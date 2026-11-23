@@ -44,19 +44,16 @@ Check Node 18+, `ffmpeg` and `ffprobe` on PATH, Python 3.9+ with `numpy` and `Pi
 
 ## GitHub Actions rendering
 
-Video rendering is done via GitHub Actions workflow (`.github/workflows/render-what-if.yml`). To trigger a render:
-1. Push changes to the repository
-2. Go to Actions tab and manually trigger the workflow with the desired episode slug
-3. Or push to main branch (default slug: 'rewind')
+Video rendering is done via `.github/workflows/render-what-if.yml` at the project root — **video-only, no
+ElevenLabs calls, no credits spent**. Push to `main` or dispatch the workflow with a slug.
 
-The workflow will:
-- Install dependencies (Node.js, Python, FFmpeg)
-- Generate voice with ElevenLabs (using both API keys with fallback)
-- Generate shot plan and storyboard
-- Generate sound effects
-- Render final video
-- Upload artifacts (MP4, storyboard, report, costs)
+What must be committed for a render to work: `episode.json`, `shots.tsx`, `index.tsx`, `timeline.json` and
+`words.json` under `studio/src/episodes/<slug>/`. Generated audio under `studio/public/<slug>/` is gitignored and
+not needed — the workflow strips audio from the timeline and outputs a **silent** `<slug>-final.mp4` (plus
+`report.json`) as workflow artifacts. Mux voice/sfx/music onto it locally afterwards.
 
-Required GitHub Secrets:
-- `ELEVENLABS_API_KEY`
-- `ELEVENLABS_API_KEY_2`
+Pipeline inside the workflow: `plan` splits `timeline.json`'s total frames into up to 8 chunks (~1500 frames each),
+`render` runs `remotion render --frames=start-end` per chunk as parallel matrix jobs, `join` concatenates the parts
+with ffmpeg and runs `master.py <slug> --skip-render` (silent renders skip loudnorm). Use Python 3.12 in CI — 3.9 is
+unavailable on current Ubuntu runner images. `ELEVENLABS_API_KEY` / `ELEVENLABS_API_KEY_2` secrets exist for any
+future audio step but the shipped workflow does not use them.

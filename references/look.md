@@ -73,7 +73,8 @@ again. Only a board that passes goes to animation.
 6. **The world is full.** Wides show 20 or more designed objects; no empty wall, no floating furniture. Everything
    that stands has legs and a contact shadow.
 7. **Perspective holds.** Objects sit on their surfaces, at the right scale for the character, toward the room's
-   vanishing point.
+   vanishing point. A prop in a hand is hand-sized — a fraction of the body at that shot's zoom, not near
+   body-height (see `traps.md`).
 8. **Acting matches the line.** The expression and pose say the line without the voice; the hand that moves is the
    near one (with `yaw < 0` the far arm hides behind the body).
 9. **Continuity.** Same costume, same set layout, same props in the same places across shots of one place.

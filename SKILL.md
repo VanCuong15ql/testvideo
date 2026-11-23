@@ -39,8 +39,9 @@ schematic for the science beat, a cliffhanger blackout). Read the one closest to
 - **Every fact is real.** A number in the script is worked out and sourced in the episode's `science` field first.
 - **Script splitting.** If the script is too long, manually split it into pages (script/page1.txt, script/page2.txt, etc.)
   by content boundaries - do NOT use code for splitting. Each page should be a coherent section.
-- **GitHub Actions rendering.** Video will be rendered on GitHub Actions, not locally. Adjust workflow accordingly -
-  prepare assets and scripts for CI/CD pipeline rather than local rendering.
+- **GitHub Actions rendering.** Video is rendered on GitHub Actions, not locally (see "Rendering on GitHub Actions"
+  below). Prepare assets and scripts for CI/CD rather than local rendering: commit `timeline.json` and `words.json`,
+  keep generated audio out of git, and expect the runner to produce a silent MP4 you mux audio onto yourself.
 
 ## Setup (once per machine)
 
@@ -167,6 +168,26 @@ python <skill>/scripts/master.py <slug>
 Renders, brings the mix to -14 LUFS with peaks under -1 dBTP, and writes `out/<slug>/report.json` (length, loudness,
 pace, credits). Watch the final file once through with sound. Hand over `out/<slug>/<slug>-final.mp4` and
 `out/<slug>/storyboard.jpg`, with the length, the ElevenLabs credits used, and anything you'd still improve.
+
+## Rendering on GitHub Actions
+
+`.github/workflows/render-what-if.yml` renders the video on GitHub-hosted runners; push to `main` or dispatch it with
+a slug. The shipped workflow is **video-only**: it never calls ElevenLabs, so it costs no credits. Audio
+(`public/<slug>/*.wav`) is generated locally ahead of time if wanted, but the CI pass strips the audio entries from
+`timeline.json` and produces a **silent** `<slug>-final.mp4` plus `report.json` as artifacts; mux the voice/sfx/music
+onto it locally afterwards.
+
+What the workflow needs committed: `episode.json`, `shots.tsx`, `index.tsx`, `timeline.json` and `words.json` (the
+timing files `voice.py`/`plan.py` write — without them there is nothing to render). `public/<slug>/` audio stays
+gitignored.
+
+How it works: a `plan` job reads `timeline.json`'s `total` frames and splits them into up to 8 chunks of ~1500 frames;
+a `render` matrix job runs `npx remotion render --frames=start-end` per chunk in parallel; a `join` job concatenates
+the parts with `ffmpeg -f concat -c copy` into `<slug>-raw.mp4` and runs `master.py <slug> --skip-render`, which
+detects the missing audio stream and copy-throughs to `-final.mp4` without loudnorm. Standard `ubuntu-latest` runners
+are free on public repos, so chunk count is the lever: render wall-clock is roughly `frames / (chunks × ~4-core
+throughput)` plus ~4 min of setup per job. Use Python 3.12 in CI — 3.9 is not published for the current Ubuntu
+runner image. `ELEVENLABS_API_KEY`/`_2` secrets are only needed if a workflow step calls the API; this one doesn't.
 
 ## Where an episode lives
 

@@ -23,6 +23,10 @@ shot or a character.
 - **Props near a hand get read as the hand.** In copy-paste's top-down desk shot a ruler sat where the arm came in
   and read as a thin beige arm. Keep a clear space round hands, and scale an arm that enters an insert up hard (a
   sleeve 100 to 130 wide, the mitten at 4.5 to 5).
+- **A prop in a hand is hand-sized.** Check it against the body *at that shot's camera zoom*: the sandglass run's
+  S48 held an hourglass at `s=1.6` under a 1.75x zoom and it read nearly body-height. Held objects should be a
+  fraction of the body (the rig is ~380 units tall at scale 1); bench-top hero props can be bigger because the
+  camera is tighter or they are the subject.
 - **Hands come from where the character is.** In an insert, the arm enters from the side of frame where that
   character stands in the neighbouring shots (the far side of the desk is the top of a top-down frame).
 - **A big room's light holes must be small.** A LightVeil hole the size of the back wall lights it evenly and the
@@ -87,3 +91,13 @@ shot or a character.
   can lag. Re-read it before reporting.
 - **Remotion Studio can't drag these shots around:** they're computed from the timeline, so retime in
   `episode.json` and re-run `plan.py`.
+- **master.py's loudnorm pass needs an audio stream.** On a silent render it crashed parsing empty ffmpeg JSON;
+  it now detects missing audio and copy-throughs to `-final.mp4` with `"silent": true` in the report. For a silent
+  CI pass use `master.py <slug> --skip-render` after concatenating the chunks yourself.
+- **setup-python 3.9 is gone from the current Ubuntu runner image** ("version '3.9' was not found for Ubuntu
+  26.04"). Pin `python-version: '3.12'` in workflows.
+- **Render time scales with frames, not story length.** A 15-25 s episode is ~700 frames; the sandglass story ran
+  ~6 minutes / 11,422 frames and took ~100 min on one runner. The CI workflow splits `timeline.json`'s `total` into
+  up to 8 `--frames` chunks on parallel jobs and ffmpeg-concatenates them — keep that structure for long episodes.
+- **Concat chunks with `-c copy`,** not re-encode: same renderer settings mean identical streams, and re-encoding
+  1080p for minutes costs more than the render saved.

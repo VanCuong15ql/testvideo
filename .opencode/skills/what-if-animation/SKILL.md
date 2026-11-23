@@ -26,14 +26,34 @@ up: the folder that contains `SKILL.md`, `references/`, `scripts/` and `studio/`
 - **Original characters only:** Pip, Mo, the sister, mum and the suit on the rig. Never a channel's hero and nothing
   that resembles a famous cartoon character; check a new look on the cast sheet.
 - **Original stories:** the formula is shared, the episode isn't anyone else's. Search YouTube for the premise first.
-- **Keys by name only:** `ELEVENLABS_API_KEY`, from the environment or a `.env` above the studio. Never print, paste or
-  hardcode a key.
+- **Keys by name only:** `ELEVENLABS_API_KEY` and `ELEVENLABS_API_KEY_2`, from the environment or a `.env` above the studio.
+  If the first key fails, automatically try the second key. Never print, paste or hardcode a key in conversation.
 - **Report the ElevenLabs credits** of every run, read fresh from the account at hand-over time.
 - **Storyboard before animation:** no video render until the stills pass the self-check.
 - **Every fact is real:** work the number out and source it in the episode's `science` field before it is voiced.
+- **Script splitting:** If the script is too long, manually split it into pages (script/page1.txt, script/page2.txt, etc.)
+  by content boundaries - do NOT use code for splitting. Each page should be a coherent section.
+- **GitHub Actions rendering:** Video will be rendered on GitHub Actions, not locally. Adjust workflow accordingly -
+  prepare assets and scripts for CI/CD pipeline rather than local rendering.
 
 ## First run on this machine
 
 Check Node 18+, `ffmpeg` and `ffprobe` on PATH, Python 3.9+ with `numpy` and `Pillow`, and `ELEVENLABS_API_KEY` in a
 `.env` at the project root. Then install the studio once: `cd <project>/studio && npm install`. After that, a run is:
 `/what-if What if you could pause everyone but you?`
+
+## GitHub Actions rendering
+
+Video rendering is done via `.github/workflows/render-what-if.yml` at the project root — **video-only, no
+ElevenLabs calls, no credits spent**. Push to `main` or dispatch the workflow with a slug.
+
+What must be committed for a render to work: `episode.json`, `shots.tsx`, `index.tsx`, `timeline.json` and
+`words.json` under `studio/src/episodes/<slug>/`. Generated audio under `studio/public/<slug>/` is gitignored and
+not needed — the workflow strips audio from the timeline and outputs a **silent** `<slug>-final.mp4` (plus
+`report.json`) as workflow artifacts. Mux voice/sfx/music onto it locally afterwards.
+
+Pipeline inside the workflow: `plan` splits `timeline.json`'s total frames into up to 8 chunks (~1500 frames each),
+`render` runs `remotion render --frames=start-end` per chunk as parallel matrix jobs, `join` concatenates the parts
+with ffmpeg and runs `master.py <slug> --skip-render` (silent renders skip loudnorm). Use Python 3.12 in CI — 3.9 is
+unavailable on current Ubuntu runner images. `ELEVENLABS_API_KEY` / `ELEVENLABS_API_KEY_2` secrets exist for any
+future audio step but the shipped workflow does not use them.

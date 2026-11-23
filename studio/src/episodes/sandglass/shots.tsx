@@ -1163,10 +1163,10 @@ export const S48: React.FC<ShotProps> = ({ t, len }) => {
       <Hero look={MINH} pose={{ ...pose, ...faceAt(t, [[0, 'neutral']]) }} rimId="rimR" shadow={0.5} />
       <Bench lamp={1} />
       {/* the hourglass held up to the light */}
-      <g transform={`translate(${hand.x} ${hand.y - 30})`}>
-        <Hourglass x={0} y={0} s={1.6} t={t} flow={0} caked={false} cap={1} crack={1} glow={0.5} />
+      <g transform={`translate(${hand.x} ${hand.y - 14}) rotate(-6)`}>
+        <Hourglass x={0} y={0} s={1.05} t={t} flow={0} caked={false} cap={1} crack={1} glow={0.5} />
       </g>
-      <Glow x={hand.x} y={hand.y - 60} r={160} o={0.4} />
+      <Glow x={hand.x} y={hand.y - 60} r={130} o={0.4} />
     </g>
   );
 };
