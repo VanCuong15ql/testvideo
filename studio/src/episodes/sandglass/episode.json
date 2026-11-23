@@ -1,0 +1,1312 @@
+{
+ "id": "Sandglass",
+ "slug": "sandglass",
+ "topic": "Chiếc đồng hồ cát trong tiệm sửa đồ cũ",
+ "title": [
+  "CHIẾC ĐỒNG HỒ CÁT",
+  "TRONG TIỆM SỬA ĐỒ CŨ"
+ ],
+ "accent": "CÁT",
+ "cast": [
+  "minh",
+  "linh"
+ ],
+ "voice": {
+  "model": "eleven_multilingual_v2",
+  "settings": {
+   "stability": 0.42,
+   "similarity_boost": 0.8,
+   "style": 0.3,
+   "use_speaker_boost": true
+  }
+ },
+ "script": [
+  {
+   "beat": "1 the alley and the shop",
+   "text": "Cuối con hẻm nhỏ rêu phong ở rìa phố cổ, có một tiệm sửa đồ cũ không tên."
+  },
+  {
+   "beat": "1 the shop's keeper",
+   "text": "Người ta gọi nó là tiệm của ông Ba, dù ông Ba đã mất từ mười năm trước, và người trông coi bây giờ là Minh — một chàng trai gầy gò có đôi mắt luôn ánh lên vẻ trầm tĩnh lạ thường."
+  },
+  {
+   "beat": "2 what he repairs",
+   "text": "Công việc của Minh không phải là sửa những món đồ đắt tiền."
+  },
+  {
+   "beat": "2 the things people bring",
+   "text": "Người ta mang đến đây một chiếc bật lửa zippo đã trầy xước mất lớp sơn, một con búp bê sứ sứt mép môi, hay một cuốn sổ tay bìa da phai màu vì nước mưa."
+  },
+  {
+   "beat": "2 the thing he really keeps",
+   "text": "Minh sửa chúng không hẳn để chúng hoạt động lại như mới, mà để giữ cho ký ức gắn liền với chúng không bị đứt gãy."
+  },
+  {
+   "beat": "3 the girl at the door",
+   "text": "Một buổi chiều mưa phùn tháng Mười Một, chiếc chuông gió bằng đồng treo trên cửa kêu lên lanh lảnh. Một cô gái trẻ bước vào, chiếc áo khoác kaki ướt sũng ở vai."
+  },
+  {
+   "beat": "3 the hourglass in her hand",
+   "text": "Trên tay cô là một chiếc đồng hồ cát nhỏ xíu, khung gỗ óc chó đã ngả màu thời gian, nhưng phần thủy tinh ở giữa lại nứt một đường mảnh như sợi tóc."
+  },
+  {
+   "beat": "3 the sand has stopped",
+   "text": "Cát bên trong đã vón cục, bám chặt vào thành kính, không thể chảy xuống được nữa."
+  },
+  {
+   "beat": "4 the ask",
+   "text": "“Anh có sửa được không?” cô gái hỏi, giọng hơi ngập ngừng. “Em làm rơi nó hôm qua. Cát bên trong... không chạy nữa.”"
+  },
+  {
+   "beat": "5 on the bench under the lamp",
+   "text": "Minh nhận lấy chiếc đồng hồ cát, đặt nó lên bàn làm việc dưới ánh đèn vàng ấm áp."
+  },
+  {
+   "beat": "5 the crack and the clumps",
+   "text": "Anh xoay nhẹ nó dưới ánh sáng, quan sát vết nứt và những hạt cát mịn màu ngà đang dính bết vào nhau."
+  },
+  {
+   "beat": "6 the glass can be mended",
+   "text": "“Thủy tinh nứt thì có thể hàn lại, nhưng vết nối sẽ không bao giờ hoàn hảo như khối thủy tinh nguyên bản,” Minh nói chậm rãi."
+  },
+  {
+   "beat": "6 a hairline in the glass",
+   "text": "“Còn cát bị vón cục là do hơi ẩm lọt vào."
+  },
+  {
+   "beat": "6 the sand must be dried",
+   "text": "Muốn nó chảy đều trở lại, phải sấy khô hoàn toàn, lọc bỏ những hạt kết dính, rồi mới cho vào.”"
+  },
+  {
+   "beat": "7 she sits",
+   "text": "Cô gái ngồi xuống chiếc ghế gỗ đối diện, hai tay đan vào nhau đặt trên mặt bàn."
+  },
+  {
+   "beat": "7 the eighteenth-birthday gift",
+   "text": "Nó là quà sinh nhật năm mười tám tuổi của bạn trai cũ tặng em. Hồi đó anh ấy bảo, mỗi lần em giận dỗi hay thấy bế tắc, cứ lật ngược nó lên, nhìn cát chảy là sẽ bình tâm lại."
+  },
+  {
+   "beat": "7 half a year, and the drop",
+   "text": "Bây giờ bọn em chia tay được nửa năm rồi. Hôm qua dọn dẹp, em vô tình làm rơi..."
+  },
+  {
+   "beat": "8 why she brought it",
+   "text": "Cô dừng lại, nhìn xuống mũi giày của mình. Em không biết tại sao mình lại mang nó tới đây. Có lẽ em chỉ thấy tiếc một món đồ, hoặc có lẽ em không muốn nhìn nó dừng lại giữa chừng như thế."
+  },
+  {
+   "beat": "9 he begins",
+   "text": "Minh mỉm cười nhẹ, bắt tay vào công việc."
+  },
+  {
+   "beat": "9 the cap comes off",
+   "text": "Đầu tiên, anh dùng một chiếc kẹp nhỏ và dụng cụ chuyên dụng khéo léo tách phần nắp gỗ ở một đầu, đổ phần cát ẩm ra một chiếc đĩa sứ trắng."
+  },
+  {
+   "beat": "9 sand that used to move",
+   "text": "Những hạt cát nhỏ li ti, vốn tượng trưng cho sự trôi chảy vô tình của thời gian, giờ nằm im lìm, kết thành từng mảng nhỏ như những đám mây thu nhỏ."
+  },
+  {
+   "beat": "10 time never stops",
+   "text": "“Thời gian thực ra không bao giờ dừng lại,” Minh vừa làm vừa trò chuyện, giọng đều đều như tiếng mưa rơi bên ngoài hiên."
+  },
+  {
+   "beat": "10 moments that feel still",
+   "text": "“Chỉ là đôi khi, có những khoảnh khắc khiến ta cảm thấy mọi thứ đứng yên."
+  },
+  {
+   "beat": "10 three minutes",
+   "text": "Chiếc đồng hồ cát này chỉ đong đếm một khoảng thời gian rất ngắn — chừng ba phút thôi. Nó không giữ được cả một mối quan hệ, cũng không níu giữ được người đã rời đi.”"
+  },
+  {
+   "beat": "10 what does it keep",
+   "text": "“Vậy nó giữ được gì?” cô gái ngẩng lên hỏi."
+  },
+  {
+   "beat": "11 how she used to see the world",
+   "text": "“Nó giữ lại cách em đã từng nhìn thế giới vào lúc nhận được nó,” Minh đặt chiếc đĩa cát dưới đèn sưởi mini để hút ẩm."
+  },
+  {
+   "beat": "11 the value is in her",
+   "text": "“Ba phút ấy từng giúp em hít thở sâu hơn khi lòng rối bời. Giá trị của nó nằm ở những lần em tự xoa dịu chính mình, chứ không phải ở người đã tặng.”"
+  },
+  {
+   "beat": "12 the room goes quiet",
+   "text": "Cô gái im lặng hồi lâu. Ngoài kia, tiếng xe máy lướt qua mặt đường ướt át nghe xa xăm. Trong căn phòng nhỏ ngập mùi gỗ cũ, dầu máy và hương trầm nhè nhẹ, mọi thứ dường như chậm lại."
+  },
+  {
+   "beat": "13 the glue, layer by layer",
+   "text": "Minh bắt đầu xử lý phần bầu thủy tinh. Vết nứt nhỏ đòi hỏi sự kiên nhẫn tuyệt đối. Anh dùng keo chuyên dụng trong suốt, thoa từng lớp mỏng, gạt bỏ phần dư thừa rồi chiếu đèn UV để làm cứng."
+  },
+  {
+   "beat": "13 the scar stays",
+   "text": "Khi đưa lên trước ánh đèn bàn, đường nứt vẫn còn đó — một vệt mờ mảnh mai chạy dọc thân kính — nhưng cấu trúc đã liền mạch trở lại."
+  },
+  {
+   "beat": "14 sift, pour, close",
+   "text": "Tiếp theo, anh dùng rây mịn sàng lại số cát đã khô ráo. Những hạt cát tơi ra, lấp lánh dưới ánh sáng. Anh cẩn thận đổ chúng trở lại vào bầu thủy tinh qua chiếc phễu giấy nhỏ xíu, rồi gắn chặt nắp gỗ."
+  },
+  {
+   "beat": "14 in the palm",
+   "text": "Chiếc đồng hồ cát nằm gọn trong lòng bàn tay Minh. Anh lật ngược nó lại."
+  },
+  {
+   "beat": "15 the sand runs",
+   "text": "Một dòng cát mảnh, đều tăm tắp bắt đầu chảy từ bầu trên xuống bầu dưới. Từng hạt, từng hạt một, rơi xuống tạo thành một ngọn núi nhỏ xíu đang lớn dần lên từng giây. Vết nứt trên thân kính bắt sáng lấp lánh, không hề cản trở dòng chảy bên trong."
+  },
+  {
+   "beat": "16 three minutes of yours",
+   "text": "Minh đặt chiếc đồng hồ xuống trước mặt cô gái. “Xong rồi đây. Ba phút của em.”"
+  },
+  {
+   "beat": "16 she watches it",
+   "text": "Cô gái nhìn dòng cát đang rơi, mắt hơi đỏ nhưng khóe môi đã giãn ra một nụ cười nhẹ nhõm."
+  },
+  {
+   "beat": "17 the scar makes it real",
+   "text": "Cô đưa tay chạm nhẹ vào mặt kính mát lạnh, nơi có đường nứt mờ. “Nhìn nó có vết sẹo thế này... lại thấy thật hơn,” cô nói nhỏ."
+  },
+  {
+   "beat": "17 what was broken and healed",
+   "text": "“Đúng vậy,” Minh đáp. “Cái gì từng vỡ rồi lành lại cũng đều có vết tích. Quan trọng là bên trong nó vẫn còn chuyển động.”"
+  },
+  {
+   "beat": "18 she leaves into the rain",
+   "text": "Cô gái thanh toán tiền sửa, cảm ơn Minh rồi bước ra khỏi tiệm. Tiếng chuông gió lại vang lên lanh lảnh khi cánh cửa khép lại. Bóng cô khuất dần sau màn mưa nhạt, mang theo chiếc đồng hồ cát nhỏ nằm gọn trong túi áo khoác."
+  },
+  {
+   "beat": "19 one lamp goes off",
+   "text": "Minh dọn dẹp lại bàn làm việc, tắt bớt một bóng đèn để tiết kiệm điện."
+  },
+  {
+   "beat": "19 the shelf of waiting things",
+   "text": "Trên kệ gỗ phía sau lưng anh là hàng chục món đồ khác đang chờ đến lượt: một chiếc la bàn hỏng kim, một chiếc hộp nhạc thiếu mất vài nốt ngân, một chiếc khung ảnh gỗ tróc sơn."
+  },
+  {
+   "beat": "19 each one a story",
+   "text": "Mỗi món đồ là một câu chuyện dang dở, và công việc của Minh chỉ đơn giản là giúp chúng tìm lại nhịp điệu vốn có của mình, trước khi tiếp tục hành trình cùng chủ nhân."
+  },
+  {
+   "beat": "20 the rain keeps falling",
+   "text": "Mưa ngoài hẻm vẫn rơi, đều đặn và kiên nhẫn, giống như dòng cát vừa chảy hết trong chiếc đồng hồ nhỏ bé kia."
+  }
+ ],
+ "shots": [
+  {
+   "id": "S1",
+   "size": "wide, establishing",
+   "set": "workshop",
+   "key": 80,
+   "note": "the whole shop in the rain: shelves, window, door, bench; Minh small behind the bench"
+  },
+  {
+   "id": "S2",
+   "size": "medium",
+   "set": "workshop (bench)",
+   "key": 110,
+   "note": "Minh under the lamp; the two-line title sits over the room"
+  },
+  {
+   "id": "S3",
+   "size": "close-up",
+   "set": "workshop",
+   "key": 70,
+   "note": "his eyes, calm; the lamp warm on one side"
+  },
+  {
+   "id": "S4",
+   "size": "medium",
+   "set": "workshop (bench)",
+   "key": 66,
+   "note": "the bench with the cheap objects; he turns one in his hands"
+  },
+  {
+   "id": "S5",
+   "size": "insert, low angle",
+   "set": "workshop (shelf)",
+   "key": 44,
+   "note": "the shelf of other people's things, a slow pan"
+  },
+  {
+   "id": "S6",
+   "size": "macro",
+   "set": "workshop (bench)",
+   "key": 50,
+   "note": "the zippo, its worn chrome, his thumb"
+  },
+  {
+   "id": "S7",
+   "size": "macro",
+   "set": "workshop (bench)",
+   "key": 90,
+   "note": "the chipped doll and the rain-stained notebook beside it"
+  },
+  {
+   "id": "S8",
+   "size": "medium, low angle",
+   "set": "workshop (bench)",
+   "key": 130,
+   "note": "Minh works; the memory is the thing he keeps, not the object"
+  },
+  {
+   "id": "S9",
+   "size": "wide",
+   "set": "workshop (door)",
+   "key": 70,
+   "note": "rain at the door; the chime hangs still, then moves"
+  },
+  {
+   "id": "S10",
+   "size": "insert",
+   "set": "workshop (door)",
+   "key": 60,
+   "note": "the brass chime swinging, the rain behind it"
+  },
+  {
+   "id": "S11",
+   "size": "wide",
+   "set": "workshop (door)",
+   "key": 70,
+   "note": "the door opens; Linh steps in out of the rain, shoulders dark with water"
+  },
+  {
+   "id": "S12",
+   "size": "medium",
+   "set": "workshop",
+   "key": 60,
+   "note": "Linh holding the little hourglass out in both hands"
+  },
+  {
+   "id": "S13",
+   "size": "macro",
+   "set": "workshop",
+   "key": 80,
+   "note": "the walnut frame, the hairline crack in the glass"
+  },
+  {
+   "id": "S14",
+   "size": "extreme close-up",
+   "set": "workshop",
+   "key": 90,
+   "note": "caked sand stuck to the inside of the glass"
+  },
+  {
+   "id": "S15",
+   "size": "two-shot",
+   "set": "workshop",
+   "key": 70,
+   "note": "she asks; Minh looks up from the bench"
+  },
+  {
+   "id": "S16",
+   "size": "close-up",
+   "set": "workshop",
+   "key": 60,
+   "note": "Linh, uncertain, the question still in her face"
+  },
+  {
+   "id": "S17",
+   "size": "medium",
+   "set": "workshop (bench)",
+   "key": 60,
+   "note": "he takes it and sets it on the bench under the lamp"
+  },
+  {
+   "id": "S18",
+   "size": "macro",
+   "set": "workshop (bench)",
+   "key": 100,
+   "note": "the hourglass turning in the lamp light, the crack and the clumps"
+  },
+  {
+   "id": "S19",
+   "size": "close-up",
+   "set": "workshop (bench)",
+   "key": 70,
+   "note": "Minh: the glass can be mended, the seam will show"
+  },
+  {
+   "id": "S20",
+   "size": "extreme close-up",
+   "set": "workshop (bench)",
+   "key": 70,
+   "note": "the hairline crack, light bending in it"
+  },
+  {
+   "id": "S21",
+   "size": "close-up",
+   "set": "workshop (bench)",
+   "key": 70,
+   "note": "Minh: the damp got in"
+  },
+  {
+   "id": "S22",
+   "size": "macro",
+   "set": "workshop (bench)",
+   "key": 80,
+   "note": "the caked sand; dry it, sift it, pour it back"
+  },
+  {
+   "id": "S23",
+   "size": "medium",
+   "set": "workshop (stool)",
+   "key": 60,
+   "note": "Linh sits on the stool, hands clasped on the bench"
+  },
+  {
+   "id": "S24",
+   "size": "close-up",
+   "set": "workshop (stool)",
+   "key": 70,
+   "note": "she tells him about the eighteenth birthday"
+  },
+  {
+   "id": "S25",
+   "size": "insert, warm",
+   "set": "workshop (bench)",
+   "key": 80,
+   "note": "the hourglass with a warm glow behind it, as she remembers"
+  },
+  {
+   "id": "S26",
+   "size": "close-up",
+   "set": "workshop (stool)",
+   "key": 70,
+   "note": "half a year, and the drop; her voice thins"
+  },
+  {
+   "id": "S27",
+   "size": "close-up",
+   "set": "workshop (stool)",
+   "key": 80,
+   "note": "she stops, looks down at her shoes"
+  },
+  {
+   "id": "S28",
+   "size": "close-up",
+   "set": "workshop (stool)",
+   "key": 100,
+   "note": "the quiet after; she does not want to see it stop midway"
+  },
+  {
+   "id": "S29",
+   "size": "medium",
+   "set": "workshop (bench)",
+   "key": 50,
+   "note": "Minh smiles a little and picks up his tweezers"
+  },
+  {
+   "id": "S30",
+   "size": "macro insert, high angle",
+   "set": "workshop (worktop)",
+   "key": 80,
+   "note": "the cap comes off; the damp sand pours onto the white dish"
+  },
+  {
+   "id": "S31",
+   "size": "macro",
+   "set": "workshop (worktop)",
+   "key": 70,
+   "note": "the sand leaves the glass, grain by grain"
+  },
+  {
+   "id": "S32",
+   "size": "top-down insert",
+   "set": "workshop (worktop)",
+   "key": 80,
+   "note": "the dish of caked sand, small clouds that used to move"
+  },
+  {
+   "id": "S33",
+   "size": "insert",
+   "set": "workshop (worktop)",
+   "key": 70,
+   "note": "the dish under the little heater; a thread of steam"
+  },
+  {
+   "id": "S34",
+   "size": "medium",
+   "set": "workshop (bench)",
+   "key": 120,
+   "note": "Minh talks while he works, rain at his back"
+  },
+  {
+   "id": "S35",
+   "size": "insert, window",
+   "set": "workshop (window)",
+   "key": 90,
+   "note": "rain running down the window; the shop reflected"
+  },
+  {
+   "id": "S36",
+   "size": "medium, low angle",
+   "set": "workshop (bench)",
+   "key": 90,
+   "note": "he holds the hourglass up: three minutes, no more"
+  },
+  {
+   "id": "S37",
+   "size": "close-up",
+   "set": "workshop (bench)",
+   "key": 80,
+   "note": "the hourglass in his fingers, the empty bulbs"
+  },
+  {
+   "id": "S38",
+   "size": "close-up",
+   "set": "workshop (stool)",
+   "key": 50,
+   "note": "Linh looks up: what does it keep, then?"
+  },
+  {
+   "id": "S39",
+   "size": "two-shot",
+   "set": "workshop",
+   "key": 70,
+   "note": "Minh answers; he sets the dish of sand under the mini heater"
+  },
+  {
+   "id": "S40",
+   "size": "insert",
+   "set": "workshop (worktop)",
+   "key": 60,
+   "note": "the dish and the heater, the sand drying pale"
+  },
+  {
+   "id": "S41",
+   "size": "close-up",
+   "set": "workshop (stool)",
+   "key": 70,
+   "note": "Linh listening; the hard line in her face softens"
+  },
+  {
+   "id": "S42",
+   "size": "close-up",
+   "set": "workshop (bench)",
+   "key": 80,
+   "note": "Minh: the value is in the times she soothed herself"
+  },
+  {
+   "id": "S43",
+   "size": "wide",
+   "set": "workshop",
+   "key": 50,
+   "note": "the two of them still; rain, dust, one lamp"
+  },
+  {
+   "id": "S44",
+   "size": "insert",
+   "set": "workshop (window)",
+   "key": 70,
+   "note": "the wet street beyond the glass, a scooter passing"
+  },
+  {
+   "id": "S45",
+   "size": "wide",
+   "set": "workshop",
+   "key": 100,
+   "note": "the small room, the old-wood smell almost visible"
+  },
+  {
+   "id": "S46",
+   "size": "macro insert",
+   "set": "workshop (worktop)",
+   "key": 90,
+   "note": "clear glue laid along the crack, a thin bead"
+  },
+  {
+   "id": "S47",
+   "size": "macro insert",
+   "set": "workshop (worktop)",
+   "key": 90,
+   "note": "the UV lamp comes on; the glue sets"
+  },
+  {
+   "id": "S48",
+   "size": "close-up",
+   "set": "workshop (bench)",
+   "key": 40,
+   "note": "he holds the glass up to the lamp"
+  },
+  {
+   "id": "S49",
+   "size": "close-up",
+   "set": "workshop (bench)",
+   "key": 90,
+   "note": "the crack is still there; the glass is whole"
+  },
+  {
+   "id": "S50",
+   "size": "extreme close-up",
+   "set": "workshop (bench)",
+   "key": 50,
+   "note": "the faint scar running down the glass"
+  },
+  {
+   "id": "S51",
+   "size": "macro insert",
+   "set": "workshop (worktop)",
+   "key": 80,
+   "note": "the sieve, the dry sand falling through"
+  },
+  {
+   "id": "S52",
+   "size": "macro insert",
+   "set": "workshop (worktop)",
+   "key": 60,
+   "note": "the grains sparkling in the lamp light"
+  },
+  {
+   "id": "S53",
+   "size": "macro insert",
+   "set": "workshop (worktop)",
+   "key": 100,
+   "note": "the paper funnel, the sand running back into the bulb"
+  },
+  {
+   "id": "S54",
+   "size": "close-up",
+   "set": "workshop (bench)",
+   "key": 30,
+   "note": "the wooden cap pressed back on"
+  },
+  {
+   "id": "S55",
+   "size": "close-up",
+   "set": "workshop (bench)",
+   "key": 100,
+   "note": "the hourglass in his palm; he turns it over"
+  },
+  {
+   "id": "S56",
+   "size": "macro",
+   "set": "workshop (bench)",
+   "key": 100,
+   "note": "the first thread of sand falls"
+  },
+  {
+   "id": "S57",
+   "size": "macro",
+   "set": "workshop (bench)",
+   "key": 130,
+   "note": "the little mound growing, grain by grain"
+  },
+  {
+   "id": "S58",
+   "size": "macro",
+   "set": "workshop (bench)",
+   "key": 110,
+   "note": "the scar catching the light, not blocking the flow"
+  },
+  {
+   "id": "S59",
+   "size": "medium",
+   "set": "workshop (stool)",
+   "key": 40,
+   "note": "he sets it down in front of her: three minutes of yours"
+  },
+  {
+   "id": "S60",
+   "size": "close-up",
+   "set": "workshop (stool)",
+   "key": 40,
+   "note": "Linh watches the sand; her eyes are red"
+  },
+  {
+   "id": "S61",
+   "size": "close-up",
+   "set": "workshop (stool)",
+   "key": 100,
+   "note": "the small smile arrives"
+  },
+  {
+   "id": "S62",
+   "size": "macro insert",
+   "set": "workshop (stool)",
+   "key": 90,
+   "note": "her fingertips touch the cool glass over the faint scar"
+  },
+  {
+   "id": "S63",
+   "size": "close-up",
+   "set": "workshop (stool)",
+   "key": 70,
+   "note": "she says the scar makes it real"
+  },
+  {
+   "id": "S64",
+   "size": "two-shot",
+   "set": "workshop",
+   "key": 100,
+   "note": "Minh answers: what was broken and healed keeps a mark"
+  },
+  {
+   "id": "S65",
+   "size": "close-up",
+   "set": "workshop (bench)",
+   "key": 60,
+   "note": "Minh: what matters is that it still moves inside"
+  },
+  {
+   "id": "S66",
+   "size": "wide",
+   "set": "workshop (door)",
+   "key": 80,
+   "note": "she pays, thanks him, steps out; the chime rings"
+  },
+  {
+   "id": "S67",
+   "size": "insert",
+   "set": "workshop (door)",
+   "key": 70,
+   "note": "the chime swinging after the door"
+  },
+  {
+   "id": "S68",
+   "size": "wide",
+   "set": "workshop (door)",
+   "key": 110,
+   "note": "the door closes; her shape fades into the rain"
+  },
+  {
+   "id": "S69",
+   "size": "medium",
+   "set": "workshop (bench)",
+   "key": 50,
+   "note": "Minh tidies the bench"
+  },
+  {
+   "id": "S70",
+   "size": "close-up",
+   "set": "workshop (bench)",
+   "key": 50,
+   "note": "his hand on the lamp switch; one light goes off"
+  },
+  {
+   "id": "S71",
+   "size": "insert, low angle",
+   "set": "workshop (shelf)",
+   "key": 110,
+   "note": "the shelf of waiting things in the low light"
+  },
+  {
+   "id": "S72",
+   "size": "close-up",
+   "set": "workshop (shelf)",
+   "key": 40,
+   "note": "the compass with a dead needle and the music box"
+  },
+  {
+   "id": "S73",
+   "size": "close-up",
+   "set": "workshop (shelf)",
+   "key": 50,
+   "note": "the flaking wooden photo frame"
+  },
+  {
+   "id": "S74",
+   "size": "medium",
+   "set": "workshop",
+   "key": 100,
+   "note": "Minh alone, the shelf behind him, the lamp low"
+  },
+  {
+   "id": "S75",
+   "size": "wide",
+   "set": "workshop",
+   "key": 110,
+   "note": "the shop at its quietest; the rain keeps on"
+  },
+  {
+   "id": "S76",
+   "size": "close-up, window",
+   "set": "workshop (window)",
+   "key": 80,
+   "note": "rain on the glass; the last line"
+  }
+ ],
+ "edit": [
+  {
+   "shot": "S1",
+   "at": "Cuối"
+  },
+  {
+   "shot": "S1b",
+   "at": "có"
+  },
+  {
+   "shot": "S2",
+   "at": "Người"
+  },
+  {
+   "shot": "S2b",
+   "at": "mất"
+  },
+  {
+   "shot": "S3",
+   "at": "Minh—"
+  },
+  {
+   "shot": "S4",
+   "at": "Công"
+  },
+  {
+   "shot": "S5",
+   "at": "mang"
+  },
+  {
+   "shot": "S6",
+   "at": "zippo"
+  },
+  {
+   "shot": "S7",
+   "at": "búp"
+  },
+  {
+   "shot": "S8",
+   "at": "Minh"
+  },
+  {
+   "shot": "S8b",
+   "at": "mà"
+  },
+  {
+   "shot": "S9",
+   "at": "Một"
+  },
+  {
+   "shot": "S10",
+   "at": "trên"
+  },
+  {
+   "shot": "S11",
+   "at": "Một"
+  },
+  {
+   "shot": "S12",
+   "at": "Trên"
+  },
+  {
+   "shot": "S13",
+   "at": "khung"
+  },
+  {
+   "shot": "S13b",
+   "at": "nhưng"
+  },
+  {
+   "shot": "S14",
+   "at": "Cát"
+  },
+  {
+   "shot": "S15",
+   "at": "Anh"
+  },
+  {
+   "shot": "S16",
+   "at": "Em"
+  },
+  {
+   "shot": "S17",
+   "at": "Minh"
+  },
+  {
+   "shot": "S18",
+   "at": "Anh"
+  },
+  {
+   "shot": "S18b",
+   "at": "những"
+  },
+  {
+   "shot": "S19",
+   "at": "Thủy"
+  },
+  {
+   "shot": "S20",
+   "at": "khối"
+  },
+  {
+   "shot": "S21",
+   "at": "Còn"
+  },
+  {
+   "shot": "S22",
+   "at": "Muốn"
+  },
+  {
+   "shot": "S22b",
+   "at": "lọc"
+  },
+  {
+   "shot": "S23",
+   "at": "Cô"
+  },
+  {
+   "shot": "S24",
+   "at": "Nó"
+  },
+  {
+   "shot": "S25",
+   "at": "Hồi"
+  },
+  {
+   "shot": "S25b",
+   "at": "cứ"
+  },
+  {
+   "shot": "S26",
+   "at": "Bây"
+  },
+  {
+   "shot": "S27",
+   "at": "Cô"
+  },
+  {
+   "shot": "S28",
+   "at": "Có"
+  },
+  {
+   "shot": "S29",
+   "at": "Minh"
+  },
+  {
+   "shot": "S30",
+   "at": "Đầu"
+  },
+  {
+   "shot": "S31",
+   "at": "phần"
+  },
+  {
+   "shot": "S32",
+   "at": "Những"
+  },
+  {
+   "shot": "S33",
+   "at": "giờ"
+  },
+  {
+   "shot": "S34",
+   "at": "Thời"
+  },
+  {
+   "shot": "S34b",
+   "at": "giọng"
+  },
+  {
+   "shot": "S35",
+   "at": "Chỉ"
+  },
+  {
+   "shot": "S36",
+   "at": "Chiếc"
+  },
+  {
+   "shot": "S37",
+   "at": "Nó"
+  },
+  {
+   "shot": "S38",
+   "at": "Vậy"
+  },
+  {
+   "shot": "S39",
+   "at": "cách"
+  },
+  {
+   "shot": "S40",
+   "at": "Minh"
+  },
+  {
+   "shot": "S41",
+   "at": "Ba"
+  },
+  {
+   "shot": "S42",
+   "at": "Giá"
+  },
+  {
+   "shot": "S43",
+   "at": "Cô"
+  },
+  {
+   "shot": "S44",
+   "at": "Ngoài"
+  },
+  {
+   "shot": "S45",
+   "at": "Trong"
+  },
+  {
+   "shot": "S45b",
+   "at": "mọi"
+  },
+  {
+   "shot": "S46",
+   "at": "Minh"
+  },
+  {
+   "shot": "S47",
+   "at": "Anh"
+  },
+  {
+   "shot": "S48",
+   "at": "chiếu"
+  },
+  {
+   "shot": "S49",
+   "at": "Khi"
+  },
+  {
+   "shot": "S50",
+   "at": "nhưng"
+  },
+  {
+   "shot": "S51",
+   "at": "Tiếp"
+  },
+  {
+   "shot": "S52",
+   "at": "Những"
+  },
+  {
+   "shot": "S53",
+   "at": "Anh"
+  },
+  {
+   "shot": "S54",
+   "at": "rồi"
+  },
+  {
+   "shot": "S55",
+   "at": "Chiếc"
+  },
+  {
+   "shot": "S56",
+   "at": "Một"
+  },
+  {
+   "shot": "S57",
+   "at": "Từng"
+  },
+  {
+   "shot": "S57b",
+   "at": "rơi"
+  },
+  {
+   "shot": "S58",
+   "at": "Vết"
+  },
+  {
+   "shot": "S59",
+   "at": "Minh"
+  },
+  {
+   "shot": "S60",
+   "at": "Xong"
+  },
+  {
+   "shot": "S61",
+   "at": "Cô"
+  },
+  {
+   "shot": "S62",
+   "at": "Cô"
+  },
+  {
+   "shot": "S63",
+   "at": "Nhìn"
+  },
+  {
+   "shot": "S64",
+   "at": "Đúng"
+  },
+  {
+   "shot": "S65",
+   "at": "Quan"
+  },
+  {
+   "shot": "S66",
+   "at": "Cô"
+  },
+  {
+   "shot": "S67",
+   "at": "Tiếng"
+  },
+  {
+   "shot": "S68",
+   "at": "Bóng"
+  },
+  {
+   "shot": "S68b",
+   "at": "mang"
+  },
+  {
+   "shot": "S69",
+   "at": "Minh"
+  },
+  {
+   "shot": "S70",
+   "at": "một"
+  },
+  {
+   "shot": "S71",
+   "at": "Trên"
+  },
+  {
+   "shot": "S72",
+   "at": "một"
+  },
+  {
+   "shot": "S73",
+   "at": "một"
+  },
+  {
+   "shot": "S74",
+   "at": "Mỗi"
+  },
+  {
+   "shot": "S75",
+   "at": "giúp"
+  },
+  {
+   "shot": "S76",
+   "at": "Mưa"
+  },
+  {
+   "shot": "S76b",
+   "at": "giống"
+  }
+ ],
+ "tail": 1.4,
+ "fx": [
+  {
+   "at": "S11+40",
+   "kind": "flash",
+   "color": "#CFE6F4",
+   "o": 0.14
+  },
+  {
+   "at": "S56+8",
+   "kind": "flash",
+   "color": "#FFE7B3",
+   "o": 0.1
+  }
+ ],
+ "sound": {
+  "clips": {
+   "rain": [
+    "soft rain on a window and a tin roof, steady patter, no thunder",
+    12.0
+   ],
+   "room_tone": [
+    "quiet old wooden room tone, faint dust motes, distant street hum, no voices",
+    10.0
+   ],
+   "chime": [
+    "a small brass wind chime ringing softly in a breeze, three gentle notes",
+    2.0
+   ],
+   "door_open": [
+    "a wooden door opening slowly with a soft creak and a small brass chime",
+    2.0
+   ],
+   "door_close": [
+    "a wooden door closing softly with a latch click",
+    1.5
+   ],
+   "sand_pour": [
+    "dry fine sand pouring slowly from a small glass bulb into a white dish, granular whisper",
+    3.0
+   ],
+   "glass_set": [
+    "a small glass object set gently on a wooden bench, soft clink",
+    1.0
+   ],
+   "sieve": [
+    "dry sand sifted through a fine mesh sieve, soft granular rustle",
+    3.0
+   ],
+   "glue": [
+    "a small bottle of clear glue squeezed, a thin wet bead, quiet",
+    2.0
+   ],
+   "uv_lamp": [
+    "a small UV lamp clicking on with a faint electrical hum",
+    2.0
+   ],
+   "fingers": [
+    "fingertips touching cool glass, a very soft tap",
+    0.8
+   ],
+   "cloth": [
+    "a soft cloth wiping a wooden bench, gentle rustle",
+    2.0
+   ],
+   "lamp_off": [
+    "a small desk lamp switching off with a soft click, the room going quiet",
+    1.5
+   ],
+   "music": [
+    "gentle melancholic piano and soft strings, slow tempo, warm and reflective, no vocals",
+    30.0
+   ]
+  },
+  "events": [
+   [
+    "S1",
+    "rain",
+    0.15,
+    "onset",
+    "S76"
+   ],
+   [
+    "S1",
+    "room_tone",
+    0.1,
+    "onset",
+    "S76"
+   ],
+   [
+    "S1",
+    "music",
+    0.12,
+    "onset",
+    "S66"
+   ],
+   [
+    "S9",
+    "chime",
+    0.3
+   ],
+   [
+    "S10",
+    "chime",
+    0.25
+   ],
+   [
+    "S11+10",
+    "door_open",
+    0.4
+   ],
+   [
+    "S15",
+    "glass_set",
+    0.3
+   ],
+   [
+    "S17",
+    "glass_set",
+    0.3
+   ],
+   [
+    "S30",
+    "sand_pour",
+    0.4
+   ],
+   [
+    "S31",
+    "sand_pour",
+    0.35
+   ],
+   [
+    "S32",
+    "sand_pour",
+    0.25
+   ],
+   [
+    "S33",
+    "room_tone",
+    0.05
+   ],
+   [
+    "S46",
+    "glue",
+    0.3
+   ],
+   [
+    "S47",
+    "uv_lamp",
+    0.35
+   ],
+   [
+    "S51",
+    "sieve",
+    0.35
+   ],
+   [
+    "S52",
+    "sieve",
+    0.25
+   ],
+   [
+    "S53",
+    "sand_pour",
+    0.3
+   ],
+   [
+    "S55",
+    "glass_set",
+    0.3
+   ],
+   [
+    "S56",
+    "sand_pour",
+    0.25
+   ],
+   [
+    "S57",
+    "sand_pour",
+    0.2
+   ],
+   [
+    "S59",
+    "glass_set",
+    0.35
+   ],
+   [
+    "S62",
+    "fingers",
+    0.3
+   ],
+   [
+    "S66+60",
+    "door_close",
+    0.4
+   ],
+   [
+    "S66+80",
+    "chime",
+    0.3
+   ],
+   [
+    "S69",
+    "cloth",
+    0.25
+   ],
+   [
+    "S70",
+    "lamp_off",
+    0.4
+   ],
+   [
+    "S75",
+    "rain",
+    0.08
+   ],
+   [
+    "S76",
+    "rain",
+    0.1
+   ]
+  ],
+  "music": {
+   "clip": "music",
+   "until": "S66"
+  },
+  "levels": {
+   "sfx_lu": -18,
+   "music_lu": -24
+  }
+ }
+}
