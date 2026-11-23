@@ -181,7 +181,7 @@ What the workflow needs committed: `episode.json`, `shots.tsx`, `index.tsx`, `ti
 timing files `voice.py`/`plan.py` write — without them there is nothing to render). `public/<slug>/` audio stays
 gitignored.
 
-How it works: a `plan` job reads `timeline.json`'s `total` frames and splits them into up to 8 chunks of ~1500 frames;
+How it works: a `plan` job reads `timeline.json`'s `total` frames and splits them into up to 32 chunks of ~1500 frames;
 a `render` matrix job runs `npx remotion render --frames=start-end` per chunk in parallel; a `join` job concatenates
 the parts with `ffmpeg -f concat -c copy` into `<slug>-raw.mp4` and runs `master.py <slug> --skip-render`, which
 detects the missing audio stream and copy-throughs to `-final.mp4` without loudnorm. Standard `ubuntu-latest` runners

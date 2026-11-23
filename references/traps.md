@@ -98,6 +98,7 @@ shot or a character.
   26.04"). Pin `python-version: '3.12'` in workflows.
 - **Render time scales with frames, not story length.** A 15-25 s episode is ~700 frames; the sandglass story ran
   ~6 minutes / 11,422 frames and took ~100 min on one runner. The CI workflow splits `timeline.json`'s `total` into
-  up to 8 `--frames` chunks on parallel jobs and ffmpeg-concatenates them — keep that structure for long episodes.
+  up to 32 `--frames` chunks on parallel jobs and ffmpeg-concatenates them — keep that structure for long episodes
+  (30-60 minute videos need the full 32).
 - **Concat chunks with `-c copy`,** not re-encode: same renderer settings mean identical streams, and re-encoding
   1080p for minutes costs more than the render saved.

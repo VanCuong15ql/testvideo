@@ -34,7 +34,7 @@ jobs:
           slug = os.environ['SLUG']
           d = json.load(open(f'studio/src/episodes/{slug}/timeline.json', encoding='utf-8'))
           total = int(d['total'])
-          n = max(1, min(8, math.ceil(total / 1500)))
+          n = max(1, min(32, math.ceil(total / 1500)))
           size = math.ceil(total / n)
           chunks = [{'i': i, 'start': i * size, 'end': min((i + 1) * size, total) - 1} for i in range(n)]
           with open(os.environ['GITHUB_OUTPUT'], 'a', encoding='utf-8') as f:

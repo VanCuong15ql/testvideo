@@ -52,7 +52,7 @@ What must be committed for a render to work: `episode.json`, `shots.tsx`, `index
 not needed — the workflow strips audio from the timeline and outputs a **silent** `<slug>-final.mp4` (plus
 `report.json`) as workflow artifacts. Mux voice/sfx/music onto it locally afterwards.
 
-Pipeline inside the workflow: `plan` splits `timeline.json`'s total frames into up to 8 chunks (~1500 frames each),
+Pipeline inside the workflow: `plan` splits `timeline.json`'s total frames into up to 32 chunks (~1500 frames each),
 `render` runs `remotion render --frames=start-end` per chunk as parallel matrix jobs, `join` concatenates the parts
 with ffmpeg and runs `master.py <slug> --skip-render` (silent renders skip loudnorm). Use Python 3.12 in CI — 3.9 is
 unavailable on current Ubuntu runner images. `ELEVENLABS_API_KEY` / `ELEVENLABS_API_KEY_2` secrets exist for any
