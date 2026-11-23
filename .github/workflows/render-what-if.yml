@@ -8,12 +8,13 @@ on:
       slug:
         description: 'Episode slug to render'
         required: true
-        default: 'rewind'
+        default: 'sandglass'
 
 jobs:
   render:
     runs-on: ubuntu-latest
-    
+    timeout-minutes: 300
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -21,87 +22,39 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'
           cache: 'npm'
           cache-dependency-path: studio/package-lock.json
 
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.9'
-          cache: 'pip'
+          python-version: '3.12'
 
       - name: Install Python dependencies
+        run: pip install numpy Pillow
+
+      - name: Install FFmpeg
         run: |
-          pip install numpy Pillow requests
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
 
       - name: Install Node dependencies
         working-directory: studio
         run: npm install
 
-      - name: Setup FFmpeg
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y ffmpeg
-
-      - name: Create .env file
-        run: |
-          echo "ELEVENLABS_API_KEY=${{ secrets.ELEVENLABS_API_KEY }}" > .env
-          echo "ELEVENLABS_API_KEY_2=${{ secrets.ELEVENLABS_API_KEY_2 }}" >> .env
-
-      - name: Run voice generation
-        working-directory: studio
-        run: python ../scripts/voice.py ${{ github.event.inputs.slug || 'rewind' }}
-        env:
-          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
-          ELEVENLABS_API_KEY_2: ${{ secrets.ELEVENLABS_API_KEY_2 }}
-
-      - name: Run plan generation
-        working-directory: studio
-        run: python ../scripts/plan.py ${{ github.event.inputs.slug || 'rewind' }}
-
-      - name: Generate stills
+      - name: Strip audio from timeline (silent render)
         working-directory: studio
         run: |
-          node ../scripts/stills.mjs ${{ github.event.inputs.slug || 'rewind' }}
-          python ../scripts/board.py ${{ github.event.inputs.slug || 'rewind' }}
+          python -c "import json,io; p='src/episodes/${{ github.event.inputs.slug || 'sandglass' }}/timeline.json'; d=json.load(io.open(p,encoding='utf-8')); d['audio']={}; io.open(p,'w',encoding='utf-8').write(json.dumps(d,indent=1,ensure_ascii=False))"
 
-      - name: Generate sound effects
+      - name: Render video
         working-directory: studio
-        run: python ../scripts/sfx.py ${{ github.event.inputs.slug || 'rewind' }}
-        env:
-          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
-          ELEVENLABS_API_KEY_2: ${{ secrets.ELEVENLABS_API_KEY_2 }}
-
-      - name: Master and render video
-        working-directory: studio
-        run: python ../scripts/master.py ${{ github.event.inputs.slug || 'rewind' }}
+        run: python ../scripts/master.py ${{ github.event.inputs.slug || 'sandglass' }}
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: what-if-episode-${{ github.event.inputs.slug || 'rewind' }}
-          path: |
-            studio/out/${{ github.event.inputs.slug || 'rewind' }}/*-final.mp4
-            studio/out/${{ github.event.inputs.slug || 'rewind' }}/storyboard.jpg
-            studio/out/${{ github.event.inputs.slug || 'rewind' }}/report.json
-            studio/out/${{ github.event.inputs.slug || 'rewind' }}/costs.json
+          name: what-if-${{ github.event.inputs.slug || 'sandglass' }}
+          path: studio/out/${{ github.event.inputs.slug || 'sandglass' }}/*-final.mp4
           retention-days: 30
-
-      - name: Comment on PR
-        if: github.event_name == 'pull_request'
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const slug = '${{ github.event.inputs.slug || 'rewind' }}';
-            const fs = require('fs');
-            const reportPath = `studio/out/${slug}/report.json`;
-            if (fs.existsSync(reportPath)) {
-              const report = JSON.parse(fs.readFileSync(reportPath, 'utf8'));
-              github.rest.issues.createComment({
-                issue_number: context.issue.number,
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                body: `## What If Episode Rendered\n\n**Slug:** ${slug}\n**Duration:** ${report.duration}s\n**Credits Used:** ${report.credits}\n\nArtifacts have been uploaded and are available for download.`
-              });
-            }
