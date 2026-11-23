@@ -26,6 +26,25 @@ if '--skip-render' not in args:
     subprocess.run(cmd, cwd=STUDIO, check=True)
     print(f'rendered in {time.time() - t0:.0f} s')
 
+# A silent render (CI strips the audio for a video-only pass) has no stream to measure: copy it through.
+probe = subprocess.run(['ffprobe', '-v', 'error', '-select_streams', 'a', '-show_entries', 'stream=codec_type', '-of', 'csv=p=0', str(raw)],
+                       capture_output=True, text=True).stdout.strip()
+if not probe:
+    subprocess.run(['ffmpeg', '-y', '-v', 'error', '-i', str(raw), '-c', 'copy', '-movflags', '+faststart', str(final)], check=True)
+    lufs, peak, true_peak = float('-inf'), float('-inf'), float('-inf')
+    dur = float(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', str(final)], capture_output=True, text=True).stdout.strip())
+    tl = load_json(ep_dir(slug) / 'timeline.json')
+    costs = load_json(od / 'costs.json', [])
+    report = {
+        'episode': ep['id'], 'file': str(final), 'seconds': round(dur, 2), 'lufs': None, 'true_peak_dbtp': None, 'silent': True,
+        'segments': len(tl['segments']), 'cuts_per_min': round((len(tl['segments']) - 1) / (tl['total'] / tl['fps']) * 60, 1),
+        'elevenlabs_credits': sum(c['credits'] for c in costs), 'cost_lines': costs,
+    }
+    save_json(od / 'report.json', report)
+    print(json.dumps({k: v for k, v in report.items() if k != 'cost_lines'}, indent=1))
+    print('silent render: no loudnorm pass')
+    sys.exit(0)
+
 I, TP, LRA = -14.0, -1.5, 11
 first = subprocess.run(['ffmpeg', '-hide_banner', '-nostats', '-i', str(raw), '-af', f'loudnorm=I={I}:TP={TP}:LRA={LRA}:print_format=json', '-f', 'null', '-'],
                        capture_output=True, text=True, encoding='utf-8', errors='ignore').stderr

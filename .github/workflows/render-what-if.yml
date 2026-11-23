@@ -11,9 +11,45 @@ on:
         default: 'sandglass'
 
 jobs:
-  render:
+  plan:
     runs-on: ubuntu-latest
-    timeout-minutes: 300
+    outputs:
+      chunks: ${{ steps.chunks.outputs.chunks }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Compute frame chunks
+        id: chunks
+        env:
+          SLUG: ${{ github.event.inputs.slug || 'sandglass' }}
+        run: |
+          python - <<'EOF'
+          import json, math, os
+          slug = os.environ['SLUG']
+          d = json.load(open(f'studio/src/episodes/{slug}/timeline.json', encoding='utf-8'))
+          total = int(d['total'])
+          n = max(1, min(4, math.ceil(total / 1500)))
+          size = math.ceil(total / n)
+          chunks = [{'i': i, 'start': i * size, 'end': min((i + 1) * size, total) - 1} for i in range(n)]
+          with open(os.environ['GITHUB_OUTPUT'], 'a', encoding='utf-8') as f:
+              f.write('chunks=' + json.dumps(chunks) + '\n')
+          print(f'total={total} chunks={len(chunks)} size={size}')
+          EOF
+
+  render:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    strategy:
+      fail-fast: false
+      matrix:
+        chunk: ${{ fromJson(needs.plan.outputs.chunks) }}
 
     steps:
       - name: Checkout repository
@@ -45,16 +81,79 @@ jobs:
 
       - name: Strip audio from timeline (silent render)
         working-directory: studio
+        env:
+          SLUG: ${{ github.event.inputs.slug || 'sandglass' }}
         run: |
-          python -c "import json,io; p='src/episodes/${{ github.event.inputs.slug || 'sandglass' }}/timeline.json'; d=json.load(io.open(p,encoding='utf-8')); d['audio']={}; io.open(p,'w',encoding='utf-8').write(json.dumps(d,indent=1,ensure_ascii=False))"
+          python -c "import json,io,os; p='src/episodes/'+os.environ['SLUG']+'/timeline.json'; d=json.load(io.open(p,encoding='utf-8')); d['audio']={}; io.open(p,'w',encoding='utf-8').write(json.dumps(d,indent=1,ensure_ascii=False))"
 
-      - name: Render video
+      - name: Render chunk ${{ matrix.chunk.i }} (frames ${{ matrix.chunk.start }}-${{ matrix.chunk.end }})
         working-directory: studio
-        run: python ../scripts/master.py ${{ github.event.inputs.slug || 'sandglass' }}
+        env:
+          SLUG: ${{ github.event.inputs.slug || 'sandglass' }}
+        run: |
+          npx remotion render src/index.ts $(python -c "import json;print(json.load(open('src/episodes/$SLUG/episode.json',encoding='utf-8'))['id'])") \
+            out/$SLUG/part-${{ matrix.chunk.i }}.mp4 \
+            --frames=${{ matrix.chunk.start }}-${{ matrix.chunk.end }} --log error
 
-      - name: Upload artifacts
+      - name: Upload chunk artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: part-${{ matrix.chunk.i }}
+          path: studio/out/${{ github.event.inputs.slug || 'sandglass' }}/part-${{ matrix.chunk.i }}.mp4
+          retention-days: 30
+
+  join:
+    needs: render
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Python dependencies
+        run: pip install numpy Pillow
+
+      - name: Install FFmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: Download chunks
+        uses: actions/download-artifact@v4
+        with:
+          pattern: part-*
+          path: studio/out/${{ github.event.inputs.slug || 'sandglass' }}/
+          merge-multiple: true
+
+      - name: Concatenate chunks into raw video
+        working-directory: studio/out/${{ github.event.inputs.slug || 'sandglass' }}
+        env:
+          SLUG: ${{ github.event.inputs.slug || 'sandglass' }}
+        run: |
+          ls part-*.mp4 | sort -t- -k2 -n | while read f; do echo "file '$f'"; done > concat.txt
+          cat concat.txt
+          ffmpeg -y -v error -f concat -safe 0 -i concat.txt -c copy ${SLUG}-raw.mp4
+
+      - name: "Master (silent: copy-through, no loudnorm)"
+        working-directory: studio
+        env:
+          SLUG: ${{ github.event.inputs.slug || 'sandglass' }}
+        run: python ../scripts/master.py $SLUG --skip-render
+
+      - name: Upload final video
         uses: actions/upload-artifact@v4
         with:
           name: what-if-${{ github.event.inputs.slug || 'sandglass' }}
-          path: studio/out/${{ github.event.inputs.slug || 'sandglass' }}/*-final.mp4
+          path: studio/out/${{ github.event.inputs.slug || 'sandglass' }}/report.json
+          retention-days: 30
+      - name: Upload final mp4
+        uses: actions/upload-artifact@v4
+        with:
+          name: what-if-${{ github.event.inputs.slug || 'sandglass' }}-video
+          path: studio/out/${{ github.event.inputs.slug || 'sandglass' }}/${{ github.event.inputs.slug || 'sandglass' }}-final.mp4
           retention-days: 30
