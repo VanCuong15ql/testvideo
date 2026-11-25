@@ -7,53 +7,45 @@
   {
    "shot": "P1S1",
    "a": 0,
-   "b": 44,
+   "b": 136,
    "t0": 0,
-   "t1": 44,
-   "line": "What if your crush's shadow"
+   "t1": 136,
+   "line": "What if your crush's shadow revealed her secret feelings?"
   },
   {
    "shot": "P1S2",
-   "a": 44,
-   "b": 216,
+   "a": 136,
+   "b": 276,
    "t0": 0,
-   "t1": 172,
-   "line": "revealed her secret feelings? Exactly 8 -12 on Monday morning."
+   "t1": 140,
+   "line": "Exactly 8 -12 on Monday morning. You notice something strange."
   },
   {
    "shot": "P1S3",
-   "a": 216,
-   "b": 359,
+   "a": 276,
+   "b": 402,
    "t0": 0,
-   "t1": 143,
-   "line": "You notice something strange. Your crush was standing on the other side of the school hallway,"
+   "t1": 126,
+   "line": "Your crush was standing on the other side of the school hallway, chatting with her friends."
   },
   {
    "shot": "P1S4",
-   "a": 359,
-   "b": 402,
+   "a": 402,
+   "b": 440,
    "t0": 0,
-   "t1": 43,
-   "line": "chatting with her friends."
+   "t1": 38,
+   "line": "You looked at her."
   },
   {
    "shot": "P1S5",
-   "a": 402,
-   "b": 409,
+   "a": 440,
+   "b": 480,
    "t0": 0,
-   "t1": 7,
-   "line": "You"
+   "t1": 40,
+   "line": "She smiled."
   },
   {
    "shot": "P1S6",
-   "a": 409,
-   "b": 480,
-   "t0": 0,
-   "t1": 71,
-   "line": "looked at her. She smiled."
-  },
-  {
-   "shot": "P1S7",
    "a": 480,
    "b": 539,
    "t0": 0,
@@ -61,375 +53,375 @@
    "line": "You immediately looked away."
   },
   {
-   "shot": "P1S8",
+   "shot": "P1S7",
    "a": 539,
-   "b": 639,
+   "b": 601,
    "t0": 0,
-   "t1": 100,
-   "line": "Just another normal day. But then, you"
+   "t1": 62,
+   "line": "Just another normal day."
+  },
+  {
+   "shot": "P1S8",
+   "a": 601,
+   "b": 733,
+   "t0": 0,
+   "t1": 132,
+   "line": "But then, you noticed something completely impossible."
   },
   {
    "shot": "P1S9",
-   "a": 639,
-   "b": 739,
+   "a": 733,
+   "b": 817,
    "t0": 0,
-   "t1": 100,
-   "line": "noticed something completely impossible. Her"
+   "t1": 84,
+   "line": "Her shadow was waving at you."
   },
   {
    "shot": "P1S10",
-   "a": 739,
-   "b": 755,
+   "a": 817,
+   "b": 850,
    "t0": 0,
-   "t1": 16,
-   "line": "shadow"
+   "t1": 33,
+   "line": "You blinked."
   },
   {
    "shot": "P1S11",
-   "a": 755,
-   "b": 824,
+   "a": 850,
+   "b": 892,
    "t0": 0,
-   "t1": 69,
-   "line": "was waving at you. You"
+   "t1": 42,
+   "line": "She wasn't waving."
   },
   {
    "shot": "P1S12",
-   "a": 824,
-   "b": 892,
+   "a": 892,
+   "b": 986,
    "t0": 0,
-   "t1": 68,
-   "line": "blinked. She wasn't waving."
+   "t1": 94,
+   "line": "Both of her hands were still holding her books."
   },
   {
    "shot": "P1S13",
-   "a": 892,
-   "b": 959,
+   "a": 986,
+   "b": 1022,
    "t0": 0,
-   "t1": 67,
-   "line": "Both of her hands were still holding her"
+   "t1": 36,
+   "line": "But her shadow?"
   },
   {
    "shot": "P1S14",
-   "a": 959,
-   "b": 1074,
+   "a": 1022,
+   "b": 1151,
    "t0": 0,
-   "t1": 115,
-   "line": "books. But her shadow? It was waving. Like I had just"
+   "t1": 129,
+   "line": "It was waving. Like I had just spotted its favorite celebrity."
   },
   {
    "shot": "P1S15",
-   "a": 1074,
-   "b": 1151,
+   "a": 1151,
+   "b": 1199,
    "t0": 0,
-   "t1": 77,
-   "line": "spotted its favorite celebrity."
+   "t1": 48,
+   "line": "You stared at it."
   },
   {
    "shot": "P1S16",
-   "a": 1151,
-   "b": 1276,
+   "a": 1199,
+   "b": 1331,
    "t0": 0,
-   "t1": 125,
-   "line": "You stared at it. The shadow pointed at you. Then used both hands"
+   "t1": 132,
+   "line": "The shadow pointed at you. Then used both hands to make a heart."
   },
   {
    "shot": "P1S17",
-   "a": 1276,
-   "b": 1283,
+   "a": 1331,
+   "b": 1391,
    "t0": 0,
-   "t1": 7,
-   "line": "to"
+   "t1": 60,
+   "line": "You almost dropped your backpack."
   },
   {
    "shot": "P1S18",
-   "a": 1283,
-   "b": 1403,
+   "a": 1391,
+   "b": 1447,
    "t0": 0,
-   "t1": 120,
-   "line": "make a heart. You almost dropped your backpack. You"
+   "t1": 56,
+   "line": "You looked back at Emma."
   },
   {
    "shot": "P1S19",
-   "a": 1403,
-   "b": 1540,
+   "a": 1447,
+   "b": 1588,
    "t0": 0,
-   "t1": 137,
-   "line": "looked back at Emma. She was still chatting with her friends. Completely unaware of what"
+   "t1": 141,
+   "line": "She was still chatting with her friends. Completely unaware of what her shadow was doing."
   },
   {
    "shot": "P1S20",
-   "a": 1540,
-   "b": 1545,
+   "a": 1588,
+   "b": 1660,
    "t0": 0,
-   "t1": 5,
-   "line": "her"
+   "t1": 72,
+   "line": "You quickly walked into your classroom."
   },
   {
    "shot": "P1S21",
-   "a": 1545,
-   "b": 1711,
+   "a": 1660,
+   "b": 1780,
    "t0": 0,
-   "t1": 166,
-   "line": "shadow was doing. You quickly walked into your classroom. There was no way you were going to spend the rest"
+   "t1": 120,
+   "line": "There was no way you were going to spend the rest of the morning staring at someone's shadow."
   },
   {
    "shot": "P1S22",
-   "a": 1711,
-   "b": 1780,
+   "a": 1780,
+   "b": 1868,
    "t0": 0,
-   "t1": 69,
-   "line": "of the morning staring at someone's shadow."
+   "t1": 88,
+   "line": "At least, that was the plan."
   },
   {
    "shot": "P1S23",
-   "a": 1780,
-   "b": 1785,
+   "a": 1868,
+   "b": 1954,
    "t0": 0,
-   "t1": 5,
-   "line": "At"
+   "t1": 86,
+   "line": "The first strange discovery."
   },
   {
    "shot": "P1S24",
-   "a": 1785,
-   "b": 2038,
+   "a": 1954,
+   "b": 2108,
    "t0": 0,
-   "t1": 253,
-   "line": "least, that was the plan. The first strange discovery. During the first break, you were standing near the classroom"
+   "t1": 154,
+   "line": "During the first break, you were standing near the classroom window when Emma approached."
   },
   {
    "shot": "P1S25",
-   "a": 2038,
-   "b": 2062,
+   "a": 2108,
+   "b": 2206,
    "t0": 0,
-   "t1": 24,
-   "line": "window when"
+   "t1": 98,
+   "line": "Hey, do you understand question 5?"
   },
   {
    "shot": "P1S26",
-   "a": 2062,
-   "b": 2171,
+   "a": 2206,
+   "b": 2268,
    "t0": 0,
-   "t1": 109,
-   "line": "Emma approached. Hey, do you understand question"
+   "t1": 62,
+   "line": "You turned around."
   },
   {
    "shot": "P1S27",
-   "a": 2171,
-   "b": 2206,
+   "a": 2268,
+   "b": 2341,
    "t0": 0,
-   "t1": 35,
-   "line": "5?"
+   "t1": 73,
+   "line": "Maybe, let me see."
   },
   {
    "shot": "P1S28",
-   "a": 2206,
-   "b": 2305,
+   "a": 2341,
+   "b": 2396,
    "t0": 0,
-   "t1": 99,
-   "line": "You turned around. Maybe, let"
+   "t1": 55,
+   "line": "She handed you her notebook."
   },
   {
    "shot": "P1S29",
-   "a": 2305,
-   "b": 2309,
+   "a": 2396,
+   "b": 2500,
    "t0": 0,
-   "t1": 4,
-   "line": "me"
+   "t1": 104,
+   "line": "You looked at the question, trying very hard to concentrate."
   },
   {
    "shot": "P1S30",
-   "a": 2309,
-   "b": 2544,
+   "a": 2500,
+   "b": 2592,
    "t0": 0,
-   "t1": 235,
-   "line": "see. She handed you her notebook. You looked at the question, trying very hard to concentrate. But then you noticed her"
+   "t1": 92,
+   "line": "But then you noticed her shadow on the wall."
   },
   {
    "shot": "P1S31",
-   "a": 2544,
-   "b": 2713,
+   "a": 2592,
+   "b": 2771,
    "t0": 0,
-   "t1": 169,
-   "line": "shadow on the wall. While Emma was looking at the notebook, her shadow was leaning toward you with"
+   "t1": 179,
+   "line": "While Emma was looking at the notebook, her shadow was leaning toward you with the tans clashed together."
   },
   {
    "shot": "P1S32",
-   "a": 2713,
-   "b": 2803,
+   "a": 2771,
+   "b": 2857,
    "t0": 0,
-   "t1": 90,
-   "line": "the tans clashed together. It looked like it"
+   "t1": 86,
+   "line": "It looked like it was waiting for something."
   },
   {
    "shot": "P1S33",
-   "a": 2803,
-   "b": 2855,
-   "t0": 0,
-   "t1": 52,
-   "line": "was waiting for something."
-  },
-  {
-   "shot": "P1S34",
-   "a": 2855,
+   "a": 2857,
    "b": 2905,
    "t0": 0,
-   "t1": 50,
+   "t1": 48,
    "line": "You glanced at Emma."
   },
   {
-   "shot": "P1S35",
+   "shot": "P1S34",
    "a": 2905,
-   "b": 2998,
+   "b": 2973,
    "t0": 0,
-   "t1": 93,
-   "line": "What's wrong? She asked. Nothing."
+   "t1": 68,
+   "line": "What's wrong? She asked."
+  },
+  {
+   "shot": "P1S35",
+   "a": 2973,
+   "b": 3061,
+   "t0": 0,
+   "t1": 88,
+   "line": "Nothing. I just need to think."
   },
   {
    "shot": "P1S36",
-   "a": 2998,
-   "b": 3065,
+   "a": 3061,
+   "b": 3159,
    "t0": 0,
-   "t1": 67,
-   "line": "I just need to think. Her"
+   "t1": 98,
+   "line": "Her shadow suddenly nodded enthusiastically."
   },
   {
    "shot": "P1S37",
-   "a": 3065,
-   "b": 3105,
+   "a": 3159,
+   "b": 3203,
    "t0": 0,
-   "t1": 40,
-   "line": "shadow suddenly nodded"
+   "t1": 44,
+   "line": "You looked away."
   },
   {
    "shot": "P1S38",
-   "a": 3105,
-   "b": 3223,
+   "a": 3203,
+   "b": 3294,
    "t0": 0,
-   "t1": 118,
-   "line": "enthusiastically. You looked away. After explaining"
+   "t1": 91,
+   "line": "After explaining the question, Emma smiled."
   },
   {
    "shot": "P1S39",
-   "a": 3223,
-   "b": 3320,
+   "a": 3294,
+   "b": 3374,
    "t0": 0,
-   "t1": 97,
-   "line": "the question, Emma smiled. Thanks."
+   "t1": 80,
+   "line": "Thanks. I knew you'd understand it."
   },
   {
    "shot": "P1S40",
-   "a": 3320,
-   "b": 3404,
+   "a": 3374,
+   "b": 3452,
    "t0": 0,
-   "t1": 84,
-   "line": "I knew you'd understand it. Her shadow immediately"
+   "t1": 78,
+   "line": "Her shadow immediately jumped into the air."
   },
   {
    "shot": "P1S41",
-   "a": 3404,
-   "b": 3429,
+   "a": 3452,
+   "b": 3499,
    "t0": 0,
-   "t1": 25,
-   "line": "jumped into the"
+   "t1": 47,
+   "line": "You nearly laughed."
   },
   {
    "shot": "P1S42",
-   "a": 3429,
-   "b": 3461,
+   "a": 3499,
+   "b": 3542,
    "t0": 0,
-   "t1": 32,
-   "line": "air. You"
+   "t1": 43,
+   "line": "You're welcome."
   },
   {
    "shot": "P1S43",
-   "a": 3461,
-   "b": 3542,
+   "a": 3542,
+   "b": 3611,
    "t0": 0,
-   "t1": 81,
-   "line": "nearly laughed. You're welcome."
+   "t1": 69,
+   "line": "Emma walked back to her seat."
   },
   {
    "shot": "P1S44",
-   "a": 3542,
-   "b": 3663,
+   "a": 3611,
+   "b": 3761,
    "t0": 0,
-   "t1": 121,
-   "line": "Emma walked back to her seat. Her shadow turned around and gave"
+   "t1": 150,
+   "line": "Her shadow turned around and gave you one final thumbs up before following her."
   },
   {
    "shot": "P1S45",
-   "a": 3663,
+   "a": 3761,
    "b": 3890,
    "t0": 0,
-   "t1": 227,
-   "line": "you one final thumbs up before following her. You were beginning to suspect that her shadow had a personality of its own."
+   "t1": 129,
+   "line": "You were beginning to suspect that her shadow had a personality of its own."
   },
   {
    "shot": "P2S1",
    "a": 3890,
-   "b": 3904,
+   "b": 3974,
    "t0": 0,
-   "t1": 14,
-   "line": "The"
+   "t1": 84,
+   "line": "The Group Project A few"
   },
   {
    "shot": "P2S2",
-   "a": 3904,
-   "b": 4011,
+   "a": 3974,
+   "b": 4066,
    "t0": 0,
-   "t1": 107,
-   "line": "Group Project A few days later, your teacher"
+   "t1": 92,
+   "line": "days later, your teacher announced a group assignment."
   },
   {
    "shot": "P2S3",
-   "a": 4011,
-   "b": 4091,
+   "a": 4066,
+   "b": 4156,
    "t0": 0,
-   "t1": 80,
-   "line": "announced a group assignment. You were hoping to work"
+   "t1": 90,
+   "line": "You were hoping to work with your usual friends."
   },
   {
    "shot": "P2S4",
-   "a": 4091,
-   "b": 4187,
+   "a": 4156,
+   "b": 4240,
    "t0": 0,
-   "t1": 96,
-   "line": "with your usual friends. Unfortunately, the"
+   "t1": 84,
+   "line": "Unfortunately, the teacher had other plans."
   },
   {
    "shot": "P2S5",
-   "a": 4187,
-   "b": 4199,
+   "a": 4240,
+   "b": 4297,
    "t0": 0,
-   "t1": 12,
-   "line": "teacher had"
+   "t1": 57,
+   "line": "Emma and you will work together."
   },
   {
    "shot": "P2S6",
-   "a": 4199,
-   "b": 4301,
+   "a": 4297,
+   "b": 4349,
    "t0": 0,
-   "t1": 102,
-   "line": "other plans. Emma and you will work together. You"
+   "t1": 52,
+   "line": "You tried to look calm."
   },
   {
    "shot": "P2S7",
-   "a": 4301,
-   "b": 4308,
+   "a": 4349,
+   "b": 4385,
    "t0": 0,
-   "t1": 7,
-   "line": "tried"
+   "t1": 36,
+   "line": "Okay."
   },
   {
    "shot": "P2S8",
-   "a": 4308,
-   "b": 4385,
-   "t0": 0,
-   "t1": 77,
-   "line": "to look calm. Okay."
-  },
-  {
-   "shot": "P2S9",
    "a": 4385,
    "b": 4426,
    "t0": 0,
@@ -437,815 +429,815 @@
    "line": "Emma turned toward you."
   },
   {
-   "shot": "P2S10",
+   "shot": "P2S9",
    "a": 4426,
-   "b": 4442,
+   "b": 4473,
    "t0": 0,
-   "t1": 16,
-   "line": "Looks like we're"
+   "t1": 47,
+   "line": "Looks like we're partners."
+  },
+  {
+   "shot": "P2S10",
+   "a": 4473,
+   "b": 4528,
+   "t0": 0,
+   "t1": 55,
+   "line": "Yeah, guess so."
   },
   {
    "shot": "P2S11",
-   "a": 4442,
-   "b": 4492,
+   "a": 4528,
+   "b": 4561,
    "t0": 0,
-   "t1": 50,
-   "line": "partners. Yeah,"
+   "t1": 33,
+   "line": "She smiled."
   },
   {
    "shot": "P2S12",
-   "a": 4492,
-   "b": 4628,
+   "a": 4561,
+   "b": 4678,
    "t0": 0,
-   "t1": 136,
-   "line": "guess so. She smiled. Her shadow immediately threw both"
+   "t1": 117,
+   "line": "Her shadow immediately threw both hands into the air."
   },
   {
    "shot": "P2S13",
-   "a": 4628,
-   "b": 4639,
+   "a": 4678,
+   "b": 4731,
    "t0": 0,
-   "t1": 11,
-   "line": "hands"
+   "t1": 53,
+   "line": "You pretended not to notice. Yes."
   },
   {
    "shot": "P2S14",
-   "a": 4639,
-   "b": 4805,
+   "a": 4731,
+   "b": 4855,
    "t0": 0,
-   "t1": 166,
-   "line": "into the air. You pretended not to notice. Yes. After class, you and Emma went to the library"
+   "t1": 124,
+   "line": "After class, you and Emma went to the library to plan the assignment."
   },
   {
    "shot": "P2S15",
-   "a": 4805,
-   "b": 4906,
+   "a": 4855,
+   "b": 4963,
    "t0": 0,
-   "t1": 101,
-   "line": "to plan the assignment. She opened her laptop while you"
+   "t1": 108,
+   "line": "She opened her laptop while you started writing down ideas."
   },
   {
    "shot": "P2S16",
-   "a": 4906,
-   "b": 5031,
+   "a": 4963,
+   "b": 5058,
    "t0": 0,
-   "t1": 125,
-   "line": "started writing down ideas. How about we make a presentation instead of"
+   "t1": 95,
+   "line": "How about we make a presentation instead of a poster?"
   },
   {
    "shot": "P2S17",
-   "a": 5031,
-   "b": 5063,
+   "a": 5058,
+   "b": 5094,
    "t0": 0,
-   "t1": 32,
-   "line": "a poster? She"
+   "t1": 36,
+   "line": "She suggested."
   },
   {
    "shot": "P2S18",
-   "a": 5063,
-   "b": 5156,
+   "a": 5094,
+   "b": 5204,
    "t0": 0,
-   "t1": 93,
-   "line": "suggested. That could work. And maybe we can"
+   "t1": 110,
+   "line": "That could work. And maybe we can add a short video."
   },
   {
    "shot": "P2S19",
-   "a": 5156,
-   "b": 5219,
+   "a": 5204,
+   "b": 5272,
    "t0": 0,
-   "t1": 63,
-   "line": "add a short video. That's"
+   "t1": 68,
+   "line": "That's actually a good idea."
   },
   {
    "shot": "P2S20",
-   "a": 5219,
-   "b": 5237,
+   "a": 5272,
+   "b": 5328,
    "t0": 0,
-   "t1": 18,
-   "line": "actually a good"
+   "t1": 56,
+   "line": "She looked surprised."
   },
   {
    "shot": "P2S21",
-   "a": 5237,
-   "b": 5272,
+   "a": 5328,
+   "b": 5419,
    "t0": 0,
-   "t1": 35,
-   "line": "idea."
+   "t1": 91,
+   "line": "Wow. You agreed with me twice."
   },
   {
    "shot": "P2S22",
-   "a": 5272,
-   "b": 5377,
+   "a": 5419,
+   "b": 5455,
    "t0": 0,
-   "t1": 105,
-   "line": "She looked surprised. Wow. You agreed with"
+   "t1": 36,
+   "line": "You laughed."
   },
   {
    "shot": "P2S23",
-   "a": 5377,
-   "b": 5504,
+   "a": 5455,
+   "b": 5548,
    "t0": 0,
-   "t1": 127,
-   "line": "me twice. You laughed. Should I disagree just"
+   "t1": 93,
+   "line": "Should I disagree just to make things interesting?"
   },
   {
    "shot": "P2S24",
-   "a": 5504,
-   "b": 5519,
+   "a": 5548,
+   "b": 5611,
    "t0": 0,
-   "t1": 15,
-   "line": "to make things"
+   "t1": 63,
+   "line": "Please don't."
   },
   {
    "shot": "P2S25",
-   "a": 5519,
-   "b": 5548,
+   "a": 5611,
+   "b": 5699,
    "t0": 0,
-   "t1": 29,
-   "line": "interesting?"
+   "t1": 88,
+   "line": "His shadow was standing beside your chair."
   },
   {
    "shot": "P2S26",
-   "a": 5548,
-   "b": 5668,
+   "a": 5699,
+   "b": 5773,
    "t0": 0,
-   "t1": 120,
-   "line": "Please don't. His shadow was standing beside your"
+   "t1": 74,
+   "line": "It was giving you two thumbs up."
   },
   {
    "shot": "P2S27",
-   "a": 5668,
-   "b": 5810,
+   "a": 5773,
+   "b": 5861,
    "t0": 0,
-   "t1": 142,
-   "line": "chair. It was giving you two thumbs up. You had to look away before"
+   "t1": 88,
+   "line": "You had to look away before Emma noticed you smiling."
   },
   {
    "shot": "P2S28",
-   "a": 5810,
-   "b": 5911,
+   "a": 5861,
+   "b": 5990,
    "t0": 0,
-   "t1": 101,
-   "line": "Emma noticed you smiling. Over the next few days, working"
+   "t1": 129,
+   "line": "Over the next few days, working together became surprisingly enjoyable."
   },
   {
    "shot": "P2S29",
-   "a": 5911,
-   "b": 6023,
+   "a": 5990,
+   "b": 6106,
    "t0": 0,
-   "t1": 112,
-   "line": "together became surprisingly enjoyable. Emma was organized, but"
+   "t1": 116,
+   "line": "Emma was organized, but sometimes forgot small details."
   },
   {
    "shot": "P2S30",
-   "a": 6023,
-   "b": 6207,
+   "a": 6106,
+   "b": 6273,
    "t0": 0,
-   "t1": 184,
-   "line": "sometimes forgot small details. You were good at solving problems, but occasionally spent too much time"
+   "t1": 167,
+   "line": "You were good at solving problems, but occasionally spent too much time worrying about minor things."
   },
   {
    "shot": "P2S31",
-   "a": 6207,
-   "b": 6216,
+   "a": 6273,
+   "b": 6279,
    "t0": 0,
-   "t1": 9,
-   "line": "worrying"
+   "t1": 6,
+   "line": "She"
   },
   {
    "shot": "P2S32",
-   "a": 6216,
-   "b": 6303,
+   "a": 6279,
+   "b": 6356,
    "t0": 0,
-   "t1": 87,
-   "line": "about minor things. She teased you about it."
+   "t1": 77,
+   "line": "teased you about it. You teased her back,"
   },
   {
    "shot": "P2S33",
-   "a": 6303,
-   "b": 6509,
+   "a": 6356,
+   "b": 6551,
    "t0": 0,
-   "t1": 206,
-   "line": "You teased her back, and somehow the assignment that had initially seemed like a chore became the best part"
+   "t1": 195,
+   "line": "and somehow the assignment that had initially seemed like a chore became the best part of your school week."
   },
   {
    "shot": "P2S34",
-   "a": 6509,
-   "b": 6576,
+   "a": 6551,
+   "b": 6637,
    "t0": 0,
-   "t1": 67,
-   "line": "of your school week. One afternoon,"
+   "t1": 86,
+   "line": "One afternoon, you stayed late to finish the presentation."
   },
   {
    "shot": "P2S35",
-   "a": 6576,
-   "b": 6649,
+   "a": 6637,
+   "b": 6713,
    "t0": 0,
-   "t1": 73,
-   "line": "you stayed late to finish the presentation. The"
+   "t1": 76,
+   "line": "The library was almost empty."
   },
   {
    "shot": "P2S36",
-   "a": 6649,
-   "b": 6737,
+   "a": 6713,
+   "b": 6786,
    "t0": 0,
-   "t1": 88,
-   "line": "library was almost empty. Emma stretched and"
+   "t1": 73,
+   "line": "Emma stretched and looked at the clock."
   },
   {
    "shot": "P2S37",
-   "a": 6737,
-   "b": 6823,
+   "a": 6786,
+   "b": 6896,
    "t0": 0,
-   "t1": 86,
-   "line": "looked at the clock. Wow. We've been"
+   "t1": 110,
+   "line": "Wow. We've been here for two hours."
   },
   {
    "shot": "P2S38",
-   "a": 6823,
-   "b": 6939,
+   "a": 6896,
+   "b": 6987,
    "t0": 0,
-   "t1": 116,
-   "line": "here for two hours. Really? It"
+   "t1": 91,
+   "line": "Really? It felt like twenty minutes."
   },
   {
    "shot": "P2S39",
-   "a": 6939,
-   "b": 6961,
+   "a": 6987,
+   "b": 7037,
    "t0": 0,
-   "t1": 22,
-   "line": "felt like twenty"
+   "t1": 50,
+   "line": "She looked at you."
   },
   {
    "shot": "P2S40",
-   "a": 6961,
-   "b": 7074,
+   "a": 7037,
+   "b": 7106,
    "t0": 0,
-   "t1": 113,
-   "line": "minutes. She looked at you. That's because you spent"
+   "t1": 69,
+   "line": "That's because you spent half the time choosing"
   },
   {
    "shot": "P2S41",
-   "a": 7074,
-   "b": 7093,
+   "a": 7106,
+   "b": 7198,
    "t0": 0,
-   "t1": 19,
-   "line": "half the time"
+   "t1": 92,
+   "line": "fonts. Fonts are important."
   },
   {
    "shot": "P2S42",
-   "a": 7093,
-   "b": 7165,
+   "a": 7198,
+   "b": 7274,
    "t0": 0,
-   "t1": 72,
-   "line": "choosing fonts. Fonts are"
+   "t1": 76,
+   "line": "Sure. Very important."
   },
   {
    "shot": "P2S43",
-   "a": 7165,
-   "b": 7274,
+   "a": 7274,
+   "b": 7369,
    "t0": 0,
-   "t1": 109,
-   "line": "important. Sure. Very important."
+   "t1": 95,
+   "line": "Her shadow was laughing."
   },
   {
    "shot": "P2S44",
-   "a": 7274,
-   "b": 7279,
+   "a": 7369,
+   "b": 7408,
    "t0": 0,
-   "t1": 5,
-   "line": "Her"
+   "t1": 39,
+   "line": "Not Emma."
   },
   {
    "shot": "P2S45",
-   "a": 7279,
-   "b": 7369,
+   "a": 7408,
+   "b": 7453,
    "t0": 0,
-   "t1": 90,
-   "line": "shadow was laughing."
+   "t1": 45,
+   "line": "The shadow."
   },
   {
    "shot": "P2S46",
-   "a": 7369,
-   "b": 7553,
+   "a": 7453,
+   "b": 7626,
    "t0": 0,
-   "t1": 184,
-   "line": "Not Emma. The shadow. It had both hands on its stomach, bending forward as if"
+   "t1": 173,
+   "line": "It had both hands on its stomach, bending forward as if it couldn't stop laughing."
   },
   {
    "shot": "P2S47",
-   "a": 7553,
-   "b": 7651,
+   "a": 7626,
+   "b": 7693,
    "t0": 0,
-   "t1": 98,
-   "line": "it couldn't stop laughing. You quickly looked"
+   "t1": 67,
+   "line": "You quickly looked down at your laptop."
   },
   {
    "shot": "P2S48",
-   "a": 7651,
+   "a": 7693,
    "b": 7746,
    "t0": 0,
-   "t1": 95,
-   "line": "down at your laptop. This was getting ridiculous."
+   "t1": 53,
+   "line": "This was getting ridiculous."
   },
   {
    "shot": "P3S1",
    "a": 7746,
-   "b": 7754,
+   "b": 7807,
    "t0": 0,
-   "t1": 8,
-   "line": "The"
+   "t1": 61,
+   "line": "The rainy afternoon."
   },
   {
    "shot": "P3S2",
-   "a": 7754,
-   "b": 7892,
+   "a": 7807,
+   "b": 7945,
    "t0": 0,
    "t1": 138,
-   "line": "rainy afternoon. The following Thursday, heavy rain started"
+   "line": "The following Thursday, heavy rain started just as school ended."
   },
   {
    "shot": "P3S3",
-   "a": 7892,
-   "b": 7958,
+   "a": 7945,
+   "b": 8021,
    "t0": 0,
-   "t1": 66,
-   "line": "just as school ended. Students"
+   "t1": 76,
+   "line": "Students rushed toward the entrance."
   },
   {
    "shot": "P3S4",
-   "a": 7958,
-   "b": 8116,
+   "a": 8021,
+   "b": 8168,
    "t0": 0,
-   "t1": 158,
-   "line": "rushed toward the entrance. You stood under the roof, checking your phone and waiting for the"
+   "t1": 147,
+   "line": "You stood under the roof, checking your phone and waiting for the rain to slow down."
   },
   {
    "shot": "P3S5",
-   "a": 8116,
-   "b": 8168,
+   "a": 8168,
+   "b": 8245,
    "t0": 0,
-   "t1": 52,
-   "line": "rain to slow down."
+   "t1": 77,
+   "line": "Then Emma appeared beside you."
   },
   {
    "shot": "P3S6",
-   "a": 8168,
-   "b": 8198,
+   "a": 8245,
+   "b": 8297,
    "t0": 0,
-   "t1": 30,
-   "line": "Then Emma"
+   "t1": 52,
+   "line": "Do you have an umbrella?"
   },
   {
    "shot": "P3S7",
-   "a": 8198,
-   "b": 8297,
+   "a": 8297,
+   "b": 8346,
    "t0": 0,
-   "t1": 99,
-   "line": "appeared beside you. Do you have an umbrella?"
+   "t1": 49,
+   "line": "You shook your head."
   },
   {
    "shot": "P3S8",
-   "a": 8297,
-   "b": 8310,
+   "a": 8346,
+   "b": 8396,
    "t0": 0,
-   "t1": 13,
-   "line": "You shook"
+   "t1": 50,
+   "line": "Unfortunately no."
   },
   {
    "shot": "P3S9",
-   "a": 8310,
-   "b": 8421,
+   "a": 8396,
+   "b": 8472,
    "t0": 0,
-   "t1": 111,
-   "line": "your head. Unfortunately no. She held up"
+   "t1": 76,
+   "line": "She held up a small blue umbrella."
   },
   {
    "shot": "P3S10",
-   "a": 8421,
-   "b": 8440,
+   "a": 8472,
+   "b": 8507,
    "t0": 0,
-   "t1": 19,
-   "line": "a small blue"
+   "t1": 35,
+   "line": "Want to share?"
   },
   {
    "shot": "P3S11",
-   "a": 8440,
-   "b": 8480,
+   "a": 8507,
+   "b": 8558,
    "t0": 0,
-   "t1": 40,
-   "line": "umbrella. Want"
+   "t1": 51,
+   "line": "You looked at the umbrella."
   },
   {
    "shot": "P3S12",
-   "a": 8480,
-   "b": 8484,
+   "a": 8558,
+   "b": 8587,
    "t0": 0,
-   "t1": 4,
-   "line": "to"
+   "t1": 29,
+   "line": "Then at Emma,"
   },
   {
    "shot": "P3S13",
-   "a": 8484,
-   "b": 8558,
+   "a": 8587,
+   "b": 8608,
    "t0": 0,
-   "t1": 74,
-   "line": "share? You looked at the umbrella."
+   "t1": 21,
+   "line": "are you sure?"
   },
   {
    "shot": "P3S14",
-   "a": 8558,
-   "b": 8562,
+   "a": 8608,
+   "b": 8681,
    "t0": 0,
-   "t1": 4,
-   "line": "Then"
+   "t1": 73,
+   "line": "Unless you want to swim home."
   },
   {
    "shot": "P3S15",
-   "a": 8562,
-   "b": 8647,
+   "a": 8681,
+   "b": 8725,
    "t0": 0,
-   "t1": 85,
-   "line": "at Emma, are you sure? Unless you want to"
+   "t1": 44,
+   "line": "You laughed."
   },
   {
    "shot": "P3S16",
-   "a": 8647,
-   "b": 8697,
+   "a": 8725,
+   "b": 8777,
    "t0": 0,
-   "t1": 50,
-   "line": "swim home. You"
+   "t1": 52,
+   "line": "Okay, fair enough."
   },
   {
    "shot": "P3S17",
-   "a": 8697,
-   "b": 8747,
+   "a": 8777,
+   "b": 8826,
    "t0": 0,
-   "t1": 50,
-   "line": "laughed. Okay, fair"
+   "t1": 49,
+   "line": "The umbrella was small."
   },
   {
    "shot": "P3S18",
-   "a": 8747,
-   "b": 8788,
+   "a": 8826,
+   "b": 8863,
    "t0": 0,
-   "t1": 41,
-   "line": "enough. The umbrella"
+   "t1": 37,
+   "line": "Very small."
   },
   {
    "shot": "P3S19",
-   "a": 8788,
-   "b": 8826,
+   "a": 8863,
+   "b": 8949,
    "t0": 0,
-   "t1": 38,
-   "line": "was small."
+   "t1": 86,
+   "line": "You both had the walk close together to stay underneath it."
   },
   {
    "shot": "P3S20",
-   "a": 8826,
-   "b": 9001,
+   "a": 8949,
+   "b": 9050,
    "t0": 0,
-   "t1": 175,
-   "line": "Very small. You both had the walk close together to stay underneath it. At first, you tried to leave as much space"
+   "t1": 101,
+   "line": "At first, you tried to leave as much space between you as possible."
   },
   {
    "shot": "P3S21",
-   "a": 9001,
-   "b": 9090,
+   "a": 9050,
+   "b": 9144,
    "t0": 0,
-   "t1": 89,
-   "line": "between you as possible. Which meant one of your"
+   "t1": 94,
+   "line": "Which meant one of your shoulders was getting soaked."
   },
   {
    "shot": "P3S22",
-   "a": 9090,
-   "b": 9099,
+   "a": 9144,
+   "b": 9180,
    "t0": 0,
-   "t1": 9,
-   "line": "shoulders"
+   "t1": 36,
+   "line": "Emma noticed."
   },
   {
    "shot": "P3S23",
-   "a": 9099,
-   "b": 9149,
+   "a": 9180,
+   "b": 9241,
    "t0": 0,
-   "t1": 50,
-   "line": "was getting soaked. Emma"
+   "t1": 61,
+   "line": "You're getting wet."
   },
   {
    "shot": "P3S24",
-   "a": 9149,
-   "b": 9186,
+   "a": 9241,
+   "b": 9291,
    "t0": 0,
-   "t1": 37,
-   "line": "noticed. You're"
+   "t1": 50,
+   "line": "I'm fine."
   },
   {
    "shot": "P3S25",
-   "a": 9186,
-   "b": 9308,
+   "a": 9291,
+   "b": 9357,
    "t0": 0,
-   "t1": 122,
-   "line": "getting wet. I'm fine. She moved"
+   "t1": 66,
+   "line": "She moved the umbrella toward you."
   },
   {
    "shot": "P3S26",
-   "a": 9308,
-   "b": 9312,
+   "a": 9357,
+   "b": 9439,
    "t0": 0,
-   "t1": 4,
-   "line": "the"
+   "t1": 82,
+   "line": "You're really bad at sharing an umbrella."
   },
   {
    "shot": "P3S27",
-   "a": 9312,
-   "b": 9402,
+   "a": 9439,
+   "b": 9480,
    "t0": 0,
-   "t1": 90,
-   "line": "umbrella toward you. You're really bad at sharing"
+   "t1": 41,
+   "line": "You laughed."
   },
   {
    "shot": "P3S28",
-   "a": 9402,
-   "b": 9497,
+   "a": 9480,
+   "b": 9545,
    "t0": 0,
-   "t1": 95,
-   "line": "an umbrella. You laughed. You're"
+   "t1": 65,
+   "line": "You're the one holding it."
   },
   {
    "shot": "P3S29",
-   "a": 9497,
-   "b": 9585,
+   "a": 9545,
+   "b": 9637,
    "t0": 0,
-   "t1": 88,
-   "line": "the one holding it. Exactly, and"
+   "t1": 92,
+   "line": "Exactly, and I'm doing a terrible job."
   },
   {
    "shot": "P3S30",
-   "a": 9585,
-   "b": 9590,
+   "a": 9637,
+   "b": 9700,
    "t0": 0,
-   "t1": 5,
-   "line": "I'm doing"
+   "t1": 63,
+   "line": "You both laughed. But when you"
   },
   {
    "shot": "P3S31",
-   "a": 9590,
-   "b": 9700,
+   "a": 9700,
+   "b": 9836,
    "t0": 0,
-   "t1": 110,
-   "line": "a terrible job. You both laughed. But when you"
+   "t1": 136,
+   "line": "looked down, her shadow was doing something strange."
   },
   {
    "shot": "P3S32",
-   "a": 9700,
-   "b": 9943,
+   "a": 9836,
+   "b": 9997,
    "t0": 0,
-   "t1": 243,
-   "line": "looked down, her shadow was doing something strange. It was standing right beside yours, holding an imaginary umbrella"
+   "t1": 161,
+   "line": "It was standing right beside yours, holding an imaginary umbrella over both of you."
   },
   {
    "shot": "P3S33",
-   "a": 9943,
-   "b": 10044,
+   "a": 9997,
+   "b": 10082,
    "t0": 0,
-   "t1": 101,
-   "line": "over both of you. Then it slowly leaned its"
+   "t1": 85,
+   "line": "Then it slowly leaned its head against your shoulder."
   },
   {
    "shot": "P3S34",
-   "a": 10044,
-   "b": 10099,
+   "a": 10082,
+   "b": 10148,
    "t0": 0,
-   "t1": 55,
-   "line": "head against your shoulder. You almost"
+   "t1": 66,
+   "line": "You almost walked into a puddle."
   },
   {
    "shot": "P3S35",
-   "a": 10099,
-   "b": 10148,
+   "a": 10148,
+   "b": 10190,
    "t0": 0,
-   "t1": 49,
-   "line": "walked into a puddle."
+   "t1": 42,
+   "line": "Emma looked at you."
   },
   {
    "shot": "P3S36",
-   "a": 10148,
-   "b": 10159,
+   "a": 10190,
+   "b": 10223,
    "t0": 0,
-   "t1": 11,
-   "line": "Emma"
+   "t1": 33,
+   "line": "Careful."
   },
   {
    "shot": "P3S37",
-   "a": 10159,
-   "b": 10165,
+   "a": 10223,
+   "b": 10262,
    "t0": 0,
-   "t1": 6,
-   "line": "looked"
+   "t1": 39,
+   "line": "Yeah, sorry."
   },
   {
    "shot": "P3S38",
-   "a": 10165,
-   "b": 10262,
+   "a": 10262,
+   "b": 10312,
    "t0": 0,
-   "t1": 97,
-   "line": "at you. Careful. Yeah, sorry."
+   "t1": 50,
+   "line": "You continued walking."
   },
   {
    "shot": "P3S39",
-   "a": 10262,
-   "b": 10325,
+   "a": 10312,
+   "b": 10351,
    "t0": 0,
-   "t1": 63,
-   "line": "You continued walking. A few minutes"
+   "t1": 39,
+   "line": "A few minutes later,"
   },
   {
    "shot": "P3S40",
-   "a": 10325,
-   "b": 10405,
+   "a": 10351,
+   "b": 10456,
    "t0": 0,
-   "t1": 80,
-   "line": "later, Emma suddenly asked. Can"
+   "t1": 105,
+   "line": "Emma suddenly asked. Can I tell you something?"
   },
   {
    "shot": "P3S41",
-   "a": 10405,
-   "b": 10410,
+   "a": 10456,
+   "b": 10480,
    "t0": 0,
-   "t1": 5,
-   "line": "I"
+   "t1": 24,
+   "line": "Sure."
   },
   {
    "shot": "P3S42",
-   "a": 10410,
-   "b": 10534,
+   "a": 10480,
+   "b": 10576,
    "t0": 0,
-   "t1": 124,
-   "line": "tell you something? Sure. You're actually easier to talk"
+   "t1": 96,
+   "line": "You're actually easier to talk to than I expected."
   },
   {
    "shot": "P3S43",
-   "a": 10534,
-   "b": 10576,
+   "a": 10576,
+   "b": 10606,
    "t0": 0,
-   "t1": 42,
-   "line": "to than I expected."
+   "t1": 30,
+   "line": "You looked at her."
   },
   {
    "shot": "P3S44",
-   "a": 10576,
-   "b": 10625,
+   "a": 10606,
+   "b": 10669,
    "t0": 0,
-   "t1": 49,
-   "line": "You looked at her. Was I difficult"
+   "t1": 63,
+   "line": "Was I difficult to talk to before?"
   },
   {
    "shot": "P3S45",
-   "a": 10625,
-   "b": 10637,
+   "a": 10669,
+   "b": 10717,
    "t0": 0,
-   "t1": 12,
-   "line": "to talk"
+   "t1": 48,
+   "line": "She laughed."
   },
   {
    "shot": "P3S46",
-   "a": 10637,
-   "b": 10717,
+   "a": 10717,
+   "b": 10829,
    "t0": 0,
-   "t1": 80,
-   "line": "to before? She laughed."
+   "t1": 112,
+   "line": "No. I just thought you were really quiet."
   },
   {
    "shot": "P3S47",
-   "a": 10717,
-   "b": 10761,
+   "a": 10829,
+   "b": 10878,
    "t0": 0,
-   "t1": 44,
-   "line": "No. I just"
+   "t1": 49,
+   "line": "You shrugged."
   },
   {
    "shot": "P3S48",
-   "a": 10761,
-   "b": 10923,
+   "a": 10878,
+   "b": 10914,
    "t0": 0,
-   "t1": 162,
-   "line": "thought you were really quiet. You shrugged. I'm usually quiet around people."
+   "t1": 36,
+   "line": "I'm usually quiet around people."
   },
   {
    "shot": "P3S49",
-   "a": 10923,
-   "b": 10930,
+   "a": 10914,
+   "b": 11011,
    "t0": 0,
-   "t1": 7,
-   "line": "I don't know"
+   "t1": 97,
+   "line": "I don't know very well. And now?"
   },
   {
    "shot": "P3S50",
-   "a": 10930,
-   "b": 10936,
+   "a": 11011,
+   "b": 11066,
    "t0": 0,
-   "t1": 6,
-   "line": "very"
+   "t1": 55,
+   "line": "You looked at her."
   },
   {
    "shot": "P3S51",
-   "a": 10936,
-   "b": 11085,
+   "a": 11066,
+   "b": 11141,
    "t0": 0,
-   "t1": 149,
-   "line": "well. And now? You looked at her. Now I'm"
+   "t1": 75,
+   "line": "Now I'm getting used to you."
   },
   {
    "shot": "P3S52",
-   "a": 11085,
-   "b": 11095,
+   "a": 11141,
+   "b": 11196,
    "t0": 0,
-   "t1": 10,
-   "line": "getting used"
+   "t1": 55,
+   "line": "Emma smiled."
   },
   {
    "shot": "P3S53",
-   "a": 11095,
-   "b": 11100,
+   "a": 11196,
+   "b": 11284,
    "t0": 0,
-   "t1": 5,
-   "line": "to"
+   "t1": 88,
+   "line": "Her shadow immediately started jumping."
   },
   {
    "shot": "P3S54",
-   "a": 11100,
+   "a": 11284,
    "b": 11342,
    "t0": 0,
-   "t1": 242,
-   "line": "you. Emma smiled. Her shadow immediately started jumping. You pretended to focus on the road."
+   "t1": 58,
+   "line": "You pretended to focus on the road."
   },
   {
    "shot": "P4S1",
    "a": 11342,
-   "b": 11353,
+   "b": 11392,
    "t0": 0,
-   "t1": 11,
-   "line": "The"
+   "t1": 50,
+   "line": "The School Festival."
   },
   {
    "shot": "P4S2",
-   "a": 11353,
-   "b": 11443,
+   "a": 11392,
+   "b": 11509,
    "t0": 0,
-   "t1": 90,
-   "line": "School Festival. A week later, the school"
+   "t1": 117,
+   "line": "A week later, the school announced its annual festival."
   },
   {
    "shot": "P4S3",
-   "a": 11443,
-   "b": 11453,
+   "a": 11509,
+   "b": 11580,
    "t0": 0,
-   "t1": 10,
-   "line": "announced"
+   "t1": 71,
+   "line": "Every class had to prepare a small activity."
   },
   {
    "shot": "P4S4",
-   "a": 11453,
-   "b": 11615,
+   "a": 11580,
+   "b": 11657,
    "t0": 0,
-   "t1": 162,
-   "line": "its annual festival. Every class had to prepare a small activity. Your class decided to run"
+   "t1": 77,
+   "line": "Your class decided to run a little game booth."
   },
   {
    "shot": "P4S5",
-   "a": 11615,
-   "b": 11713,
+   "a": 11657,
+   "b": 11772,
    "t0": 0,
-   "t1": 98,
-   "line": "a little game booth. And somehow, you and Emma ended up being"
+   "t1": 115,
+   "line": "And somehow, you and Emma ended up being responsible for decorating it."
   },
   {
    "shot": "P4S6",
-   "a": 11713,
-   "b": 11899,
+   "a": 11772,
+   "b": 11944,
    "t0": 0,
-   "t1": 186,
-   "line": "responsible for decorating it. After school, you both stayed in the classroom with colorful paper, markers, tape,"
+   "t1": 172,
+   "line": "After school, you both stayed in the classroom with colorful paper, markers, tape, and a pile of cardboard."
   },
   {
    "shot": "P4S7",
-   "a": 11899,
-   "b": 11957,
+   "a": 11944,
+   "b": 11995,
    "t0": 0,
-   "t1": 58,
-   "line": "and a pile of cardboard. Emma"
+   "t1": 51,
+   "line": "Emma held up a sign."
   },
   {
    "shot": "P4S8",
-   "a": 11957,
-   "b": 11995,
-   "t0": 0,
-   "t1": 38,
-   "line": "held up a sign."
-  },
-  {
-   "shot": "P4S9",
    "a": 11995,
    "b": 12052,
    "t0": 0,
@@ -1253,1103 +1245,1103 @@
    "line": "Does this look good?"
   },
   {
-   "shot": "P4S10",
+   "shot": "P4S9",
    "a": 12052,
-   "b": 12115,
+   "b": 12094,
+   "t0": 0,
+   "t1": 42,
+   "line": "You tilted your head."
+  },
+  {
+   "shot": "P4S10",
+   "a": 12094,
+   "b": 12157,
    "t0": 0,
    "t1": 63,
-   "line": "You tilted your head. Maybe the"
+   "line": "Maybe the letter should be bigger?"
   },
   {
    "shot": "P4S11",
-   "a": 12115,
-   "b": 12157,
+   "a": 12157,
+   "b": 12218,
    "t0": 0,
-   "t1": 42,
-   "line": "letter should be bigger?"
+   "t1": 61,
+   "line": "She narrowed her eyes."
   },
   {
    "shot": "P4S12",
-   "a": 12157,
-   "b": 12274,
+   "a": 12218,
+   "b": 12326,
    "t0": 0,
-   "t1": 117,
-   "line": "She narrowed her eyes. You're very demanding for someone"
+   "t1": 108,
+   "line": "You're very demanding for someone who hasn't done much."
   },
   {
    "shot": "P4S13",
-   "a": 12274,
-   "b": 12338,
+   "a": 12326,
+   "b": 12400,
    "t0": 0,
-   "t1": 64,
-   "line": "who hasn't done much. I've"
+   "t1": 74,
+   "line": "I've been providing creative direction."
   },
   {
    "shot": "P4S14",
-   "a": 12338,
-   "b": 12436,
+   "a": 12400,
+   "b": 12490,
    "t0": 0,
-   "t1": 98,
-   "line": "been providing creative direction. That's a fancy way of saying"
+   "t1": 90,
+   "line": "That's a fancy way of saying you've been sitting there."
   },
   {
    "shot": "P4S15",
-   "a": 12436,
-   "b": 12448,
+   "a": 12490,
+   "b": 12524,
    "t0": 0,
-   "t1": 12,
-   "line": "you've been"
+   "t1": 34,
+   "line": "You laughed."
   },
   {
    "shot": "P4S16",
-   "a": 12448,
-   "b": 12547,
+   "a": 12524,
+   "b": 12591,
    "t0": 0,
-   "t1": 99,
-   "line": "sitting there. You laughed. She threw a small"
+   "t1": 67,
+   "line": "She threw a small piece of paper at you."
   },
   {
    "shot": "P4S17",
-   "a": 12547,
-   "b": 12606,
+   "a": 12591,
+   "b": 12640,
    "t0": 0,
-   "t1": 59,
-   "line": "piece of paper at you. He picked it up"
+   "t1": 49,
+   "line": "He picked it up and threw it back. For a few"
   },
   {
    "shot": "P4S18",
-   "a": 12606,
-   "b": 12693,
+   "a": 12640,
+   "b": 12758,
    "t0": 0,
-   "t1": 87,
-   "line": "and threw it back. For a few seconds, the classroom turned into"
+   "t1": 118,
+   "line": "seconds, the classroom turned into a ridiculous paper battle."
   },
   {
    "shot": "P4S19",
-   "a": 12693,
-   "b": 12828,
+   "a": 12758,
+   "b": 12869,
    "t0": 0,
-   "t1": 135,
-   "line": "a ridiculous paper battle. Then Emma laughed so hard that she"
+   "t1": 111,
+   "line": "Then Emma laughed so hard that she had to sit down."
   },
   {
    "shot": "P4S20",
-   "a": 12828,
-   "b": 12869,
+   "a": 12869,
+   "b": 12903,
    "t0": 0,
-   "t1": 41,
-   "line": "had to sit down."
+   "t1": 34,
+   "line": "You looked at her."
   },
   {
    "shot": "P4S21",
-   "a": 12869,
-   "b": 12946,
+   "a": 12903,
+   "b": 13004,
    "t0": 0,
-   "t1": 77,
-   "line": "You looked at her. And for a moment, you"
+   "t1": 101,
+   "line": "And for a moment, you forgot about the decorations. Her"
   },
   {
    "shot": "P4S22",
-   "a": 12946,
-   "b": 13035,
+   "a": 13004,
+   "b": 13107,
    "t0": 0,
-   "t1": 89,
-   "line": "forgot about the decorations. Her shadow was sitting"
+   "t1": 103,
+   "line": "shadow was sitting beside her, laughing too."
   },
   {
    "shot": "P4S23",
-   "a": 13035,
-   "b": 13114,
+   "a": 13107,
+   "b": 13175,
    "t0": 0,
-   "t1": 79,
-   "line": "beside her, laughing too. It"
+   "t1": 68,
+   "line": "It looked happier than ever."
   },
   {
    "shot": "P4S24",
-   "a": 13114,
-   "b": 13150,
+   "a": 13175,
+   "b": 13211,
    "t0": 0,
    "t1": 36,
-   "line": "looked happier than ever."
+   "line": "Later, while"
   },
   {
    "shot": "P4S25",
-   "a": 13150,
-   "b": 13295,
+   "a": 13211,
+   "b": 13364,
    "t0": 0,
-   "t1": 145,
-   "line": "Later, while you were cutting cardboard, you accidentally nicked your finger"
+   "t1": 153,
+   "line": "you were cutting cardboard, you accidentally nicked your finger on a rough edge."
   },
   {
    "shot": "P4S26",
-   "a": 13295,
-   "b": 13364,
+   "a": 13364,
+   "b": 13413,
    "t0": 0,
-   "t1": 69,
-   "line": "on a rough edge."
+   "t1": 49,
+   "line": "Emma immediately looked over."
   },
   {
    "shot": "P4S27",
-   "a": 13364,
-   "b": 13384,
+   "a": 13413,
+   "b": 13451,
    "t0": 0,
-   "t1": 20,
-   "line": "Emma immediately"
+   "t1": 38,
+   "line": "What happened?"
   },
   {
    "shot": "P4S28",
-   "a": 13384,
-   "b": 13413,
+   "a": 13451,
+   "b": 13492,
    "t0": 0,
-   "t1": 29,
-   "line": "looked over."
+   "t1": 41,
+   "line": "It's nothing."
   },
   {
    "shot": "P4S29",
-   "a": 13413,
-   "b": 13511,
+   "a": 13492,
+   "b": 13564,
    "t0": 0,
-   "t1": 98,
-   "line": "What happened? It's nothing. She put down her"
+   "t1": 72,
+   "line": "She put down her marker and came closer."
   },
   {
    "shot": "P4S30",
-   "a": 13511,
-   "b": 13534,
+   "a": 13564,
+   "b": 13598,
    "t0": 0,
-   "t1": 23,
-   "line": "marker and came"
+   "t1": 34,
+   "line": "Let me see."
   },
   {
    "shot": "P4S31",
-   "a": 13534,
-   "b": 13667,
+   "a": 13598,
+   "b": 13718,
    "t0": 0,
-   "t1": 133,
-   "line": "closer. Let me see. She checked your finger and brought you a small"
+   "t1": 120,
+   "line": "She checked your finger and brought you a small bandage from her bag."
   },
   {
    "shot": "P4S32",
-   "a": 13667,
-   "b": 13742,
+   "a": 13718,
+   "b": 13797,
    "t0": 0,
-   "t1": 75,
-   "line": "bandage from her bag. Here."
+   "t1": 79,
+   "line": "Here. Be careful next time."
   },
   {
    "shot": "P4S33",
-   "a": 13742,
-   "b": 13747,
+   "a": 13797,
+   "b": 13838,
    "t0": 0,
-   "t1": 5,
-   "line": "Be"
+   "t1": 41,
+   "line": "Thanks."
   },
   {
    "shot": "P4S34",
-   "a": 13747,
-   "b": 13761,
+   "a": 13838,
+   "b": 13883,
    "t0": 0,
-   "t1": 14,
-   "line": "careful next"
+   "t1": 45,
+   "line": "She smiled."
   },
   {
    "shot": "P4S35",
-   "a": 13761,
-   "b": 13927,
+   "a": 13883,
+   "b": 14004,
    "t0": 0,
-   "t1": 166,
-   "line": "time. Thanks. She smiled. You're supposed to help me finish the"
+   "t1": 121,
+   "line": "You're supposed to help me finish the booth, not injure yourself."
   },
   {
    "shot": "P4S36",
-   "a": 13927,
-   "b": 13950,
+   "a": 14004,
+   "b": 14050,
    "t0": 0,
-   "t1": 23,
-   "line": "booth, not"
+   "t1": 46,
+   "line": "You laughed."
   },
   {
    "shot": "P4S37",
-   "a": 13950,
-   "b": 14107,
+   "a": 14050,
+   "b": 14161,
    "t0": 0,
-   "t1": 157,
-   "line": "injure yourself. You laughed. Her shadow, however, had both"
+   "t1": 111,
+   "line": "Her shadow, however, had both hands on its cheeks."
   },
   {
    "shot": "P4S38",
-   "a": 14107,
-   "b": 14117,
+   "a": 14161,
+   "b": 14227,
    "t0": 0,
-   "t1": 10,
-   "line": "hands"
+   "t1": 66,
+   "line": "It looked extremely worried."
   },
   {
    "shot": "P4S39",
-   "a": 14117,
-   "b": 14251,
+   "a": 14227,
+   "b": 14308,
    "t0": 0,
-   "t1": 134,
-   "line": "on its cheeks. It looked extremely worried. Then it carefully"
+   "t1": 81,
+   "line": "Then it carefully reached toward your hand."
   },
   {
    "shot": "P4S40",
-   "a": 14251,
-   "b": 14308,
+   "a": 14308,
+   "b": 14357,
    "t0": 0,
-   "t1": 57,
-   "line": "reached toward your hand."
+   "t1": 49,
+   "line": "You glanced at Emma."
   },
   {
    "shot": "P4S41",
-   "a": 14308,
-   "b": 14374,
+   "a": 14357,
+   "b": 14428,
    "t0": 0,
-   "t1": 66,
-   "line": "You glanced at Emma. She was already"
+   "t1": 71,
+   "line": "She was already returning to the decorations."
   },
   {
    "shot": "P4S42",
-   "a": 14374,
-   "b": 14386,
+   "a": 14428,
+   "b": 14484,
    "t0": 0,
-   "t1": 12,
-   "line": "returning"
+   "t1": 56,
+   "line": "You couldn't help smiling."
   },
   {
    "shot": "P4S43",
-   "a": 14386,
-   "b": 14392,
+   "a": 14484,
+   "b": 14528,
    "t0": 0,
-   "t1": 6,
-   "line": "to"
+   "t1": 44,
+   "line": "The misunderstanding."
   },
   {
    "shot": "P4S44",
-   "a": 14392,
-   "b": 14539,
+   "a": 14528,
+   "b": 14571,
    "t0": 0,
-   "t1": 147,
-   "line": "the decorations. You couldn't help smiling. The misunderstanding. On the day"
+   "t1": 43,
+   "line": "On the day of the festival,"
   },
   {
    "shot": "P4S45",
-   "a": 14539,
-   "b": 14544,
+   "a": 14571,
+   "b": 14674,
    "t0": 0,
-   "t1": 5,
-   "line": "of"
+   "t1": 103,
+   "line": "everything was going well. Your booth was busy."
   },
   {
    "shot": "P4S46",
-   "a": 14544,
-   "b": 14699,
+   "a": 14674,
+   "b": 14752,
    "t0": 0,
-   "t1": 155,
-   "line": "the festival, everything was going well. Your booth was busy. Emma was laughing"
+   "t1": 78,
+   "line": "Emma was laughing with the other students."
   },
   {
    "shot": "P4S47",
-   "a": 14699,
-   "b": 14768,
+   "a": 14752,
+   "b": 14847,
    "t0": 0,
-   "t1": 69,
-   "line": "with the other students. You were helping"
+   "t1": 95,
+   "line": "You were helping people play the game. Then, during a"
   },
   {
    "shot": "P4S48",
-   "a": 14768,
-   "b": 14887,
+   "a": 14847,
+   "b": 14959,
    "t0": 0,
-   "t1": 119,
-   "line": "people play the game. Then, during a short break,"
+   "t1": 112,
+   "line": "short break, you noticed Emma standing with Daniel."
   },
   {
    "shot": "P4S49",
-   "a": 14887,
-   "b": 14991,
+   "a": 14959,
+   "b": 15066,
    "t0": 0,
-   "t1": 104,
-   "line": "you noticed Emma standing with Daniel. The same Daniel who"
+   "t1": 107,
+   "line": "The same Daniel who had been talking to her near the school gate."
   },
   {
    "shot": "P4S50",
-   "a": 14991,
-   "b": 15072,
+   "a": 15066,
+   "b": 15118,
    "t0": 0,
-   "t1": 81,
-   "line": "had been talking to her near the school gate. He"
+   "t1": 52,
+   "line": "He handed her a drink."
   },
   {
    "shot": "P4S51",
-   "a": 15072,
-   "b": 15124,
+   "a": 15118,
+   "b": 15174,
    "t0": 0,
-   "t1": 52,
-   "line": "handed her a drink. She"
+   "t1": 56,
+   "line": "She smiled and thanked him."
   },
   {
    "shot": "P4S52",
-   "a": 15124,
-   "b": 15134,
+   "a": 15174,
+   "b": 15210,
    "t0": 0,
-   "t1": 10,
-   "line": "smiled"
+   "t1": 36,
+   "line": "You looked away."
   },
   {
    "shot": "P4S53",
-   "a": 15134,
-   "b": 15233,
+   "a": 15210,
+   "b": 15296,
    "t0": 0,
-   "t1": 99,
-   "line": "and thanked him. You looked away. You knew you had no"
+   "t1": 86,
+   "line": "You knew you had no reason to feel jealous. But"
   },
   {
    "shot": "P4S54",
-   "a": 15233,
-   "b": 15296,
+   "a": 15296,
+   "b": 15371,
    "t0": 0,
-   "t1": 63,
-   "line": "reason to feel jealous. But"
+   "t1": 75,
+   "line": "somehow, it still bothered you."
   },
   {
    "shot": "P4S55",
-   "a": 15296,
-   "b": 15398,
+   "a": 15371,
+   "b": 15454,
    "t0": 0,
-   "t1": 102,
-   "line": "somehow, it still bothered you. Then you"
+   "t1": 83,
+   "line": "Then you looked at her shadow. It"
   },
   {
    "shot": "P4S56",
-   "a": 15398,
-   "b": 15405,
+   "a": 15454,
+   "b": 15494,
    "t0": 0,
-   "t1": 7,
-   "line": "looked"
+   "t1": 40,
+   "line": "wasn't celebrating."
   },
   {
    "shot": "P4S57",
-   "a": 15405,
-   "b": 15411,
+   "a": 15494,
+   "b": 15545,
    "t0": 0,
-   "t1": 6,
-   "line": "at"
+   "t1": 51,
+   "line": "It wasn't smiling."
   },
   {
    "shot": "P4S58",
-   "a": 15411,
-   "b": 15601,
+   "a": 15545,
+   "b": 15674,
    "t0": 0,
-   "t1": 190,
-   "line": "her shadow. It wasn't celebrating. It wasn't smiling. It was looking directly at you"
+   "t1": 129,
+   "line": "It was looking directly at you with a disappointed expression."
   },
   {
    "shot": "P4S59",
-   "a": 15601,
-   "b": 15764,
+   "a": 15674,
+   "b": 15865,
    "t0": 0,
-   "t1": 163,
-   "line": "with a disappointed expression. Then, it pointed toward Emma and made a small"
+   "t1": 191,
+   "line": "Then, it pointed toward Emma and made a small gesture as if asking you to come closer."
   },
   {
    "shot": "P4S60",
-   "a": 15764,
-   "b": 15782,
+   "a": 15865,
+   "b": 15908,
    "t0": 0,
-   "t1": 18,
-   "line": "gesture"
+   "t1": 43,
+   "line": "You hesitated."
   },
   {
    "shot": "P4S61",
-   "a": 15782,
-   "b": 15943,
+   "a": 15908,
+   "b": 16007,
    "t0": 0,
-   "t1": 161,
-   "line": "as if asking you to come closer. You hesitated. Before you could decide what to"
+   "t1": 99,
+   "line": "Before you could decide what to do, Emma noticed you."
   },
   {
    "shot": "P4S62",
-   "a": 15943,
-   "b": 16045,
+   "a": 16007,
+   "b": 16043,
    "t0": 0,
-   "t1": 102,
-   "line": "do, Emma noticed you. Hey, where did"
+   "t1": 36,
+   "line": "Hey, where"
   },
   {
    "shot": "P4S63",
-   "a": 16045,
-   "b": 16100,
+   "a": 16043,
+   "b": 16146,
    "t0": 0,
-   "t1": 55,
-   "line": "you go? No, I was"
+   "t1": 103,
+   "line": "did you go? No, I was just getting some water."
   },
   {
    "shot": "P4S64",
-   "a": 16100,
-   "b": 16120,
+   "a": 16146,
+   "b": 16202,
    "t0": 0,
-   "t1": 20,
-   "line": "just getting some"
+   "t1": 56,
+   "line": "She looked at you for a moment."
   },
   {
    "shot": "P4S65",
-   "a": 16120,
-   "b": 16173,
+   "a": 16202,
+   "b": 16252,
    "t0": 0,
-   "t1": 53,
-   "line": "water. She looked at you for"
+   "t1": 50,
+   "line": "Are you okay?"
   },
   {
    "shot": "P4S66",
-   "a": 16173,
-   "b": 16212,
+   "a": 16252,
+   "b": 16298,
    "t0": 0,
-   "t1": 39,
-   "line": "a moment. Are"
+   "t1": 46,
+   "line": "Yeah, why?"
   },
   {
    "shot": "P4S67",
-   "a": 16212,
-   "b": 16270,
+   "a": 16298,
+   "b": 16359,
    "t0": 0,
-   "t1": 58,
-   "line": "you okay? Yeah,"
+   "t1": 61,
+   "line": "You've been quiet."
   },
   {
    "shot": "P4S68",
-   "a": 16270,
-   "b": 16314,
+   "a": 16359,
+   "b": 16420,
    "t0": 0,
-   "t1": 44,
-   "line": "why? You've"
+   "t1": 61,
+   "line": "You shrugged. Just a"
   },
   {
    "shot": "P4S69",
-   "a": 16314,
-   "b": 16399,
+   "a": 16420,
+   "b": 16456,
    "t0": 0,
-   "t1": 85,
-   "line": "been quiet. You shrugged."
+   "t1": 36,
+   "line": "little tired."
   },
   {
    "shot": "P4S70",
-   "a": 16399,
-   "b": 16420,
+   "a": 16456,
+   "b": 16496,
    "t0": 0,
-   "t1": 21,
-   "line": "Just a"
+   "t1": 40,
+   "line": "Emma nodded."
   },
   {
    "shot": "P4S71",
-   "a": 16420,
-   "b": 16502,
+   "a": 16496,
+   "b": 16553,
    "t0": 0,
-   "t1": 82,
-   "line": "little tired. Emma nodded. Then"
+   "t1": 57,
+   "line": "Then she glanced at Daniel."
   },
   {
    "shot": "P4S72",
-   "a": 16502,
-   "b": 16638,
+   "a": 16553,
+   "b": 16589,
    "t0": 0,
-   "t1": 136,
-   "line": "she glanced at Daniel. He was just helping me carry the drinks. We ran"
+   "t1": 36,
+   "line": "He was just helping me carry"
   },
   {
    "shot": "P4S73",
-   "a": 16638,
-   "b": 16680,
+   "a": 16589,
+   "b": 16768,
    "t0": 0,
-   "t1": 42,
-   "line": "out at the booth."
+   "t1": 179,
+   "line": "the drinks. We ran out at the booth. You fell slightly embarrassed. Oh,"
   },
   {
    "shot": "P4S74",
-   "a": 16680,
-   "b": 16702,
+   "a": 16768,
+   "b": 16804,
    "t0": 0,
-   "t1": 22,
-   "line": "You fell slightly"
+   "t1": 36,
+   "line": "I see."
   },
   {
    "shot": "P4S75",
-   "a": 16702,
-   "b": 16774,
+   "a": 16804,
+   "b": 16845,
    "t0": 0,
-   "t1": 72,
-   "line": "embarrassed. Oh, I"
+   "t1": 41,
+   "line": "Emma looked at you."
   },
   {
    "shot": "P4S76",
-   "a": 16774,
-   "b": 16808,
+   "a": 16845,
+   "b": 16905,
    "t0": 0,
-   "t1": 34,
-   "line": "see. Emma"
+   "t1": 60,
+   "line": "Did you think something else?"
   },
   {
    "shot": "P4S77",
-   "a": 16808,
-   "b": 16914,
+   "a": 16905,
+   "b": 16941,
    "t0": 0,
-   "t1": 106,
-   "line": "looked at you. Did you think something else? You"
+   "t1": 36,
+   "line": "You quickly shook your"
   },
   {
    "shot": "P4S78",
-   "a": 16914,
-   "b": 16927,
-   "t0": 0,
-   "t1": 13,
-   "line": "quickly"
-  },
-  {
-   "shot": "P4S79",
-   "a": 16927,
-   "b": 16939,
-   "t0": 0,
-   "t1": 12,
-   "line": "shook your"
-  },
-  {
-   "shot": "P4S80",
-   "a": 16939,
+   "a": 16941,
    "b": 16957,
    "t0": 0,
-   "t1": 18,
+   "t1": 16,
    "line": "head."
   },
   {
-   "shot": "P4S81",
+   "shot": "P4S79",
    "a": 16957,
-   "b": 17142,
+   "b": 17035,
    "t0": 0,
-   "t1": 185,
-   "line": "No, she smiled. Okay. But her shadow was now standing behind her, making"
+   "t1": 78,
+   "line": "No, she smiled."
+  },
+  {
+   "shot": "P4S80",
+   "a": 17035,
+   "b": 17068,
+   "t0": 0,
+   "t1": 33,
+   "line": "Okay. But her"
+  },
+  {
+   "shot": "P4S81",
+   "a": 17068,
+   "b": 17224,
+   "t0": 0,
+   "t1": 156,
+   "line": "shadow was now standing behind her, making an exaggerated face palm."
   },
   {
    "shot": "P4S82",
-   "a": 17142,
-   "b": 17180,
+   "a": 17224,
+   "b": 17278,
    "t0": 0,
-   "t1": 38,
-   "line": "an exaggerated face"
+   "t1": 54,
+   "line": "You almost laughed."
   },
   {
    "shot": "P4S83",
-   "a": 17180,
+   "a": 17278,
    "b": 17366,
    "t0": 0,
-   "t1": 186,
-   "line": "palm. You almost laughed. Apparently, even her shadow thought you were being ridiculous."
+   "t1": 88,
+   "line": "Apparently, even her shadow thought you were being ridiculous."
   },
   {
    "shot": "P5S1",
    "a": 17366,
-   "b": 17374,
+   "b": 17449,
    "t0": 0,
-   "t1": 8,
-   "line": "The"
+   "t1": 83,
+   "line": "The moment she needed you."
   },
   {
    "shot": "P5S2",
-   "a": 17374,
-   "b": 17484,
+   "a": 17449,
+   "b": 17553,
    "t0": 0,
-   "t1": 110,
-   "line": "moment she needed you. Later that afternoon,"
+   "t1": 104,
+   "line": "Later that afternoon, the festival became crowded."
   },
   {
    "shot": "P5S3",
-   "a": 17484,
-   "b": 17595,
+   "a": 17553,
+   "b": 17645,
    "t0": 0,
-   "t1": 111,
-   "line": "the festival became crowded. Emma was responsible for collecting"
+   "t1": 92,
+   "line": "Emma was responsible for collecting tickets at the entrance."
   },
   {
    "shot": "P5S4",
-   "a": 17595,
-   "b": 17612,
+   "a": 17645,
+   "b": 17710,
    "t0": 0,
-   "t1": 17,
-   "line": "tickets at"
+   "t1": 65,
+   "line": "You were helping at the game booth."
   },
   {
    "shot": "P5S5",
-   "a": 17612,
-   "b": 17779,
+   "a": 17710,
+   "b": 17819,
    "t0": 0,
-   "t1": 167,
-   "line": "the entrance. You were helping at the game booth. Then you noticed her standing alone near the"
+   "t1": 109,
+   "line": "Then you noticed her standing alone near the side of the hall."
   },
   {
    "shot": "P5S6",
-   "a": 17779,
-   "b": 17840,
+   "a": 17819,
+   "b": 17886,
    "t0": 0,
-   "t1": 61,
-   "line": "side of the hall. She was looking"
+   "t1": 67,
+   "line": "She was looking down at her phone."
   },
   {
    "shot": "P5S7",
-   "a": 17840,
-   "b": 17857,
+   "a": 17886,
+   "b": 17947,
    "t0": 0,
-   "t1": 17,
-   "line": "down at her"
+   "t1": 61,
+   "line": "Something seemed wrong."
   },
   {
    "shot": "P5S8",
-   "a": 17857,
-   "b": 17912,
+   "a": 17947,
+   "b": 17996,
    "t0": 0,
-   "t1": 55,
-   "line": "phone. Something seemed"
+   "t1": 49,
+   "line": "You walked over."
   },
   {
    "shot": "P5S9",
-   "a": 17912,
-   "b": 17959,
+   "a": 17996,
+   "b": 18050,
    "t0": 0,
-   "t1": 47,
-   "line": "wrong. You walked"
+   "t1": 54,
+   "line": "Hey, everything okay?"
   },
   {
    "shot": "P5S10",
-   "a": 17959,
-   "b": 18023,
+   "a": 18050,
+   "b": 18099,
    "t0": 0,
-   "t1": 64,
-   "line": "over. Hey, everything"
+   "t1": 49,
+   "line": "She looked up."
   },
   {
    "shot": "P5S11",
-   "a": 18023,
-   "b": 18099,
+   "a": 18099,
+   "b": 18166,
    "t0": 0,
-   "t1": 76,
-   "line": "okay? She looked up."
+   "t1": 67,
+   "line": "Oh yeah, I'm fine."
   },
   {
    "shot": "P5S12",
-   "a": 18099,
-   "b": 18230,
+   "a": 18166,
+   "b": 18280,
    "t0": 0,
-   "t1": 131,
-   "line": "Oh yeah, I'm fine. But her shadow was sitting on the floor"
+   "t1": 114,
+   "line": "But her shadow was sitting on the floor with its head lowered."
   },
   {
    "shot": "P5S13",
-   "a": 18230,
-   "b": 18249,
+   "a": 18280,
+   "b": 18327,
    "t0": 0,
-   "t1": 19,
-   "line": "with its head"
+   "t1": 47,
+   "line": "It looked sad."
   },
   {
    "shot": "P5S14",
-   "a": 18249,
-   "b": 18387,
+   "a": 18327,
+   "b": 18448,
    "t0": 0,
-   "t1": 138,
-   "line": "lowered. It looked sad. You didn't know what had happened, but you could"
+   "t1": 121,
+   "line": "You didn't know what had happened, but you could tell she wasn't okay."
   },
   {
    "shot": "P5S15",
-   "a": 18387,
-   "b": 18459,
+   "a": 18448,
+   "b": 18497,
    "t0": 0,
-   "t1": 72,
-   "line": "tell she wasn't okay. Want"
+   "t1": 49,
+   "line": "Want to take a break?"
   },
   {
    "shot": "P5S16",
-   "a": 18459,
-   "b": 18464,
+   "a": 18497,
+   "b": 18547,
    "t0": 0,
-   "t1": 5,
-   "line": "to take"
+   "t1": 50,
+   "line": "Emma hesitated."
   },
   {
    "shot": "P5S17",
-   "a": 18464,
-   "b": 18504,
+   "a": 18547,
+   "b": 18592,
    "t0": 0,
-   "t1": 40,
-   "line": "a break? Emma"
+   "t1": 45,
+   "line": "Then she nodded."
   },
   {
    "shot": "P5S18",
-   "a": 18504,
-   "b": 18621,
+   "a": 18592,
+   "b": 18671,
    "t0": 0,
-   "t1": 117,
-   "line": "hesitated. Then she nodded. You found two empty"
+   "t1": 79,
+   "line": "You found two empty chairs near the window."
   },
   {
    "shot": "P5S19",
-   "a": 18621,
-   "b": 18694,
+   "a": 18671,
+   "b": 18749,
    "t0": 0,
-   "t1": 73,
-   "line": "chairs near the window. For a while"
+   "t1": 78,
+   "line": "For a while neither of you spoke."
   },
   {
    "shot": "P5S20",
-   "a": 18694,
-   "b": 18760,
+   "a": 18749,
+   "b": 18809,
    "t0": 0,
-   "t1": 66,
-   "line": "neither of you spoke. Then"
+   "t1": 60,
+   "line": "Then she finally said,"
   },
   {
    "shot": "P5S21",
-   "a": 18760,
-   "b": 18838,
+   "a": 18809,
+   "b": 18890,
    "t0": 0,
-   "t1": 78,
-   "line": "she finally said, I think"
+   "t1": 81,
+   "line": "I think I messed something up."
   },
   {
    "shot": "P5S22",
-   "a": 18838,
-   "b": 18863,
+   "a": 18890,
+   "b": 18922,
    "t0": 0,
-   "t1": 25,
-   "line": "I messed something"
+   "t1": 32,
+   "line": "What happened?"
   },
   {
    "shot": "P5S23",
-   "a": 18863,
-   "b": 19037,
+   "a": 18922,
+   "b": 19083,
    "t0": 0,
-   "t1": 174,
-   "line": "up. What happened? I was supposed to prepare the tickets for the next activity, but I"
+   "t1": 161,
+   "line": "I was supposed to prepare the tickets for the next activity, but I forgot to bring them."
   },
   {
    "shot": "P5S24",
-   "a": 19037,
-   "b": 19083,
+   "a": 19083,
+   "b": 19119,
    "t0": 0,
-   "t1": 46,
-   "line": "forgot to bring them."
+   "t1": 36,
+   "line": "You looked at her."
   },
   {
    "shot": "P5S25",
-   "a": 19083,
-   "b": 19097,
+   "a": 19119,
+   "b": 19124,
    "t0": 0,
-   "t1": 14,
-   "line": "You looked at"
+   "t1": 5,
+   "line": "Is"
   },
   {
    "shot": "P5S26",
-   "a": 19097,
-   "b": 19136,
+   "a": 19124,
+   "b": 19157,
    "t0": 0,
-   "t1": 39,
-   "line": "her. Is that"
+   "t1": 33,
+   "line": "that all?"
   },
   {
    "shot": "P5S27",
-   "a": 19136,
-   "b": 19249,
+   "a": 19157,
+   "b": 19295,
    "t0": 0,
-   "t1": 113,
-   "line": "all? She nodded. I know it's not a big deal, but everyone"
+   "t1": 138,
+   "line": "She nodded. I know it's not a big deal, but everyone is depending on me."
   },
   {
    "shot": "P5S28",
-   "a": 19249,
-   "b": 19265,
+   "a": 19295,
+   "b": 19324,
    "t0": 0,
-   "t1": 16,
-   "line": "is depending"
+   "t1": 29,
+   "line": "You smiled."
   },
   {
    "shot": "P5S29",
-   "a": 19265,
-   "b": 19324,
+   "a": 19324,
+   "b": 19364,
    "t0": 0,
-   "t1": 59,
-   "line": "on me. You smiled."
+   "t1": 40,
+   "line": "Then let's fix it."
   },
   {
    "shot": "P5S30",
-   "a": 19324,
-   "b": 19342,
+   "a": 19364,
+   "b": 19403,
    "t0": 0,
-   "t1": 18,
-   "line": "Then let's fix"
+   "t1": 39,
+   "line": "She looked surprised."
   },
   {
    "shot": "P5S31",
-   "a": 19342,
-   "b": 19369,
+   "a": 19403,
+   "b": 19433,
    "t0": 0,
-   "t1": 27,
-   "line": "it. She"
+   "t1": 30,
+   "line": "You'll help?"
   },
   {
    "shot": "P5S32",
-   "a": 19369,
-   "b": 19403,
+   "a": 19433,
+   "b": 19467,
    "t0": 0,
    "t1": 34,
-   "line": "looked surprised."
+   "line": "Of course."
   },
   {
    "shot": "P5S33",
-   "a": 19403,
-   "b": 19525,
+   "a": 19467,
+   "b": 19570,
    "t0": 0,
-   "t1": 122,
-   "line": "You'll help? Of course. You both went back to the classroom and quickly"
+   "t1": 103,
+   "line": "You both went back to the classroom and quickly prepared the missing tickets."
   },
   {
    "shot": "P5S34",
-   "a": 19525,
-   "b": 19580,
+   "a": 19570,
+   "b": 19654,
    "t0": 0,
-   "t1": 55,
-   "line": "prepared the missing tickets. It took"
+   "t1": 84,
+   "line": "It took less than 15 minutes."
   },
   {
    "shot": "P5S35",
-   "a": 19580,
-   "b": 19594,
+   "a": 19654,
+   "b": 19741,
    "t0": 0,
-   "t1": 14,
-   "line": "less"
+   "t1": 87,
+   "line": "When you returned, Emma looked relieved."
   },
   {
    "shot": "P5S36",
-   "a": 19594,
-   "b": 19694,
+   "a": 19741,
+   "b": 19773,
    "t0": 0,
-   "t1": 100,
-   "line": "than 15 minutes. When you returned, Emma"
+   "t1": 32,
+   "line": "Thank you."
   },
   {
    "shot": "P5S37",
-   "a": 19694,
-   "b": 19741,
+   "a": 19773,
+   "b": 19813,
    "t0": 0,
-   "t1": 47,
-   "line": "looked relieved."
+   "t1": 40,
+   "line": "No problem."
   },
   {
    "shot": "P5S38",
-   "a": 19741,
-   "b": 19750,
+   "a": 19813,
+   "b": 19932,
    "t0": 0,
-   "t1": 9,
-   "line": "Thank"
+   "t1": 119,
+   "line": "Her shadow suddenly jumped up and made a heart with both hands."
   },
   {
    "shot": "P5S39",
-   "a": 19750,
-   "b": 19892,
+   "a": 19932,
+   "b": 19979,
    "t0": 0,
-   "t1": 142,
-   "line": "you. No problem. Her shadow suddenly jumped up and made a heart with"
+   "t1": 47,
+   "line": "You smiled."
   },
   {
    "shot": "P5S40",
-   "a": 19892,
-   "b": 19900,
+   "a": 19979,
+   "b": 20125,
    "t0": 0,
-   "t1": 8,
-   "line": "both"
+   "t1": 146,
+   "line": "For the first time that day, Emma looked genuinely happy again."
   },
   {
    "shot": "P5S41",
-   "a": 19900,
-   "b": 19932,
+   "a": 20125,
+   "b": 20177,
    "t0": 0,
-   "t1": 32,
-   "line": "hands."
+   "t1": 52,
+   "line": "The confession."
   },
   {
    "shot": "P5S42",
-   "a": 19932,
-   "b": 20224,
+   "a": 20177,
+   "b": 20282,
    "t0": 0,
-   "t1": 292,
-   "line": "You smiled. For the first time that day, Emma looked genuinely happy again. The confession. After the festival ended, you and"
+   "t1": 105,
+   "line": "After the festival ended, you and Emma walked outside together."
   },
   {
    "shot": "P5S43",
-   "a": 20224,
-   "b": 20286,
+   "a": 20282,
+   "b": 20349,
    "t0": 0,
-   "t1": 62,
-   "line": "Emma walked outside together. The"
+   "t1": 67,
+   "line": "The sky was turning orange."
   },
   {
    "shot": "P5S44",
-   "a": 20286,
-   "b": 20403,
+   "a": 20349,
+   "b": 20472,
    "t0": 0,
-   "t1": 117,
-   "line": "sky was turning orange. Students were leaving in groups,"
+   "t1": 123,
+   "line": "Students were leaving in groups, carrying decorations and bags."
   },
   {
    "shot": "P5S45",
-   "a": 20403,
-   "b": 20513,
+   "a": 20472,
+   "b": 20508,
    "t0": 0,
-   "t1": 110,
-   "line": "carrying decorations and bags. Emma was holding a small box"
+   "t1": 36,
+   "line": "Emma was holding a small box"
   },
   {
    "shot": "P5S46",
-   "a": 20513,
-   "b": 20582,
+   "a": 20508,
+   "b": 20665,
    "t0": 0,
-   "t1": 69,
-   "line": "of leftover supplies. Tonight"
+   "t1": 157,
+   "line": "of leftover supplies. Tonight was exhausting. She said."
   },
   {
    "shot": "P5S47",
-   "a": 20582,
-   "b": 20590,
+   "a": 20665,
+   "b": 20707,
    "t0": 0,
-   "t1": 8,
-   "line": "was"
+   "t1": 42,
+   "line": "Definitely."
   },
   {
    "shot": "P5S48",
-   "a": 20590,
-   "b": 20707,
+   "a": 20707,
+   "b": 20783,
    "t0": 0,
-   "t1": 117,
-   "line": "exhausting. She said. Definitely."
+   "t1": 76,
+   "line": "But it was fun."
   },
   {
    "shot": "P5S49",
-   "a": 20707,
-   "b": 20800,
+   "a": 20783,
+   "b": 20857,
    "t0": 0,
-   "t1": 93,
-   "line": "But it was fun. Yeah,"
+   "t1": 74,
+   "line": "Yeah, especially the paper fight."
   },
   {
    "shot": "P5S50",
-   "a": 20800,
-   "b": 20825,
+   "a": 20857,
+   "b": 20896,
    "t0": 0,
-   "t1": 25,
-   "line": "especially the paper"
+   "t1": 39,
+   "line": "She laughed."
   },
   {
    "shot": "P5S51",
-   "a": 20825,
-   "b": 20904,
+   "a": 20896,
+   "b": 20983,
    "t0": 0,
-   "t1": 79,
-   "line": "fight. She laughed. I"
+   "t1": 87,
+   "line": "I still can't believe you threw paper at me."
   },
   {
    "shot": "P5S52",
-   "a": 20904,
-   "b": 20983,
+   "a": 20983,
+   "b": 21019,
    "t0": 0,
-   "t1": 79,
-   "line": "still can't believe you threw paper at me."
+   "t1": 36,
+   "line": "You started it."
   },
   {
    "shot": "P5S53",
-   "a": 20983,
-   "b": 21002,
+   "a": 21019,
+   "b": 21083,
    "t0": 0,
-   "t1": 19,
-   "line": "You started"
+   "t1": 64,
+   "line": "I did not."
   },
   {
    "shot": "P5S54",
-   "a": 21002,
-   "b": 21035,
+   "a": 21083,
+   "b": 21126,
    "t0": 0,
-   "t1": 33,
-   "line": "it. I did"
+   "t1": 43,
+   "line": "You both laughed."
   },
   {
    "shot": "P5S55",
-   "a": 21035,
-   "b": 21137,
+   "a": 21126,
+   "b": 21162,
    "t0": 0,
-   "t1": 102,
-   "line": "not. You both laughed. Then the"
+   "t1": 36,
+   "line": "Then the conversation slowly"
   },
   {
    "shot": "P5S56",
-   "a": 21137,
-   "b": 21262,
+   "a": 21162,
+   "b": 21166,
    "t0": 0,
-   "t1": 125,
-   "line": "conversation slowly became quiet. You would spend so much time together for"
+   "t1": 4,
+   "line": ""
   },
   {
    "shot": "P5S57",
-   "a": 21262,
-   "b": 21440,
+   "a": 21166,
+   "b": 21534,
    "t0": 0,
-   "t1": 178,
-   "line": "the past few weeks. You would work on assignments, shared an umbrella, decorated a booth,"
+   "t1": 368,
+   "line": "became quiet. You would spend so much time together for the past few weeks. You would work on assignments, shared an umbrella, decorated a booth, and helped each other through a stressful day."
   },
   {
    "shot": "P5S58",
-   "a": 21440,
-   "b": 21639,
+   "a": 21534,
+   "b": 21698,
    "t0": 0,
-   "t1": 199,
-   "line": "and helped each other through a stressful day. And every time, Emma's shadow had revealed something she"
+   "t1": 164,
+   "line": "And every time, Emma's shadow had revealed something she never set out loud."
   },
   {
    "shot": "P5S59",
-   "a": 21639,
-   "b": 21711,
+   "a": 21698,
+   "b": 21809,
    "t0": 0,
-   "t1": 72,
-   "line": "never set out loud. But"
+   "t1": 111,
+   "line": "But you still didn't know what Emma herself felt."
   },
   {
    "shot": "P5S60",
-   "a": 21711,
-   "b": 21716,
+   "a": 21809,
+   "b": 21878,
    "t0": 0,
-   "t1": 5,
-   "line": "you"
+   "t1": 69,
+   "line": "You finally decided to ask."
   },
   {
    "shot": "P5S61",
-   "a": 21716,
-   "b": 21830,
+   "a": 21878,
+   "b": 21912,
    "t0": 0,
-   "t1": 114,
-   "line": "still didn't know what Emma herself felt. You finally"
+   "t1": 34,
+   "line": "Emma?"
   },
   {
    "shot": "P5S62",
-   "a": 21830,
-   "b": 21848,
+   "a": 21912,
+   "b": 21941,
    "t0": 0,
-   "t1": 18,
-   "line": "decided to"
+   "t1": 29,
+   "line": "Yeah?"
   },
   {
    "shot": "P5S63",
-   "a": 21848,
-   "b": 21941,
-   "t0": 0,
-   "t1": 93,
-   "line": "ask. Emma? Yeah?"
-  },
-  {
-   "shot": "P5S64",
    "a": 21941,
    "b": 22019,
    "t0": 0,
@@ -2357,119 +2349,103 @@
    "line": "Okay, tell you something."
   },
   {
-   "shot": "P5S65",
+   "shot": "P5S64",
    "a": 22019,
-   "b": 22037,
+   "b": 22075,
    "t0": 0,
-   "t1": 18,
-   "line": "She"
+   "t1": 56,
+   "line": "She turned toward you."
+  },
+  {
+   "shot": "P5S65",
+   "a": 22075,
+   "b": 22111,
+   "t0": 0,
+   "t1": 36,
+   "line": "Of course."
   },
   {
    "shot": "P5S66",
-   "a": 22037,
-   "b": 22125,
+   "a": 22111,
+   "b": 22159,
    "t0": 0,
-   "t1": 88,
-   "line": "turned toward you. Of course. You"
+   "t1": 48,
+   "line": "You took a breath."
   },
   {
    "shot": "P5S67",
-   "a": 22125,
-   "b": 22199,
+   "a": 22159,
+   "b": 22289,
    "t0": 0,
-   "t1": 74,
-   "line": "took a breath. I think"
+   "t1": 130,
+   "line": "I think I've started liking you."
   },
   {
    "shot": "P5S68",
-   "a": 22199,
-   "b": 22213,
+   "a": 22289,
+   "b": 22330,
    "t0": 0,
-   "t1": 14,
-   "line": "I've"
+   "t1": 41,
+   "line": "Emma stopped walking."
   },
   {
    "shot": "P5S69",
-   "a": 22213,
-   "b": 22351,
+   "a": 22330,
+   "b": 22435,
    "t0": 0,
-   "t1": 138,
-   "line": "started liking you. Emma stopped walking. You continued before"
+   "t1": 105,
+   "line": "You continued before you lost your courage."
   },
   {
    "shot": "P5S70",
-   "a": 22351,
-   "b": 22579,
+   "a": 22435,
+   "b": 22622,
    "t0": 0,
-   "t1": 228,
-   "line": "you lost your courage. Actually, I've liked you for a while. I just didn't know if you"
+   "t1": 187,
+   "line": "Actually, I've liked you for a while. I just didn't know if you felt the same way."
   },
   {
    "shot": "P5S71",
-   "a": 22579,
-   "b": 22594,
+   "a": 22622,
+   "b": 22692,
    "t0": 0,
-   "t1": 15,
-   "line": "felt the same"
+   "t1": 70,
+   "line": "For a moment, she said nothing."
   },
   {
    "shot": "P5S72",
-   "a": 22594,
-   "b": 22692,
+   "a": 22692,
+   "b": 22741,
    "t0": 0,
-   "t1": 98,
-   "line": "way. For a moment, she said nothing."
+   "t1": 49,
+   "line": "Then she looked down."
   },
   {
    "shot": "P5S73",
-   "a": 22692,
-   "b": 22783,
+   "a": 22741,
+   "b": 22851,
    "t0": 0,
-   "t1": 91,
-   "line": "Then she looked down. Her shadow immediately jumped"
+   "t1": 110,
+   "line": "Her shadow immediately jumped up and started celebrating."
   },
   {
    "shot": "P5S74",
-   "a": 22783,
-   "b": 22858,
+   "a": 22851,
+   "b": 22906,
    "t0": 0,
-   "t1": 75,
-   "line": "up and started celebrating. Emma"
+   "t1": 55,
+   "line": "Emma slowly looked back at you."
   },
   {
    "shot": "P5S75",
-   "a": 22858,
-   "b": 22869,
+   "a": 22906,
+   "b": 22952,
    "t0": 0,
-   "t1": 11,
-   "line": "slowly"
+   "t1": 46,
+   "line": "I like you too."
   },
   {
    "shot": "P5S76",
-   "a": 22869,
-   "b": 22921,
-   "t0": 0,
-   "t1": 52,
-   "line": "looked back at you. I like"
-  },
-  {
-   "shot": "P5S77",
-   "a": 22921,
-   "b": 22928,
-   "t0": 0,
-   "t1": 7,
-   "line": "you"
-  },
-  {
-   "shot": "P5S78",
-   "a": 22928,
-   "b": 22952,
-   "t0": 0,
-   "t1": 24,
-   "line": "too."
-  },
-  {
-   "shot": "P5S79",
    "a": 22952,
    "b": 22980,
    "t0": 0,
@@ -2477,963 +2453,987 @@
    "line": "You blinked."
   },
   {
-   "shot": "P5S80",
+   "shot": "P5S77",
    "a": 22980,
-   "b": 23012,
+   "b": 23005,
+   "t0": 0,
+   "t1": 25,
+   "line": "Really?"
+  },
+  {
+   "shot": "P5S78",
+   "a": 23005,
+   "b": 23043,
+   "t0": 0,
+   "t1": 38,
+   "line": "She nodded."
+  },
+  {
+   "shot": "P5S79",
+   "a": 23043,
+   "b": 23075,
    "t0": 0,
    "t1": 32,
-   "line": "Really? She"
+   "line": "Really?"
+  },
+  {
+   "shot": "P5S80",
+   "a": 23075,
+   "b": 23119,
+   "t0": 0,
+   "t1": 44,
+   "line": "You smiled."
   },
   {
    "shot": "P5S81",
-   "a": 23012,
-   "b": 23176,
+   "a": 23119,
+   "b": 23226,
    "t0": 0,
-   "t1": 164,
-   "line": "nodded. Really? You smiled. So does that mean we"
+   "t1": 107,
+   "line": "So does that mean we can go out sometime?"
   },
   {
    "shot": "P5S82",
-   "a": 23176,
-   "b": 23187,
+   "a": 23226,
+   "b": 23272,
    "t0": 0,
-   "t1": 11,
-   "line": "can go"
+   "t1": 46,
+   "line": "Emma laughed."
   },
   {
    "shot": "P5S83",
-   "a": 23187,
-   "b": 23278,
+   "a": 23272,
+   "b": 23326,
    "t0": 0,
-   "t1": 91,
-   "line": "out sometime? Emma laughed. Are"
+   "t1": 54,
+   "line": "Are you asking me out?"
   },
   {
    "shot": "P5S84",
-   "a": 23278,
-   "b": 23694,
+   "a": 23326,
+   "b": 23362,
    "t0": 0,
-   "t1": 416,
-   "line": "you asking me out? Maybe. Then maybe my answer is yes. You both laughed. And just when you thought the day couldn't get any stranger, Emma suddenly looked down at the pavement. Not at her"
+   "t1": 36,
+   "line": "Maybe."
   },
   {
    "shot": "P5S85",
-   "a": 23694,
-   "b": 23809,
+   "a": 23362,
+   "b": 23379,
    "t0": 0,
-   "t1": 115,
-   "line": "own shadow. At yours. She stared at it for"
+   "t1": 17,
+   "line": ""
   },
   {
    "shot": "P5S86",
-   "a": 23809,
-   "b": 23845,
+   "a": 23379,
+   "b": 23474,
    "t0": 0,
-   "t1": 36,
-   "line": "a few seconds. Then"
+   "t1": 95,
+   "line": "Then maybe my answer is yes."
   },
   {
    "shot": "P5S87",
-   "a": 23845,
-   "b": 23849,
+   "a": 23474,
+   "b": 23515,
    "t0": 0,
-   "t1": 4,
-   "line": ""
+   "t1": 41,
+   "line": "You both laughed."
   },
   {
    "shot": "P5S88",
-   "a": 23849,
-   "b": 23854,
+   "a": 23515,
+   "b": 23680,
    "t0": 0,
-   "t1": 5,
-   "line": ""
+   "t1": 165,
+   "line": "And just when you thought the day couldn't get any stranger, Emma suddenly looked down at the pavement."
   },
   {
    "shot": "P5S89",
-   "a": 23854,
-   "b": 23858,
+   "a": 23680,
+   "b": 23736,
    "t0": 0,
-   "t1": 4,
-   "line": ""
+   "t1": 56,
+   "line": "Not at her own shadow."
   },
   {
    "shot": "P5S90",
-   "a": 23858,
-   "b": 23863,
+   "a": 23736,
+   "b": 23776,
    "t0": 0,
-   "t1": 5,
-   "line": ""
+   "t1": 40,
+   "line": "At yours."
   },
   {
    "shot": "P5S91",
-   "a": 23863,
-   "b": 23867,
+   "a": 23776,
+   "b": 23869,
    "t0": 0,
-   "t1": 4,
-   "line": "she"
+   "t1": 93,
+   "line": "She stared at it for a few seconds. Then she"
   },
   {
    "shot": "P5S92",
-   "a": 23867,
-   "b": 23872,
+   "a": 23869,
+   "b": 23918,
    "t0": 0,
-   "t1": 5,
-   "line": "started"
+   "t1": 49,
+   "line": "started laughing."
   },
   {
    "shot": "P5S93",
-   "a": 23872,
+   "a": 23918,
    "b": 24087,
    "t0": 0,
-   "t1": 215,
-   "line": "laughing. Your shadow is really nervous right now."
+   "t1": 169,
+   "line": "Your shadow is really nervous right now."
   }
  ],
  "shots": [
   {
    "id": "P1S1",
    "size": "story",
-   "key": 22,
-   "len": 44,
+   "key": 68,
+   "len": 136,
    "first": 0,
-   "line": "What if your crush's shadow",
+   "line": "What if your crush's shadow revealed her secret feelings?",
    "note": "What If Your Crush’s Shadow Revealed Her Secret Feelings?"
   },
   {
    "id": "P1S2",
    "size": "story",
-   "key": 86,
-   "len": 172,
-   "first": 44,
-   "line": "revealed her secret feelings? Exactly 8 -12 on Monday morning.",
+   "key": 70,
+   "len": 140,
+   "first": 136,
+   "line": "Exactly 8 -12 on Monday morning. You notice something strange.",
    "note": "Exactly 8:12 on Monday morning, you noticed something strange."
   },
   {
    "id": "P1S3",
    "size": "story",
-   "key": 71,
-   "len": 143,
-   "first": 216,
-   "line": "You notice something strange. Your crush was standing on the other side of the school hallway,",
+   "key": 63,
+   "len": 126,
+   "first": 276,
+   "line": "Your crush was standing on the other side of the school hallway, chatting with her friends.",
    "note": "Your CRUSH was standing on the other side of the school hallway, chatting with her friends."
   },
   {
    "id": "P1S4",
    "size": "story",
-   "key": 21,
-   "len": 43,
-   "first": 359,
-   "line": "chatting with her friends.",
+   "key": 19,
+   "len": 38,
+   "first": 402,
+   "line": "You looked at her.",
    "note": "You looked at her."
   },
   {
    "id": "P1S5",
    "size": "story",
-   "key": 3,
-   "len": 7,
-   "first": 402,
-   "line": "You",
+   "key": 20,
+   "len": 40,
+   "first": 440,
+   "line": "She smiled.",
    "note": "She smiled."
   },
   {
    "id": "P1S6",
    "size": "story",
-   "key": 35,
-   "len": 71,
-   "first": 409,
-   "line": "looked at her. She smiled.",
+   "key": 29,
+   "len": 59,
+   "first": 480,
+   "line": "You immediately looked away.",
    "note": "You immediately looked away."
   },
   {
    "id": "P1S7",
    "size": "story",
-   "key": 29,
-   "len": 59,
-   "first": 480,
-   "line": "You immediately looked away.",
+   "key": 31,
+   "len": 62,
+   "first": 539,
+   "line": "Just another normal day.",
    "note": "Just another normal day."
   },
   {
    "id": "P1S8",
    "size": "story",
-   "key": 50,
-   "len": 100,
-   "first": 539,
-   "line": "Just another normal day. But then, you",
+   "key": 66,
+   "len": 132,
+   "first": 601,
+   "line": "But then, you noticed something completely impossible.",
    "note": "But then you noticed something completely impossible."
   },
   {
    "id": "P1S9",
    "size": "story",
-   "key": 50,
-   "len": 100,
-   "first": 639,
-   "line": "noticed something completely impossible. Her",
+   "key": 42,
+   "len": 84,
+   "first": 733,
+   "line": "Her shadow was waving at you.",
    "note": "Her shadow was waving at you."
   },
   {
    "id": "P1S10",
    "size": "story",
-   "key": 8,
-   "len": 16,
-   "first": 739,
-   "line": "shadow",
+   "key": 16,
+   "len": 33,
+   "first": 817,
+   "line": "You blinked.",
    "note": "You blinked."
   },
   {
    "id": "P1S11",
    "size": "story",
-   "key": 34,
-   "len": 69,
-   "first": 755,
-   "line": "was waving at you. You",
+   "key": 21,
+   "len": 42,
+   "first": 850,
+   "line": "She wasn't waving.",
    "note": "She wasn't waving."
   },
   {
    "id": "P1S12",
    "size": "story",
-   "key": 34,
-   "len": 68,
-   "first": 824,
-   "line": "blinked. She wasn't waving.",
+   "key": 47,
+   "len": 94,
+   "first": 892,
+   "line": "Both of her hands were still holding her books.",
    "note": "Both of her hands were still holding her books."
   },
   {
    "id": "P1S13",
    "size": "story",
-   "key": 33,
-   "len": 67,
-   "first": 892,
-   "line": "Both of her hands were still holding her",
+   "key": 18,
+   "len": 36,
+   "first": 986,
+   "line": "But her shadow?",
    "note": "But her shadow?"
   },
   {
    "id": "P1S14",
    "size": "story",
-   "key": 57,
-   "len": 115,
-   "first": 959,
-   "line": "books. But her shadow? It was waving. Like I had just",
+   "key": 64,
+   "len": 129,
+   "first": 1022,
+   "line": "It was waving. Like I had just spotted its favorite celebrity.",
    "note": "It was waving like it had just spotted its favorite celebrity."
   },
   {
    "id": "P1S15",
    "size": "story",
-   "key": 38,
-   "len": 77,
-   "first": 1074,
-   "line": "spotted its favorite celebrity.",
+   "key": 24,
+   "len": 48,
+   "first": 1151,
+   "line": "You stared at it.",
    "note": "You stared at it."
   },
   {
    "id": "P1S16",
    "size": "story",
-   "key": 62,
-   "len": 125,
-   "first": 1151,
-   "line": "You stared at it. The shadow pointed at you. Then used both hands",
+   "key": 66,
+   "len": 132,
+   "first": 1199,
+   "line": "The shadow pointed at you. Then used both hands to make a heart.",
    "note": "The shadow pointed at you, then used both hands to make a heart."
   },
   {
    "id": "P1S17",
    "size": "story",
-   "key": 3,
-   "len": 7,
-   "first": 1276,
-   "line": "to",
+   "key": 30,
+   "len": 60,
+   "first": 1331,
+   "line": "You almost dropped your backpack.",
    "note": "You almost dropped your backpack."
   },
   {
    "id": "P1S18",
    "size": "story",
-   "key": 60,
-   "len": 120,
-   "first": 1283,
-   "line": "make a heart. You almost dropped your backpack. You",
+   "key": 28,
+   "len": 56,
+   "first": 1391,
+   "line": "You looked back at Emma.",
    "note": "You looked back at Emma."
   },
   {
    "id": "P1S19",
    "size": "story",
-   "key": 68,
-   "len": 137,
-   "first": 1403,
-   "line": "looked back at Emma. She was still chatting with her friends. Completely unaware of what",
+   "key": 70,
+   "len": 141,
+   "first": 1447,
+   "line": "She was still chatting with her friends. Completely unaware of what her shadow was doing.",
    "note": "She was still chatting with her friends, completely unaware of what her shadow was doing."
   },
   {
    "id": "P1S20",
    "size": "story",
-   "key": 2,
-   "len": 5,
-   "first": 1540,
-   "line": "her",
+   "key": 36,
+   "len": 72,
+   "first": 1588,
+   "line": "You quickly walked into your classroom.",
    "note": "You quickly walked into your classroom."
   },
   {
    "id": "P1S21",
    "size": "story",
-   "key": 83,
-   "len": 166,
-   "first": 1545,
-   "line": "shadow was doing. You quickly walked into your classroom. There was no way you were going to spend the rest",
+   "key": 60,
+   "len": 120,
+   "first": 1660,
+   "line": "There was no way you were going to spend the rest of the morning staring at someone's shadow.",
    "note": "There was no way you were going to spend the rest of the morning staring at someone's shadow."
   },
   {
    "id": "P1S22",
    "size": "story",
-   "key": 34,
-   "len": 69,
-   "first": 1711,
-   "line": "of the morning staring at someone's shadow.",
+   "key": 44,
+   "len": 88,
+   "first": 1780,
+   "line": "At least, that was the plan.",
    "note": "At least, that was the plan."
   },
   {
    "id": "P1S23",
    "size": "story",
-   "key": 2,
-   "len": 5,
-   "first": 1780,
-   "line": "At",
+   "key": 43,
+   "len": 86,
+   "first": 1868,
+   "line": "The first strange discovery.",
    "note": "The first strange discovery"
   },
   {
    "id": "P1S24",
    "size": "story",
-   "key": 126,
-   "len": 253,
-   "first": 1785,
-   "line": "least, that was the plan. The first strange discovery. During the first break, you were standing near the classroom",
+   "key": 77,
+   "len": 154,
+   "first": 1954,
+   "line": "During the first break, you were standing near the classroom window when Emma approached.",
    "note": "During the first break, you were standing near the classroom window when Emma approached."
   },
   {
    "id": "P1S25",
    "size": "story",
-   "key": 12,
-   "len": 24,
-   "first": 2038,
-   "line": "window when",
+   "key": 49,
+   "len": 98,
+   "first": 2108,
+   "line": "Hey, do you understand question 5?",
    "note": "\"Hey, do you understand question five?\""
   },
   {
    "id": "P1S26",
    "size": "story",
-   "key": 54,
-   "len": 109,
-   "first": 2062,
-   "line": "Emma approached. Hey, do you understand question",
+   "key": 31,
+   "len": 62,
+   "first": 2206,
+   "line": "You turned around.",
    "note": "You turned around."
   },
   {
    "id": "P1S27",
    "size": "story",
-   "key": 17,
-   "len": 35,
-   "first": 2171,
-   "line": "5?",
+   "key": 36,
+   "len": 73,
+   "first": 2268,
+   "line": "Maybe, let me see.",
    "note": "\"Uh… maybe. Let me see.\""
   },
   {
    "id": "P1S28",
    "size": "story",
-   "key": 49,
-   "len": 99,
-   "first": 2206,
-   "line": "You turned around. Maybe, let",
+   "key": 27,
+   "len": 55,
+   "first": 2341,
+   "line": "She handed you her notebook.",
    "note": "She handed you her notebook."
   },
   {
    "id": "P1S29",
    "size": "story",
-   "key": 2,
-   "len": 4,
-   "first": 2305,
-   "line": "me",
+   "key": 52,
+   "len": 104,
+   "first": 2396,
+   "line": "You looked at the question, trying very hard to concentrate.",
    "note": "You looked at the question, trying very hard to concentrate."
   },
   {
    "id": "P1S30",
    "size": "story",
-   "key": 117,
-   "len": 235,
-   "first": 2309,
-   "line": "see. She handed you her notebook. You looked at the question, trying very hard to concentrate. But then you noticed her",
+   "key": 46,
+   "len": 92,
+   "first": 2500,
+   "line": "But then you noticed her shadow on the wall.",
    "note": "But then you noticed her shadow on the wall."
   },
   {
    "id": "P1S31",
    "size": "story",
-   "key": 84,
-   "len": 169,
-   "first": 2544,
-   "line": "shadow on the wall. While Emma was looking at the notebook, her shadow was leaning toward you with",
+   "key": 89,
+   "len": 179,
+   "first": 2592,
+   "line": "While Emma was looking at the notebook, her shadow was leaning toward you with the tans clashed together.",
    "note": "While Emma was looking at the notebook, her shadow was leaning toward you with its hands clasped together."
   },
   {
    "id": "P1S32",
    "size": "story",
-   "key": 45,
-   "len": 90,
-   "first": 2713,
-   "line": "the tans clashed together. It looked like it",
+   "key": 43,
+   "len": 86,
+   "first": 2771,
+   "line": "It looked like it was waiting for something.",
    "note": "It looked like it was waiting for something."
   },
   {
    "id": "P1S33",
    "size": "story",
-   "key": 26,
-   "len": 52,
-   "first": 2803,
-   "line": "was waiting for something.",
+   "key": 24,
+   "len": 48,
+   "first": 2857,
+   "line": "You glanced at Emma.",
    "note": "You glanced at Emma."
   },
   {
    "id": "P1S34",
    "size": "story",
-   "key": 25,
-   "len": 50,
-   "first": 2855,
-   "line": "You glanced at Emma.",
+   "key": 34,
+   "len": 68,
+   "first": 2905,
+   "line": "What's wrong? She asked.",
    "note": "\"What's wrong?\" she asked."
   },
   {
    "id": "P1S35",
    "size": "story",
-   "key": 46,
-   "len": 93,
-   "first": 2905,
-   "line": "What's wrong? She asked. Nothing.",
+   "key": 44,
+   "len": 88,
+   "first": 2973,
+   "line": "Nothing. I just need to think.",
    "note": "\"Nothing. I just… need to think.\""
   },
   {
    "id": "P1S36",
    "size": "story",
-   "key": 33,
-   "len": 67,
-   "first": 2998,
-   "line": "I just need to think. Her",
+   "key": 49,
+   "len": 98,
+   "first": 3061,
+   "line": "Her shadow suddenly nodded enthusiastically.",
    "note": "Her shadow suddenly nodded enthusiastically."
   },
   {
    "id": "P1S37",
    "size": "story",
-   "key": 20,
-   "len": 40,
-   "first": 3065,
-   "line": "shadow suddenly nodded",
+   "key": 22,
+   "len": 44,
+   "first": 3159,
+   "line": "You looked away.",
    "note": "You looked away."
   },
   {
    "id": "P1S38",
    "size": "story",
-   "key": 59,
-   "len": 118,
-   "first": 3105,
-   "line": "enthusiastically. You looked away. After explaining",
+   "key": 45,
+   "len": 91,
+   "first": 3203,
+   "line": "After explaining the question, Emma smiled.",
    "note": "After explaining the question, Emma smiled."
   },
   {
    "id": "P1S39",
    "size": "story",
-   "key": 48,
-   "len": 97,
-   "first": 3223,
-   "line": "the question, Emma smiled. Thanks.",
+   "key": 40,
+   "len": 80,
+   "first": 3294,
+   "line": "Thanks. I knew you'd understand it.",
    "note": "\"Thanks! I knew you'd understand it.\""
   },
   {
    "id": "P1S40",
    "size": "story",
-   "key": 42,
-   "len": 84,
-   "first": 3320,
-   "line": "I knew you'd understand it. Her shadow immediately",
+   "key": 39,
+   "len": 78,
+   "first": 3374,
+   "line": "Her shadow immediately jumped into the air.",
    "note": "Her shadow immediately jumped into the air."
   },
   {
    "id": "P1S41",
    "size": "story",
-   "key": 12,
-   "len": 25,
-   "first": 3404,
-   "line": "jumped into the",
+   "key": 23,
+   "len": 47,
+   "first": 3452,
+   "line": "You nearly laughed.",
    "note": "You nearly laughed."
   },
   {
    "id": "P1S42",
    "size": "story",
-   "key": 16,
-   "len": 32,
-   "first": 3429,
-   "line": "air. You",
+   "key": 21,
+   "len": 43,
+   "first": 3499,
+   "line": "You're welcome.",
    "note": "\"You're welcome.\""
   },
   {
    "id": "P1S43",
    "size": "story",
-   "key": 40,
-   "len": 81,
-   "first": 3461,
-   "line": "nearly laughed. You're welcome.",
+   "key": 34,
+   "len": 69,
+   "first": 3542,
+   "line": "Emma walked back to her seat.",
    "note": "Emma walked back to her seat."
   },
   {
    "id": "P1S44",
    "size": "story",
-   "key": 60,
-   "len": 121,
-   "first": 3542,
-   "line": "Emma walked back to her seat. Her shadow turned around and gave",
+   "key": 75,
+   "len": 150,
+   "first": 3611,
+   "line": "Her shadow turned around and gave you one final thumbs up before following her.",
    "note": "Her shadow turned around and gave you one final thumbs-up before following her."
   },
   {
    "id": "P1S45",
    "size": "story",
-   "key": 113,
-   "len": 227,
-   "first": 3663,
-   "line": "you one final thumbs up before following her. You were beginning to suspect that her shadow had a personality of its own.",
+   "key": 64,
+   "len": 129,
+   "first": 3761,
+   "line": "You were beginning to suspect that her shadow had a personality of its own.",
    "note": "You were beginning to suspect that her shadow had a personality of its own."
   },
   {
    "id": "P2S1",
    "size": "story",
-   "key": 7,
-   "len": 14,
+   "key": 42,
+   "len": 84,
    "first": 3890,
-   "line": "The",
+   "line": "The Group Project A few",
    "note": "The group project"
   },
   {
    "id": "P2S2",
    "size": "story",
-   "key": 53,
-   "len": 107,
-   "first": 3904,
-   "line": "Group Project A few days later, your teacher",
+   "key": 46,
+   "len": 92,
+   "first": 3974,
+   "line": "days later, your teacher announced a group assignment.",
    "note": "A few days later, your teacher announced a group assignment."
   },
   {
    "id": "P2S3",
    "size": "story",
-   "key": 40,
-   "len": 80,
-   "first": 4011,
-   "line": "announced a group assignment. You were hoping to work",
+   "key": 45,
+   "len": 90,
+   "first": 4066,
+   "line": "You were hoping to work with your usual friends.",
    "note": "You were hoping to work with your usual friends."
   },
   {
    "id": "P2S4",
    "size": "story",
-   "key": 48,
-   "len": 96,
-   "first": 4091,
-   "line": "with your usual friends. Unfortunately, the",
+   "key": 42,
+   "len": 84,
+   "first": 4156,
+   "line": "Unfortunately, the teacher had other plans.",
    "note": "Unfortunately, the teacher had other plans."
   },
   {
    "id": "P2S5",
    "size": "story",
-   "key": 6,
-   "len": 12,
-   "first": 4187,
-   "line": "teacher had",
+   "key": 28,
+   "len": 57,
+   "first": 4240,
+   "line": "Emma and you will work together.",
    "note": "\"Emma and you will work together.\""
   },
   {
    "id": "P2S6",
    "size": "story",
-   "key": 51,
-   "len": 102,
-   "first": 4199,
-   "line": "other plans. Emma and you will work together. You",
+   "key": 26,
+   "len": 52,
+   "first": 4297,
+   "line": "You tried to look calm.",
    "note": "You tried to look calm."
   },
   {
    "id": "P2S7",
    "size": "story",
-   "key": 3,
-   "len": 7,
-   "first": 4301,
-   "line": "tried",
+   "key": 18,
+   "len": 36,
+   "first": 4349,
+   "line": "Okay.",
    "note": "\"Okay.\""
   },
   {
    "id": "P2S8",
    "size": "story",
-   "key": 38,
-   "len": 77,
-   "first": 4308,
-   "line": "to look calm. Okay.",
+   "key": 20,
+   "len": 41,
+   "first": 4385,
+   "line": "Emma turned toward you.",
    "note": "Emma turned toward you."
   },
   {
    "id": "P2S9",
    "size": "story",
-   "key": 20,
-   "len": 41,
-   "first": 4385,
-   "line": "Emma turned toward you.",
+   "key": 23,
+   "len": 47,
+   "first": 4426,
+   "line": "Looks like we're partners.",
    "note": "\"Looks like we're partners.\""
   },
   {
    "id": "P2S10",
    "size": "story",
-   "key": 8,
-   "len": 16,
-   "first": 4426,
-   "line": "Looks like we're",
+   "key": 27,
+   "len": 55,
+   "first": 4473,
+   "line": "Yeah, guess so.",
    "note": "\"Yeah. Guess so.\""
   },
   {
    "id": "P2S11",
    "size": "story",
-   "key": 25,
-   "len": 50,
-   "first": 4442,
-   "line": "partners. Yeah,",
+   "key": 16,
+   "len": 33,
+   "first": 4528,
+   "line": "She smiled.",
    "note": "She smiled."
   },
   {
    "id": "P2S12",
    "size": "story",
-   "key": 68,
-   "len": 136,
-   "first": 4492,
-   "line": "guess so. She smiled. Her shadow immediately threw both",
+   "key": 58,
+   "len": 117,
+   "first": 4561,
+   "line": "Her shadow immediately threw both hands into the air.",
    "note": "Her shadow immediately threw both hands into the air."
   },
   {
    "id": "P2S13",
    "size": "story",
-   "key": 5,
-   "len": 11,
-   "first": 4628,
-   "line": "hands",
+   "key": 26,
+   "len": 53,
+   "first": 4678,
+   "line": "You pretended not to notice. Yes.",
    "note": "You pretended not to notice."
   },
   {
    "id": "P2S14",
    "size": "story",
-   "key": 83,
-   "len": 166,
-   "first": 4639,
-   "line": "into the air. You pretended not to notice. Yes. After class, you and Emma went to the library",
+   "key": 62,
+   "len": 124,
+   "first": 4731,
+   "line": "After class, you and Emma went to the library to plan the assignment.",
    "note": "After class, you and Emma went to the library to plan the assignment."
   },
   {
    "id": "P2S15",
    "size": "story",
-   "key": 50,
-   "len": 101,
-   "first": 4805,
-   "line": "to plan the assignment. She opened her laptop while you",
+   "key": 54,
+   "len": 108,
+   "first": 4855,
+   "line": "She opened her laptop while you started writing down ideas.",
    "note": "She opened her laptop while you started writing down ideas."
   },
   {
    "id": "P2S16",
    "size": "story",
-   "key": 62,
-   "len": 125,
-   "first": 4906,
-   "line": "started writing down ideas. How about we make a presentation instead of",
+   "key": 47,
+   "len": 95,
+   "first": 4963,
+   "line": "How about we make a presentation instead of a poster?",
    "note": "\"How about we make a presentation instead of a poster?\" she suggested."
   },
   {
    "id": "P2S17",
    "size": "story",
-   "key": 16,
-   "len": 32,
-   "first": 5031,
-   "line": "a poster? She",
+   "key": 18,
+   "len": 36,
+   "first": 5058,
+   "line": "She suggested.",
    "note": "\"That could work.\""
   },
   {
    "id": "P2S18",
    "size": "story",
-   "key": 46,
-   "len": 93,
-   "first": 5063,
-   "line": "suggested. That could work. And maybe we can",
+   "key": 55,
+   "len": 110,
+   "first": 5094,
+   "line": "That could work. And maybe we can add a short video.",
    "note": "\"And maybe we can add a short video.\""
   },
   {
    "id": "P2S19",
    "size": "story",
-   "key": 31,
-   "len": 63,
-   "first": 5156,
-   "line": "add a short video. That's",
+   "key": 34,
+   "len": 68,
+   "first": 5204,
+   "line": "That's actually a good idea.",
    "note": "\"That's actually a good idea.\""
   },
   {
    "id": "P2S20",
    "size": "story",
-   "key": 9,
-   "len": 18,
-   "first": 5219,
-   "line": "actually a good",
+   "key": 28,
+   "len": 56,
+   "first": 5272,
+   "line": "She looked surprised.",
    "note": "She looked surprised."
   },
   {
    "id": "P2S21",
    "size": "story",
-   "key": 17,
-   "len": 35,
-   "first": 5237,
-   "line": "idea.",
+   "key": 45,
+   "len": 91,
+   "first": 5328,
+   "line": "Wow. You agreed with me twice.",
    "note": "\"Wow. You agreed with me twice.\""
   },
   {
    "id": "P2S22",
    "size": "story",
-   "key": 52,
-   "len": 105,
-   "first": 5272,
-   "line": "She looked surprised. Wow. You agreed with",
+   "key": 18,
+   "len": 36,
+   "first": 5419,
+   "line": "You laughed.",
    "note": "You laughed."
   },
   {
    "id": "P2S23",
    "size": "story",
-   "key": 63,
-   "len": 127,
-   "first": 5377,
-   "line": "me twice. You laughed. Should I disagree just",
+   "key": 46,
+   "len": 93,
+   "first": 5455,
+   "line": "Should I disagree just to make things interesting?",
    "note": "\"Should I disagree just to make things interesting?\""
   },
   {
    "id": "P2S24",
    "size": "story",
-   "key": 7,
-   "len": 15,
-   "first": 5504,
-   "line": "to make things",
+   "key": 31,
+   "len": 63,
+   "first": 5548,
+   "line": "Please don't.",
    "note": "\"Please don't.\""
   },
   {
    "id": "P2S25",
    "size": "story",
-   "key": 14,
-   "len": 29,
-   "first": 5519,
-   "line": "interesting?",
+   "key": 44,
+   "len": 88,
+   "first": 5611,
+   "line": "His shadow was standing beside your chair.",
    "note": "Her shadow was standing beside your chair."
   },
   {
    "id": "P2S26",
    "size": "story",
-   "key": 60,
-   "len": 120,
-   "first": 5548,
-   "line": "Please don't. His shadow was standing beside your",
+   "key": 37,
+   "len": 74,
+   "first": 5699,
+   "line": "It was giving you two thumbs up.",
    "note": "It was giving you two thumbs-up."
   },
   {
    "id": "P2S27",
    "size": "story",
-   "key": 71,
-   "len": 142,
-   "first": 5668,
-   "line": "chair. It was giving you two thumbs up. You had to look away before",
+   "key": 44,
+   "len": 88,
+   "first": 5773,
+   "line": "You had to look away before Emma noticed you smiling.",
    "note": "You had to look away before Emma noticed you smiling."
   },
   {
    "id": "P2S28",
    "size": "story",
-   "key": 50,
-   "len": 101,
-   "first": 5810,
-   "line": "Emma noticed you smiling. Over the next few days, working",
+   "key": 64,
+   "len": 129,
+   "first": 5861,
+   "line": "Over the next few days, working together became surprisingly enjoyable.",
    "note": "Over the next few days, working together became surprisingly enjoyable."
   },
   {
    "id": "P2S29",
    "size": "story",
-   "key": 56,
-   "len": 112,
-   "first": 5911,
-   "line": "together became surprisingly enjoyable. Emma was organized, but",
+   "key": 58,
+   "len": 116,
+   "first": 5990,
+   "line": "Emma was organized, but sometimes forgot small details.",
    "note": "Emma was organized but sometimes forgot small details."
   },
   {
    "id": "P2S30",
    "size": "story",
-   "key": 92,
-   "len": 184,
-   "first": 6023,
-   "line": "sometimes forgot small details. You were good at solving problems, but occasionally spent too much time",
+   "key": 83,
+   "len": 167,
+   "first": 6106,
+   "line": "You were good at solving problems, but occasionally spent too much time worrying about minor things.",
    "note": "You were good at solving problems but occasionally spent too much time worrying about minor things."
   },
   {
    "id": "P2S31",
    "size": "story",
-   "key": 4,
-   "len": 9,
-   "first": 6207,
-   "line": "worrying",
+   "key": 3,
+   "len": 6,
+   "first": 6273,
+   "line": "She",
    "note": "She teased you about it."
   },
   {
    "id": "P2S32",
    "size": "story",
-   "key": 43,
-   "len": 87,
-   "first": 6216,
-   "line": "about minor things. She teased you about it.",
+   "key": 38,
+   "len": 77,
+   "first": 6279,
+   "line": "teased you about it. You teased her back,",
    "note": "You teased her back."
   },
   {
    "id": "P2S33",
    "size": "story",
-   "key": 103,
-   "len": 206,
-   "first": 6303,
-   "line": "You teased her back, and somehow the assignment that had initially seemed like a chore became the best part",
+   "key": 97,
+   "len": 195,
+   "first": 6356,
+   "line": "and somehow the assignment that had initially seemed like a chore became the best part of your school week.",
    "note": "And somehow, the assignment that had initially seemed like a chore became the best part of your school week."
   },
   {
    "id": "P2S34",
    "size": "story",
-   "key": 33,
-   "len": 67,
-   "first": 6509,
-   "line": "of your school week. One afternoon,",
+   "key": 43,
+   "len": 86,
+   "first": 6551,
+   "line": "One afternoon, you stayed late to finish the presentation.",
    "note": "One afternoon, you stayed late to finish the presentation."
   },
   {
    "id": "P2S35",
    "size": "story",
-   "key": 36,
-   "len": 73,
-   "first": 6576,
-   "line": "you stayed late to finish the presentation. The",
+   "key": 38,
+   "len": 76,
+   "first": 6637,
+   "line": "The library was almost empty.",
    "note": "The library was almost empty."
   },
   {
    "id": "P2S36",
    "size": "story",
-   "key": 44,
-   "len": 88,
-   "first": 6649,
-   "line": "library was almost empty. Emma stretched and",
+   "key": 36,
+   "len": 73,
+   "first": 6713,
+   "line": "Emma stretched and looked at the clock.",
    "note": "Emma stretched and looked at the clock."
   },
   {
    "id": "P2S37",
    "size": "story",
-   "key": 43,
-   "len": 86,
-   "first": 6737,
-   "line": "looked at the clock. Wow. We've been",
+   "key": 55,
+   "len": 110,
+   "first": 6786,
+   "line": "Wow. We've been here for two hours.",
    "note": "\"Wow. We've been here for two hours.\""
   },
   {
    "id": "P2S38",
    "size": "story",
-   "key": 58,
-   "len": 116,
-   "first": 6823,
-   "line": "here for two hours. Really? It",
+   "key": 45,
+   "len": 91,
+   "first": 6896,
+   "line": "Really? It felt like twenty minutes.",
    "note": "\"Really? It felt like twenty minutes.\""
   },
   {
    "id": "P2S39",
    "size": "story",
-   "key": 11,
-   "len": 22,
-   "first": 6939,
-   "line": "felt like twenty",
+   "key": 25,
+   "len": 50,
+   "first": 6987,
+   "line": "She looked at you.",
    "note": "She looked at you."
   },
   {
    "id": "P2S40",
    "size": "story",
-   "key": 56,
-   "len": 113,
-   "first": 6961,
-   "line": "minutes. She looked at you. That's because you spent",
+   "key": 34,
+   "len": 69,
+   "first": 7037,
+   "line": "That's because you spent half the time choosing",
    "note": "\"That's because you spent half the time choosing fonts.\""
   },
   {
    "id": "P2S41",
    "size": "story",
-   "key": 9,
-   "len": 19,
-   "first": 7074,
-   "line": "half the time",
+   "key": 46,
+   "len": 92,
+   "first": 7106,
+   "line": "fonts. Fonts are important.",
    "note": "\"Fonts are important.\""
   },
   {
    "id": "P2S42",
    "size": "story",
-   "key": 36,
-   "len": 72,
-   "first": 7093,
-   "line": "choosing fonts. Fonts are",
+   "key": 38,
+   "len": 76,
+   "first": 7198,
+   "line": "Sure. Very important.",
    "note": "\"Sure. Very important.\""
   },
   {
    "id": "P2S43",
    "size": "story",
-   "key": 54,
-   "len": 109,
-   "first": 7165,
-   "line": "important. Sure. Very important.",
+   "key": 47,
+   "len": 95,
+   "first": 7274,
+   "line": "Her shadow was laughing.",
    "note": "Her shadow was laughing."
   },
   {
    "id": "P2S44",
    "size": "story",
-   "key": 2,
-   "len": 5,
-   "first": 7274,
-   "line": "Her",
+   "key": 19,
+   "len": 39,
+   "first": 7369,
+   "line": "Not Emma.",
    "note": "Not Emma."
   },
   {
    "id": "P2S45",
    "size": "story",
-   "key": 45,
-   "len": 90,
-   "first": 7279,
-   "line": "shadow was laughing.",
+   "key": 22,
+   "len": 45,
+   "first": 7408,
+   "line": "The shadow.",
    "note": "The shadow."
   },
   {
    "id": "P2S46",
    "size": "story",
-   "key": 92,
-   "len": 184,
-   "first": 7369,
-   "line": "Not Emma. The shadow. It had both hands on its stomach, bending forward as if",
+   "key": 86,
+   "len": 173,
+   "first": 7453,
+   "line": "It had both hands on its stomach, bending forward as if it couldn't stop laughing.",
    "note": "It had both hands on its stomach, bending forward as if it couldn't stop laughing."
   },
   {
    "id": "P2S47",
    "size": "story",
-   "key": 49,
-   "len": 98,
-   "first": 7553,
-   "line": "it couldn't stop laughing. You quickly looked",
+   "key": 33,
+   "len": 67,
+   "first": 7626,
+   "line": "You quickly looked down at your laptop.",
    "note": "You quickly looked down at your laptop."
   },
   {
    "id": "P2S48",
    "size": "story",
-   "key": 47,
-   "len": 95,
-   "first": 7651,
-   "line": "down at your laptop. This was getting ridiculous.",
+   "key": 26,
+   "len": 53,
+   "first": 7693,
+   "line": "This was getting ridiculous.",
    "note": "This was getting ridiculous."
   },
   {
    "id": "P3S1",
    "size": "story",
-   "key": 4,
-   "len": 8,
+   "key": 30,
+   "len": 61,
    "first": 7746,
-   "line": "The",
+   "line": "The rainy afternoon.",
    "note": "The rainy afternoon"
   },
   {
@@ -3441,557 +3441,557 @@
    "size": "story",
    "key": 69,
    "len": 138,
-   "first": 7754,
-   "line": "rainy afternoon. The following Thursday, heavy rain started",
+   "first": 7807,
+   "line": "The following Thursday, heavy rain started just as school ended.",
    "note": "The following Thursday, heavy rain started just as school ended."
   },
   {
    "id": "P3S3",
    "size": "story",
-   "key": 33,
-   "len": 66,
-   "first": 7892,
-   "line": "just as school ended. Students",
+   "key": 38,
+   "len": 76,
+   "first": 7945,
+   "line": "Students rushed toward the entrance.",
    "note": "Students rushed toward the entrance."
   },
   {
    "id": "P3S4",
    "size": "story",
-   "key": 79,
-   "len": 158,
-   "first": 7958,
-   "line": "rushed toward the entrance. You stood under the roof, checking your phone and waiting for the",
+   "key": 73,
+   "len": 147,
+   "first": 8021,
+   "line": "You stood under the roof, checking your phone and waiting for the rain to slow down.",
    "note": "You stood under the roof, checking your phone and waiting for the rain to slow down."
   },
   {
    "id": "P3S5",
    "size": "story",
-   "key": 26,
-   "len": 52,
-   "first": 8116,
-   "line": "rain to slow down.",
+   "key": 38,
+   "len": 77,
+   "first": 8168,
+   "line": "Then Emma appeared beside you.",
    "note": "Then Emma appeared beside you."
   },
   {
    "id": "P3S6",
    "size": "story",
-   "key": 15,
-   "len": 30,
-   "first": 8168,
-   "line": "Then Emma",
+   "key": 26,
+   "len": 52,
+   "first": 8245,
+   "line": "Do you have an umbrella?",
    "note": "\"Do you have an umbrella?\""
   },
   {
    "id": "P3S7",
    "size": "story",
-   "key": 49,
-   "len": 99,
-   "first": 8198,
-   "line": "appeared beside you. Do you have an umbrella?",
+   "key": 24,
+   "len": 49,
+   "first": 8297,
+   "line": "You shook your head.",
    "note": "You shook your head."
   },
   {
    "id": "P3S8",
    "size": "story",
-   "key": 6,
-   "len": 13,
-   "first": 8297,
-   "line": "You shook",
+   "key": 25,
+   "len": 50,
+   "first": 8346,
+   "line": "Unfortunately no.",
    "note": "\"Unfortunately, no.\""
   },
   {
    "id": "P3S9",
    "size": "story",
-   "key": 55,
-   "len": 111,
-   "first": 8310,
-   "line": "your head. Unfortunately no. She held up",
+   "key": 38,
+   "len": 76,
+   "first": 8396,
+   "line": "She held up a small blue umbrella.",
    "note": "She held up a small blue umbrella."
   },
   {
    "id": "P3S10",
    "size": "story",
-   "key": 9,
-   "len": 19,
-   "first": 8421,
-   "line": "a small blue",
+   "key": 17,
+   "len": 35,
+   "first": 8472,
+   "line": "Want to share?",
    "note": "\"Want to share?\""
   },
   {
    "id": "P3S11",
    "size": "story",
-   "key": 20,
-   "len": 40,
-   "first": 8440,
-   "line": "umbrella. Want",
+   "key": 25,
+   "len": 51,
+   "first": 8507,
+   "line": "You looked at the umbrella.",
    "note": "You looked at the umbrella."
   },
   {
    "id": "P3S12",
    "size": "story",
-   "key": 2,
-   "len": 4,
-   "first": 8480,
-   "line": "to",
+   "key": 14,
+   "len": 29,
+   "first": 8558,
+   "line": "Then at Emma,",
    "note": "Then at Emma."
   },
   {
    "id": "P3S13",
    "size": "story",
-   "key": 37,
-   "len": 74,
-   "first": 8484,
-   "line": "share? You looked at the umbrella.",
+   "key": 10,
+   "len": 21,
+   "first": 8587,
+   "line": "are you sure?",
    "note": "\"Are you sure?\""
   },
   {
    "id": "P3S14",
    "size": "story",
-   "key": 2,
-   "len": 4,
-   "first": 8558,
-   "line": "Then",
+   "key": 36,
+   "len": 73,
+   "first": 8608,
+   "line": "Unless you want to swim home.",
    "note": "\"Unless you want to swim home.\""
   },
   {
    "id": "P3S15",
    "size": "story",
-   "key": 42,
-   "len": 85,
-   "first": 8562,
-   "line": "at Emma, are you sure? Unless you want to",
+   "key": 22,
+   "len": 44,
+   "first": 8681,
+   "line": "You laughed.",
    "note": "You laughed."
   },
   {
    "id": "P3S16",
    "size": "story",
-   "key": 25,
-   "len": 50,
-   "first": 8647,
-   "line": "swim home. You",
+   "key": 26,
+   "len": 52,
+   "first": 8725,
+   "line": "Okay, fair enough.",
    "note": "\"Okay. Fair enough.\""
   },
   {
    "id": "P3S17",
    "size": "story",
-   "key": 25,
-   "len": 50,
-   "first": 8697,
-   "line": "laughed. Okay, fair",
+   "key": 24,
+   "len": 49,
+   "first": 8777,
+   "line": "The umbrella was small.",
    "note": "The umbrella was small."
   },
   {
    "id": "P3S18",
    "size": "story",
-   "key": 20,
-   "len": 41,
-   "first": 8747,
-   "line": "enough. The umbrella",
+   "key": 18,
+   "len": 37,
+   "first": 8826,
+   "line": "Very small.",
    "note": "Very small."
   },
   {
    "id": "P3S19",
    "size": "story",
-   "key": 19,
-   "len": 38,
-   "first": 8788,
-   "line": "was small.",
+   "key": 43,
+   "len": 86,
+   "first": 8863,
+   "line": "You both had the walk close together to stay underneath it.",
    "note": "You both had to walk close together to stay underneath it."
   },
   {
    "id": "P3S20",
    "size": "story",
-   "key": 87,
-   "len": 175,
-   "first": 8826,
-   "line": "Very small. You both had the walk close together to stay underneath it. At first, you tried to leave as much space",
+   "key": 50,
+   "len": 101,
+   "first": 8949,
+   "line": "At first, you tried to leave as much space between you as possible.",
    "note": "At first, you tried to leave as much space between you as possible."
   },
   {
    "id": "P3S21",
    "size": "story",
-   "key": 44,
-   "len": 89,
-   "first": 9001,
-   "line": "between you as possible. Which meant one of your",
+   "key": 47,
+   "len": 94,
+   "first": 9050,
+   "line": "Which meant one of your shoulders was getting soaked.",
    "note": "Which meant one of your shoulders was getting soaked."
   },
   {
    "id": "P3S22",
    "size": "story",
-   "key": 4,
-   "len": 9,
-   "first": 9090,
-   "line": "shoulders",
+   "key": 18,
+   "len": 36,
+   "first": 9144,
+   "line": "Emma noticed.",
    "note": "Emma noticed."
   },
   {
    "id": "P3S23",
    "size": "story",
-   "key": 25,
-   "len": 50,
-   "first": 9099,
-   "line": "was getting soaked. Emma",
+   "key": 30,
+   "len": 61,
+   "first": 9180,
+   "line": "You're getting wet.",
    "note": "\"You're getting wet.\""
   },
   {
    "id": "P3S24",
    "size": "story",
-   "key": 18,
-   "len": 37,
-   "first": 9149,
-   "line": "noticed. You're",
+   "key": 25,
+   "len": 50,
+   "first": 9241,
+   "line": "I'm fine.",
    "note": "\"I'm fine.\""
   },
   {
    "id": "P3S25",
    "size": "story",
-   "key": 61,
-   "len": 122,
-   "first": 9186,
-   "line": "getting wet. I'm fine. She moved",
+   "key": 33,
+   "len": 66,
+   "first": 9291,
+   "line": "She moved the umbrella toward you.",
    "note": "She moved the umbrella toward you."
   },
   {
    "id": "P3S26",
    "size": "story",
-   "key": 2,
-   "len": 4,
-   "first": 9308,
-   "line": "the",
+   "key": 41,
+   "len": 82,
+   "first": 9357,
+   "line": "You're really bad at sharing an umbrella.",
    "note": "\"You're really bad at sharing an umbrella.\""
   },
   {
    "id": "P3S27",
    "size": "story",
-   "key": 45,
-   "len": 90,
-   "first": 9312,
-   "line": "umbrella toward you. You're really bad at sharing",
+   "key": 20,
+   "len": 41,
+   "first": 9439,
+   "line": "You laughed.",
    "note": "You laughed."
   },
   {
    "id": "P3S28",
    "size": "story",
-   "key": 47,
-   "len": 95,
-   "first": 9402,
-   "line": "an umbrella. You laughed. You're",
+   "key": 32,
+   "len": 65,
+   "first": 9480,
+   "line": "You're the one holding it.",
    "note": "\"You're the one holding it.\""
   },
   {
    "id": "P3S29",
    "size": "story",
-   "key": 44,
-   "len": 88,
-   "first": 9497,
-   "line": "the one holding it. Exactly, and",
+   "key": 46,
+   "len": 92,
+   "first": 9545,
+   "line": "Exactly, and I'm doing a terrible job.",
    "note": "\"Exactly. And I'm doing a terrible job.\""
   },
   {
    "id": "P3S30",
    "size": "story",
-   "key": 2,
-   "len": 5,
-   "first": 9585,
-   "line": "I'm doing",
+   "key": 31,
+   "len": 63,
+   "first": 9637,
+   "line": "You both laughed. But when you",
    "note": "You both laughed."
   },
   {
    "id": "P3S31",
    "size": "story",
-   "key": 55,
-   "len": 110,
-   "first": 9590,
-   "line": "a terrible job. You both laughed. But when you",
+   "key": 68,
+   "len": 136,
+   "first": 9700,
+   "line": "looked down, her shadow was doing something strange.",
    "note": "But when you looked down, her shadow was doing something strange."
   },
   {
    "id": "P3S32",
    "size": "story",
-   "key": 121,
-   "len": 243,
-   "first": 9700,
-   "line": "looked down, her shadow was doing something strange. It was standing right beside yours, holding an imaginary umbrella",
+   "key": 80,
+   "len": 161,
+   "first": 9836,
+   "line": "It was standing right beside yours, holding an imaginary umbrella over both of you.",
    "note": "It was standing right beside yours, holding an imaginary umbrella over both of you."
   },
   {
    "id": "P3S33",
    "size": "story",
-   "key": 50,
-   "len": 101,
-   "first": 9943,
-   "line": "over both of you. Then it slowly leaned its",
+   "key": 42,
+   "len": 85,
+   "first": 9997,
+   "line": "Then it slowly leaned its head against your shoulder.",
    "note": "Then it slowly leaned its head against your shoulder."
   },
   {
    "id": "P3S34",
    "size": "story",
-   "key": 27,
-   "len": 55,
-   "first": 10044,
-   "line": "head against your shoulder. You almost",
+   "key": 33,
+   "len": 66,
+   "first": 10082,
+   "line": "You almost walked into a puddle.",
    "note": "You almost walked into a puddle."
   },
   {
    "id": "P3S35",
    "size": "story",
-   "key": 24,
-   "len": 49,
-   "first": 10099,
-   "line": "walked into a puddle.",
+   "key": 21,
+   "len": 42,
+   "first": 10148,
+   "line": "Emma looked at you.",
    "note": "Emma looked at you."
   },
   {
    "id": "P3S36",
    "size": "story",
-   "key": 5,
-   "len": 11,
-   "first": 10148,
-   "line": "Emma",
+   "key": 16,
+   "len": 33,
+   "first": 10190,
+   "line": "Careful.",
    "note": "\"Careful!\""
   },
   {
    "id": "P3S37",
    "size": "story",
-   "key": 3,
-   "len": 6,
-   "first": 10159,
-   "line": "looked",
+   "key": 19,
+   "len": 39,
+   "first": 10223,
+   "line": "Yeah, sorry.",
    "note": "\"Yeah. Sorry.\""
   },
   {
    "id": "P3S38",
    "size": "story",
-   "key": 48,
-   "len": 97,
-   "first": 10165,
-   "line": "at you. Careful. Yeah, sorry.",
+   "key": 25,
+   "len": 50,
+   "first": 10262,
+   "line": "You continued walking.",
    "note": "You continued walking."
   },
   {
    "id": "P3S39",
    "size": "story",
-   "key": 31,
-   "len": 63,
-   "first": 10262,
-   "line": "You continued walking. A few minutes",
+   "key": 19,
+   "len": 39,
+   "first": 10312,
+   "line": "A few minutes later,",
    "note": "A few minutes later, Emma suddenly asked:"
   },
   {
    "id": "P3S40",
    "size": "story",
-   "key": 40,
-   "len": 80,
-   "first": 10325,
-   "line": "later, Emma suddenly asked. Can",
+   "key": 52,
+   "len": 105,
+   "first": 10351,
+   "line": "Emma suddenly asked. Can I tell you something?",
    "note": "\"Can I tell you something?\""
   },
   {
    "id": "P3S41",
    "size": "story",
-   "key": 2,
-   "len": 5,
-   "first": 10405,
-   "line": "I",
+   "key": 12,
+   "len": 24,
+   "first": 10456,
+   "line": "Sure.",
    "note": "\"Sure.\""
   },
   {
    "id": "P3S42",
    "size": "story",
-   "key": 62,
-   "len": 124,
-   "first": 10410,
-   "line": "tell you something? Sure. You're actually easier to talk",
+   "key": 48,
+   "len": 96,
+   "first": 10480,
+   "line": "You're actually easier to talk to than I expected.",
    "note": "\"You're actually easier to talk to than I expected.\""
   },
   {
    "id": "P3S43",
    "size": "story",
-   "key": 21,
-   "len": 42,
-   "first": 10534,
-   "line": "to than I expected.",
+   "key": 15,
+   "len": 30,
+   "first": 10576,
+   "line": "You looked at her.",
    "note": "You looked at her."
   },
   {
    "id": "P3S44",
    "size": "story",
-   "key": 24,
-   "len": 49,
-   "first": 10576,
-   "line": "You looked at her. Was I difficult",
+   "key": 31,
+   "len": 63,
+   "first": 10606,
+   "line": "Was I difficult to talk to before?",
    "note": "\"Was I difficult to talk to before?\""
   },
   {
    "id": "P3S45",
    "size": "story",
-   "key": 6,
-   "len": 12,
-   "first": 10625,
-   "line": "to talk",
+   "key": 24,
+   "len": 48,
+   "first": 10669,
+   "line": "She laughed.",
    "note": "She laughed."
   },
   {
    "id": "P3S46",
    "size": "story",
-   "key": 40,
-   "len": 80,
-   "first": 10637,
-   "line": "to before? She laughed.",
+   "key": 56,
+   "len": 112,
+   "first": 10717,
+   "line": "No. I just thought you were really quiet.",
    "note": "\"No. I just thought you were really quiet.\""
   },
   {
    "id": "P3S47",
    "size": "story",
-   "key": 22,
-   "len": 44,
-   "first": 10717,
-   "line": "No. I just",
+   "key": 24,
+   "len": 49,
+   "first": 10829,
+   "line": "You shrugged.",
    "note": "You shrugged."
   },
   {
    "id": "P3S48",
    "size": "story",
-   "key": 81,
-   "len": 162,
-   "first": 10761,
-   "line": "thought you were really quiet. You shrugged. I'm usually quiet around people.",
+   "key": 18,
+   "len": 36,
+   "first": 10878,
+   "line": "I'm usually quiet around people.",
    "note": "\"I'm usually quiet around people I don't know very well.\""
   },
   {
    "id": "P3S49",
    "size": "story",
-   "key": 3,
-   "len": 7,
-   "first": 10923,
-   "line": "I don't know",
+   "key": 48,
+   "len": 97,
+   "first": 10914,
+   "line": "I don't know very well. And now?",
    "note": "\"And now?\""
   },
   {
    "id": "P3S50",
    "size": "story",
-   "key": 3,
-   "len": 6,
-   "first": 10930,
-   "line": "very",
+   "key": 27,
+   "len": 55,
+   "first": 11011,
+   "line": "You looked at her.",
    "note": "You looked at her."
   },
   {
    "id": "P3S51",
    "size": "story",
-   "key": 74,
-   "len": 149,
-   "first": 10936,
-   "line": "well. And now? You looked at her. Now I'm",
+   "key": 37,
+   "len": 75,
+   "first": 11066,
+   "line": "Now I'm getting used to you.",
    "note": "\"Now I'm getting used to you.\""
   },
   {
    "id": "P3S52",
    "size": "story",
-   "key": 5,
-   "len": 10,
-   "first": 11085,
-   "line": "getting used",
+   "key": 27,
+   "len": 55,
+   "first": 11141,
+   "line": "Emma smiled.",
    "note": "Emma smiled."
   },
   {
    "id": "P3S53",
    "size": "story",
-   "key": 2,
-   "len": 5,
-   "first": 11095,
-   "line": "to",
+   "key": 44,
+   "len": 88,
+   "first": 11196,
+   "line": "Her shadow immediately started jumping.",
    "note": "Her shadow immediately started jumping."
   },
   {
    "id": "P3S54",
    "size": "story",
-   "key": 121,
-   "len": 242,
-   "first": 11100,
-   "line": "you. Emma smiled. Her shadow immediately started jumping. You pretended to focus on the road.",
+   "key": 29,
+   "len": 58,
+   "first": 11284,
+   "line": "You pretended to focus on the road.",
    "note": "You pretended to focus on the road."
   },
   {
    "id": "P4S1",
    "size": "story",
-   "key": 5,
-   "len": 11,
+   "key": 25,
+   "len": 50,
    "first": 11342,
-   "line": "The",
+   "line": "The School Festival.",
    "note": "The school festival"
   },
   {
    "id": "P4S2",
    "size": "story",
-   "key": 45,
-   "len": 90,
-   "first": 11353,
-   "line": "School Festival. A week later, the school",
+   "key": 58,
+   "len": 117,
+   "first": 11392,
+   "line": "A week later, the school announced its annual festival.",
    "note": "A week later, the school announced its annual festival."
   },
   {
    "id": "P4S3",
    "size": "story",
-   "key": 5,
-   "len": 10,
-   "first": 11443,
-   "line": "announced",
+   "key": 35,
+   "len": 71,
+   "first": 11509,
+   "line": "Every class had to prepare a small activity.",
    "note": "Every class had to prepare a small activity."
   },
   {
    "id": "P4S4",
    "size": "story",
-   "key": 81,
-   "len": 162,
-   "first": 11453,
-   "line": "its annual festival. Every class had to prepare a small activity. Your class decided to run",
+   "key": 38,
+   "len": 77,
+   "first": 11580,
+   "line": "Your class decided to run a little game booth.",
    "note": "Your class decided to run a little game booth."
   },
   {
    "id": "P4S5",
    "size": "story",
-   "key": 49,
-   "len": 98,
-   "first": 11615,
-   "line": "a little game booth. And somehow, you and Emma ended up being",
+   "key": 57,
+   "len": 115,
+   "first": 11657,
+   "line": "And somehow, you and Emma ended up being responsible for decorating it.",
    "note": "And somehow, you and Emma ended up being responsible for decorating it."
   },
   {
    "id": "P4S6",
    "size": "story",
-   "key": 93,
-   "len": 186,
-   "first": 11713,
-   "line": "responsible for decorating it. After school, you both stayed in the classroom with colorful paper, markers, tape,",
+   "key": 86,
+   "len": 172,
+   "first": 11772,
+   "line": "After school, you both stayed in the classroom with colorful paper, markers, tape, and a pile of cardboard.",
    "note": "After school, you both stayed in the classroom with colorful paper, markers, tape, and a pile of cardboard."
   },
   {
    "id": "P4S7",
    "size": "story",
-   "key": 29,
-   "len": 58,
-   "first": 11899,
-   "line": "and a pile of cardboard. Emma",
+   "key": 25,
+   "len": 51,
+   "first": 11944,
+   "line": "Emma held up a sign.",
    "note": "Emma held up a sign."
   },
   {
    "id": "P4S8",
    "size": "story",
-   "key": 19,
-   "len": 38,
-   "first": 11957,
-   "line": "held up a sign.",
+   "key": 28,
+   "len": 57,
+   "first": 11995,
+   "line": "Does this look good?",
    "note": "\"Does this look good?\""
   },
   {
    "id": "P4S9",
    "size": "story",
-   "key": 28,
-   "len": 57,
-   "first": 11995,
-   "line": "Does this look good?",
+   "key": 21,
+   "len": 42,
+   "first": 12052,
+   "line": "You tilted your head.",
    "note": "You tilted your head."
   },
   {
@@ -3999,125 +3999,125 @@
    "size": "story",
    "key": 31,
    "len": 63,
-   "first": 12052,
-   "line": "You tilted your head. Maybe the",
+   "first": 12094,
+   "line": "Maybe the letter should be bigger?",
    "note": "\"Maybe the letters should be bigger.\""
   },
   {
    "id": "P4S11",
    "size": "story",
-   "key": 21,
-   "len": 42,
-   "first": 12115,
-   "line": "letter should be bigger?",
+   "key": 30,
+   "len": 61,
+   "first": 12157,
+   "line": "She narrowed her eyes.",
    "note": "She narrowed her eyes."
   },
   {
    "id": "P4S12",
    "size": "story",
-   "key": 58,
-   "len": 117,
-   "first": 12157,
-   "line": "She narrowed her eyes. You're very demanding for someone",
+   "key": 54,
+   "len": 108,
+   "first": 12218,
+   "line": "You're very demanding for someone who hasn't done much.",
    "note": "\"You're very demanding for someone who hasn't done much.\""
   },
   {
    "id": "P4S13",
    "size": "story",
-   "key": 32,
-   "len": 64,
-   "first": 12274,
-   "line": "who hasn't done much. I've",
+   "key": 37,
+   "len": 74,
+   "first": 12326,
+   "line": "I've been providing creative direction.",
    "note": "\"I've been providing creative direction.\""
   },
   {
    "id": "P4S14",
    "size": "story",
-   "key": 49,
-   "len": 98,
-   "first": 12338,
-   "line": "been providing creative direction. That's a fancy way of saying",
+   "key": 45,
+   "len": 90,
+   "first": 12400,
+   "line": "That's a fancy way of saying you've been sitting there.",
    "note": "\"That's a fancy way of saying you've been sitting there.\""
   },
   {
    "id": "P4S15",
    "size": "story",
-   "key": 6,
-   "len": 12,
-   "first": 12436,
-   "line": "you've been",
+   "key": 17,
+   "len": 34,
+   "first": 12490,
+   "line": "You laughed.",
    "note": "You laughed."
   },
   {
    "id": "P4S16",
    "size": "story",
-   "key": 49,
-   "len": 99,
-   "first": 12448,
-   "line": "sitting there. You laughed. She threw a small",
+   "key": 33,
+   "len": 67,
+   "first": 12524,
+   "line": "She threw a small piece of paper at you.",
    "note": "She threw a small piece of paper at you."
   },
   {
    "id": "P4S17",
    "size": "story",
-   "key": 29,
-   "len": 59,
-   "first": 12547,
-   "line": "piece of paper at you. He picked it up",
+   "key": 24,
+   "len": 49,
+   "first": 12591,
+   "line": "He picked it up and threw it back. For a few",
    "note": "You picked it up and threw it back."
   },
   {
    "id": "P4S18",
    "size": "story",
-   "key": 43,
-   "len": 87,
-   "first": 12606,
-   "line": "and threw it back. For a few seconds, the classroom turned into",
+   "key": 59,
+   "len": 118,
+   "first": 12640,
+   "line": "seconds, the classroom turned into a ridiculous paper battle.",
    "note": "For a few seconds, the classroom turned into a ridiculous paper battle."
   },
   {
    "id": "P4S19",
    "size": "story",
-   "key": 67,
-   "len": 135,
-   "first": 12693,
-   "line": "a ridiculous paper battle. Then Emma laughed so hard that she",
+   "key": 55,
+   "len": 111,
+   "first": 12758,
+   "line": "Then Emma laughed so hard that she had to sit down.",
    "note": "Then Emma laughed so hard that she had to sit down."
   },
   {
    "id": "P4S20",
    "size": "story",
-   "key": 20,
-   "len": 41,
-   "first": 12828,
-   "line": "had to sit down.",
+   "key": 17,
+   "len": 34,
+   "first": 12869,
+   "line": "You looked at her.",
    "note": "You looked at her."
   },
   {
    "id": "P4S21",
    "size": "story",
-   "key": 38,
-   "len": 77,
-   "first": 12869,
-   "line": "You looked at her. And for a moment, you",
+   "key": 50,
+   "len": 101,
+   "first": 12903,
+   "line": "And for a moment, you forgot about the decorations. Her",
    "note": "And for a moment, you forgot about the decorations."
   },
   {
    "id": "P4S22",
    "size": "story",
-   "key": 44,
-   "len": 89,
-   "first": 12946,
-   "line": "forgot about the decorations. Her shadow was sitting",
+   "key": 51,
+   "len": 103,
+   "first": 13004,
+   "line": "shadow was sitting beside her, laughing too.",
    "note": "Her shadow was sitting beside her, laughing too."
   },
   {
    "id": "P4S23",
    "size": "story",
-   "key": 39,
-   "len": 79,
-   "first": 13035,
-   "line": "beside her, laughing too. It",
+   "key": 34,
+   "len": 68,
+   "first": 13107,
+   "line": "It looked happier than ever.",
    "note": "It looked happier than ever."
   },
   {
@@ -4125,818 +4125,818 @@
    "size": "story",
    "key": 18,
    "len": 36,
-   "first": 13114,
-   "line": "looked happier than ever.",
+   "first": 13175,
+   "line": "Later, while",
    "note": "Later, while you were cutting cardboard, you accidentally nicked your finger on a rough edge."
   },
   {
    "id": "P4S25",
    "size": "story",
-   "key": 72,
-   "len": 145,
-   "first": 13150,
-   "line": "Later, while you were cutting cardboard, you accidentally nicked your finger",
+   "key": 76,
+   "len": 153,
+   "first": 13211,
+   "line": "you were cutting cardboard, you accidentally nicked your finger on a rough edge.",
    "note": "\"Ow.\""
   },
   {
    "id": "P4S26",
    "size": "story",
-   "key": 34,
-   "len": 69,
-   "first": 13295,
-   "line": "on a rough edge.",
+   "key": 24,
+   "len": 49,
+   "first": 13364,
+   "line": "Emma immediately looked over.",
    "note": "Emma immediately looked over."
   },
   {
    "id": "P4S27",
    "size": "story",
-   "key": 10,
-   "len": 20,
-   "first": 13364,
-   "line": "Emma immediately",
+   "key": 19,
+   "len": 38,
+   "first": 13413,
+   "line": "What happened?",
    "note": "\"What happened?\""
   },
   {
    "id": "P4S28",
    "size": "story",
-   "key": 14,
-   "len": 29,
-   "first": 13384,
-   "line": "looked over.",
+   "key": 20,
+   "len": 41,
+   "first": 13451,
+   "line": "It's nothing.",
    "note": "\"It's nothing.\""
   },
   {
    "id": "P4S29",
    "size": "story",
-   "key": 49,
-   "len": 98,
-   "first": 13413,
-   "line": "What happened? It's nothing. She put down her",
+   "key": 36,
+   "len": 72,
+   "first": 13492,
+   "line": "She put down her marker and came closer.",
    "note": "She put down her marker and came closer."
   },
   {
    "id": "P4S30",
    "size": "story",
-   "key": 11,
-   "len": 23,
-   "first": 13511,
-   "line": "marker and came",
+   "key": 17,
+   "len": 34,
+   "first": 13564,
+   "line": "Let me see.",
    "note": "\"Let me see.\""
   },
   {
    "id": "P4S31",
    "size": "story",
-   "key": 66,
-   "len": 133,
-   "first": 13534,
-   "line": "closer. Let me see. She checked your finger and brought you a small",
+   "key": 60,
+   "len": 120,
+   "first": 13598,
+   "line": "She checked your finger and brought you a small bandage from her bag.",
    "note": "She checked your finger and brought you a small bandage from her bag."
   },
   {
    "id": "P4S32",
    "size": "story",
-   "key": 37,
-   "len": 75,
-   "first": 13667,
-   "line": "bandage from her bag. Here.",
+   "key": 39,
+   "len": 79,
+   "first": 13718,
+   "line": "Here. Be careful next time.",
    "note": "\"Here. Be careful next time.\""
   },
   {
    "id": "P4S33",
    "size": "story",
-   "key": 2,
-   "len": 5,
-   "first": 13742,
-   "line": "Be",
+   "key": 20,
+   "len": 41,
+   "first": 13797,
+   "line": "Thanks.",
    "note": "\"Thanks.\""
   },
   {
    "id": "P4S34",
    "size": "story",
-   "key": 7,
-   "len": 14,
-   "first": 13747,
-   "line": "careful next",
+   "key": 22,
+   "len": 45,
+   "first": 13838,
+   "line": "She smiled.",
    "note": "She smiled."
   },
   {
    "id": "P4S35",
    "size": "story",
-   "key": 83,
-   "len": 166,
-   "first": 13761,
-   "line": "time. Thanks. She smiled. You're supposed to help me finish the",
+   "key": 60,
+   "len": 121,
+   "first": 13883,
+   "line": "You're supposed to help me finish the booth, not injure yourself.",
    "note": "\"You're supposed to help me finish the booth, not injure yourself.\""
   },
   {
    "id": "P4S36",
    "size": "story",
-   "key": 11,
-   "len": 23,
-   "first": 13927,
-   "line": "booth, not",
+   "key": 23,
+   "len": 46,
+   "first": 14004,
+   "line": "You laughed.",
    "note": "You laughed."
   },
   {
    "id": "P4S37",
    "size": "story",
-   "key": 78,
-   "len": 157,
-   "first": 13950,
-   "line": "injure yourself. You laughed. Her shadow, however, had both",
+   "key": 55,
+   "len": 111,
+   "first": 14050,
+   "line": "Her shadow, however, had both hands on its cheeks.",
    "note": "Her shadow, however, had both hands on its cheeks."
   },
   {
    "id": "P4S38",
    "size": "story",
-   "key": 5,
-   "len": 10,
-   "first": 14107,
-   "line": "hands",
+   "key": 33,
+   "len": 66,
+   "first": 14161,
+   "line": "It looked extremely worried.",
    "note": "It looked extremely worried."
   },
   {
    "id": "P4S39",
    "size": "story",
-   "key": 67,
-   "len": 134,
-   "first": 14117,
-   "line": "on its cheeks. It looked extremely worried. Then it carefully",
+   "key": 40,
+   "len": 81,
+   "first": 14227,
+   "line": "Then it carefully reached toward your hand.",
    "note": "Then it carefully reached toward your hand."
   },
   {
    "id": "P4S40",
    "size": "story",
-   "key": 28,
-   "len": 57,
-   "first": 14251,
-   "line": "reached toward your hand.",
+   "key": 24,
+   "len": 49,
+   "first": 14308,
+   "line": "You glanced at Emma.",
    "note": "You glanced at Emma."
   },
   {
    "id": "P4S41",
    "size": "story",
-   "key": 33,
-   "len": 66,
-   "first": 14308,
-   "line": "You glanced at Emma. She was already",
+   "key": 35,
+   "len": 71,
+   "first": 14357,
+   "line": "She was already returning to the decorations.",
    "note": "She was already returning to the decorations."
   },
   {
    "id": "P4S42",
    "size": "story",
-   "key": 6,
-   "len": 12,
-   "first": 14374,
-   "line": "returning",
+   "key": 28,
+   "len": 56,
+   "first": 14428,
+   "line": "You couldn't help smiling.",
    "note": "You couldn't help smiling."
   },
   {
    "id": "P4S43",
    "size": "story",
-   "key": 3,
-   "len": 6,
-   "first": 14386,
-   "line": "to",
+   "key": 22,
+   "len": 44,
+   "first": 14484,
+   "line": "The misunderstanding.",
    "note": "The misunderstanding"
   },
   {
    "id": "P4S44",
    "size": "story",
-   "key": 73,
-   "len": 147,
-   "first": 14392,
-   "line": "the decorations. You couldn't help smiling. The misunderstanding. On the day",
+   "key": 21,
+   "len": 43,
+   "first": 14528,
+   "line": "On the day of the festival,",
    "note": "On the day of the festival, everything was going well."
   },
   {
    "id": "P4S45",
    "size": "story",
-   "key": 2,
-   "len": 5,
-   "first": 14539,
-   "line": "of",
+   "key": 51,
+   "len": 103,
+   "first": 14571,
+   "line": "everything was going well. Your booth was busy.",
    "note": "Your booth was busy."
   },
   {
    "id": "P4S46",
    "size": "story",
-   "key": 77,
-   "len": 155,
-   "first": 14544,
-   "line": "the festival, everything was going well. Your booth was busy. Emma was laughing",
+   "key": 39,
+   "len": 78,
+   "first": 14674,
+   "line": "Emma was laughing with the other students.",
    "note": "Emma was laughing with the other students."
   },
   {
    "id": "P4S47",
    "size": "story",
-   "key": 34,
-   "len": 69,
-   "first": 14699,
-   "line": "with the other students. You were helping",
+   "key": 47,
+   "len": 95,
+   "first": 14752,
+   "line": "You were helping people play the game. Then, during a",
    "note": "You were helping people play the game."
   },
   {
    "id": "P4S48",
    "size": "story",
-   "key": 59,
-   "len": 119,
-   "first": 14768,
-   "line": "people play the game. Then, during a short break,",
+   "key": 56,
+   "len": 112,
+   "first": 14847,
+   "line": "short break, you noticed Emma standing with Daniel.",
    "note": "Then, during a short break, you noticed Emma standing with Daniel."
   },
   {
    "id": "P4S49",
    "size": "story",
-   "key": 52,
-   "len": 104,
-   "first": 14887,
-   "line": "you noticed Emma standing with Daniel. The same Daniel who",
+   "key": 53,
+   "len": 107,
+   "first": 14959,
+   "line": "The same Daniel who had been talking to her near the school gate.",
    "note": "The same Daniel who had been talking to her near the school gate."
   },
   {
    "id": "P4S50",
    "size": "story",
-   "key": 40,
-   "len": 81,
-   "first": 14991,
-   "line": "had been talking to her near the school gate. He",
+   "key": 26,
+   "len": 52,
+   "first": 15066,
+   "line": "He handed her a drink.",
    "note": "He handed her a drink."
   },
   {
    "id": "P4S51",
    "size": "story",
-   "key": 26,
-   "len": 52,
-   "first": 15072,
-   "line": "handed her a drink. She",
+   "key": 28,
+   "len": 56,
+   "first": 15118,
+   "line": "She smiled and thanked him.",
    "note": "She smiled and thanked him."
   },
   {
    "id": "P4S52",
    "size": "story",
-   "key": 5,
-   "len": 10,
-   "first": 15124,
-   "line": "smiled",
+   "key": 18,
+   "len": 36,
+   "first": 15174,
+   "line": "You looked away.",
    "note": "You looked away."
   },
   {
    "id": "P4S53",
    "size": "story",
-   "key": 49,
-   "len": 99,
-   "first": 15134,
-   "line": "and thanked him. You looked away. You knew you had no",
+   "key": 43,
+   "len": 86,
+   "first": 15210,
+   "line": "You knew you had no reason to feel jealous. But",
    "note": "You knew you had no reason to feel jealous."
   },
   {
    "id": "P4S54",
    "size": "story",
-   "key": 31,
-   "len": 63,
-   "first": 15233,
-   "line": "reason to feel jealous. But",
+   "key": 37,
+   "len": 75,
+   "first": 15296,
+   "line": "somehow, it still bothered you.",
    "note": "But somehow, it still bothered you."
   },
   {
    "id": "P4S55",
    "size": "story",
-   "key": 51,
-   "len": 102,
-   "first": 15296,
-   "line": "somehow, it still bothered you. Then you",
+   "key": 41,
+   "len": 83,
+   "first": 15371,
+   "line": "Then you looked at her shadow. It",
    "note": "Then you looked at her shadow."
   },
   {
    "id": "P4S56",
    "size": "story",
-   "key": 3,
-   "len": 7,
-   "first": 15398,
-   "line": "looked",
+   "key": 20,
+   "len": 40,
+   "first": 15454,
+   "line": "wasn't celebrating.",
    "note": "It wasn't celebrating."
   },
   {
    "id": "P4S57",
    "size": "story",
-   "key": 3,
-   "len": 6,
-   "first": 15405,
-   "line": "at",
+   "key": 25,
+   "len": 51,
+   "first": 15494,
+   "line": "It wasn't smiling.",
    "note": "It wasn't smiling."
   },
   {
    "id": "P4S58",
    "size": "story",
-   "key": 95,
-   "len": 190,
-   "first": 15411,
-   "line": "her shadow. It wasn't celebrating. It wasn't smiling. It was looking directly at you",
+   "key": 64,
+   "len": 129,
+   "first": 15545,
+   "line": "It was looking directly at you with a disappointed expression.",
    "note": "It was looking directly at you with a disappointed expression."
   },
   {
    "id": "P4S59",
    "size": "story",
-   "key": 81,
-   "len": 163,
-   "first": 15601,
-   "line": "with a disappointed expression. Then, it pointed toward Emma and made a small",
+   "key": 95,
+   "len": 191,
+   "first": 15674,
+   "line": "Then, it pointed toward Emma and made a small gesture as if asking you to come closer.",
    "note": "Then it pointed toward Emma and made a small gesture, as if asking you to come closer."
   },
   {
    "id": "P4S60",
    "size": "story",
-   "key": 9,
-   "len": 18,
-   "first": 15764,
-   "line": "gesture",
+   "key": 21,
+   "len": 43,
+   "first": 15865,
+   "line": "You hesitated.",
    "note": "You hesitated."
   },
   {
    "id": "P4S61",
    "size": "story",
-   "key": 80,
-   "len": 161,
-   "first": 15782,
-   "line": "as if asking you to come closer. You hesitated. Before you could decide what to",
+   "key": 49,
+   "len": 99,
+   "first": 15908,
+   "line": "Before you could decide what to do, Emma noticed you.",
    "note": "Before you could decide what to do, Emma noticed you."
   },
   {
    "id": "P4S62",
    "size": "story",
-   "key": 51,
-   "len": 102,
-   "first": 15943,
-   "line": "do, Emma noticed you. Hey, where did",
+   "key": 18,
+   "len": 36,
+   "first": 16007,
+   "line": "Hey, where",
    "note": "\"Hey! Where did you go?\""
   },
   {
    "id": "P4S63",
    "size": "story",
-   "key": 27,
-   "len": 55,
-   "first": 16045,
-   "line": "you go? No, I was",
+   "key": 51,
+   "len": 103,
+   "first": 16043,
+   "line": "did you go? No, I was just getting some water.",
    "note": "\"Nowhere. I was just getting some water.\""
   },
   {
    "id": "P4S64",
    "size": "story",
-   "key": 10,
-   "len": 20,
-   "first": 16100,
-   "line": "just getting some",
+   "key": 28,
+   "len": 56,
+   "first": 16146,
+   "line": "She looked at you for a moment.",
    "note": "She looked at you for a moment."
   },
   {
    "id": "P4S65",
    "size": "story",
-   "key": 26,
-   "len": 53,
-   "first": 16120,
-   "line": "water. She looked at you for",
+   "key": 25,
+   "len": 50,
+   "first": 16202,
+   "line": "Are you okay?",
    "note": "\"Are you okay?\""
   },
   {
    "id": "P4S66",
    "size": "story",
-   "key": 19,
-   "len": 39,
-   "first": 16173,
-   "line": "a moment. Are",
+   "key": 23,
+   "len": 46,
+   "first": 16252,
+   "line": "Yeah, why?",
    "note": "\"Yeah. Why?\""
   },
   {
    "id": "P4S67",
    "size": "story",
-   "key": 29,
-   "len": 58,
-   "first": 16212,
-   "line": "you okay? Yeah,",
+   "key": 30,
+   "len": 61,
+   "first": 16298,
+   "line": "You've been quiet.",
    "note": "\"You've been quiet.\""
   },
   {
    "id": "P4S68",
    "size": "story",
-   "key": 22,
-   "len": 44,
-   "first": 16270,
-   "line": "why? You've",
+   "key": 30,
+   "len": 61,
+   "first": 16359,
+   "line": "You shrugged. Just a",
    "note": "You shrugged."
   },
   {
    "id": "P4S69",
    "size": "story",
-   "key": 42,
-   "len": 85,
-   "first": 16314,
-   "line": "been quiet. You shrugged.",
+   "key": 18,
+   "len": 36,
+   "first": 16420,
+   "line": "little tired.",
    "note": "\"Just a little tired.\""
   },
   {
    "id": "P4S70",
    "size": "story",
-   "key": 10,
-   "len": 21,
-   "first": 16399,
-   "line": "Just a",
+   "key": 20,
+   "len": 40,
+   "first": 16456,
+   "line": "Emma nodded.",
    "note": "Emma nodded."
   },
   {
    "id": "P4S71",
    "size": "story",
-   "key": 41,
-   "len": 82,
-   "first": 16420,
-   "line": "little tired. Emma nodded. Then",
+   "key": 28,
+   "len": 57,
+   "first": 16496,
+   "line": "Then she glanced at Daniel.",
    "note": "Then she glanced at Daniel."
   },
   {
    "id": "P4S72",
    "size": "story",
-   "key": 68,
-   "len": 136,
-   "first": 16502,
-   "line": "she glanced at Daniel. He was just helping me carry the drinks. We ran",
+   "key": 18,
+   "len": 36,
+   "first": 16553,
+   "line": "He was just helping me carry",
    "note": "\"He was just helping me carry the drinks. We ran out at the booth.\""
   },
   {
    "id": "P4S73",
    "size": "story",
-   "key": 21,
-   "len": 42,
-   "first": 16638,
-   "line": "out at the booth.",
+   "key": 89,
+   "len": 179,
+   "first": 16589,
+   "line": "the drinks. We ran out at the booth. You fell slightly embarrassed. Oh,",
    "note": "You felt slightly embarrassed."
   },
   {
    "id": "P4S74",
    "size": "story",
-   "key": 11,
-   "len": 22,
-   "first": 16680,
-   "line": "You fell slightly",
+   "key": 18,
+   "len": 36,
+   "first": 16768,
+   "line": "I see.",
    "note": "\"Oh. I see.\""
   },
   {
    "id": "P4S75",
    "size": "story",
-   "key": 36,
-   "len": 72,
-   "first": 16702,
-   "line": "embarrassed. Oh, I",
+   "key": 20,
+   "len": 41,
+   "first": 16804,
+   "line": "Emma looked at you.",
    "note": "Emma looked at you."
   },
   {
    "id": "P4S76",
    "size": "story",
-   "key": 17,
-   "len": 34,
-   "first": 16774,
-   "line": "see. Emma",
+   "key": 30,
+   "len": 60,
+   "first": 16845,
+   "line": "Did you think something else?",
    "note": "\"Did you think something else?\""
   },
   {
    "id": "P4S77",
    "size": "story",
-   "key": 53,
-   "len": 106,
-   "first": 16808,
-   "line": "looked at you. Did you think something else? You",
+   "key": 18,
+   "len": 36,
+   "first": 16905,
+   "line": "You quickly shook your",
    "note": "You quickly shook your head."
   },
   {
    "id": "P4S78",
    "size": "story",
-   "key": 6,
-   "len": 13,
-   "first": 16914,
-   "line": "quickly",
+   "key": 8,
+   "len": 16,
+   "first": 16941,
+   "line": "head.",
    "note": "\"No.\""
   },
   {
    "id": "P4S79",
    "size": "story",
-   "key": 6,
-   "len": 12,
-   "first": 16927,
-   "line": "shook your",
+   "key": 39,
+   "len": 78,
+   "first": 16957,
+   "line": "No, she smiled.",
    "note": "She smiled."
   },
   {
    "id": "P4S80",
    "size": "story",
-   "key": 9,
-   "len": 18,
-   "first": 16939,
-   "line": "head.",
+   "key": 16,
+   "len": 33,
+   "first": 17035,
+   "line": "Okay. But her",
    "note": "\"Okay.\""
   },
   {
    "id": "P4S81",
    "size": "story",
-   "key": 92,
-   "len": 185,
-   "first": 16957,
-   "line": "No, she smiled. Okay. But her shadow was now standing behind her, making",
+   "key": 78,
+   "len": 156,
+   "first": 17068,
+   "line": "shadow was now standing behind her, making an exaggerated face palm.",
    "note": "But her shadow was now standing behind her, making an exaggerated facepalm."
   },
   {
    "id": "P4S82",
    "size": "story",
-   "key": 19,
-   "len": 38,
-   "first": 17142,
-   "line": "an exaggerated face",
+   "key": 27,
+   "len": 54,
+   "first": 17224,
+   "line": "You almost laughed.",
    "note": "You almost laughed."
   },
   {
    "id": "P4S83",
    "size": "story",
-   "key": 93,
-   "len": 186,
-   "first": 17180,
-   "line": "palm. You almost laughed. Apparently, even her shadow thought you were being ridiculous.",
+   "key": 44,
+   "len": 88,
+   "first": 17278,
+   "line": "Apparently, even her shadow thought you were being ridiculous.",
    "note": "Apparently, even her shadow thought you were being ridiculous."
   },
   {
    "id": "P5S1",
    "size": "story",
-   "key": 4,
-   "len": 8,
+   "key": 41,
+   "len": 83,
    "first": 17366,
-   "line": "The",
+   "line": "The moment she needed you.",
    "note": "The moment she needed you"
   },
   {
    "id": "P5S2",
    "size": "story",
-   "key": 55,
-   "len": 110,
-   "first": 17374,
-   "line": "moment she needed you. Later that afternoon,",
+   "key": 52,
+   "len": 104,
+   "first": 17449,
+   "line": "Later that afternoon, the festival became crowded.",
    "note": "Later that afternoon, the festival became crowded."
   },
   {
    "id": "P5S3",
    "size": "story",
-   "key": 55,
-   "len": 111,
-   "first": 17484,
-   "line": "the festival became crowded. Emma was responsible for collecting",
+   "key": 46,
+   "len": 92,
+   "first": 17553,
+   "line": "Emma was responsible for collecting tickets at the entrance.",
    "note": "Emma was responsible for collecting tickets at the entrance."
   },
   {
    "id": "P5S4",
    "size": "story",
-   "key": 8,
-   "len": 17,
-   "first": 17595,
-   "line": "tickets at",
+   "key": 32,
+   "len": 65,
+   "first": 17645,
+   "line": "You were helping at the game booth.",
    "note": "You were helping at the game booth."
   },
   {
    "id": "P5S5",
    "size": "story",
-   "key": 83,
-   "len": 167,
-   "first": 17612,
-   "line": "the entrance. You were helping at the game booth. Then you noticed her standing alone near the",
+   "key": 54,
+   "len": 109,
+   "first": 17710,
+   "line": "Then you noticed her standing alone near the side of the hall.",
    "note": "Then you noticed her standing alone near the side of the hall."
   },
   {
    "id": "P5S6",
    "size": "story",
-   "key": 30,
-   "len": 61,
-   "first": 17779,
-   "line": "side of the hall. She was looking",
+   "key": 33,
+   "len": 67,
+   "first": 17819,
+   "line": "She was looking down at her phone.",
    "note": "She was looking down at her phone."
   },
   {
    "id": "P5S7",
    "size": "story",
-   "key": 8,
-   "len": 17,
-   "first": 17840,
-   "line": "down at her",
+   "key": 30,
+   "len": 61,
+   "first": 17886,
+   "line": "Something seemed wrong.",
    "note": "Something seemed wrong."
   },
   {
    "id": "P5S8",
    "size": "story",
-   "key": 27,
-   "len": 55,
-   "first": 17857,
-   "line": "phone. Something seemed",
+   "key": 24,
+   "len": 49,
+   "first": 17947,
+   "line": "You walked over.",
    "note": "You walked over."
   },
   {
    "id": "P5S9",
    "size": "story",
-   "key": 23,
-   "len": 47,
-   "first": 17912,
-   "line": "wrong. You walked",
+   "key": 27,
+   "len": 54,
+   "first": 17996,
+   "line": "Hey, everything okay?",
    "note": "\"Hey. Everything okay?\""
   },
   {
    "id": "P5S10",
    "size": "story",
-   "key": 32,
-   "len": 64,
-   "first": 17959,
-   "line": "over. Hey, everything",
+   "key": 24,
+   "len": 49,
+   "first": 18050,
+   "line": "She looked up.",
    "note": "She looked up."
   },
   {
    "id": "P5S11",
    "size": "story",
-   "key": 38,
-   "len": 76,
-   "first": 18023,
-   "line": "okay? She looked up.",
+   "key": 33,
+   "len": 67,
+   "first": 18099,
+   "line": "Oh yeah, I'm fine.",
    "note": "\"Oh. Yeah. I'm fine.\""
   },
   {
    "id": "P5S12",
    "size": "story",
-   "key": 65,
-   "len": 131,
-   "first": 18099,
-   "line": "Oh yeah, I'm fine. But her shadow was sitting on the floor",
+   "key": 57,
+   "len": 114,
+   "first": 18166,
+   "line": "But her shadow was sitting on the floor with its head lowered.",
    "note": "But her shadow was sitting on the floor with its head lowered."
   },
   {
    "id": "P5S13",
    "size": "story",
-   "key": 9,
-   "len": 19,
-   "first": 18230,
-   "line": "with its head",
+   "key": 23,
+   "len": 47,
+   "first": 18280,
+   "line": "It looked sad.",
    "note": "It looked sad."
   },
   {
    "id": "P5S14",
    "size": "story",
-   "key": 69,
-   "len": 138,
-   "first": 18249,
-   "line": "lowered. It looked sad. You didn't know what had happened, but you could",
+   "key": 60,
+   "len": 121,
+   "first": 18327,
+   "line": "You didn't know what had happened, but you could tell she wasn't okay.",
    "note": "You didn't know what had happened, but you could tell she wasn't okay."
   },
   {
    "id": "P5S15",
    "size": "story",
-   "key": 36,
-   "len": 72,
-   "first": 18387,
-   "line": "tell she wasn't okay. Want",
+   "key": 24,
+   "len": 49,
+   "first": 18448,
+   "line": "Want to take a break?",
    "note": "\"Want to take a break?\""
   },
   {
    "id": "P5S16",
    "size": "story",
-   "key": 2,
-   "len": 5,
-   "first": 18459,
-   "line": "to take",
+   "key": 25,
+   "len": 50,
+   "first": 18497,
+   "line": "Emma hesitated.",
    "note": "Emma hesitated."
   },
   {
    "id": "P5S17",
    "size": "story",
-   "key": 20,
-   "len": 40,
-   "first": 18464,
-   "line": "a break? Emma",
+   "key": 22,
+   "len": 45,
+   "first": 18547,
+   "line": "Then she nodded.",
    "note": "Then she nodded."
   },
   {
    "id": "P5S18",
    "size": "story",
-   "key": 58,
-   "len": 117,
-   "first": 18504,
-   "line": "hesitated. Then she nodded. You found two empty",
+   "key": 39,
+   "len": 79,
+   "first": 18592,
+   "line": "You found two empty chairs near the window.",
    "note": "You found two empty chairs near the window."
   },
   {
    "id": "P5S19",
    "size": "story",
-   "key": 36,
-   "len": 73,
-   "first": 18621,
-   "line": "chairs near the window. For a while",
+   "key": 39,
+   "len": 78,
+   "first": 18671,
+   "line": "For a while neither of you spoke.",
    "note": "For a while, neither of you spoke."
   },
   {
    "id": "P5S20",
    "size": "story",
-   "key": 33,
-   "len": 66,
-   "first": 18694,
-   "line": "neither of you spoke. Then",
+   "key": 30,
+   "len": 60,
+   "first": 18749,
+   "line": "Then she finally said,",
    "note": "Then she finally said:"
   },
   {
    "id": "P5S21",
    "size": "story",
-   "key": 39,
-   "len": 78,
-   "first": 18760,
-   "line": "she finally said, I think",
+   "key": 40,
+   "len": 81,
+   "first": 18809,
+   "line": "I think I messed something up.",
    "note": "\"I think I messed something up.\""
   },
   {
    "id": "P5S22",
    "size": "story",
-   "key": 12,
-   "len": 25,
-   "first": 18838,
-   "line": "I messed something",
+   "key": 16,
+   "len": 32,
+   "first": 18890,
+   "line": "What happened?",
    "note": "\"What happened?\""
   },
   {
    "id": "P5S23",
    "size": "story",
-   "key": 87,
-   "len": 174,
-   "first": 18863,
-   "line": "up. What happened? I was supposed to prepare the tickets for the next activity, but I",
+   "key": 80,
+   "len": 161,
+   "first": 18922,
+   "line": "I was supposed to prepare the tickets for the next activity, but I forgot to bring them.",
    "note": "\"I was supposed to prepare the tickets for the next activity, but I forgot to bring them.\""
   },
   {
    "id": "P5S24",
    "size": "story",
-   "key": 23,
-   "len": 46,
-   "first": 19037,
-   "line": "forgot to bring them.",
+   "key": 18,
+   "len": 36,
+   "first": 19083,
+   "line": "You looked at her.",
    "note": "You looked at her."
   },
   {
    "id": "P5S25",
    "size": "story",
-   "key": 7,
-   "len": 14,
-   "first": 19083,
-   "line": "You looked at",
+   "key": 2,
+   "len": 5,
+   "first": 19119,
+   "line": "Is",
    "note": "\"Is that all?\""
   },
   {
    "id": "P5S26",
    "size": "story",
-   "key": 19,
-   "len": 39,
-   "first": 19097,
-   "line": "her. Is that",
+   "key": 16,
+   "len": 33,
+   "first": 19124,
+   "line": "that all?",
    "note": "She nodded."
   },
   {
    "id": "P5S27",
    "size": "story",
-   "key": 56,
-   "len": 113,
-   "first": 19136,
-   "line": "all? She nodded. I know it's not a big deal, but everyone",
+   "key": 69,
+   "len": 138,
+   "first": 19157,
+   "line": "She nodded. I know it's not a big deal, but everyone is depending on me.",
    "note": "\"I know it's not a big deal, but everyone is depending on me.\""
   },
   {
    "id": "P5S28",
    "size": "story",
-   "key": 8,
-   "len": 16,
-   "first": 19249,
-   "line": "is depending",
+   "key": 14,
+   "len": 29,
+   "first": 19295,
+   "line": "You smiled.",
    "note": "You smiled."
   },
   {
    "id": "P5S29",
    "size": "story",
-   "key": 29,
-   "len": 59,
-   "first": 19265,
-   "line": "on me. You smiled.",
+   "key": 20,
+   "len": 40,
+   "first": 19324,
+   "line": "Then let's fix it.",
    "note": "\"Then let's fix it.\""
   },
   {
    "id": "P5S30",
    "size": "story",
-   "key": 9,
-   "len": 18,
-   "first": 19324,
-   "line": "Then let's fix",
+   "key": 19,
+   "len": 39,
+   "first": 19364,
+   "line": "She looked surprised.",
    "note": "She looked surprised."
   },
   {
    "id": "P5S31",
    "size": "story",
-   "key": 13,
-   "len": 27,
-   "first": 19342,
-   "line": "it. She",
+   "key": 15,
+   "len": 30,
+   "first": 19403,
+   "line": "You'll help?",
    "note": "\"You'll help?\""
   },
   {
@@ -4944,557 +4944,557 @@
    "size": "story",
    "key": 17,
    "len": 34,
-   "first": 19369,
-   "line": "looked surprised.",
+   "first": 19433,
+   "line": "Of course.",
    "note": "\"Of course.\""
   },
   {
    "id": "P5S33",
    "size": "story",
-   "key": 61,
-   "len": 122,
-   "first": 19403,
-   "line": "You'll help? Of course. You both went back to the classroom and quickly",
+   "key": 51,
+   "len": 103,
+   "first": 19467,
+   "line": "You both went back to the classroom and quickly prepared the missing tickets.",
    "note": "You both went back to the classroom and quickly prepared the missing tickets."
   },
   {
    "id": "P5S34",
    "size": "story",
-   "key": 27,
-   "len": 55,
-   "first": 19525,
-   "line": "prepared the missing tickets. It took",
+   "key": 42,
+   "len": 84,
+   "first": 19570,
+   "line": "It took less than 15 minutes.",
    "note": "It took less than fifteen minutes."
   },
   {
    "id": "P5S35",
    "size": "story",
-   "key": 7,
-   "len": 14,
-   "first": 19580,
-   "line": "less",
+   "key": 43,
+   "len": 87,
+   "first": 19654,
+   "line": "When you returned, Emma looked relieved.",
    "note": "When you returned, Emma looked relieved."
   },
   {
    "id": "P5S36",
    "size": "story",
-   "key": 50,
-   "len": 100,
-   "first": 19594,
-   "line": "than 15 minutes. When you returned, Emma",
+   "key": 16,
+   "len": 32,
+   "first": 19741,
+   "line": "Thank you.",
    "note": "\"Thank you.\""
   },
   {
    "id": "P5S37",
    "size": "story",
-   "key": 23,
-   "len": 47,
-   "first": 19694,
-   "line": "looked relieved.",
+   "key": 20,
+   "len": 40,
+   "first": 19773,
+   "line": "No problem.",
    "note": "\"No problem.\""
   },
   {
    "id": "P5S38",
    "size": "story",
-   "key": 4,
-   "len": 9,
-   "first": 19741,
-   "line": "Thank",
+   "key": 59,
+   "len": 119,
+   "first": 19813,
+   "line": "Her shadow suddenly jumped up and made a heart with both hands.",
    "note": "Her shadow suddenly jumped up and made a heart with both hands."
   },
   {
    "id": "P5S39",
    "size": "story",
-   "key": 71,
-   "len": 142,
-   "first": 19750,
-   "line": "you. No problem. Her shadow suddenly jumped up and made a heart with",
+   "key": 23,
+   "len": 47,
+   "first": 19932,
+   "line": "You smiled.",
    "note": "You smiled."
   },
   {
    "id": "P5S40",
    "size": "story",
-   "key": 4,
-   "len": 8,
-   "first": 19892,
-   "line": "both",
+   "key": 73,
+   "len": 146,
+   "first": 19979,
+   "line": "For the first time that day, Emma looked genuinely happy again.",
    "note": "For the first time that day, Emma looked genuinely happy again."
   },
   {
    "id": "P5S41",
    "size": "story",
-   "key": 16,
-   "len": 32,
-   "first": 19900,
-   "line": "hands.",
+   "key": 26,
+   "len": 52,
+   "first": 20125,
+   "line": "The confession.",
    "note": "The confession"
   },
   {
    "id": "P5S42",
    "size": "story",
-   "key": 146,
-   "len": 292,
-   "first": 19932,
-   "line": "You smiled. For the first time that day, Emma looked genuinely happy again. The confession. After the festival ended, you and",
+   "key": 52,
+   "len": 105,
+   "first": 20177,
+   "line": "After the festival ended, you and Emma walked outside together.",
    "note": "After the festival ended, you and Emma walked outside together."
   },
   {
    "id": "P5S43",
    "size": "story",
-   "key": 31,
-   "len": 62,
-   "first": 20224,
-   "line": "Emma walked outside together. The",
+   "key": 33,
+   "len": 67,
+   "first": 20282,
+   "line": "The sky was turning orange.",
    "note": "The sky was turning orange."
   },
   {
    "id": "P5S44",
    "size": "story",
-   "key": 58,
-   "len": 117,
-   "first": 20286,
-   "line": "sky was turning orange. Students were leaving in groups,",
+   "key": 61,
+   "len": 123,
+   "first": 20349,
+   "line": "Students were leaving in groups, carrying decorations and bags.",
    "note": "Students were leaving in groups, carrying decorations and bags."
   },
   {
    "id": "P5S45",
    "size": "story",
-   "key": 55,
-   "len": 110,
-   "first": 20403,
-   "line": "carrying decorations and bags. Emma was holding a small box",
+   "key": 18,
+   "len": 36,
+   "first": 20472,
+   "line": "Emma was holding a small box",
    "note": "Emma was holding a small box of leftover supplies."
   },
   {
    "id": "P5S46",
    "size": "story",
-   "key": 34,
-   "len": 69,
-   "first": 20513,
-   "line": "of leftover supplies. Tonight",
+   "key": 78,
+   "len": 157,
+   "first": 20508,
+   "line": "of leftover supplies. Tonight was exhausting. She said.",
    "note": "\"Today was exhausting,\" she said."
   },
   {
    "id": "P5S47",
    "size": "story",
-   "key": 4,
-   "len": 8,
-   "first": 20582,
-   "line": "was",
+   "key": 21,
+   "len": 42,
+   "first": 20665,
+   "line": "Definitely.",
    "note": "\"Definitely.\""
   },
   {
    "id": "P5S48",
    "size": "story",
-   "key": 58,
-   "len": 117,
-   "first": 20590,
-   "line": "exhausting. She said. Definitely.",
+   "key": 38,
+   "len": 76,
+   "first": 20707,
+   "line": "But it was fun.",
    "note": "\"But it was fun.\""
   },
   {
    "id": "P5S49",
    "size": "story",
-   "key": 46,
-   "len": 93,
-   "first": 20707,
-   "line": "But it was fun. Yeah,",
+   "key": 37,
+   "len": 74,
+   "first": 20783,
+   "line": "Yeah, especially the paper fight.",
    "note": "\"Yeah. Especially the paper fight.\""
   },
   {
    "id": "P5S50",
    "size": "story",
-   "key": 12,
-   "len": 25,
-   "first": 20800,
-   "line": "especially the paper",
+   "key": 19,
+   "len": 39,
+   "first": 20857,
+   "line": "She laughed.",
    "note": "She laughed."
   },
   {
    "id": "P5S51",
    "size": "story",
-   "key": 39,
-   "len": 79,
-   "first": 20825,
-   "line": "fight. She laughed. I",
+   "key": 43,
+   "len": 87,
+   "first": 20896,
+   "line": "I still can't believe you threw paper at me.",
    "note": "\"I still can't believe you threw paper at me.\""
   },
   {
    "id": "P5S52",
    "size": "story",
-   "key": 39,
-   "len": 79,
-   "first": 20904,
-   "line": "still can't believe you threw paper at me.",
+   "key": 18,
+   "len": 36,
+   "first": 20983,
+   "line": "You started it.",
    "note": "\"You started it.\""
   },
   {
    "id": "P5S53",
    "size": "story",
-   "key": 9,
-   "len": 19,
-   "first": 20983,
-   "line": "You started",
+   "key": 32,
+   "len": 64,
+   "first": 21019,
+   "line": "I did not.",
    "note": "\"I did not!\""
   },
   {
    "id": "P5S54",
    "size": "story",
-   "key": 16,
-   "len": 33,
-   "first": 21002,
-   "line": "it. I did",
+   "key": 21,
+   "len": 43,
+   "first": 21083,
+   "line": "You both laughed.",
    "note": "You both laughed."
   },
   {
    "id": "P5S55",
    "size": "story",
-   "key": 51,
-   "len": 102,
-   "first": 21035,
-   "line": "not. You both laughed. Then the",
+   "key": 18,
+   "len": 36,
+   "first": 21126,
+   "line": "Then the conversation slowly",
    "note": "Then the conversation slowly became quiet."
   },
   {
    "id": "P5S56",
    "size": "story",
-   "key": 62,
-   "len": 125,
-   "first": 21137,
-   "line": "conversation slowly became quiet. You would spend so much time together for",
+   "key": 2,
+   "len": 4,
+   "first": 21162,
+   "line": "",
    "note": "You had spent so much time together over the past few weeks."
   },
   {
    "id": "P5S57",
    "size": "story",
-   "key": 89,
-   "len": 178,
-   "first": 21262,
-   "line": "the past few weeks. You would work on assignments, shared an umbrella, decorated a booth,",
+   "key": 184,
+   "len": 368,
+   "first": 21166,
+   "line": "became quiet. You would spend so much time together for the past few weeks. You would work on assignments, shared an umbrella, decorated a booth, and helped each other through a stressful day.",
    "note": "You had worked on assignments, shared an umbrella, decorated a booth, and helped each other through a stressfu"
   },
   {
    "id": "P5S58",
    "size": "story",
-   "key": 99,
-   "len": 199,
-   "first": 21440,
-   "line": "and helped each other through a stressful day. And every time, Emma's shadow had revealed something she",
+   "key": 82,
+   "len": 164,
+   "first": 21534,
+   "line": "And every time, Emma's shadow had revealed something she never set out loud.",
    "note": "And every time, Emma's shadow had revealed something she never said out loud."
   },
   {
    "id": "P5S59",
    "size": "story",
-   "key": 36,
-   "len": 72,
-   "first": 21639,
-   "line": "never set out loud. But",
+   "key": 55,
+   "len": 111,
+   "first": 21698,
+   "line": "But you still didn't know what Emma herself felt.",
    "note": "But you still didn't know what Emma herself felt."
   },
   {
    "id": "P5S60",
    "size": "story",
-   "key": 2,
-   "len": 5,
-   "first": 21711,
-   "line": "you",
+   "key": 34,
+   "len": 69,
+   "first": 21809,
+   "line": "You finally decided to ask.",
    "note": "You finally decided to ask."
   },
   {
    "id": "P5S61",
    "size": "story",
-   "key": 57,
-   "len": 114,
-   "first": 21716,
-   "line": "still didn't know what Emma herself felt. You finally",
+   "key": 17,
+   "len": 34,
+   "first": 21878,
+   "line": "Emma?",
    "note": "\"Emma?\""
   },
   {
    "id": "P5S62",
    "size": "story",
-   "key": 9,
-   "len": 18,
-   "first": 21830,
-   "line": "decided to",
+   "key": 14,
+   "len": 29,
+   "first": 21912,
+   "line": "Yeah?",
    "note": "\"Yeah?\""
   },
   {
    "id": "P5S63",
    "size": "story",
-   "key": 46,
-   "len": 93,
-   "first": 21848,
-   "line": "ask. Emma? Yeah?",
+   "key": 39,
+   "len": 78,
+   "first": 21941,
+   "line": "Okay, tell you something.",
    "note": "\"Can I tell you something?\""
   },
   {
    "id": "P5S64",
    "size": "story",
-   "key": 39,
-   "len": 78,
-   "first": 21941,
-   "line": "Okay, tell you something.",
+   "key": 28,
+   "len": 56,
+   "first": 22019,
+   "line": "She turned toward you.",
    "note": "She turned toward you."
   },
   {
    "id": "P5S65",
    "size": "story",
-   "key": 9,
-   "len": 18,
-   "first": 22019,
-   "line": "She",
+   "key": 18,
+   "len": 36,
+   "first": 22075,
+   "line": "Of course.",
    "note": "\"Of course.\""
   },
   {
    "id": "P5S66",
    "size": "story",
-   "key": 44,
-   "len": 88,
-   "first": 22037,
-   "line": "turned toward you. Of course. You",
+   "key": 24,
+   "len": 48,
+   "first": 22111,
+   "line": "You took a breath.",
    "note": "You took a breath."
   },
   {
    "id": "P5S67",
    "size": "story",
-   "key": 37,
-   "len": 74,
-   "first": 22125,
-   "line": "took a breath. I think",
+   "key": 65,
+   "len": 130,
+   "first": 22159,
+   "line": "I think I've started liking you.",
    "note": "\"I think I've started liking you.\""
   },
   {
    "id": "P5S68",
    "size": "story",
-   "key": 7,
-   "len": 14,
-   "first": 22199,
-   "line": "I've",
+   "key": 20,
+   "len": 41,
+   "first": 22289,
+   "line": "Emma stopped walking.",
    "note": "Emma stopped walking."
   },
   {
    "id": "P5S69",
    "size": "story",
-   "key": 69,
-   "len": 138,
-   "first": 22213,
-   "line": "started liking you. Emma stopped walking. You continued before",
+   "key": 52,
+   "len": 105,
+   "first": 22330,
+   "line": "You continued before you lost your courage.",
    "note": "You continued before you lost your courage."
   },
   {
    "id": "P5S70",
    "size": "story",
-   "key": 114,
-   "len": 228,
-   "first": 22351,
-   "line": "you lost your courage. Actually, I've liked you for a while. I just didn't know if you",
+   "key": 93,
+   "len": 187,
+   "first": 22435,
+   "line": "Actually, I've liked you for a while. I just didn't know if you felt the same way.",
    "note": "\"Actually, I've liked you for a while. I just didn't know if you felt the same way.\""
   },
   {
    "id": "P5S71",
    "size": "story",
-   "key": 7,
-   "len": 15,
-   "first": 22579,
-   "line": "felt the same",
+   "key": 35,
+   "len": 70,
+   "first": 22622,
+   "line": "For a moment, she said nothing.",
    "note": "For a moment, she said nothing."
   },
   {
    "id": "P5S72",
    "size": "story",
-   "key": 49,
-   "len": 98,
-   "first": 22594,
-   "line": "way. For a moment, she said nothing.",
+   "key": 24,
+   "len": 49,
+   "first": 22692,
+   "line": "Then she looked down.",
    "note": "Then she looked down."
   },
   {
    "id": "P5S73",
    "size": "story",
-   "key": 45,
-   "len": 91,
-   "first": 22692,
-   "line": "Then she looked down. Her shadow immediately jumped",
+   "key": 55,
+   "len": 110,
+   "first": 22741,
+   "line": "Her shadow immediately jumped up and started celebrating.",
    "note": "Her shadow immediately jumped up and started celebrating."
   },
   {
    "id": "P5S74",
    "size": "story",
-   "key": 37,
-   "len": 75,
-   "first": 22783,
-   "line": "up and started celebrating. Emma",
+   "key": 27,
+   "len": 55,
+   "first": 22851,
+   "line": "Emma slowly looked back at you.",
    "note": "Emma slowly looked back at you."
   },
   {
    "id": "P5S75",
    "size": "story",
-   "key": 5,
-   "len": 11,
-   "first": 22858,
-   "line": "slowly",
+   "key": 23,
+   "len": 46,
+   "first": 22906,
+   "line": "I like you too.",
    "note": "\"I like you too.\""
   },
   {
    "id": "P5S76",
    "size": "story",
-   "key": 26,
-   "len": 52,
-   "first": 22869,
-   "line": "looked back at you. I like",
+   "key": 14,
+   "len": 28,
+   "first": 22952,
+   "line": "You blinked.",
    "note": "You blinked."
   },
   {
    "id": "P5S77",
    "size": "story",
-   "key": 3,
-   "len": 7,
-   "first": 22921,
-   "line": "you",
+   "key": 12,
+   "len": 25,
+   "first": 22980,
+   "line": "Really?",
    "note": "\"Really?\""
   },
   {
    "id": "P5S78",
    "size": "story",
-   "key": 12,
-   "len": 24,
-   "first": 22928,
-   "line": "too.",
+   "key": 19,
+   "len": 38,
+   "first": 23005,
+   "line": "She nodded.",
    "note": "She nodded."
   },
   {
    "id": "P5S79",
    "size": "story",
-   "key": 14,
-   "len": 28,
-   "first": 22952,
-   "line": "You blinked.",
+   "key": 16,
+   "len": 32,
+   "first": 23043,
+   "line": "Really?",
    "note": "\"Really.\""
   },
   {
    "id": "P5S80",
    "size": "story",
-   "key": 16,
-   "len": 32,
-   "first": 22980,
-   "line": "Really? She",
+   "key": 22,
+   "len": 44,
+   "first": 23075,
+   "line": "You smiled.",
    "note": "You smiled."
   },
   {
    "id": "P5S81",
    "size": "story",
-   "key": 82,
-   "len": 164,
-   "first": 23012,
-   "line": "nodded. Really? You smiled. So does that mean we",
+   "key": 53,
+   "len": 107,
+   "first": 23119,
+   "line": "So does that mean we can go out sometime?",
    "note": "\"So… does that mean we can go out sometime?\""
   },
   {
    "id": "P5S82",
    "size": "story",
-   "key": 5,
-   "len": 11,
-   "first": 23176,
-   "line": "can go",
+   "key": 23,
+   "len": 46,
+   "first": 23226,
+   "line": "Emma laughed.",
    "note": "Emma laughed."
   },
   {
    "id": "P5S83",
    "size": "story",
-   "key": 45,
-   "len": 91,
-   "first": 23187,
-   "line": "out sometime? Emma laughed. Are",
+   "key": 27,
+   "len": 54,
+   "first": 23272,
+   "line": "Are you asking me out?",
    "note": "\"Are you asking me out?\""
   },
   {
    "id": "P5S84",
    "size": "story",
-   "key": 208,
-   "len": 416,
-   "first": 23278,
-   "line": "you asking me out? Maybe. Then maybe my answer is yes. You both laughed. And just when you thought the day couldn't get any stranger, Emma suddenly looked down at the pavement. Not at her",
+   "key": 18,
+   "len": 36,
+   "first": 23326,
+   "line": "Maybe.",
    "note": "\"Maybe.\""
   },
   {
    "id": "P5S85",
    "size": "story",
-   "key": 57,
-   "len": 115,
-   "first": 23694,
-   "line": "own shadow. At yours. She stared at it for",
+   "key": 8,
+   "len": 17,
+   "first": 23362,
+   "line": "",
    "note": "She smiled."
   },
   {
    "id": "P5S86",
    "size": "story",
-   "key": 18,
-   "len": 36,
-   "first": 23809,
-   "line": "a few seconds. Then",
+   "key": 47,
+   "len": 95,
+   "first": 23379,
+   "line": "Then maybe my answer is yes.",
    "note": "\"Then maybe my answer is yes.\""
   },
   {
    "id": "P5S87",
    "size": "story",
-   "key": 2,
-   "len": 4,
-   "first": 23845,
-   "line": "",
+   "key": 20,
+   "len": 41,
+   "first": 23474,
+   "line": "You both laughed.",
    "note": "You both laughed."
   },
   {
    "id": "P5S88",
    "size": "story",
-   "key": 2,
-   "len": 5,
-   "first": 23849,
-   "line": "",
+   "key": 82,
+   "len": 165,
+   "first": 23515,
+   "line": "And just when you thought the day couldn't get any stranger, Emma suddenly looked down at the pavement.",
    "note": "And just when you thought the day couldn't get any stranger, Emma suddenly looked down at the pavement."
   },
   {
    "id": "P5S89",
    "size": "story",
-   "key": 2,
-   "len": 4,
-   "first": 23854,
-   "line": "",
+   "key": 28,
+   "len": 56,
+   "first": 23680,
+   "line": "Not at her own shadow.",
    "note": "Not at her own shadow."
   },
   {
    "id": "P5S90",
    "size": "story",
-   "key": 2,
-   "len": 5,
-   "first": 23858,
-   "line": "",
+   "key": 20,
+   "len": 40,
+   "first": 23736,
+   "line": "At yours.",
    "note": "At yours."
   },
   {
    "id": "P5S91",
    "size": "story",
-   "key": 2,
-   "len": 4,
-   "first": 23863,
-   "line": "she",
+   "key": 46,
+   "len": 93,
+   "first": 23776,
+   "line": "She stared at it for a few seconds. Then she",
    "note": "She stared at it for a few seconds."
   },
   {
    "id": "P5S92",
    "size": "story",
-   "key": 2,
-   "len": 5,
-   "first": 23867,
-   "line": "started",
+   "key": 24,
+   "len": 49,
+   "first": 23869,
+   "line": "started laughing.",
    "note": "Then she started laughing."
   },
   {
    "id": "P5S93",
    "size": "story",
-   "key": 107,
-   "len": 215,
-   "first": 23872,
-   "line": "laughing. Your shadow is really nervous right now.",
+   "key": 84,
+   "len": 169,
+   "first": 23918,
+   "line": "Your shadow is really nervous right now.",
    "note": "\"Your shadow is really nervous right now.\""
   }
  ],
