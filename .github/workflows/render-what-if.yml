@@ -19,6 +19,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Resolve slug
         id: slug
@@ -26,7 +28,9 @@ jobs:
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             s="${{ github.event.inputs.slug }}"
           else
-            s=$(git diff --name-only HEAD~1 HEAD | sed -n 's#studio/src/episodes/\([^/]*\)/.*#\1#p' | sort -u | head -1)
+            base="${{ github.event.before }}"
+            [ "$base" = "0000000000000000000000000000000000000000" ] && base="HEAD~1"
+            s=$(git diff --name-only "$base" HEAD | sed -n 's#studio/src/episodes/\([^/]*\)/.*#\1#p' | sort -u | head -1)
             s="${s:-sandglass}"
           fi
           echo "slug=$s" >> "$GITHUB_OUTPUT"
