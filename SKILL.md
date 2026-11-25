@@ -52,13 +52,16 @@ schematic for the science beat, a cliffhanger blackout). Read the one closest to
   where each character blocks, and the keyframe budget — every shot gets ≥3 independently moving elements
   (pose keys, camera drift, prop motion, particles). Sets are shared kit pieces in `shots/common.tsx`; extend
   them rather than inventing one-off backgrounds. See `episodes/crush/shots/common.tsx` (`Hallway`,
-  `Question5Board`, `HallForeground`) for the pattern.
+  `Question5Board`, `HallForeground`) for the pattern. **Scene-by-scene review:** render the scene's board
+  stills (`node scripts/stills.mjs <slug> <shot ids>`) and check them before writing the next scene — fix the
+  set and motion in that scene's file rather than letting a weak background propagate to the rest.
 - **Model and reasoning.** Plumbing (pipeline scripts, type fixes) is fine on fast models; the design passes —
   set dressing, layout, motion feel — deserve the strongest available model at high reasoning. If a video
   looks stiff or ugly, the fix is usually a design pass, not more code.
 - **Remotion agent skills (optional).** `npx skills add remotion-dev/skills` installs Remotion's official
   agent skills for generic Remotion best practices; our shot model is pure functions of `t` (not
-  `<Sequence>`/`interpolate`), so treat them as reference, not rules.
+  `<Sequence>`/`interpolate`), so treat them as reference, not rules. Their spring guidance maps onto our
+  `spring(t, {damping, stiffness})` helper in `engine/anim.ts` (damping 12 / stiffness 100 = the default pop).
 - **GitHub Actions rendering.** Video is rendered on GitHub Actions, not locally (see "Rendering on GitHub Actions"
   below). Prepare assets and scripts for CI/CD rather than local rendering: commit `timeline.json` and `words.json`,
   keep generated audio out of git, and expect the runner to produce a silent MP4 you mux audio onto yourself.

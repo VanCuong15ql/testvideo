@@ -26,6 +26,21 @@ export const kf = (f: number, keys: [number, number][], ease = easeInOut) => {
 export const rnd = (seed: number, i: number) => Math.abs(Math.sin(seed * 31.7 + i * 12.9898) * 43758.5453) % 1;
 /** A wobble that dies away: for things that land, get hit or get knocked. */
 export const settle = (t: number, amp: number, speed = 1.4, decay = 8) => (t > 0 ? Math.sin(t * speed) * amp * Math.exp(-t / decay) : 0);
+/** Damped-harmonic 0→1 pop — the spring() feel without Remotion's <Spring>: use for anything that
+ *  enters with weight (a panel slamming, a character landing, a card stamping). t in frames.
+ *  damping ~12 / stiffness ~100 is the genre default: a soft overshoot then rest.
+ *  Lower damping = more bounce, higher stiffness = faster. */
+export const spring = (t: number, { damping = 12, stiffness = 100, mass = 1 }: { damping?: number; stiffness?: number; mass?: number } = {}) => {
+  if (t <= 0) return 0;
+  const w0 = Math.sqrt(stiffness / mass);
+  const zeta = damping / (2 * Math.sqrt(stiffness * mass));
+  const s = t / 30;
+  if (zeta < 1) {
+    const wd = w0 * Math.sqrt(1 - zeta * zeta);
+    return 1 - Math.exp(-zeta * w0 * s) * (Math.cos(wd * s) + (zeta * w0 / wd) * Math.sin(wd * s));
+  }
+  return 1 - Math.exp(-w0 * s) * (1 + w0 * s);
+};
 
 /** The camera: centre the world point (cx, cy) on screen at zoom s (1920 x 1080 frame). */
 export const camT = (cx: number, cy: number, s: number) => `translate(960 540) scale(${s}) translate(${-cx} ${-cy})`;

@@ -94,6 +94,11 @@ again. Only a board that passes goes to animation.
 - Two voices of type: the display face for the title card and big labels, the mono face for small
   readouts (timers, chips, room numbers), the hand face for anything "written" (chalk, notebook).
 - Text is rare and small; when in doubt, cut it.
+- Layout discipline: ~80px safe margin on all sides, one focal point per shot, consistent spacing
+  between elements, and text NEVER overlaps characters or key art — if it does, move the camera or
+  the text, don't shrink until it fits.
+- Layered, not flat: every surface gets at least outline + gradient/shade + one texture or light
+  pass (rim light, glow, dust, reflection). A solid-color rectangle is a placeholder, not a shot.
 
 ## Motion grammar
 
@@ -103,6 +108,7 @@ Movement is physics, not interpolation. Pick the helper that matches the beat:
 |---|---|
 | `easeOut` (kf default per-key `ease`) | anything entering frame, a head turn, a reach — fast start, soft land |
 | `easeIn` | anything leaving frame or winding up |
+| `spring(t, {damping, stiffness})` | anything that enters with weight — panels, cards, landings, stamps. `damping:12, stiffness:100` is the genre default: soft overshoot then rest. Never bare linear `t`-driven motion |
 | `backOut` | pops, landings, stings — overshoot then settle (the genre's signature "boing") |
 | `settle(t, amp)` | the wobble after a hit, catch or landing — decaying sine, never a hard stop |
 | `shake(t, from)` | impacts the camera should feel (a hit, a slam, a snap) |
