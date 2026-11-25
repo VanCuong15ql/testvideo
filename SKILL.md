@@ -47,6 +47,18 @@ schematic for the science beat, a cliffhanger blackout). Read the one closest to
   `out/<slug>/scenes/`. Scenes (~10 paragraphs) are the unit of parallel work — each agent implements
   `shots/p{n}c{m}.tsx` exporting `{mod}Shots: ShotMap`; `shots.tsx` merges them all. Then `plan.py` builds
   `timeline.json` as usual. See `episodes/crush/` for the pattern.
+- **Design before code, per scene.** Before writing a scene's shots, write its design note (in the scene file's
+  header comment or the brief): the set's object inventory, the depth layers (foreground/midground/background),
+  where each character blocks, and the keyframe budget — every shot gets ≥3 independently moving elements
+  (pose keys, camera drift, prop motion, particles). Sets are shared kit pieces in `shots/common.tsx`; extend
+  them rather than inventing one-off backgrounds. See `episodes/crush/shots/common.tsx` (`Hallway`,
+  `Question5Board`, `HallForeground`) for the pattern.
+- **Model and reasoning.** Plumbing (pipeline scripts, type fixes) is fine on fast models; the design passes —
+  set dressing, layout, motion feel — deserve the strongest available model at high reasoning. If a video
+  looks stiff or ugly, the fix is usually a design pass, not more code.
+- **Remotion agent skills (optional).** `npx skills add remotion-dev/skills` installs Remotion's official
+  agent skills for generic Remotion best practices; our shot model is pure functions of `t` (not
+  `<Sequence>`/`interpolate`), so treat them as reference, not rules.
 - **GitHub Actions rendering.** Video is rendered on GitHub Actions, not locally (see "Rendering on GitHub Actions"
   below). Prepare assets and scripts for CI/CD rather than local rendering: commit `timeline.json` and `words.json`,
   keep generated audio out of git, and expect the runner to produce a silent MP4 you mux audio onto yourself.

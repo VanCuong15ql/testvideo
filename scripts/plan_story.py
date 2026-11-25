@@ -118,6 +118,12 @@ for (n, c), rows in sorted(scenes.items()):
              f'`export const {mod}Shots: ShotMap = {{ {first}: ..., {last}: ... }}` — every id below must exist.',
              'Shared kit: `./common` (engine re-exports, cast looks, sets, ShadowFigure).',
              'Style reference: `studio/src/episodes/sandglass/shots.tsx`. Keep the dusk-lit stick-figure look.',
+             '',
+             'Design before code — put a short design note in the file header: set object inventory,',
+             'depth layers (foreground/midground/background), character blocking, and a keyframe budget',
+             '(every shot: >=3 independently moving elements — pose keys, camera drift, prop motion, particles).',
+             'Motion grammar (references/look.md): easeOut for entrances, easeIn for exits, backOut for pops,',
+             'settle() for landing wobble, shake() for impacts, rnd() for scatter — never linear-only motion.',
              '', '| Shot | Starts (s, local) | Paragraph |', '|---|---|---|']
     for sid, st, para in rows:
         lines.append(f'| {sid} | {st:.1f} | {para} |')

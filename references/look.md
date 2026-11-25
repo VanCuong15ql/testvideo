@@ -70,8 +70,13 @@ again. Only a board that passes goes to animation.
 4. **The character pops.** The face is the brightest, sharpest thing in its area; the rim light is on the lit side;
    no dark limb on a dark wall.
 5. **Depth.** A blurred dark foreground in about a third of the shots; soft backgrounds on close-ups.
-6. **The world is full.** Wides show 20 or more designed objects; no empty wall, no floating furniture. Everything
-   that stands has legs and a contact shadow.
+6. **The world is full — and it was designed, not improvised.** Before a scene is coded, its set gets a
+   written inventory: every object in the space (fixtures, props, dressing), which layer it sits on
+   (foreground / midground / background), and which characters block where. A wide should show 20+
+   designed objects; a medium still shows the set's signature pieces; close-ups keep one readable
+   background element. No empty wall, no floating furniture; everything that stands has legs and a
+   contact shadow. Detail layers compound: trim, hardware, wear, signage, small clutter — the genre's
+   rooms look lived-in, not rendered.
 7. **Perspective holds.** Objects sit on their surfaces, at the right scale for the character, toward the room's
    vanishing point. A prop in a hand is hand-sized — a fraction of the body at that shot's zoom, not near
    body-height (see `traps.md`).
@@ -80,6 +85,40 @@ again. Only a board that passes goes to animation.
 9. **Continuity.** Same costume, same set layout, same props in the same places across shots of one place.
 10. **Only the title and readouts as text,** spelled right, inside the frame.
 11. **Ours.** Nothing resembles a famous character, a channel's hero or a brand.
+
+## Palette and type
+
+- Dusk palette only: purple night `#221D3C`/`#2E2850` walls, warm practicals `#F2B95C`/`#FFE9B0`,
+  ink outlines `#0D0A14`, accents pink `#E86A92`, teal `#8FD3FF`, gold `#E9C46A`, violet `#8B7BB8`.
+  Nothing neon, nothing pure white except practical bulbs and paper.
+- Two voices of type: the display face for the title card and big labels, the mono face for small
+  readouts (timers, chips, room numbers), the hand face for anything "written" (chalk, notebook).
+- Text is rare and small; when in doubt, cut it.
+
+## Motion grammar
+
+Movement is physics, not interpolation. Pick the helper that matches the beat:
+
+| Helper | Use for |
+|---|---|
+| `easeOut` (kf default per-key `ease`) | anything entering frame, a head turn, a reach — fast start, soft land |
+| `easeIn` | anything leaving frame or winding up |
+| `backOut` | pops, landings, stings — overshoot then settle (the genre's signature "boing") |
+| `settle(t, amp)` | the wobble after a hit, catch or landing — decaying sine, never a hard stop |
+| `shake(t, from)` | impacts the camera should feel (a hit, a slam, a snap) |
+| `rnd(seed, i)` | scattering props deterministically — books, dust, confetti; never `Math.random()` |
+
+Rules:
+
+- **Never linear-only motion.** A bare `lerp`/`t * x` drift reads as a slide, not a move. Every
+  translate, scale or rotation gets an ease; holds get a secondary motion (bob, sway, flicker).
+- Entrances `easeOut`, exits `easeIn`, overshoots `backOut`, aftershocks `settle`. If a move has
+  no overshoot and no settle, it probably needs one.
+- `poseAt` keys carry their own `ease` — put `easeOut` on arrivals and `backOut` on the final
+  landing key of a big move, not on every key.
+- Idle is not still: breathing bob, blinking, dust, a sway — pick at least two per shot.
+- Anticipation before the big move (a crouch, a wind-up), a 2-frame hold on the realisation beat,
+  then the action lands on its word.
 
 ## The motion check (step 6)
 
