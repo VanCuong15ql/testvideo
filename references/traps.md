@@ -87,8 +87,8 @@ shot or a character.
 - **Google Fonts need a connection** at render time. Set a local title face in `studio.config.ts` to work offline.
 - **Windows:** `master.py` calls `npx.cmd`; Remotion downloads its own headless Chrome on the first render (about
   110 MB, once).
-- **ElevenLabs costs:** the voice's exact cost is in the history; sound clips only move the account counter, which
-  can lag. Re-read it before reporting.
+- **Costs:** the voice is Gemini TTS free tier (quota, not credits — one request per episode, ~15/day); sound
+  clips move only the ElevenLabs account counter, which can lag. Re-read it before reporting.
 - **Remotion Studio can't drag these shots around:** they're computed from the timeline, so retime in
   `episode.json` and re-run `plan.py`.
 - **master.py's loudnorm pass needs an audio stream.** On a silent render it crashed parsing empty ffmpeg JSON;

@@ -48,7 +48,7 @@ and the sister in danger (6), and ends on "Part 1".
 - **End on a question or a threat,** never a resolution: "So where are yours coming from?", "It's about to ruin
   your life."
 - **Length:** 45 to 65 words lands at 15 to 25 seconds after voice.py tightens the pauses (about 2.7 words a
-  second). Count before you call the voice: every character costs credits.
+  second). Count before you call the voice: the take spends one of ~15 free Gemini requests a day.
 - **The title card** is the premise, in capitals: line 1 `WHAT IF YOU COULD`, line 2 the power in four words or
   fewer with a question mark. One word of line 2 can pulse as the accent (`10`, `ANYTHING`).
 
@@ -71,12 +71,12 @@ The copy-paste example (`studio/src/episodes/copy-paste/episode.json`), 61 words
 "topic": "What if you could copy and paste anything?",
 "title": ["WHAT IF YOU COULD", "COPY AND PASTE ANYTHING?"],
 "script": [
-  {"beat": "1 cold open, demo 1 (small and selfish)", "text": "Copy a cookie. Paste. Free cookies, forever."},
-  {"beat": "1 cold open, demo 2 (useful)", "text": "Copy your homework. Paste. Done."},
-  {"beat": "1 cold open, demo 3 (a little uncanny)", "text": "Copy your best friend. Paste. Okay, that's weird."},
-  {"beat": "2 the premise (title card)", "text": "What if you could copy and paste anything?"},
-  {"beat": "4 the turn: the cost, one real fact", "text": "One catch: a copy can't come from nothing. One cookie, made from pure energy, needs every power plant on Earth running for over ten minutes. That's real."},
-  {"beat": "5-7 folded into a question", "text": "So where are yours coming from?"}
+  {"beat": "1 cold open, demo 1 (small and selfish)", "who": "pip", "style": "cheerful, quick", "text": "Copy a cookie. Paste. Free cookies, forever."},
+  {"beat": "1 cold open, demo 2 (useful)", "who": "mo", "style": "impressed", "text": "Copy your homework. Paste. Done."},
+  {"beat": "1 cold open, demo 3 (a little uncanny)", "who": "pip", "style": "uneasy, quieter", "text": "Copy your best friend. Paste. Okay, that's weird."},
+  {"beat": "2 the premise (title card)", "who": "mo", "style": "curious", "text": "What if you could copy and paste anything?"},
+  {"beat": "4 the turn: the cost, one real fact", "who": "pip", "style": "serious, steady", "text": "One catch: a copy can't come from nothing. One cookie, made from pure energy, needs every power plant on Earth running for over ten minutes. That's real."},
+  {"beat": "5-7 folded into a question", "who": "mo", "style": "mischievous", "text": "So where are yours coming from?"}
 ],
 "science": [
   {"claim": "One cookie made from pure energy needs every power plant on Earth running for over ten minutes.",
@@ -85,5 +85,7 @@ The copy-paste example (`studio/src/episodes/copy-paste/episode.json`), 61 words
 ]
 ```
 
-`voice.py` joins the beats' text with spaces and sends it as one take, so the read flows; the beats are for you and
-for the storyboard.
+`voice.py` sends the script as **one Gemini TTS request**: each entry becomes a dialogue turn for its `who`
+speaker with its `style` as the turn's emotion (see `references/voice.md`). Write `who` and `style` as carefully
+as the words — the voices alternate like a conversation, and the emotion is what makes the read act instead of
+narrate. The beats are for you and for the storyboard.

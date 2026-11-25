@@ -1,12 +1,13 @@
 ---
 name: what-if-animation
-description: Make a "What If" animated episode from one topic line ("What if you could rewind 10 seconds?"), in the dusk-lit stick-figure style of the What If channels that broke out on YouTube in October 2026. Writes the script on the seven-beat What If formula, voices it with ElevenLabs, lays out a shot list at the genre's pace, renders a storyboard of stills and self-checks it before animating, animates every frame in code (Remotion and SVG, with an original cast on one rig, rooms in perspective and light from lamps and windows), generates and syncs the sound, and masters a finished 15-25 s episode to -14 LUFS. Use when someone asks for a What If episode, animation or cartoon, "make a what if video about X", a stick-figure explainer in this style, or to run the free What If skill.
+description: Make a "What If" animated episode from one topic line ("What if you could rewind 10 seconds?"), in the dusk-lit stick-figure style of the What If channels that broke out on YouTube in October 2026. Writes the script on the seven-beat What If formula, voices it with Gemini TTS (two speakers, one request, per-line emotion), lays out a shot list at the genre's pace, renders a storyboard of stills and self-checks it before animating, animates every frame in code (Remotion and SVG, with an original cast on one rig, rooms in perspective and light from lamps and windows), generates and syncs the sound (ElevenLabs SFX), and masters a finished 15-25 s episode to -14 LUFS. Use when someone asks for a What If episode, animation or cartoon, "make a what if video about X", a stick-figure explainer in this style, or to run the free What If skill.
 ---
 
 # What If animation
 
 One topic line in, a finished 15-25 second episode out. Every frame is SVG that Claude writes (rendered by
-Remotion); the voice and the sound come from ElevenLabs. Two examples ship in `studio/src/episodes/`, both ready to
+Remotion); the voice comes from Gemini TTS (two speakers, one request per episode, emotion per line) and the
+sound effects from ElevenLabs. Two examples ship in `studio/src/episodes/`, both ready to
 render: `rewind` ("What if you could rewind 10 seconds?", the proof clip: shots played backwards as the power) and
 `copy-paste` ("What if you could copy and paste anything?", the skill's first full run: a new kitchen set, a
 schematic for the science beat, a cliffhanger blackout). Read the one closest to your topic before you start.
@@ -17,6 +18,7 @@ schematic for the science beat, a cliffhanger blackout). Read the one closest to
 | `references/look.md` | The measured look, pace, shot vocabulary, and the storyboard and motion checklists |
 | `references/kit.md` | The building blocks: engine, cast, sets, room kit, light, UI, looks, and how to add each |
 | `references/sound.md` | Writing sound events, prompts, levels, costs |
+| `references/voice.md` | The Gemini TTS voice: two speakers, per-line emotion, one request, Whisper timestamps |
 | `references/traps.md` | Everything that cost time on the two example episodes |
 | `studio/` | The Remotion project: copy it once, then every episode lives in it |
 | `scripts/` | voice, plan, stills, board, sfx, mixcheck, motiongrid, master (Python 3.9+ and Node) |
@@ -28,24 +30,31 @@ schematic for the science beat, a cliffhanger blackout). Read the one closest to
   new look on the cast sheet (Mo's first hat was dropped for drifting toward one).
 - **Original stories.** The formula is shared; the episode isn't anyone else's. Don't remake a channel's title.
 - **Never claim the viral channels are made with Claude** or any other tool. Nobody has said how they're made.
-- **Keys by name only.** `ELEVENLABS_API_KEY` and `ELEVENLABS_API_KEY_2`, from the environment or a `.env`
-  above the studio. If the first key fails, automatically try the second key. Never print, paste or hardcode a key.
-- **Report the ElevenLabs credits** of every run: the scripts log them to `out/<slug>/costs.json` and `master.py`
-  totals them in `report.json`. The voice's cost is read from the account's history (exact); sound clips don't show
-  there, so their cost comes from the account counter, which can lag: re-read it before you report. Say the number
-  when you hand the episode over. The copy-paste run cost 152 credits (78 for the voice, 74 for 12 new clips).
+- **Keys by name only.** Voice: `GEMINI_API_KEY`, `GEMINI_API_KEY_2`, `GEMINI_API_KEY_3` — tried in order,
+  falling back on failure. Sound: `ELEVENLABS_API_KEY` and `ELEVENLABS_API_KEY_2`, same fallback. All from the
+  environment or a `.env` above the studio. Never print, paste or hardcode a key.
+- **Report the costs** of every run: Gemini TTS spends free-tier daily quota (~15 requests/day, one request per
+  episode — no credits); ElevenLabs credits for sound clips are logged to `out/<slug>/costs.json` and totalled
+  in `report.json`, read fresh from the account at hand-over time (the counter can lag; re-read before reporting).
+  Say the numbers when you hand the episode over.
 - **Storyboard before animation.** No video render until the stills pass the self-check (step 5) and, when the person
   is in the loop, they've seen the board.
 - **Every fact is real.** A number in the script is worked out and sourced in the episode's `science` field first.
 - **Script splitting.** If the script is too long, manually split it into pages (script/page1.txt, script/page2.txt, etc.)
   by content boundaries - do NOT use code for splitting. Each page should be a coherent section.
+- **Story pipeline (long scripts).** After `voice_story.py` voices the pages, run `python scripts/plan_story.py <slug>`
+  from `studio/`: it writes `episode.json` (one shot per paragraph, ids `P{n}S{k}`) and a brief per scene in
+  `out/<slug>/scenes/`. Scenes (~10 paragraphs) are the unit of parallel work — each agent implements
+  `shots/p{n}c{m}.tsx` exporting `{mod}Shots: ShotMap`; `shots.tsx` merges them all. Then `plan.py` builds
+  `timeline.json` as usual. See `episodes/crush/` for the pattern.
 - **GitHub Actions rendering.** Video is rendered on GitHub Actions, not locally (see "Rendering on GitHub Actions"
   below). Prepare assets and scripts for CI/CD rather than local rendering: commit `timeline.json` and `words.json`,
   keep generated audio out of git, and expect the runner to produce a silent MP4 you mux audio onto yourself.
 
 ## Setup (once per machine)
 
-Needs Node 18+, ffmpeg and ffprobe on the PATH, Python 3.9+ with `numpy` and `Pillow`, and an ElevenLabs key.
+Needs Node 18+, ffmpeg and ffprobe on the PATH, Python 3.9+ with `numpy` and `Pillow`, Whisper for word
+timestamps, and Gemini (`GEMINI_API_KEY` + fallbacks) and ElevenLabs (`ELEVENLABS_API_KEY`) keys.
 
 ```bash
 cp -r <skill>/studio ./what-if-studio && cd what-if-studio && npm install
@@ -70,14 +79,19 @@ the claim, the working, the source). 45 to 65 words. Read it aloud at pace: ever
 
 ### 2. Voice
 
+Read `references/voice.md`. The script is dialogue: each `script` entry gets `who` (one of the two speakers)
+and `style` (that line's emotion). Then:
+
 ```bash
 python <skill>/scripts/voice.py <slug>
 ```
 
-One ElevenLabs take with character timestamps (the 356-character copy-paste take cost 78 credits), then the pauses
-cut to the genre's pace: `public/<slug>/voice.wav` and `src/episodes/<slug>/words.json`. Check the length (15-25 s)
-and the word times it prints. Retune pauses with `gaps` in `episode.json` and re-run: the take is cached, so that's free. Change a word
-and it calls the API again.
+One Gemini TTS request returns the whole episode's voice track (two voices, per-line emotion — free tier is
+~15 requests/day, so the take is precious: get the script and styles right first). Whisper transcribes it for
+word timestamps, then the pauses are cut to the genre's pace: `public/<slug>/voice.wav` and
+`src/episodes/<slug>/words.json`. Check the length (15-25 s) and the word times it prints. Retune pauses with
+`gaps` in `episode.json` and re-run: the take is cached, so that's free. Change a line and it calls the API
+again — a quota spent.
 
 ### 3. Shot list
 
@@ -166,13 +180,15 @@ python <skill>/scripts/master.py <slug>
 ```
 
 Renders, brings the mix to -14 LUFS with peaks under -1 dBTP, and writes `out/<slug>/report.json` (length, loudness,
-pace, credits). Watch the final file once through with sound. Hand over `out/<slug>/<slug>-final.mp4` and
-`out/<slug>/storyboard.jpg`, with the length, the ElevenLabs credits used, and anything you'd still improve.
+pace, costs). Watch the final file once through with sound. Hand over `out/<slug>/<slug>-final.mp4` and
+`out/<slug>/storyboard.jpg`, with the length, the Gemini quota and ElevenLabs credits used, and anything you'd
+still improve.
 
 ## Rendering on GitHub Actions
 
 `.github/workflows/render-what-if.yml` renders the video on GitHub-hosted runners; push to `main` or dispatch it with
-a slug. The shipped workflow is **video-only**: it never calls ElevenLabs, so it costs no credits. Audio
+a slug. The shipped workflow is **video-only**: it never calls the voice or sound APIs, so it costs no quota or
+credits. Audio
 (`public/<slug>/*.wav`) is generated locally ahead of time if wanted, but the CI pass strips the audio entries from
 `timeline.json` and produces a **silent** `<slug>-final.mp4` plus `report.json` as artifacts; mux the voice/sfx/music
 onto it locally afterwards.
@@ -187,7 +203,8 @@ the parts with `ffmpeg -f concat -c copy` into `<slug>-raw.mp4` and runs `master
 detects the missing audio stream and copy-throughs to `-final.mp4` without loudnorm. Standard `ubuntu-latest` runners
 are free on public repos, so chunk count is the lever: render wall-clock is roughly `frames / (chunks × ~4-core
 throughput)` plus ~4 min of setup per job. Use Python 3.12 in CI — 3.9 is not published for the current Ubuntu
-runner image. `ELEVENLABS_API_KEY`/`_2` secrets are only needed if a workflow step calls the API; this one doesn't.
+runner image. `GEMINI_API_KEY*`/`ELEVENLABS_API_KEY*` secrets are only needed if a workflow step calls the APIs;
+this one doesn't.
 
 ## Where an episode lives
 
