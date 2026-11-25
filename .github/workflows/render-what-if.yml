@@ -31,6 +31,9 @@ jobs:
             base="${{ github.event.before }}"
             [ "$base" = "0000000000000000000000000000000000000000" ] && base="HEAD~1"
             s=$(git diff --name-only "$base" HEAD | sed -n 's#studio/src/episodes/\([^/]*\)/.*#\1#p' | sort -u | head -1)
+            if [ -z "$s" ]; then
+              s=$(git log --format= --name-only -30 | sed -n 's#studio/src/episodes/\([^/]*\)/.*#\1#p' | head -1)
+            fi
             s="${s:-sandglass}"
           fi
           echo "slug=$s" >> "$GITHUB_OUTPUT"
