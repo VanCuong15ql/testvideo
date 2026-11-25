@@ -2,5 +2,6 @@
 import { rewind } from './rewind';
 import { copyPaste } from './copy-paste';
 import { sandglass } from './sandglass';
+import { crush } from './crush';
 
-export const EPISODES = [rewind, copyPaste, sandglass];
+export const EPISODES = [rewind, copyPaste, sandglass, crush];

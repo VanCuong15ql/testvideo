@@ -15,9 +15,22 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       chunks: ${{ steps.chunks.outputs.chunks }}
+      slug: ${{ steps.slug.outputs.slug }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Resolve slug
+        id: slug
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            s="${{ github.event.inputs.slug }}"
+          else
+            s=$(git diff --name-only HEAD~1 HEAD | sed -n 's#studio/src/episodes/\([^/]*\)/.*#\1#p' | sort -u | head -1)
+            s="${s:-sandglass}"
+          fi
+          echo "slug=$s" >> "$GITHUB_OUTPUT"
+          echo "resolved slug: $s"
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -27,7 +40,7 @@ jobs:
       - name: Compute frame chunks
         id: chunks
         env:
-          SLUG: ${{ github.event.inputs.slug || 'sandglass' }}
+          SLUG: ${{ steps.slug.outputs.slug }}
         run: |
           python - <<'EOF'
           import json, math, os
@@ -46,6 +59,8 @@ jobs:
     needs: plan
     runs-on: ubuntu-latest
     timeout-minutes: 180
+    env:
+      SLUG: ${{ needs.plan.outputs.slug }}
     strategy:
       fail-fast: false
       matrix:
@@ -81,15 +96,11 @@ jobs:
 
       - name: Strip audio from timeline (silent render)
         working-directory: studio
-        env:
-          SLUG: ${{ github.event.inputs.slug || 'sandglass' }}
         run: |
           python -c "import json,io,os; p='src/episodes/'+os.environ['SLUG']+'/timeline.json'; d=json.load(io.open(p,encoding='utf-8')); d['audio']={}; io.open(p,'w',encoding='utf-8').write(json.dumps(d,indent=1,ensure_ascii=False))"
 
       - name: Render chunk ${{ matrix.chunk.i }} (frames ${{ matrix.chunk.start }}-${{ matrix.chunk.end }})
         working-directory: studio
-        env:
-          SLUG: ${{ github.event.inputs.slug || 'sandglass' }}
         run: |
           npx remotion render src/index.ts $(python -c "import json;print(json.load(open('src/episodes/$SLUG/episode.json',encoding='utf-8'))['id'])") \
             out/$SLUG/part-${{ matrix.chunk.i }}.mp4 \
@@ -99,13 +110,15 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: part-${{ matrix.chunk.i }}
-          path: studio/out/${{ github.event.inputs.slug || 'sandglass' }}/part-${{ matrix.chunk.i }}.mp4
+          path: studio/out/${{ needs.plan.outputs.slug }}/part-${{ matrix.chunk.i }}.mp4
           retention-days: 30
 
   join:
-    needs: render
+    needs: [render, plan]
     runs-on: ubuntu-latest
     timeout-minutes: 60
+    env:
+      SLUG: ${{ needs.plan.outputs.slug }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -127,13 +140,11 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           pattern: part-*
-          path: studio/out/${{ github.event.inputs.slug || 'sandglass' }}/
+          path: studio/out/${{ needs.plan.outputs.slug }}/
           merge-multiple: true
 
       - name: Concatenate chunks into raw video
-        working-directory: studio/out/${{ github.event.inputs.slug || 'sandglass' }}
-        env:
-          SLUG: ${{ github.event.inputs.slug || 'sandglass' }}
+        working-directory: studio/out/${{ needs.plan.outputs.slug }}
         run: |
           ls part-*.mp4 | sort -t- -k2 -n | while read f; do echo "file '$f'"; done > concat.txt
           cat concat.txt
@@ -141,19 +152,17 @@ jobs:
 
       - name: "Master (silent: copy-through, no loudnorm)"
         working-directory: studio
-        env:
-          SLUG: ${{ github.event.inputs.slug || 'sandglass' }}
         run: python ../scripts/master.py $SLUG --skip-render
 
       - name: Upload final video
         uses: actions/upload-artifact@v4
         with:
-          name: what-if-${{ github.event.inputs.slug || 'sandglass' }}
-          path: studio/out/${{ github.event.inputs.slug || 'sandglass' }}/report.json
+          name: what-if-${{ needs.plan.outputs.slug }}
+          path: studio/out/${{ needs.plan.outputs.slug }}/report.json
           retention-days: 30
       - name: Upload final mp4
         uses: actions/upload-artifact@v4
         with:
-          name: what-if-${{ github.event.inputs.slug || 'sandglass' }}-video
-          path: studio/out/${{ github.event.inputs.slug || 'sandglass' }}/${{ github.event.inputs.slug || 'sandglass' }}-final.mp4
+          name: what-if-${{ needs.plan.outputs.slug }}-video
+          path: studio/out/${{ needs.plan.outputs.slug }}/${{ needs.plan.outputs.slug }}-final.mp4
           retention-days: 30

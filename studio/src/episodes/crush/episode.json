@@ -1,0 +1,2920 @@
+{
+ "id": "Crush",
+ "slug": "crush",
+ "title": [
+  "What If Your Crush’s Shadow Revealed Her Secret Feelings?"
+ ],
+ "tail": 2.5,
+ "fps": 30,
+ "shots": [
+  {
+   "id": "P1S1",
+   "size": "story",
+   "note": "What If Your Crush’s Shadow Revealed Her Secret Feelings?"
+  },
+  {
+   "id": "P1S2",
+   "size": "story",
+   "note": "Exactly 8:12 on Monday morning, you noticed something strange."
+  },
+  {
+   "id": "P1S3",
+   "size": "story",
+   "note": "Your CRUSH was standing on the other side of the school hallway, chatting with her friends."
+  },
+  {
+   "id": "P1S4",
+   "size": "story",
+   "note": "You looked at her."
+  },
+  {
+   "id": "P1S5",
+   "size": "story",
+   "note": "She smiled."
+  },
+  {
+   "id": "P1S6",
+   "size": "story",
+   "note": "You immediately looked away."
+  },
+  {
+   "id": "P1S7",
+   "size": "story",
+   "note": "Just another normal day."
+  },
+  {
+   "id": "P1S8",
+   "size": "story",
+   "note": "But then you noticed something completely impossible."
+  },
+  {
+   "id": "P1S9",
+   "size": "story",
+   "note": "Her shadow was waving at you."
+  },
+  {
+   "id": "P1S10",
+   "size": "story",
+   "note": "You blinked."
+  },
+  {
+   "id": "P1S11",
+   "size": "story",
+   "note": "She wasn't waving."
+  },
+  {
+   "id": "P1S12",
+   "size": "story",
+   "note": "Both of her hands were still holding her books."
+  },
+  {
+   "id": "P1S13",
+   "size": "story",
+   "note": "But her shadow?"
+  },
+  {
+   "id": "P1S14",
+   "size": "story",
+   "note": "It was waving like it had just spotted its favorite celebrity."
+  },
+  {
+   "id": "P1S15",
+   "size": "story",
+   "note": "You stared at it."
+  },
+  {
+   "id": "P1S16",
+   "size": "story",
+   "note": "The shadow pointed at you, then used both hands to make a heart."
+  },
+  {
+   "id": "P1S17",
+   "size": "story",
+   "note": "You almost dropped your backpack."
+  },
+  {
+   "id": "P1S18",
+   "size": "story",
+   "note": "You looked back at Emma."
+  },
+  {
+   "id": "P1S19",
+   "size": "story",
+   "note": "She was still chatting with her friends, completely unaware of what her shadow was doing."
+  },
+  {
+   "id": "P1S20",
+   "size": "story",
+   "note": "You quickly walked into your classroom."
+  },
+  {
+   "id": "P1S21",
+   "size": "story",
+   "note": "There was no way you were going to spend the rest of the morning staring at someone's shadow."
+  },
+  {
+   "id": "P1S22",
+   "size": "story",
+   "note": "At least, that was the plan."
+  },
+  {
+   "id": "P1S23",
+   "size": "story",
+   "note": "The first strange discovery"
+  },
+  {
+   "id": "P1S24",
+   "size": "story",
+   "note": "During the first break, you were standing near the classroom window when Emma approached."
+  },
+  {
+   "id": "P1S25",
+   "size": "story",
+   "note": "\"Hey, do you understand question five?\""
+  },
+  {
+   "id": "P1S26",
+   "size": "story",
+   "note": "You turned around."
+  },
+  {
+   "id": "P1S27",
+   "size": "story",
+   "note": "\"Uh… maybe. Let me see.\""
+  },
+  {
+   "id": "P1S28",
+   "size": "story",
+   "note": "She handed you her notebook."
+  },
+  {
+   "id": "P1S29",
+   "size": "story",
+   "note": "You looked at the question, trying very hard to concentrate."
+  },
+  {
+   "id": "P1S30",
+   "size": "story",
+   "note": "But then you noticed her shadow on the wall."
+  },
+  {
+   "id": "P1S31",
+   "size": "story",
+   "note": "While Emma was looking at the notebook, her shadow was leaning toward you with its hands clasped together."
+  },
+  {
+   "id": "P1S32",
+   "size": "story",
+   "note": "It looked like it was waiting for something."
+  },
+  {
+   "id": "P1S33",
+   "size": "story",
+   "note": "You glanced at Emma."
+  },
+  {
+   "id": "P1S34",
+   "size": "story",
+   "note": "\"What's wrong?\" she asked."
+  },
+  {
+   "id": "P1S35",
+   "size": "story",
+   "note": "\"Nothing. I just… need to think.\""
+  },
+  {
+   "id": "P1S36",
+   "size": "story",
+   "note": "Her shadow suddenly nodded enthusiastically."
+  },
+  {
+   "id": "P1S37",
+   "size": "story",
+   "note": "You looked away."
+  },
+  {
+   "id": "P1S38",
+   "size": "story",
+   "note": "After explaining the question, Emma smiled."
+  },
+  {
+   "id": "P1S39",
+   "size": "story",
+   "note": "\"Thanks! I knew you'd understand it.\""
+  },
+  {
+   "id": "P1S40",
+   "size": "story",
+   "note": "Her shadow immediately jumped into the air."
+  },
+  {
+   "id": "P1S41",
+   "size": "story",
+   "note": "You nearly laughed."
+  },
+  {
+   "id": "P1S42",
+   "size": "story",
+   "note": "\"You're welcome.\""
+  },
+  {
+   "id": "P1S43",
+   "size": "story",
+   "note": "Emma walked back to her seat."
+  },
+  {
+   "id": "P1S44",
+   "size": "story",
+   "note": "Her shadow turned around and gave you one final thumbs-up before following her."
+  },
+  {
+   "id": "P1S45",
+   "size": "story",
+   "note": "You were beginning to suspect that her shadow had a personality of its own."
+  },
+  {
+   "id": "P2S1",
+   "size": "story",
+   "note": "The group project"
+  },
+  {
+   "id": "P2S2",
+   "size": "story",
+   "note": "A few days later, your teacher announced a group assignment."
+  },
+  {
+   "id": "P2S3",
+   "size": "story",
+   "note": "You were hoping to work with your usual friends."
+  },
+  {
+   "id": "P2S4",
+   "size": "story",
+   "note": "Unfortunately, the teacher had other plans."
+  },
+  {
+   "id": "P2S5",
+   "size": "story",
+   "note": "\"Emma and you will work together.\""
+  },
+  {
+   "id": "P2S6",
+   "size": "story",
+   "note": "You tried to look calm."
+  },
+  {
+   "id": "P2S7",
+   "size": "story",
+   "note": "\"Okay.\""
+  },
+  {
+   "id": "P2S8",
+   "size": "story",
+   "note": "Emma turned toward you."
+  },
+  {
+   "id": "P2S9",
+   "size": "story",
+   "note": "\"Looks like we're partners.\""
+  },
+  {
+   "id": "P2S10",
+   "size": "story",
+   "note": "\"Yeah. Guess so.\""
+  },
+  {
+   "id": "P2S11",
+   "size": "story",
+   "note": "She smiled."
+  },
+  {
+   "id": "P2S12",
+   "size": "story",
+   "note": "Her shadow immediately threw both hands into the air."
+  },
+  {
+   "id": "P2S13",
+   "size": "story",
+   "note": "You pretended not to notice."
+  },
+  {
+   "id": "P2S14",
+   "size": "story",
+   "note": "After class, you and Emma went to the library to plan the assignment."
+  },
+  {
+   "id": "P2S15",
+   "size": "story",
+   "note": "She opened her laptop while you started writing down ideas."
+  },
+  {
+   "id": "P2S16",
+   "size": "story",
+   "note": "\"How about we make a presentation instead of a poster?\" she suggested."
+  },
+  {
+   "id": "P2S17",
+   "size": "story",
+   "note": "\"That could work.\""
+  },
+  {
+   "id": "P2S18",
+   "size": "story",
+   "note": "\"And maybe we can add a short video.\""
+  },
+  {
+   "id": "P2S19",
+   "size": "story",
+   "note": "\"That's actually a good idea.\""
+  },
+  {
+   "id": "P2S20",
+   "size": "story",
+   "note": "She looked surprised."
+  },
+  {
+   "id": "P2S21",
+   "size": "story",
+   "note": "\"Wow. You agreed with me twice.\""
+  },
+  {
+   "id": "P2S22",
+   "size": "story",
+   "note": "You laughed."
+  },
+  {
+   "id": "P2S23",
+   "size": "story",
+   "note": "\"Should I disagree just to make things interesting?\""
+  },
+  {
+   "id": "P2S24",
+   "size": "story",
+   "note": "\"Please don't.\""
+  },
+  {
+   "id": "P2S25",
+   "size": "story",
+   "note": "Her shadow was standing beside your chair."
+  },
+  {
+   "id": "P2S26",
+   "size": "story",
+   "note": "It was giving you two thumbs-up."
+  },
+  {
+   "id": "P2S27",
+   "size": "story",
+   "note": "You had to look away before Emma noticed you smiling."
+  },
+  {
+   "id": "P2S28",
+   "size": "story",
+   "note": "Over the next few days, working together became surprisingly enjoyable."
+  },
+  {
+   "id": "P2S29",
+   "size": "story",
+   "note": "Emma was organized but sometimes forgot small details."
+  },
+  {
+   "id": "P2S30",
+   "size": "story",
+   "note": "You were good at solving problems but occasionally spent too much time worrying about minor things."
+  },
+  {
+   "id": "P2S31",
+   "size": "story",
+   "note": "She teased you about it."
+  },
+  {
+   "id": "P2S32",
+   "size": "story",
+   "note": "You teased her back."
+  },
+  {
+   "id": "P2S33",
+   "size": "story",
+   "note": "And somehow, the assignment that had initially seemed like a chore became the best part of your school week."
+  },
+  {
+   "id": "P2S34",
+   "size": "story",
+   "note": "One afternoon, you stayed late to finish the presentation."
+  },
+  {
+   "id": "P2S35",
+   "size": "story",
+   "note": "The library was almost empty."
+  },
+  {
+   "id": "P2S36",
+   "size": "story",
+   "note": "Emma stretched and looked at the clock."
+  },
+  {
+   "id": "P2S37",
+   "size": "story",
+   "note": "\"Wow. We've been here for two hours.\""
+  },
+  {
+   "id": "P2S38",
+   "size": "story",
+   "note": "\"Really? It felt like twenty minutes.\""
+  },
+  {
+   "id": "P2S39",
+   "size": "story",
+   "note": "She looked at you."
+  },
+  {
+   "id": "P2S40",
+   "size": "story",
+   "note": "\"That's because you spent half the time choosing fonts.\""
+  },
+  {
+   "id": "P2S41",
+   "size": "story",
+   "note": "\"Fonts are important.\""
+  },
+  {
+   "id": "P2S42",
+   "size": "story",
+   "note": "\"Sure. Very important.\""
+  },
+  {
+   "id": "P2S43",
+   "size": "story",
+   "note": "Her shadow was laughing."
+  },
+  {
+   "id": "P2S44",
+   "size": "story",
+   "note": "Not Emma."
+  },
+  {
+   "id": "P2S45",
+   "size": "story",
+   "note": "The shadow."
+  },
+  {
+   "id": "P2S46",
+   "size": "story",
+   "note": "It had both hands on its stomach, bending forward as if it couldn't stop laughing."
+  },
+  {
+   "id": "P2S47",
+   "size": "story",
+   "note": "You quickly looked down at your laptop."
+  },
+  {
+   "id": "P2S48",
+   "size": "story",
+   "note": "This was getting ridiculous."
+  },
+  {
+   "id": "P3S1",
+   "size": "story",
+   "note": "The rainy afternoon"
+  },
+  {
+   "id": "P3S2",
+   "size": "story",
+   "note": "The following Thursday, heavy rain started just as school ended."
+  },
+  {
+   "id": "P3S3",
+   "size": "story",
+   "note": "Students rushed toward the entrance."
+  },
+  {
+   "id": "P3S4",
+   "size": "story",
+   "note": "You stood under the roof, checking your phone and waiting for the rain to slow down."
+  },
+  {
+   "id": "P3S5",
+   "size": "story",
+   "note": "Then Emma appeared beside you."
+  },
+  {
+   "id": "P3S6",
+   "size": "story",
+   "note": "\"Do you have an umbrella?\""
+  },
+  {
+   "id": "P3S7",
+   "size": "story",
+   "note": "You shook your head."
+  },
+  {
+   "id": "P3S8",
+   "size": "story",
+   "note": "\"Unfortunately, no.\""
+  },
+  {
+   "id": "P3S9",
+   "size": "story",
+   "note": "She held up a small blue umbrella."
+  },
+  {
+   "id": "P3S10",
+   "size": "story",
+   "note": "\"Want to share?\""
+  },
+  {
+   "id": "P3S11",
+   "size": "story",
+   "note": "You looked at the umbrella."
+  },
+  {
+   "id": "P3S12",
+   "size": "story",
+   "note": "Then at Emma."
+  },
+  {
+   "id": "P3S13",
+   "size": "story",
+   "note": "\"Are you sure?\""
+  },
+  {
+   "id": "P3S14",
+   "size": "story",
+   "note": "\"Unless you want to swim home.\""
+  },
+  {
+   "id": "P3S15",
+   "size": "story",
+   "note": "You laughed."
+  },
+  {
+   "id": "P3S16",
+   "size": "story",
+   "note": "\"Okay. Fair enough.\""
+  },
+  {
+   "id": "P3S17",
+   "size": "story",
+   "note": "The umbrella was small."
+  },
+  {
+   "id": "P3S18",
+   "size": "story",
+   "note": "Very small."
+  },
+  {
+   "id": "P3S19",
+   "size": "story",
+   "note": "You both had to walk close together to stay underneath it."
+  },
+  {
+   "id": "P3S20",
+   "size": "story",
+   "note": "At first, you tried to leave as much space between you as possible."
+  },
+  {
+   "id": "P3S21",
+   "size": "story",
+   "note": "Which meant one of your shoulders was getting soaked."
+  },
+  {
+   "id": "P3S22",
+   "size": "story",
+   "note": "Emma noticed."
+  },
+  {
+   "id": "P3S23",
+   "size": "story",
+   "note": "\"You're getting wet.\""
+  },
+  {
+   "id": "P3S24",
+   "size": "story",
+   "note": "\"I'm fine.\""
+  },
+  {
+   "id": "P3S25",
+   "size": "story",
+   "note": "She moved the umbrella toward you."
+  },
+  {
+   "id": "P3S26",
+   "size": "story",
+   "note": "\"You're really bad at sharing an umbrella.\""
+  },
+  {
+   "id": "P3S27",
+   "size": "story",
+   "note": "You laughed."
+  },
+  {
+   "id": "P3S28",
+   "size": "story",
+   "note": "\"You're the one holding it.\""
+  },
+  {
+   "id": "P3S29",
+   "size": "story",
+   "note": "\"Exactly. And I'm doing a terrible job.\""
+  },
+  {
+   "id": "P3S30",
+   "size": "story",
+   "note": "You both laughed."
+  },
+  {
+   "id": "P3S31",
+   "size": "story",
+   "note": "But when you looked down, her shadow was doing something strange."
+  },
+  {
+   "id": "P3S32",
+   "size": "story",
+   "note": "It was standing right beside yours, holding an imaginary umbrella over both of you."
+  },
+  {
+   "id": "P3S33",
+   "size": "story",
+   "note": "Then it slowly leaned its head against your shoulder."
+  },
+  {
+   "id": "P3S34",
+   "size": "story",
+   "note": "You almost walked into a puddle."
+  },
+  {
+   "id": "P3S35",
+   "size": "story",
+   "note": "Emma looked at you."
+  },
+  {
+   "id": "P3S36",
+   "size": "story",
+   "note": "\"Careful!\""
+  },
+  {
+   "id": "P3S37",
+   "size": "story",
+   "note": "\"Yeah. Sorry.\""
+  },
+  {
+   "id": "P3S38",
+   "size": "story",
+   "note": "You continued walking."
+  },
+  {
+   "id": "P3S39",
+   "size": "story",
+   "note": "A few minutes later, Emma suddenly asked:"
+  },
+  {
+   "id": "P3S40",
+   "size": "story",
+   "note": "\"Can I tell you something?\""
+  },
+  {
+   "id": "P3S41",
+   "size": "story",
+   "note": "\"Sure.\""
+  },
+  {
+   "id": "P3S42",
+   "size": "story",
+   "note": "\"You're actually easier to talk to than I expected.\""
+  },
+  {
+   "id": "P3S43",
+   "size": "story",
+   "note": "You looked at her."
+  },
+  {
+   "id": "P3S44",
+   "size": "story",
+   "note": "\"Was I difficult to talk to before?\""
+  },
+  {
+   "id": "P3S45",
+   "size": "story",
+   "note": "She laughed."
+  },
+  {
+   "id": "P3S46",
+   "size": "story",
+   "note": "\"No. I just thought you were really quiet.\""
+  },
+  {
+   "id": "P3S47",
+   "size": "story",
+   "note": "You shrugged."
+  },
+  {
+   "id": "P3S48",
+   "size": "story",
+   "note": "\"I'm usually quiet around people I don't know very well.\""
+  },
+  {
+   "id": "P3S49",
+   "size": "story",
+   "note": "\"And now?\""
+  },
+  {
+   "id": "P3S50",
+   "size": "story",
+   "note": "You looked at her."
+  },
+  {
+   "id": "P3S51",
+   "size": "story",
+   "note": "\"Now I'm getting used to you.\""
+  },
+  {
+   "id": "P3S52",
+   "size": "story",
+   "note": "Emma smiled."
+  },
+  {
+   "id": "P3S53",
+   "size": "story",
+   "note": "Her shadow immediately started jumping."
+  },
+  {
+   "id": "P3S54",
+   "size": "story",
+   "note": "You pretended to focus on the road."
+  },
+  {
+   "id": "P4S1",
+   "size": "story",
+   "note": "The school festival"
+  },
+  {
+   "id": "P4S2",
+   "size": "story",
+   "note": "A week later, the school announced its annual festival."
+  },
+  {
+   "id": "P4S3",
+   "size": "story",
+   "note": "Every class had to prepare a small activity."
+  },
+  {
+   "id": "P4S4",
+   "size": "story",
+   "note": "Your class decided to run a little game booth."
+  },
+  {
+   "id": "P4S5",
+   "size": "story",
+   "note": "And somehow, you and Emma ended up being responsible for decorating it."
+  },
+  {
+   "id": "P4S6",
+   "size": "story",
+   "note": "After school, you both stayed in the classroom with colorful paper, markers, tape, and a pile of cardboard."
+  },
+  {
+   "id": "P4S7",
+   "size": "story",
+   "note": "Emma held up a sign."
+  },
+  {
+   "id": "P4S8",
+   "size": "story",
+   "note": "\"Does this look good?\""
+  },
+  {
+   "id": "P4S9",
+   "size": "story",
+   "note": "You tilted your head."
+  },
+  {
+   "id": "P4S10",
+   "size": "story",
+   "note": "\"Maybe the letters should be bigger.\""
+  },
+  {
+   "id": "P4S11",
+   "size": "story",
+   "note": "She narrowed her eyes."
+  },
+  {
+   "id": "P4S12",
+   "size": "story",
+   "note": "\"You're very demanding for someone who hasn't done much.\""
+  },
+  {
+   "id": "P4S13",
+   "size": "story",
+   "note": "\"I've been providing creative direction.\""
+  },
+  {
+   "id": "P4S14",
+   "size": "story",
+   "note": "\"That's a fancy way of saying you've been sitting there.\""
+  },
+  {
+   "id": "P4S15",
+   "size": "story",
+   "note": "You laughed."
+  },
+  {
+   "id": "P4S16",
+   "size": "story",
+   "note": "She threw a small piece of paper at you."
+  },
+  {
+   "id": "P4S17",
+   "size": "story",
+   "note": "You picked it up and threw it back."
+  },
+  {
+   "id": "P4S18",
+   "size": "story",
+   "note": "For a few seconds, the classroom turned into a ridiculous paper battle."
+  },
+  {
+   "id": "P4S19",
+   "size": "story",
+   "note": "Then Emma laughed so hard that she had to sit down."
+  },
+  {
+   "id": "P4S20",
+   "size": "story",
+   "note": "You looked at her."
+  },
+  {
+   "id": "P4S21",
+   "size": "story",
+   "note": "And for a moment, you forgot about the decorations."
+  },
+  {
+   "id": "P4S22",
+   "size": "story",
+   "note": "Her shadow was sitting beside her, laughing too."
+  },
+  {
+   "id": "P4S23",
+   "size": "story",
+   "note": "It looked happier than ever."
+  },
+  {
+   "id": "P4S24",
+   "size": "story",
+   "note": "Later, while you were cutting cardboard, you accidentally nicked your finger on a rough edge."
+  },
+  {
+   "id": "P4S25",
+   "size": "story",
+   "note": "\"Ow.\""
+  },
+  {
+   "id": "P4S26",
+   "size": "story",
+   "note": "Emma immediately looked over."
+  },
+  {
+   "id": "P4S27",
+   "size": "story",
+   "note": "\"What happened?\""
+  },
+  {
+   "id": "P4S28",
+   "size": "story",
+   "note": "\"It's nothing.\""
+  },
+  {
+   "id": "P4S29",
+   "size": "story",
+   "note": "She put down her marker and came closer."
+  },
+  {
+   "id": "P4S30",
+   "size": "story",
+   "note": "\"Let me see.\""
+  },
+  {
+   "id": "P4S31",
+   "size": "story",
+   "note": "She checked your finger and brought you a small bandage from her bag."
+  },
+  {
+   "id": "P4S32",
+   "size": "story",
+   "note": "\"Here. Be careful next time.\""
+  },
+  {
+   "id": "P4S33",
+   "size": "story",
+   "note": "\"Thanks.\""
+  },
+  {
+   "id": "P4S34",
+   "size": "story",
+   "note": "She smiled."
+  },
+  {
+   "id": "P4S35",
+   "size": "story",
+   "note": "\"You're supposed to help me finish the booth, not injure yourself.\""
+  },
+  {
+   "id": "P4S36",
+   "size": "story",
+   "note": "You laughed."
+  },
+  {
+   "id": "P4S37",
+   "size": "story",
+   "note": "Her shadow, however, had both hands on its cheeks."
+  },
+  {
+   "id": "P4S38",
+   "size": "story",
+   "note": "It looked extremely worried."
+  },
+  {
+   "id": "P4S39",
+   "size": "story",
+   "note": "Then it carefully reached toward your hand."
+  },
+  {
+   "id": "P4S40",
+   "size": "story",
+   "note": "You glanced at Emma."
+  },
+  {
+   "id": "P4S41",
+   "size": "story",
+   "note": "She was already returning to the decorations."
+  },
+  {
+   "id": "P4S42",
+   "size": "story",
+   "note": "You couldn't help smiling."
+  },
+  {
+   "id": "P4S43",
+   "size": "story",
+   "note": "The misunderstanding"
+  },
+  {
+   "id": "P4S44",
+   "size": "story",
+   "note": "On the day of the festival, everything was going well."
+  },
+  {
+   "id": "P4S45",
+   "size": "story",
+   "note": "Your booth was busy."
+  },
+  {
+   "id": "P4S46",
+   "size": "story",
+   "note": "Emma was laughing with the other students."
+  },
+  {
+   "id": "P4S47",
+   "size": "story",
+   "note": "You were helping people play the game."
+  },
+  {
+   "id": "P4S48",
+   "size": "story",
+   "note": "Then, during a short break, you noticed Emma standing with Daniel."
+  },
+  {
+   "id": "P4S49",
+   "size": "story",
+   "note": "The same Daniel who had been talking to her near the school gate."
+  },
+  {
+   "id": "P4S50",
+   "size": "story",
+   "note": "He handed her a drink."
+  },
+  {
+   "id": "P4S51",
+   "size": "story",
+   "note": "She smiled and thanked him."
+  },
+  {
+   "id": "P4S52",
+   "size": "story",
+   "note": "You looked away."
+  },
+  {
+   "id": "P4S53",
+   "size": "story",
+   "note": "You knew you had no reason to feel jealous."
+  },
+  {
+   "id": "P4S54",
+   "size": "story",
+   "note": "But somehow, it still bothered you."
+  },
+  {
+   "id": "P4S55",
+   "size": "story",
+   "note": "Then you looked at her shadow."
+  },
+  {
+   "id": "P4S56",
+   "size": "story",
+   "note": "It wasn't celebrating."
+  },
+  {
+   "id": "P4S57",
+   "size": "story",
+   "note": "It wasn't smiling."
+  },
+  {
+   "id": "P4S58",
+   "size": "story",
+   "note": "It was looking directly at you with a disappointed expression."
+  },
+  {
+   "id": "P4S59",
+   "size": "story",
+   "note": "Then it pointed toward Emma and made a small gesture, as if asking you to come closer."
+  },
+  {
+   "id": "P4S60",
+   "size": "story",
+   "note": "You hesitated."
+  },
+  {
+   "id": "P4S61",
+   "size": "story",
+   "note": "Before you could decide what to do, Emma noticed you."
+  },
+  {
+   "id": "P4S62",
+   "size": "story",
+   "note": "\"Hey! Where did you go?\""
+  },
+  {
+   "id": "P4S63",
+   "size": "story",
+   "note": "\"Nowhere. I was just getting some water.\""
+  },
+  {
+   "id": "P4S64",
+   "size": "story",
+   "note": "She looked at you for a moment."
+  },
+  {
+   "id": "P4S65",
+   "size": "story",
+   "note": "\"Are you okay?\""
+  },
+  {
+   "id": "P4S66",
+   "size": "story",
+   "note": "\"Yeah. Why?\""
+  },
+  {
+   "id": "P4S67",
+   "size": "story",
+   "note": "\"You've been quiet.\""
+  },
+  {
+   "id": "P4S68",
+   "size": "story",
+   "note": "You shrugged."
+  },
+  {
+   "id": "P4S69",
+   "size": "story",
+   "note": "\"Just a little tired.\""
+  },
+  {
+   "id": "P4S70",
+   "size": "story",
+   "note": "Emma nodded."
+  },
+  {
+   "id": "P4S71",
+   "size": "story",
+   "note": "Then she glanced at Daniel."
+  },
+  {
+   "id": "P4S72",
+   "size": "story",
+   "note": "\"He was just helping me carry the drinks. We ran out at the booth.\""
+  },
+  {
+   "id": "P4S73",
+   "size": "story",
+   "note": "You felt slightly embarrassed."
+  },
+  {
+   "id": "P4S74",
+   "size": "story",
+   "note": "\"Oh. I see.\""
+  },
+  {
+   "id": "P4S75",
+   "size": "story",
+   "note": "Emma looked at you."
+  },
+  {
+   "id": "P4S76",
+   "size": "story",
+   "note": "\"Did you think something else?\""
+  },
+  {
+   "id": "P4S77",
+   "size": "story",
+   "note": "You quickly shook your head."
+  },
+  {
+   "id": "P4S78",
+   "size": "story",
+   "note": "\"No.\""
+  },
+  {
+   "id": "P4S79",
+   "size": "story",
+   "note": "She smiled."
+  },
+  {
+   "id": "P4S80",
+   "size": "story",
+   "note": "\"Okay.\""
+  },
+  {
+   "id": "P4S81",
+   "size": "story",
+   "note": "But her shadow was now standing behind her, making an exaggerated facepalm."
+  },
+  {
+   "id": "P4S82",
+   "size": "story",
+   "note": "You almost laughed."
+  },
+  {
+   "id": "P4S83",
+   "size": "story",
+   "note": "Apparently, even her shadow thought you were being ridiculous."
+  },
+  {
+   "id": "P5S1",
+   "size": "story",
+   "note": "The moment she needed you"
+  },
+  {
+   "id": "P5S2",
+   "size": "story",
+   "note": "Later that afternoon, the festival became crowded."
+  },
+  {
+   "id": "P5S3",
+   "size": "story",
+   "note": "Emma was responsible for collecting tickets at the entrance."
+  },
+  {
+   "id": "P5S4",
+   "size": "story",
+   "note": "You were helping at the game booth."
+  },
+  {
+   "id": "P5S5",
+   "size": "story",
+   "note": "Then you noticed her standing alone near the side of the hall."
+  },
+  {
+   "id": "P5S6",
+   "size": "story",
+   "note": "She was looking down at her phone."
+  },
+  {
+   "id": "P5S7",
+   "size": "story",
+   "note": "Something seemed wrong."
+  },
+  {
+   "id": "P5S8",
+   "size": "story",
+   "note": "You walked over."
+  },
+  {
+   "id": "P5S9",
+   "size": "story",
+   "note": "\"Hey. Everything okay?\""
+  },
+  {
+   "id": "P5S10",
+   "size": "story",
+   "note": "She looked up."
+  },
+  {
+   "id": "P5S11",
+   "size": "story",
+   "note": "\"Oh. Yeah. I'm fine.\""
+  },
+  {
+   "id": "P5S12",
+   "size": "story",
+   "note": "But her shadow was sitting on the floor with its head lowered."
+  },
+  {
+   "id": "P5S13",
+   "size": "story",
+   "note": "It looked sad."
+  },
+  {
+   "id": "P5S14",
+   "size": "story",
+   "note": "You didn't know what had happened, but you could tell she wasn't okay."
+  },
+  {
+   "id": "P5S15",
+   "size": "story",
+   "note": "\"Want to take a break?\""
+  },
+  {
+   "id": "P5S16",
+   "size": "story",
+   "note": "Emma hesitated."
+  },
+  {
+   "id": "P5S17",
+   "size": "story",
+   "note": "Then she nodded."
+  },
+  {
+   "id": "P5S18",
+   "size": "story",
+   "note": "You found two empty chairs near the window."
+  },
+  {
+   "id": "P5S19",
+   "size": "story",
+   "note": "For a while, neither of you spoke."
+  },
+  {
+   "id": "P5S20",
+   "size": "story",
+   "note": "Then she finally said:"
+  },
+  {
+   "id": "P5S21",
+   "size": "story",
+   "note": "\"I think I messed something up.\""
+  },
+  {
+   "id": "P5S22",
+   "size": "story",
+   "note": "\"What happened?\""
+  },
+  {
+   "id": "P5S23",
+   "size": "story",
+   "note": "\"I was supposed to prepare the tickets for the next activity, but I forgot to bring them.\""
+  },
+  {
+   "id": "P5S24",
+   "size": "story",
+   "note": "You looked at her."
+  },
+  {
+   "id": "P5S25",
+   "size": "story",
+   "note": "\"Is that all?\""
+  },
+  {
+   "id": "P5S26",
+   "size": "story",
+   "note": "She nodded."
+  },
+  {
+   "id": "P5S27",
+   "size": "story",
+   "note": "\"I know it's not a big deal, but everyone is depending on me.\""
+  },
+  {
+   "id": "P5S28",
+   "size": "story",
+   "note": "You smiled."
+  },
+  {
+   "id": "P5S29",
+   "size": "story",
+   "note": "\"Then let's fix it.\""
+  },
+  {
+   "id": "P5S30",
+   "size": "story",
+   "note": "She looked surprised."
+  },
+  {
+   "id": "P5S31",
+   "size": "story",
+   "note": "\"You'll help?\""
+  },
+  {
+   "id": "P5S32",
+   "size": "story",
+   "note": "\"Of course.\""
+  },
+  {
+   "id": "P5S33",
+   "size": "story",
+   "note": "You both went back to the classroom and quickly prepared the missing tickets."
+  },
+  {
+   "id": "P5S34",
+   "size": "story",
+   "note": "It took less than fifteen minutes."
+  },
+  {
+   "id": "P5S35",
+   "size": "story",
+   "note": "When you returned, Emma looked relieved."
+  },
+  {
+   "id": "P5S36",
+   "size": "story",
+   "note": "\"Thank you.\""
+  },
+  {
+   "id": "P5S37",
+   "size": "story",
+   "note": "\"No problem.\""
+  },
+  {
+   "id": "P5S38",
+   "size": "story",
+   "note": "Her shadow suddenly jumped up and made a heart with both hands."
+  },
+  {
+   "id": "P5S39",
+   "size": "story",
+   "note": "You smiled."
+  },
+  {
+   "id": "P5S40",
+   "size": "story",
+   "note": "For the first time that day, Emma looked genuinely happy again."
+  },
+  {
+   "id": "P5S41",
+   "size": "story",
+   "note": "The confession"
+  },
+  {
+   "id": "P5S42",
+   "size": "story",
+   "note": "After the festival ended, you and Emma walked outside together."
+  },
+  {
+   "id": "P5S43",
+   "size": "story",
+   "note": "The sky was turning orange."
+  },
+  {
+   "id": "P5S44",
+   "size": "story",
+   "note": "Students were leaving in groups, carrying decorations and bags."
+  },
+  {
+   "id": "P5S45",
+   "size": "story",
+   "note": "Emma was holding a small box of leftover supplies."
+  },
+  {
+   "id": "P5S46",
+   "size": "story",
+   "note": "\"Today was exhausting,\" she said."
+  },
+  {
+   "id": "P5S47",
+   "size": "story",
+   "note": "\"Definitely.\""
+  },
+  {
+   "id": "P5S48",
+   "size": "story",
+   "note": "\"But it was fun.\""
+  },
+  {
+   "id": "P5S49",
+   "size": "story",
+   "note": "\"Yeah. Especially the paper fight.\""
+  },
+  {
+   "id": "P5S50",
+   "size": "story",
+   "note": "She laughed."
+  },
+  {
+   "id": "P5S51",
+   "size": "story",
+   "note": "\"I still can't believe you threw paper at me.\""
+  },
+  {
+   "id": "P5S52",
+   "size": "story",
+   "note": "\"You started it.\""
+  },
+  {
+   "id": "P5S53",
+   "size": "story",
+   "note": "\"I did not!\""
+  },
+  {
+   "id": "P5S54",
+   "size": "story",
+   "note": "You both laughed."
+  },
+  {
+   "id": "P5S55",
+   "size": "story",
+   "note": "Then the conversation slowly became quiet."
+  },
+  {
+   "id": "P5S56",
+   "size": "story",
+   "note": "You had spent so much time together over the past few weeks."
+  },
+  {
+   "id": "P5S57",
+   "size": "story",
+   "note": "You had worked on assignments, shared an umbrella, decorated a booth, and helped each other through a stressfu"
+  },
+  {
+   "id": "P5S58",
+   "size": "story",
+   "note": "And every time, Emma's shadow had revealed something she never said out loud."
+  },
+  {
+   "id": "P5S59",
+   "size": "story",
+   "note": "But you still didn't know what Emma herself felt."
+  },
+  {
+   "id": "P5S60",
+   "size": "story",
+   "note": "You finally decided to ask."
+  },
+  {
+   "id": "P5S61",
+   "size": "story",
+   "note": "\"Emma?\""
+  },
+  {
+   "id": "P5S62",
+   "size": "story",
+   "note": "\"Yeah?\""
+  },
+  {
+   "id": "P5S63",
+   "size": "story",
+   "note": "\"Can I tell you something?\""
+  },
+  {
+   "id": "P5S64",
+   "size": "story",
+   "note": "She turned toward you."
+  },
+  {
+   "id": "P5S65",
+   "size": "story",
+   "note": "\"Of course.\""
+  },
+  {
+   "id": "P5S66",
+   "size": "story",
+   "note": "You took a breath."
+  },
+  {
+   "id": "P5S67",
+   "size": "story",
+   "note": "\"I think I've started liking you.\""
+  },
+  {
+   "id": "P5S68",
+   "size": "story",
+   "note": "Emma stopped walking."
+  },
+  {
+   "id": "P5S69",
+   "size": "story",
+   "note": "You continued before you lost your courage."
+  },
+  {
+   "id": "P5S70",
+   "size": "story",
+   "note": "\"Actually, I've liked you for a while. I just didn't know if you felt the same way.\""
+  },
+  {
+   "id": "P5S71",
+   "size": "story",
+   "note": "For a moment, she said nothing."
+  },
+  {
+   "id": "P5S72",
+   "size": "story",
+   "note": "Then she looked down."
+  },
+  {
+   "id": "P5S73",
+   "size": "story",
+   "note": "Her shadow immediately jumped up and started celebrating."
+  },
+  {
+   "id": "P5S74",
+   "size": "story",
+   "note": "Emma slowly looked back at you."
+  },
+  {
+   "id": "P5S75",
+   "size": "story",
+   "note": "\"I like you too.\""
+  },
+  {
+   "id": "P5S76",
+   "size": "story",
+   "note": "You blinked."
+  },
+  {
+   "id": "P5S77",
+   "size": "story",
+   "note": "\"Really?\""
+  },
+  {
+   "id": "P5S78",
+   "size": "story",
+   "note": "She nodded."
+  },
+  {
+   "id": "P5S79",
+   "size": "story",
+   "note": "\"Really.\""
+  },
+  {
+   "id": "P5S80",
+   "size": "story",
+   "note": "You smiled."
+  },
+  {
+   "id": "P5S81",
+   "size": "story",
+   "note": "\"So… does that mean we can go out sometime?\""
+  },
+  {
+   "id": "P5S82",
+   "size": "story",
+   "note": "Emma laughed."
+  },
+  {
+   "id": "P5S83",
+   "size": "story",
+   "note": "\"Are you asking me out?\""
+  },
+  {
+   "id": "P5S84",
+   "size": "story",
+   "note": "\"Maybe.\""
+  },
+  {
+   "id": "P5S85",
+   "size": "story",
+   "note": "She smiled."
+  },
+  {
+   "id": "P5S86",
+   "size": "story",
+   "note": "\"Then maybe my answer is yes.\""
+  },
+  {
+   "id": "P5S87",
+   "size": "story",
+   "note": "You both laughed."
+  },
+  {
+   "id": "P5S88",
+   "size": "story",
+   "note": "And just when you thought the day couldn't get any stranger, Emma suddenly looked down at the pavement."
+  },
+  {
+   "id": "P5S89",
+   "size": "story",
+   "note": "Not at her own shadow."
+  },
+  {
+   "id": "P5S90",
+   "size": "story",
+   "note": "At yours."
+  },
+  {
+   "id": "P5S91",
+   "size": "story",
+   "note": "She stared at it for a few seconds."
+  },
+  {
+   "id": "P5S92",
+   "size": "story",
+   "note": "Then she started laughing."
+  },
+  {
+   "id": "P5S93",
+   "size": "story",
+   "note": "\"Your shadow is really nervous right now.\""
+  }
+ ],
+ "edit": [
+  {
+   "shot": "P1S1",
+   "at": "s:0.00"
+  },
+  {
+   "shot": "P1S2",
+   "at": "s:1.48"
+  },
+  {
+   "shot": "P1S3",
+   "at": "s:7.20"
+  },
+  {
+   "shot": "P1S4",
+   "at": "s:11.98"
+  },
+  {
+   "shot": "P1S5",
+   "at": "s:13.40"
+  },
+  {
+   "shot": "P1S6",
+   "at": "s:13.64"
+  },
+  {
+   "shot": "P1S7",
+   "at": "s:16.00"
+  },
+  {
+   "shot": "P1S8",
+   "at": "s:17.98"
+  },
+  {
+   "shot": "P1S9",
+   "at": "s:21.30"
+  },
+  {
+   "shot": "P1S10",
+   "at": "s:24.62"
+  },
+  {
+   "shot": "P1S11",
+   "at": "s:25.16"
+  },
+  {
+   "shot": "P1S12",
+   "at": "s:27.48"
+  },
+  {
+   "shot": "P1S13",
+   "at": "s:29.72"
+  },
+  {
+   "shot": "P1S14",
+   "at": "s:31.98"
+  },
+  {
+   "shot": "P1S15",
+   "at": "s:35.80"
+  },
+  {
+   "shot": "P1S16",
+   "at": "s:38.36"
+  },
+  {
+   "shot": "P1S17",
+   "at": "s:42.52"
+  },
+  {
+   "shot": "P1S18",
+   "at": "s:42.76"
+  },
+  {
+   "shot": "P1S19",
+   "at": "s:46.76"
+  },
+  {
+   "shot": "P1S20",
+   "at": "s:51.34"
+  },
+  {
+   "shot": "P1S21",
+   "at": "s:51.49"
+  },
+  {
+   "shot": "P1S22",
+   "at": "s:57.02"
+  },
+  {
+   "shot": "P1S23",
+   "at": "s:59.34"
+  },
+  {
+   "shot": "P1S24",
+   "at": "s:59.49"
+  },
+  {
+   "shot": "P1S25",
+   "at": "s:67.94"
+  },
+  {
+   "shot": "P1S26",
+   "at": "s:68.72"
+  },
+  {
+   "shot": "P1S27",
+   "at": "s:72.36"
+  },
+  {
+   "shot": "P1S28",
+   "at": "s:73.52"
+  },
+  {
+   "shot": "P1S29",
+   "at": "s:76.82"
+  },
+  {
+   "shot": "P1S30",
+   "at": "s:76.97"
+  },
+  {
+   "shot": "P1S31",
+   "at": "s:84.80"
+  },
+  {
+   "shot": "P1S32",
+   "at": "s:90.42"
+  },
+  {
+   "shot": "P1S33",
+   "at": "s:93.42"
+  },
+  {
+   "shot": "P1S34",
+   "at": "s:95.18"
+  },
+  {
+   "shot": "P1S35",
+   "at": "s:96.84"
+  },
+  {
+   "shot": "P1S36",
+   "at": "s:99.94"
+  },
+  {
+   "shot": "P1S37",
+   "at": "s:102.16"
+  },
+  {
+   "shot": "P1S38",
+   "at": "s:103.50"
+  },
+  {
+   "shot": "P1S39",
+   "at": "s:107.42"
+  },
+  {
+   "shot": "P1S40",
+   "at": "s:110.68"
+  },
+  {
+   "shot": "P1S41",
+   "at": "s:113.46"
+  },
+  {
+   "shot": "P1S42",
+   "at": "s:114.30"
+  },
+  {
+   "shot": "P1S43",
+   "at": "s:115.38"
+  },
+  {
+   "shot": "P1S44",
+   "at": "s:118.08"
+  },
+  {
+   "shot": "P1S45",
+   "at": "s:122.10"
+  },
+  {
+   "shot": "P2S1",
+   "at": "s:129.68"
+  },
+  {
+   "shot": "P2S2",
+   "at": "s:130.14"
+  },
+  {
+   "shot": "P2S3",
+   "at": "s:133.70"
+  },
+  {
+   "shot": "P2S4",
+   "at": "s:136.38"
+  },
+  {
+   "shot": "P2S5",
+   "at": "s:139.56"
+  },
+  {
+   "shot": "P2S6",
+   "at": "s:139.98"
+  },
+  {
+   "shot": "P2S7",
+   "at": "s:143.38"
+  },
+  {
+   "shot": "P2S8",
+   "at": "s:143.60"
+  },
+  {
+   "shot": "P2S9",
+   "at": "s:146.18"
+  },
+  {
+   "shot": "P2S10",
+   "at": "s:147.54"
+  },
+  {
+   "shot": "P2S11",
+   "at": "s:148.06"
+  },
+  {
+   "shot": "P2S12",
+   "at": "s:149.74"
+  },
+  {
+   "shot": "P2S13",
+   "at": "s:154.28"
+  },
+  {
+   "shot": "P2S14",
+   "at": "s:154.64"
+  },
+  {
+   "shot": "P2S15",
+   "at": "s:160.18"
+  },
+  {
+   "shot": "P2S16",
+   "at": "s:163.54"
+  },
+  {
+   "shot": "P2S17",
+   "at": "s:167.70"
+  },
+  {
+   "shot": "P2S18",
+   "at": "s:168.76"
+  },
+  {
+   "shot": "P2S19",
+   "at": "s:171.86"
+  },
+  {
+   "shot": "P2S20",
+   "at": "s:173.98"
+  },
+  {
+   "shot": "P2S21",
+   "at": "s:174.58"
+  },
+  {
+   "shot": "P2S22",
+   "at": "s:175.72"
+  },
+  {
+   "shot": "P2S23",
+   "at": "s:179.24"
+  },
+  {
+   "shot": "P2S24",
+   "at": "s:183.46"
+  },
+  {
+   "shot": "P2S25",
+   "at": "s:183.98"
+  },
+  {
+   "shot": "P2S26",
+   "at": "s:184.92"
+  },
+  {
+   "shot": "P2S27",
+   "at": "s:188.94"
+  },
+  {
+   "shot": "P2S28",
+   "at": "s:193.68"
+  },
+  {
+   "shot": "P2S29",
+   "at": "s:197.02"
+  },
+  {
+   "shot": "P2S30",
+   "at": "s:200.78"
+  },
+  {
+   "shot": "P2S31",
+   "at": "s:206.90"
+  },
+  {
+   "shot": "P2S32",
+   "at": "s:207.20"
+  },
+  {
+   "shot": "P2S33",
+   "at": "s:210.10"
+  },
+  {
+   "shot": "P2S34",
+   "at": "s:216.98"
+  },
+  {
+   "shot": "P2S35",
+   "at": "s:219.20"
+  },
+  {
+   "shot": "P2S36",
+   "at": "s:221.62"
+  },
+  {
+   "shot": "P2S37",
+   "at": "s:224.58"
+  },
+  {
+   "shot": "P2S38",
+   "at": "s:227.44"
+  },
+  {
+   "shot": "P2S39",
+   "at": "s:231.30"
+  },
+  {
+   "shot": "P2S40",
+   "at": "s:232.02"
+  },
+  {
+   "shot": "P2S41",
+   "at": "s:235.80"
+  },
+  {
+   "shot": "P2S42",
+   "at": "s:236.42"
+  },
+  {
+   "shot": "P2S43",
+   "at": "s:238.84"
+  },
+  {
+   "shot": "P2S44",
+   "at": "s:242.46"
+  },
+  {
+   "shot": "P2S45",
+   "at": "s:242.64"
+  },
+  {
+   "shot": "P2S46",
+   "at": "s:245.62"
+  },
+  {
+   "shot": "P2S47",
+   "at": "s:251.78"
+  },
+  {
+   "shot": "P2S48",
+   "at": "s:255.04"
+  },
+  {
+   "shot": "P3S1",
+   "at": "s:258.20"
+  },
+  {
+   "shot": "P3S2",
+   "at": "s:258.46"
+  },
+  {
+   "shot": "P3S3",
+   "at": "s:263.08"
+  },
+  {
+   "shot": "P3S4",
+   "at": "s:265.26"
+  },
+  {
+   "shot": "P3S5",
+   "at": "s:270.52"
+  },
+  {
+   "shot": "P3S6",
+   "at": "s:272.26"
+  },
+  {
+   "shot": "P3S7",
+   "at": "s:273.26"
+  },
+  {
+   "shot": "P3S8",
+   "at": "s:276.56"
+  },
+  {
+   "shot": "P3S9",
+   "at": "s:277.00"
+  },
+  {
+   "shot": "P3S10",
+   "at": "s:280.70"
+  },
+  {
+   "shot": "P3S11",
+   "at": "s:281.34"
+  },
+  {
+   "shot": "P3S12",
+   "at": "s:282.66"
+  },
+  {
+   "shot": "P3S13",
+   "at": "s:282.81"
+  },
+  {
+   "shot": "P3S14",
+   "at": "s:285.26"
+  },
+  {
+   "shot": "P3S15",
+   "at": "s:285.41"
+  },
+  {
+   "shot": "P3S16",
+   "at": "s:288.22"
+  },
+  {
+   "shot": "P3S17",
+   "at": "s:289.90"
+  },
+  {
+   "shot": "P3S18",
+   "at": "s:291.56"
+  },
+  {
+   "shot": "P3S19",
+   "at": "s:292.92"
+  },
+  {
+   "shot": "P3S20",
+   "at": "s:294.20"
+  },
+  {
+   "shot": "P3S21",
+   "at": "s:300.02"
+  },
+  {
+   "shot": "P3S22",
+   "at": "s:303.00"
+  },
+  {
+   "shot": "P3S23",
+   "at": "s:303.30"
+  },
+  {
+   "shot": "P3S24",
+   "at": "s:304.96"
+  },
+  {
+   "shot": "P3S25",
+   "at": "s:306.20"
+  },
+  {
+   "shot": "P3S26",
+   "at": "s:310.26"
+  },
+  {
+   "shot": "P3S27",
+   "at": "s:310.41"
+  },
+  {
+   "shot": "P3S28",
+   "at": "s:313.40"
+  },
+  {
+   "shot": "P3S29",
+   "at": "s:316.56"
+  },
+  {
+   "shot": "P3S30",
+   "at": "s:319.50"
+  },
+  {
+   "shot": "P3S31",
+   "at": "s:319.68"
+  },
+  {
+   "shot": "P3S32",
+   "at": "s:323.32"
+  },
+  {
+   "shot": "P3S33",
+   "at": "s:331.44"
+  },
+  {
+   "shot": "P3S34",
+   "at": "s:334.80"
+  },
+  {
+   "shot": "P3S35",
+   "at": "s:336.64"
+  },
+  {
+   "shot": "P3S36",
+   "at": "s:338.28"
+  },
+  {
+   "shot": "P3S37",
+   "at": "s:338.64"
+  },
+  {
+   "shot": "P3S38",
+   "at": "s:338.82"
+  },
+  {
+   "shot": "P3S39",
+   "at": "s:342.08"
+  },
+  {
+   "shot": "P3S40",
+   "at": "s:344.18"
+  },
+  {
+   "shot": "P3S41",
+   "at": "s:346.84"
+  },
+  {
+   "shot": "P3S42",
+   "at": "s:346.99"
+  },
+  {
+   "shot": "P3S43",
+   "at": "s:351.14"
+  },
+  {
+   "shot": "P3S44",
+   "at": "s:352.54"
+  },
+  {
+   "shot": "P3S45",
+   "at": "s:354.16"
+  },
+  {
+   "shot": "P3S46",
+   "at": "s:354.58"
+  },
+  {
+   "shot": "P3S47",
+   "at": "s:357.24"
+  },
+  {
+   "shot": "P3S48",
+   "at": "s:358.70"
+  },
+  {
+   "shot": "P3S49",
+   "at": "s:364.10"
+  },
+  {
+   "shot": "P3S50",
+   "at": "s:364.34"
+  },
+  {
+   "shot": "P3S51",
+   "at": "s:364.54"
+  },
+  {
+   "shot": "P3S52",
+   "at": "s:369.50"
+  },
+  {
+   "shot": "P3S53",
+   "at": "s:369.84"
+  },
+  {
+   "shot": "P3S54",
+   "at": "s:369.99"
+  },
+  {
+   "shot": "P4S1",
+   "at": "s:378.08"
+  },
+  {
+   "shot": "P4S2",
+   "at": "s:378.42"
+  },
+  {
+   "shot": "P4S3",
+   "at": "s:381.42"
+  },
+  {
+   "shot": "P4S4",
+   "at": "s:381.76"
+  },
+  {
+   "shot": "P4S5",
+   "at": "s:387.16"
+  },
+  {
+   "shot": "P4S6",
+   "at": "s:390.42"
+  },
+  {
+   "shot": "P4S7",
+   "at": "s:396.64"
+  },
+  {
+   "shot": "P4S8",
+   "at": "s:398.56"
+  },
+  {
+   "shot": "P4S9",
+   "at": "s:399.82"
+  },
+  {
+   "shot": "P4S10",
+   "at": "s:401.72"
+  },
+  {
+   "shot": "P4S11",
+   "at": "s:403.82"
+  },
+  {
+   "shot": "P4S12",
+   "at": "s:405.24"
+  },
+  {
+   "shot": "P4S13",
+   "at": "s:409.12"
+  },
+  {
+   "shot": "P4S14",
+   "at": "s:411.28"
+  },
+  {
+   "shot": "P4S15",
+   "at": "s:414.54"
+  },
+  {
+   "shot": "P4S16",
+   "at": "s:414.94"
+  },
+  {
+   "shot": "P4S17",
+   "at": "s:418.22"
+  },
+  {
+   "shot": "P4S18",
+   "at": "s:420.20"
+  },
+  {
+   "shot": "P4S19",
+   "at": "s:423.10"
+  },
+  {
+   "shot": "P4S20",
+   "at": "s:427.60"
+  },
+  {
+   "shot": "P4S21",
+   "at": "s:428.98"
+  },
+  {
+   "shot": "P4S22",
+   "at": "s:431.52"
+  },
+  {
+   "shot": "P4S23",
+   "at": "s:434.50"
+  },
+  {
+   "shot": "P4S24",
+   "at": "s:437.12"
+  },
+  {
+   "shot": "P4S25",
+   "at": "s:438.32"
+  },
+  {
+   "shot": "P4S26",
+   "at": "s:443.16"
+  },
+  {
+   "shot": "P4S27",
+   "at": "s:445.48"
+  },
+  {
+   "shot": "P4S28",
+   "at": "s:446.14"
+  },
+  {
+   "shot": "P4S29",
+   "at": "s:447.10"
+  },
+  {
+   "shot": "P4S30",
+   "at": "s:450.36"
+  },
+  {
+   "shot": "P4S31",
+   "at": "s:451.12"
+  },
+  {
+   "shot": "P4S32",
+   "at": "s:455.58"
+  },
+  {
+   "shot": "P4S33",
+   "at": "s:458.08"
+  },
+  {
+   "shot": "P4S34",
+   "at": "s:458.24"
+  },
+  {
+   "shot": "P4S35",
+   "at": "s:458.70"
+  },
+  {
+   "shot": "P4S36",
+   "at": "s:464.24"
+  },
+  {
+   "shot": "P4S37",
+   "at": "s:465.00"
+  },
+  {
+   "shot": "P4S38",
+   "at": "s:470.22"
+  },
+  {
+   "shot": "P4S39",
+   "at": "s:470.58"
+  },
+  {
+   "shot": "P4S40",
+   "at": "s:475.02"
+  },
+  {
+   "shot": "P4S41",
+   "at": "s:476.92"
+  },
+  {
+   "shot": "P4S42",
+   "at": "s:479.14"
+  },
+  {
+   "shot": "P4S43",
+   "at": "s:479.52"
+  },
+  {
+   "shot": "P4S44",
+   "at": "s:479.72"
+  },
+  {
+   "shot": "P4S45",
+   "at": "s:484.64"
+  },
+  {
+   "shot": "P4S46",
+   "at": "s:484.79"
+  },
+  {
+   "shot": "P4S47",
+   "at": "s:489.98"
+  },
+  {
+   "shot": "P4S48",
+   "at": "s:492.26"
+  },
+  {
+   "shot": "P4S49",
+   "at": "s:496.22"
+  },
+  {
+   "shot": "P4S50",
+   "at": "s:499.70"
+  },
+  {
+   "shot": "P4S51",
+   "at": "s:502.40"
+  },
+  {
+   "shot": "P4S52",
+   "at": "s:504.14"
+  },
+  {
+   "shot": "P4S53",
+   "at": "s:504.48"
+  },
+  {
+   "shot": "P4S54",
+   "at": "s:507.78"
+  },
+  {
+   "shot": "P4S55",
+   "at": "s:509.88"
+  },
+  {
+   "shot": "P4S56",
+   "at": "s:513.28"
+  },
+  {
+   "shot": "P4S57",
+   "at": "s:513.50"
+  },
+  {
+   "shot": "P4S58",
+   "at": "s:513.70"
+  },
+  {
+   "shot": "P4S59",
+   "at": "s:520.04"
+  },
+  {
+   "shot": "P4S60",
+   "at": "s:525.48"
+  },
+  {
+   "shot": "P4S61",
+   "at": "s:526.06"
+  },
+  {
+   "shot": "P4S62",
+   "at": "s:531.44"
+  },
+  {
+   "shot": "P4S63",
+   "at": "s:534.82"
+  },
+  {
+   "shot": "P4S64",
+   "at": "s:536.66"
+  },
+  {
+   "shot": "P4S65",
+   "at": "s:537.34"
+  },
+  {
+   "shot": "P4S66",
+   "at": "s:539.10"
+  },
+  {
+   "shot": "P4S67",
+   "at": "s:540.40"
+  },
+  {
+   "shot": "P4S68",
+   "at": "s:542.34"
+  },
+  {
+   "shot": "P4S69",
+   "at": "s:543.80"
+  },
+  {
+   "shot": "P4S70",
+   "at": "s:546.62"
+  },
+  {
+   "shot": "P4S71",
+   "at": "s:547.32"
+  },
+  {
+   "shot": "P4S72",
+   "at": "s:550.08"
+  },
+  {
+   "shot": "P4S73",
+   "at": "s:554.60"
+  },
+  {
+   "shot": "P4S74",
+   "at": "s:556.00"
+  },
+  {
+   "shot": "P4S75",
+   "at": "s:556.74"
+  },
+  {
+   "shot": "P4S76",
+   "at": "s:559.12"
+  },
+  {
+   "shot": "P4S77",
+   "at": "s:560.28"
+  },
+  {
+   "shot": "P4S78",
+   "at": "s:563.80"
+  },
+  {
+   "shot": "P4S79",
+   "at": "s:564.24"
+  },
+  {
+   "shot": "P4S80",
+   "at": "s:564.62"
+  },
+  {
+   "shot": "P4S81",
+   "at": "s:565.22"
+  },
+  {
+   "shot": "P4S82",
+   "at": "s:571.40"
+  },
+  {
+   "shot": "P4S83",
+   "at": "s:572.66"
+  },
+  {
+   "shot": "P5S1",
+   "at": "s:578.88"
+  },
+  {
+   "shot": "P5S2",
+   "at": "s:579.14"
+  },
+  {
+   "shot": "P5S3",
+   "at": "s:582.80"
+  },
+  {
+   "shot": "P5S4",
+   "at": "s:586.50"
+  },
+  {
+   "shot": "P5S5",
+   "at": "s:587.08"
+  },
+  {
+   "shot": "P5S6",
+   "at": "s:592.62"
+  },
+  {
+   "shot": "P5S7",
+   "at": "s:594.68"
+  },
+  {
+   "shot": "P5S8",
+   "at": "s:595.22"
+  },
+  {
+   "shot": "P5S9",
+   "at": "s:597.06"
+  },
+  {
+   "shot": "P5S10",
+   "at": "s:598.64"
+  },
+  {
+   "shot": "P5S11",
+   "at": "s:600.76"
+  },
+  {
+   "shot": "P5S12",
+   "at": "s:603.30"
+  },
+  {
+   "shot": "P5S13",
+   "at": "s:607.66"
+  },
+  {
+   "shot": "P5S14",
+   "at": "s:608.30"
+  },
+  {
+   "shot": "P5S15",
+   "at": "s:612.90"
+  },
+  {
+   "shot": "P5S16",
+   "at": "s:615.30"
+  },
+  {
+   "shot": "P5S17",
+   "at": "s:615.48"
+  },
+  {
+   "shot": "P5S18",
+   "at": "s:616.80"
+  },
+  {
+   "shot": "P5S19",
+   "at": "s:620.70"
+  },
+  {
+   "shot": "P5S20",
+   "at": "s:623.12"
+  },
+  {
+   "shot": "P5S21",
+   "at": "s:625.32"
+  },
+  {
+   "shot": "P5S22",
+   "at": "s:627.92"
+  },
+  {
+   "shot": "P5S23",
+   "at": "s:628.76"
+  },
+  {
+   "shot": "P5S24",
+   "at": "s:634.56"
+  },
+  {
+   "shot": "P5S25",
+   "at": "s:636.10"
+  },
+  {
+   "shot": "P5S26",
+   "at": "s:636.56"
+  },
+  {
+   "shot": "P5S27",
+   "at": "s:637.86"
+  },
+  {
+   "shot": "P5S28",
+   "at": "s:641.62"
+  },
+  {
+   "shot": "P5S29",
+   "at": "s:642.16"
+  },
+  {
+   "shot": "P5S30",
+   "at": "s:644.14"
+  },
+  {
+   "shot": "P5S31",
+   "at": "s:644.74"
+  },
+  {
+   "shot": "P5S32",
+   "at": "s:645.64"
+  },
+  {
+   "shot": "P5S33",
+   "at": "s:646.78"
+  },
+  {
+   "shot": "P5S34",
+   "at": "s:650.82"
+  },
+  {
+   "shot": "P5S35",
+   "at": "s:652.68"
+  },
+  {
+   "shot": "P5S36",
+   "at": "s:653.14"
+  },
+  {
+   "shot": "P5S37",
+   "at": "s:656.46"
+  },
+  {
+   "shot": "P5S38",
+   "at": "s:658.02"
+  },
+  {
+   "shot": "P5S39",
+   "at": "s:658.34"
+  },
+  {
+   "shot": "P5S40",
+   "at": "s:663.06"
+  },
+  {
+   "shot": "P5S41",
+   "at": "s:663.32"
+  },
+  {
+   "shot": "P5S42",
+   "at": "s:664.40"
+  },
+  {
+   "shot": "P5S43",
+   "at": "s:674.14"
+  },
+  {
+   "shot": "P5S44",
+   "at": "s:676.20"
+  },
+  {
+   "shot": "P5S45",
+   "at": "s:680.10"
+  },
+  {
+   "shot": "P5S46",
+   "at": "s:683.78"
+  },
+  {
+   "shot": "P5S47",
+   "at": "s:686.08"
+  },
+  {
+   "shot": "P5S48",
+   "at": "s:686.34"
+  },
+  {
+   "shot": "P5S49",
+   "at": "s:690.22"
+  },
+  {
+   "shot": "P5S50",
+   "at": "s:693.34"
+  },
+  {
+   "shot": "P5S51",
+   "at": "s:694.16"
+  },
+  {
+   "shot": "P5S52",
+   "at": "s:696.80"
+  },
+  {
+   "shot": "P5S53",
+   "at": "s:699.44"
+  },
+  {
+   "shot": "P5S54",
+   "at": "s:700.08"
+  },
+  {
+   "shot": "P5S55",
+   "at": "s:701.16"
+  },
+  {
+   "shot": "P5S56",
+   "at": "s:704.56"
+  },
+  {
+   "shot": "P5S57",
+   "at": "s:708.72"
+  },
+  {
+   "shot": "P5S58",
+   "at": "s:714.66"
+  },
+  {
+   "shot": "P5S59",
+   "at": "s:721.30"
+  },
+  {
+   "shot": "P5S60",
+   "at": "s:723.70"
+  },
+  {
+   "shot": "P5S61",
+   "at": "s:723.85"
+  },
+  {
+   "shot": "P5S62",
+   "at": "s:727.68"
+  },
+  {
+   "shot": "P5S63",
+   "at": "s:728.26"
+  },
+  {
+   "shot": "P5S64",
+   "at": "s:731.38"
+  },
+  {
+   "shot": "P5S65",
+   "at": "s:733.96"
+  },
+  {
+   "shot": "P5S66",
+   "at": "s:734.56"
+  },
+  {
+   "shot": "P5S67",
+   "at": "s:737.50"
+  },
+  {
+   "shot": "P5S68",
+   "at": "s:739.96"
+  },
+  {
+   "shot": "P5S69",
+   "at": "s:740.42"
+  },
+  {
+   "shot": "P5S70",
+   "at": "s:745.04"
+  },
+  {
+   "shot": "P5S71",
+   "at": "s:752.62"
+  },
+  {
+   "shot": "P5S72",
+   "at": "s:753.14"
+  },
+  {
+   "shot": "P5S73",
+   "at": "s:756.40"
+  },
+  {
+   "shot": "P5S74",
+   "at": "s:759.42"
+  },
+  {
+   "shot": "P5S75",
+   "at": "s:761.92"
+  },
+  {
+   "shot": "P5S76",
+   "at": "s:762.30"
+  },
+  {
+   "shot": "P5S77",
+   "at": "s:764.04"
+  },
+  {
+   "shot": "P5S78",
+   "at": "s:764.28"
+  },
+  {
+   "shot": "P5S79",
+   "at": "s:765.06"
+  },
+  {
+   "shot": "P5S80",
+   "at": "s:766.00"
+  },
+  {
+   "shot": "P5S81",
+   "at": "s:767.06"
+  },
+  {
+   "shot": "P5S82",
+   "at": "s:772.52"
+  },
+  {
+   "shot": "P5S83",
+   "at": "s:772.90"
+  },
+  {
+   "shot": "P5S84",
+   "at": "s:775.94"
+  },
+  {
+   "shot": "P5S85",
+   "at": "s:789.80"
+  },
+  {
+   "shot": "P5S86",
+   "at": "s:793.62"
+  },
+  {
+   "shot": "P5S87",
+   "at": "s:794.82"
+  },
+  {
+   "shot": "P5S88",
+   "at": "s:794.97"
+  },
+  {
+   "shot": "P5S89",
+   "at": "s:795.12"
+  },
+  {
+   "shot": "P5S90",
+   "at": "s:795.27"
+  },
+  {
+   "shot": "P5S91",
+   "at": "s:795.42"
+  },
+  {
+   "shot": "P5S92",
+   "at": "s:795.57"
+  },
+  {
+   "shot": "P5S93",
+   "at": "s:795.72"
+  }
+ ]
+}

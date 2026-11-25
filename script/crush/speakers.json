@@ -1,0 +1,38 @@
+{
+ "voices": {"male": "Narrator/Charon", "female": "Emma/Leda"},
+ "note": "emma -> female voice; you/other -> male voice. 'other' is the teacher's one line.",
+ "quotes": [
+  "emma","you","emma","you","emma","you","other","you","emma","you",
+  "emma","you","emma","you","emma","you","emma","emma","you","emma",
+  "you","emma","emma","you","emma","you","emma","you","emma","you",
+  "emma","you","emma","emma","you","emma","you","emma","you","emma",
+  "you","emma","you","emma","you","emma","you","emma","you","emma",
+  "you","emma","emma","you","emma","emma","you","emma","you","emma",
+  "you","emma","you","emma","you","emma","you","emma","you","emma",
+  "you","emma","you","emma","you","emma","you","emma","you","emma",
+  "you","emma","you","emma","you","emma","you","emma","you","emma",
+  "you","you","emma","you","emma","you","emma","you","emma","emma"
+ ],
+ "styles": {
+  "1": "hesitant, a little nervous",
+  "9": "awkward, hopeful",
+  "15": "teasing, playful",
+  "26": "playful tease, smiling",
+  "32": "laughing, playful",
+  "42": "warm, shy",
+  "47": "teasing, playful",
+  "63": "curious, slightly teasing",
+  "69": "worried, vulnerable",
+  "73": "anxious, sincere",
+  "83": "amused, playful",
+  "85": "indignant, laughing",
+  "88": "quiet, nervous",
+  "90": "nervous, sincere, heartfelt",
+  "91": "earnest, nervous confession",
+  "92": "soft, happy, sincere",
+  "95": "hopeful, nervous",
+  "96": "surprised, delighted",
+  "98": "warm, happy, flustered",
+  "99": "amused, warm"
+ }
+}

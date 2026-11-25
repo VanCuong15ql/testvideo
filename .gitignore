@@ -11,6 +11,7 @@ studio/public/*/voice_raw.mp3
 studio/public/*/sfx.wav
 studio/public/*/music.wav
 studio/public/*/voice.mp3
+studio/public/*/voice_p*.wav
 studio/public/*/sfx.mp3
 studio/public/*/music.mp3
 # words.json and timeline.json ARE committed: CI renders video-only with no API calls
