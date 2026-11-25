@@ -43,10 +43,13 @@ schematic for the science beat, a cliffhanger blackout). Read the one closest to
 - **Script splitting.** If the script is too long, manually split it into pages (script/page1.txt, script/page2.txt, etc.)
   by content boundaries - do NOT use code for splitting. Each page should be a coherent section.
 - **Story pipeline (long scripts).** After `voice_story.py` voices the pages, run `python scripts/plan_story.py <slug>`
-  from `studio/`: it writes `episode.json` (one shot per paragraph, ids `P{n}S{k}`) and a brief per scene in
-  `out/<slug>/scenes/`. Scenes (~10 paragraphs) are the unit of parallel work — each agent implements
-  `shots/p{n}c{m}.tsx` exporting `{mod}Shots: ShotMap`; `shots.tsx` merges them all. Then `plan.py` builds
-  `timeline.json` as usual. See `episodes/crush/` for the pattern.
+  from `studio/`: it writes `episode.json` (shots `P{n}S{k}` + `s:` cues) and a brief per scene in
+  `out/<slug>/scenes/`. **Shots are time slices, not sentences** — the planner cuts the audio at Whisper
+  silence gaps into ~2.4 s shots (1.2–4.6 s bounds), so a shot can cover several short paragraphs or half of a
+  long one; paragraphs are aligned to the word stream for content labels only (which paragraphs each shot
+  illustrates), and timing never depends on that alignment. Scenes (~10 shots) are the unit of parallel work —
+  each agent implements `shots/p{n}c{m}.tsx` exporting `{mod}Shots: ShotMap`; `shots.tsx` merges them all. Then
+  `plan.py` builds `timeline.json` as usual. See `episodes/crush/` for the pattern.
 - **Design before code, per scene.** Before writing a scene's shots, write its design note (in the scene file's
   header comment or the brief): the set's object inventory, the depth layers (foreground/midground/background),
   where each character blocks, and the keyframe budget — every shot gets ≥3 independently moving elements

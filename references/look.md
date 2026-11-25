@@ -15,6 +15,8 @@ or any other tool.
 
 - Cuts come from **changing shot size**, not from motion: wide, then a macro insert, then a medium, then a close-up
   of a hand, then a reaction. No two neighbouring shots share a size and angle.
+- A shot is a **time slice, not a sentence**: group short lines into one shot, split a long speech across two.
+  The story planner (`plan_story.py`) already does this — cut at silence gaps, ~2.4 s per shot.
 - The opening runs about twice as fast as the rest. Cut on the word: `plan.py` lands each cut 2 frames before its
   cue word.
 
