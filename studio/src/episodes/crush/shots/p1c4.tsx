@@ -4,8 +4,14 @@ import * as K from './common';
 
 // Scene p1c4 — the wall shadow leans in, nods, and then jumps for joy while Emma thanks you.
 // Brief: out/crush/scenes/p1c4_brief.md
+//
+// DESIGN NOTE — set: Classroom + ClsForeground as in p1c3; wall-shadow shots zoom the camera
+// so foreground silhouettes fall out of frame (cam-space trick). Characters: EMMA oblivious
+// below, YOU reacting, shadow performing on the wall. Keyframes: shadow lean = slow drift,
+// "waiting" dots cycle, nod pops with backOut, jump arcs with settle() on landing, Emma's
+// smiles land on her words.
 
-const { Classroom, ShadowFigure, Glow, camT, kf, clamp, lerp, easeOut, poseAt, faceAt, YOU, EMMA } = K;
+const { Classroom, ShadowFigure, Glow, camT, kf, clamp, lerp, easeOut, backOut, settle, poseAt, faceAt, YOU, EMMA } = K;
 
 const idle = (x: number, y: number, s: number, extra: Partial<Pose> = {}): Pose => ({ ...K.basePose, x, y, scale: s, ...extra });
 
@@ -13,7 +19,12 @@ const PIP = { x: 640, y: 830, s: 1.0 };
 const EMP = { x: 1010, y: 800, s: 0.92 };
 const WALL_SH = { x: 1230, y: 655 };
 
-const Cls: React.FC<{ t: number; id?: string }> = ({ t, id = 'c4a' }) => <Classroom t={t + 400} id={id} board={<K.Question5Board t={t} />} />;
+const Cls: React.FC<{ t: number; id?: string }> = ({ t, id = 'c4a' }) => (
+  <>
+    <Classroom t={t + 400} id={id} board={<K.Question5Board t={t} />} />
+    <K.ClsForeground t={t} />
+  </>
+);
 
 // P1S31: while Emma reads, her wall shadow leans toward you, hands clasped — 'worried' + drift
 export const P1S31: React.FC<ShotProps> = ({ t, len }) => {
@@ -75,7 +86,7 @@ const NotebookLook: React.FC<{ x: number; y: number }> = ({ x, y }) => (
 export const P1S34: React.FC<ShotProps> = ({ t, len }) => {
   const emma = poseAt(t, [
     { f: 0, p: idle(EMP.x, EMP.y, EMP.s, { yaw: -0.3, look: -0.6, headTilt: 8 }) },
-    { f: len * 0.4, p: { headTilt: 0, look: -0.4, armL: { a: 30, b: -16 } }, ease: easeOut },
+    { f: len * 0.4, p: { headTilt: 0, look: -0.4, armL: { a: 30, b: -16 } }, ease: backOut },
   ]);
   return (
     <g transform={camT(kf(t, [[0, 975], [len, 965]]), kf(t, [[0, 575], [len, 568]]), kf(t, [[0, 1.5], [len, 1.58]]))}>
@@ -107,11 +118,11 @@ export const P1S35: React.FC<ShotProps> = ({ t, len }) => {
 
 // P1S36: her shadow suddenly nodded enthusiastically — nod mood, bigger
 export const P1S36: React.FC<ShotProps> = ({ t, len }) => {
-  const pop = easeOut(clamp((t - len * 0.25) / 8));
+  const pop = backOut(clamp((t - len * 0.25) / 8));
   return (
     <g transform={camT(kf(t, [[0, 1060], [len, 1040]]), kf(t, [[0, 430], [len, 418]]), kf(t, [[0, 1.9], [len, 2.05]]))}>
       <Cls t={t} id="c4c" />
-      <ShadowFigure x={WALL_SH.x - 60} y={WALL_SH.y} s={1.3 * (0.9 + 0.1 * pop)} flip={-1} mood="nod" t={t * 1.6} />
+      <ShadowFigure x={WALL_SH.x - 60} y={WALL_SH.y + settle(t - len * 0.3, 7)} s={1.3 * (0.9 + 0.1 * pop)} flip={-1} mood="nod" t={t * 1.6} />
       {/* speed ticks on the nod */}
       {[0, 1].map((i) => (
         <path key={i} d={`M ${WALL_SH.x - 230 - i * 20} ${WALL_SH.y - 300 + i * 16} q -14 10 -6 26`} stroke="#8B7BB8" strokeWidth={4} fill="none" opacity={0.5} />
@@ -177,7 +188,7 @@ export const P1S39: React.FC<ShotProps> = ({ t, len }) => {
 // P1S40: her shadow immediately jumped into the air — big jump, arms up
 export const P1S40: React.FC<ShotProps> = ({ t, len }) => {
   const jump = Math.sin(clamp(t / len) * Math.PI);
-  const sy = WALL_SH.y - jump * 160;
+  const sy = WALL_SH.y - jump * 160 + settle(t - len * 0.8, 12);
   return (
     <g transform={camT(kf(t, [[0, 1060], [len, 1040]]), kf(t, [[0, 430], [len, 410]]), kf(t, [[0, 1.9], [len, 2.15]]))}>
       <Cls t={t} id="c4d" />

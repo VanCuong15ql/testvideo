@@ -4,8 +4,15 @@ import * as K from './common';
 
 // Scene p1c3 — the first strange discovery: break time, Emma asks about question five,
 // hands you her notebook, and her shadow leans in on the wall. Brief: out/crush/scenes/p1c3_brief.md
+//
+// DESIGN NOTE — set: Classroom engine (perspective room, QUESTION 5 chalkboard, desk rows,
+// pinboard, wall clock) + ClsForeground (3 seated silhouettes, bottom corners, sway).
+// Characters: YOU by the window (640,830), EMMA walks the right aisle far→near, her shadow
+// on the back wall (1230,655) = hidden third character. Keyframes: Emma's approach easeOut,
+// notebook handoff on a bezier arc with backOut catch, wall-shadow reveal pops backOut,
+// notebook close-up and wall close-up as cutaways.
 
-const { Classroom, ShadowFigure, Notebook, Tag, Glow, camT, kf, clamp, lerp, easeOut, poseAt, faceAt, joints, toWorld, YOU, EMMA } = K;
+const { Classroom, ShadowFigure, Notebook, Tag, Glow, camT, kf, clamp, lerp, easeOut, backOut, settle, poseAt, faceAt, joints, toWorld, YOU, EMMA } = K;
 
 const idle = (x: number, y: number, s: number, extra: Partial<Pose> = {}): Pose => ({ ...K.basePose, x, y, scale: s, ...extra });
 
@@ -17,7 +24,12 @@ const EMMA_FAR = { x: 1420, y: 745, s: 0.8 };
 // her shadow, cast big on the back wall behind/right of her
 const WALL_SH = { x: 1230, y: 655 };
 
-const Cls: React.FC<{ t: number; id?: string }> = ({ t, id = 'c3a' }) => <Classroom t={t + 400} id={id} board={<K.Question5Board t={t} />} />;
+const Cls: React.FC<{ t: number; id?: string }> = ({ t, id = 'c3a' }) => (
+  <>
+    <Classroom t={t + 400} id={id} board={<K.Question5Board t={t} />} />
+    <K.ClsForeground t={t} />
+  </>
+);
 
 // P1S21: no way you'd spend the morning staring at a shadow — Pip at the window, resolved face
 export const P1S21: React.FC<ShotProps> = ({ t, len }) => {
@@ -67,7 +79,7 @@ export const P1S24: React.FC<ShotProps> = ({ t, len }) => {
   const emma = poseAt(t, [
     { f: 0, p: idle(EMMA_FAR.x, EMMA_FAR.y, EMMA_FAR.s, { yaw: -0.4, look: -0.6 }) },
     { f: len * 0.6, p: { x: EMMA_NEAR.x, y: EMMA_NEAR.y, scale: EMMA_NEAR.s, yaw: -0.25, look: -0.5 }, ease: easeOut },
-    { f: len, p: {} },
+    { f: len, p: { headTilt: -4 }, ease: easeOut }, // little bow on arrival
   ]);
   const pip = idle(PIP.x, PIP.y, PIP.s, { yaw: 0.55, look: 0.5, ...faceAt(t, [[0, 'neutral'], [len * 0.7, 'happy']]) });
   return (
@@ -134,7 +146,10 @@ export const P1S27: React.FC<ShotProps> = ({ t, len }) => {
 export const P1S28: React.FC<ShotProps> = ({ t, len }) => {
   const k = easeOut(clamp((t - 4) / (len * 0.45)));
   const hx = lerp(1010, 800, k);
-  const hy = lerp(640, 700, k) - Math.sin(k * Math.PI) * 60;
+  const landT = 4 + len * 0.45;
+  const hy = lerp(640, 700, k) - Math.sin(k * Math.PI) * 60 - settle(t - landT, 9);
+  const catchK = clamp((k - 0.72) / 0.28);
+  const pop = catchK > 0 ? backOut(catchK) : 0;
   const emma = poseAt(t, [
     { f: 0, p: idle(EMMA_NEAR.x, EMMA_NEAR.y, EMMA_NEAR.s, { yaw: -0.3, look: -0.5, armR: { a: 24, b: -16 } }) },
     { f: len * 0.5, p: { armR: { a: 55, b: -30 } } },
@@ -150,7 +165,7 @@ export const P1S28: React.FC<ShotProps> = ({ t, len }) => {
       <Cls t={t} />
       <K.Hero look={YOU} pose={{ ...pip, ...faceAt(t, [[0, 'neutral']]) }} rimId="rimR" shadow={0.5} />
       <K.Hero look={EMMA} pose={{ ...emma, ...faceAt(t, [[0, 'happy'], [len * 0.6, 'neutral']]) }} rimId="rimR" shadow={0.4} />
-      <Notebook x={hx} y={hy} s={0.9} rot={-10 + k * 14} open={k > 0.8 ? 1 : 0} />
+      <Notebook x={hx} y={hy} s={0.9 * (1 + 0.18 * pop)} rot={-10 + k * 14} open={k > 0.8 ? 1 : 0} />
       {/* dotted path the notebook travels */}
       <path d={`M 1010 650 Q 920 ${560 - k * 30} 800 700`} fill="none" stroke="#8B7BB8" strokeWidth={3} strokeDasharray="8 10" opacity={0.4 * (1 - k)} />
     </g>
@@ -194,7 +209,7 @@ export const P1S30: React.FC<ShotProps> = ({ t, len }) => {
       {/* her real shadow + the EXTRA shadow on the wall, revealed late */}
       <ellipse cx={1050} cy={880} rx={70} ry={12} fill="#000" opacity={0.3} />
       <ShadowFigure x={1050} y={885} s={0.55} mood="idle" t={t} opacity={0.5} />
-      <ShadowFigure x={WALL_SH.x} y={WALL_SH.y} s={1.15} flip={-1} mood="think" t={t} opacity={reveal} />
+      <ShadowFigure x={WALL_SH.x} y={WALL_SH.y} s={1.15 * (0.55 + 0.45 * backOut(clamp(reveal * 1.35)))} flip={-1} mood="think" t={t} opacity={reveal} />
       {reveal > 0 ? <Glow x={WALL_SH.x} y={WALL_SH.y - 120} r={260} o={0.12 * reveal} /> : null}
       {/* Pip's eyeline ticks toward the wall */}
       {reveal > 0 ? <path d={`M 640 640 L 980 560 M 640 656 L 990 580`} stroke="#8B7BB8" strokeWidth={4} strokeLinecap="round" opacity={0.6 * reveal} /> : null}

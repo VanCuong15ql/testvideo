@@ -5,6 +5,11 @@ import * as K from './common';
 // Scene p1c2 — the shadow's small treasons: it isn't waving (it's holding books),
 // then it points, makes a heart, and Pip almost drops his backpack.
 // Rich set: Hallway + HallForeground; shadow gets its own spotlight treatment.
+//
+// DESIGN NOTE — set: same Hallway kit; shadow lit by its own violet Glow + floor ellipse so it
+// reads as a character, not a smear. Characters: YOU foreground, EMMA+friends far, shadow mid.
+// Keyframes: shadow mood changes land on words (wave→idle→point→heart), Pip's flinch uses
+// backOut on the recovery and settle() on the backpack catch; speed lines on the flee.
 
 const { HALL, Hallway, HallForeground, ShadowFigure, Notebook, Backpack, Tag, Glow, camT, kf, clamp, lerp, poseAt, faceAt, easeOut, easeInOut, YOU, EMMA, FRIEND, SIS } = K;
 

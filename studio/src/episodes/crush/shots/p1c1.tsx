@@ -5,6 +5,12 @@ import * as K from './common';
 // Scene p1c1 — cold open: title, 8:12 Monday, the crush across the hallway, the smile,
 // the look away — then the impossible thing: her shadow waves.
 // Rich set: Hallway (clock, boards, lockers, light shafts, dust) + HallForeground depth layer.
+//
+// DESIGN NOTE — set: Hallway 6-plane kit (pipes/EXIT/204 sign → far wall clock+doors+lockers+
+// boards → 3 dusk windows w/ light shafts → perspective tile floor → flickering tubes → dust)
+// + HallForeground (blurred locker + swaying plant). Characters: YOU foreground-left, EMMA+FRIEND+SIS
+// mid-ground far wall, Emma's shadow on floor = hidden third character. Keyframes: 4-6 pose keys
+// per shot, 2-3 segment cameras, animated props (books, backpack, sparkles, speed lines).
 
 const { HALL, Hallway, HallForeground, Clock8_12, ShadowFigure, TitleCard, Tag, Glow, camT, kf, clamp, lerp, poseAt, faceAt, easeOut, easeInOut, YOU, EMMA, FRIEND, SIS } = K;
 

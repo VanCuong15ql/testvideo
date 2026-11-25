@@ -4,8 +4,13 @@ import * as K from './common';
 
 // Scene p1c5 — you nearly laugh; Emma heads back to her seat; the shadow gives a final
 // thumbs-up and follows; you start to suspect it has a personality. Brief: p1c5_brief.md
+//
+// DESIGN NOTE — set: Classroom + ClsForeground. Characters: YOU (laugh → fake-calm → suspicion),
+// EMMA walks the aisle away (walkPose), wall shadow exits frame-right trailing her.
+// Keyframes: laugh = shoulder shake decay + shadow laugh mood; walk-off has continuous gait;
+// shadow follow slides down wall→floor with scale shrink; final close-up Pip + shadow peek.
 
-const { Classroom, ShadowFigure, Glow, Tag, camT, kf, clamp, lerp, easeOut, easeInOut, poseAt, faceAt, walkPose, YOU, EMMA } = K;
+const { Classroom, ShadowFigure, Glow, Tag, camT, kf, clamp, lerp, easeOut, easeInOut, backOut, settle, poseAt, faceAt, walkPose, YOU, EMMA } = K;
 
 const idle = (x: number, y: number, s: number, extra: Partial<Pose> = {}): Pose => ({ ...K.basePose, x, y, scale: s, ...extra });
 
@@ -13,7 +18,12 @@ const EMP_SEAT = { x: 1420, y: 745, s: 0.8 };   // her desk further down the ais
 const EMP_NEAR = { x: 1010, y: 800, s: 0.92 };
 const WALL_SH = { x: 1160, y: 640 };
 
-const Cls: React.FC<{ t: number; id?: string }> = ({ t, id = 'c5a' }) => <Classroom t={t + 400} id={id} board={<K.Question5Board t={t} />} />;
+const Cls: React.FC<{ t: number; id?: string }> = ({ t, id = 'c5a' }) => (
+  <>
+    <Classroom t={t + 400} id={id} board={<K.Question5Board t={t} />} />
+    <K.ClsForeground t={t} />
+  </>
+);
 
 // P1S41: you nearly laughed — Pip bites lip, shoulders shake
 export const P1S41: React.FC<ShotProps> = ({ t, len }) => {
@@ -26,6 +36,7 @@ export const P1S41: React.FC<ShotProps> = ({ t, len }) => {
     <g transform={camT(kf(t, [[0, 975], [len, 965]]), kf(t, [[0, 575], [len, 568]]), kf(t, [[0, 1.5], [len, 1.58]]))}>
       <Cls t={t} />
       <K.Hero look={YOU} pose={{ ...pose, ...faceAt(t, [[0, 'worried'], [len * 0.4, 'happy'], [len * 0.8, 'oops']]) }} rimId="rimR" shadow={0.5} />
+      <K.Hero look={EMMA} pose={idle(EMP_NEAR.x, EMP_NEAR.y, EMP_NEAR.s, { yaw: -0.3, look: -0.55, ...faceAt(t, [[0, 'happy']]) })} rimId="rimR" shadow={0.35} />
       <ShadowFigure x={WALL_SH.x} y={WALL_SH.y} s={1.0} flip={-1} mood="laugh" t={t * 1.5} opacity={0.7} />
       {/* a snort tick */}
       <path d={`M 700 520 q 10 -10 22 0`} stroke="#E9C46A" strokeWidth={4} fill="none" opacity={clamp(1 - t * 0.06)} />
@@ -37,7 +48,7 @@ export const P1S41: React.FC<ShotProps> = ({ t, len }) => {
 export const P1S42: React.FC<ShotProps> = ({ t, len }) => {
   const pose = poseAt(t, [
     { f: 0, p: { x: 640, y: 830, scale: 1.0, yaw: 0.9, look: 0.8, armR: { a: 30, b: -16 } } },
-    { f: len * 0.4, p: { armR: { a: 55, b: -26 } }, ease: easeOut },
+    { f: len * 0.4, p: { armR: { a: 55, b: -26 } }, ease: backOut },
   ]);
   return (
     <g transform={camT(kf(t, [[0, 975], [len, 965]]), kf(t, [[0, 575], [len, 568]]), kf(t, [[0, 1.5], [len, 1.58]]))}>
@@ -64,9 +75,9 @@ export const P1S43: React.FC<ShotProps> = ({ t, len }) => {
 
 // P1S44: the shadow turns, gives one final thumbs-up, then follows her — shadow travels with her
 export const P1S44: React.FC<ShotProps> = ({ t, len }) => {
-  const k = easeInOut(clamp((t - len * 0.35) / (len * 0.5)));
+  const k = easeOut(clamp((t - len * 0.35) / (len * 0.5)));
   const sx = lerp(WALL_SH.x, 1330, k);
-  const sy = lerp(WALL_SH.y, 700, k);
+  const sy = lerp(WALL_SH.y, 700, k) + settle(t - len * 0.85, 8);
   const emmaX = lerp(EMP_NEAR.x, EMP_SEAT.x, clamp(t / len));
   const emma = walkPose(emmaX, t * 0.55, lerp(EMP_NEAR.y, EMP_SEAT.y, clamp(t / len)), lerp(EMP_NEAR.s, EMP_SEAT.s, clamp(t / len)), { yaw: 1, look: 0 }, 1);
   const mood = t < len * 0.45 ? 'thumb' : 'idle';
@@ -87,7 +98,7 @@ export const P1S45: React.FC<ShotProps> = ({ t, len }) => {
   const pose: Pose = { ...K.basePose, x: 900, y: 620 - K.HEAD.y * sc, scale: sc, yaw: 0.3, look: 0.5, armL: { a: 14, b: -8 }, armR: { a: 14, b: -8 }, headTilt: 6, ...faceAt(t, [[0, 'worried'], [len * 0.6, 'worried']]) };
   const peek = clamp((t - len * 0.5) / (len * 0.3));
   return (
-    <g transform={camT(960, 560, 1.15)}>
+    <g transform={camT(960 + kf(t, [[0, 0], [len, 24]]), 560 + kf(t, [[0, 0], [len, -14]]), 1.15 + kf(t, [[0, 0], [len, 0.09]]))}>
       <rect x={0} y={0} width={1920} height={1080} fill="#141126" />
       <Glow x={960} y={500} r={480} o={0.13} />
       <K.Hero look={YOU} pose={pose} rimId="rimR" shadow={0} />

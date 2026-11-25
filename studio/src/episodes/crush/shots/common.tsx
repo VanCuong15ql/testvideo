@@ -12,6 +12,8 @@ import {
   easeInOut,
   easeOut,
   easeIn,
+  backOut,
+  shake,
   rnd,
   settle,
   camT,
@@ -542,23 +544,43 @@ export const Question5Board: React.FC<{ t?: number }> = ({ t = 0 }) => (
 );
 
 /** Foreground depth layer for classroom shots: blurry desk edge + chair back at frame bottom. */
-export const ClsForeground: React.FC = () => (
-  <g opacity={0.9}>
-    <rect x={-30} y={930} width={700} height={200} fill="#141126" opacity={0.7} />
-    <rect x={1300} y={940} width={660} height={200} fill="#141126" opacity={0.7} />
-    {/* a classmate's shoulder + head silhouette, back to camera, bottom corners */}
-    <g transform="translate(140 1010)" opacity={0.85}>
-      <circle cx={0} cy={-60} r={52} fill="#1E1834" />
-      <path d="M -70 60 Q -72 -10 0 -14 Q 72 -10 70 60 Z" fill="#241E3C" />
-      <path d="M -58 -70 Q 0 -110 58 -70 L 50 -96 Q 0 -122 -50 -96 Z" fill="#2E2444" />
+// Blurred classmates sitting at desks in the bottom corners — drawn in CAMERA space so it can live
+// inside the camT group of every classroom shot (Cls includes it). Silhouettes sit low enough that
+// zoomed wall/board shots never see them.
+export const ClsForeground: React.FC<{ t?: number }> = ({ t = 0 }) => {
+  const sway = Math.sin(t * 0.12) * 3;
+  return (
+    <g opacity={0.92}>
+      {/* desk edge + seated classmate, back to camera, bottom-left */}
+      <g transform={`translate(560 940)`}>
+        <rect x={-60} y={60} width={380} height={160} fill="#141126" opacity={0.75} />
+        <path d="M -40 60 L 300 60 L 320 200 L -60 200 Z" fill="#1B1730" />
+        <g transform={`translate(120 ${10 + sway * 0.4})`}>
+          <path d="M -78 40 Q -80 -30 0 -34 Q 80 -30 78 40 Z" fill="#241E3C" />
+          <circle cx={0} cy={-72} r={46} fill="#1E1834" />
+          <path d="M -48 -84 Q 0 -122 48 -84 L 40 -108 Q 0 -132 -40 -108 Z" fill="#2E2444" />
+        </g>
+      </g>
+      {/* bottom-right classmate, slightly smaller/further */}
+      <g transform={`translate(1330 950)`}>
+        <rect x={-60} y={60} width={360} height={160} fill="#141126" opacity={0.7} />
+        <path d="M -40 60 L 280 60 L 300 200 L -60 200 Z" fill="#1B1730" />
+        <g transform={`translate(110 ${12 - sway * 0.3})`}>
+          <path d="M -72 38 Q -74 -26 0 -30 Q 74 -26 72 38 Z" fill="#221C38" />
+          <circle cx={0} cy={-64} r={42} fill="#1C1730" />
+          <path d="M -44 -76 Q 0 -110 44 -76 L 37 -98 Q 0 -120 -37 -98 Z" fill="#2A2140" />
+          {/* raised hand holding a pencil */}
+          <path d={`M 60 -6 L 96 ${-18 + Math.sin(t * 0.3) * 4}`} stroke="#241E3C" strokeWidth={16} strokeLinecap="round" fill="none" />
+        </g>
+      </g>
+      {/* a third silhouette far center-right, mostly out of frame */}
+      <g transform="translate(1180 985) scale(0.8)" opacity={0.6}>
+        <path d="M -60 30 Q -62 -22 0 -26 Q 62 -22 60 30 Z" fill="#201A34" />
+        <circle cx={0} cy={-56} r={38} fill="#1A152C" />
+      </g>
     </g>
-    <g transform="translate(1800 1020) scale(-1 1)" opacity={0.8}>
-      <circle cx={0} cy={-56} r={48} fill="#1E1834" />
-      <path d="M -64 56 Q -66 -8 0 -12 Q 66 -8 64 56 Z" fill="#241E3C" />
-      <path d="M -52 -64 Q 0 -100 52 -64 L 45 -88 Q 0 -110 -45 -88 Z" fill="#2E2444" />
-    </g>
-  </g>
-);
+  );
+};
 
 // Re-export everything scene files might need, so each module has a single import line.
 export {
@@ -574,6 +596,8 @@ export {
   easeInOut,
   easeOut,
   easeIn,
+  backOut,
+  shake,
   rnd,
   settle,
   camT,
