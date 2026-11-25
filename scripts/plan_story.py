@@ -33,17 +33,32 @@ if not page_files:
 
 TOKEN = re.compile(r"[A-Za-zÀ-ỹ]+(?:'[A-Za-z]+)?")
 
+# Function words carry no alignment signal — "At least, that was the plan" must not match
+# "staring AT someone's shadow". Content tokens only.
+STOP = set('''a an the and or but if then else when while of at by for with about into through
+during before after to from up down in out on off over under again further once here there all
+any both each few more most other some such no nor not only own same so than too very can will
+just should now i me my we our you your he him his she her it its they them their this that these
+those am is are was were be been being have has had having do does did doing would could ought as
+what who whom how why'''.split())
+
 
 def paragraphs(text):
     return [re.sub(r'\s+', ' ', p).strip() for p in re.split(r'\n\s*\n', text.strip()) if p.strip()]
 
 
-def first_tokens(para, n=5):
-    return [norm(t) for t in TOKEN.findall(para.lstrip('"“”\' -–—')) if len(norm(t)) > 1][:n]
-
-
 def norm(w):
     return re.sub(r"[^\w']", '', w.lower().replace('’', "'"))
+
+
+def content_tokens(para, head=6):
+    """Distinctive words of a paragraph, in order — the only tokens allowed to anchor a match."""
+    ct = []
+    for t in TOKEN.findall(para):
+        t = norm(t)
+        if len(t) > 2 and t not in STOP and t not in ct:
+            ct.append(t)
+    return ct[:head]
 
 
 def page_dur(n):
@@ -52,31 +67,90 @@ def page_dur(n):
 
 
 def para_starts(n, paras):
-    """Local start seconds of each paragraph: the first word's time in words_pN.json,
-    searched forward from the previous paragraph's word so repeats land in order."""
+    """Local start seconds of each paragraph: align on CONTENT tokens only, monotonically.
+
+    A candidate word position qualifies when the paragraph's first content token anchors the
+    window and enough of its remaining content tokens appear inside it. Whisper mishears
+    ("Her" -> "His"), so single tokens are never trusted alone; the earliest qualifying position
+    after the cursor wins. If nothing qualifies, take the position with the most hits.
+    """
     words = load_json(out / f'words_p{n}.json', [])
     if not words:
         raise SystemExit(f'page {n}: run voice_story.py first (no words_p{n}.json)')
+    wn = [norm(x['w']) for x in words]
+    # Whisper exposes sentence boundaries as silence gaps — a paragraph can only start on one,
+    # otherwise a window slides across a pause and matches the NEXT sentence's content words.
+    boundary = [True] + [
+        words[i]['s'] - words[i - 1].get('e', words[i - 1]['s']) > 0.22
+        for i in range(1, len(words))
+    ]
     starts, wi, prev_t = [], 0, -1.0
     for para in paras:
-        toks = first_tokens(para)
+        ct = content_tokens(para)
         found = None
-        # slide a window along the words: a position qualifies when enough of the paragraph's
-        # opening words appear inside it AND one of its first three anchors the start. Whisper
-        # mishears ("Her" -> "His"), so no single token is trusted alone; the earliest qualifying
-        # position after the cursor wins
-        need = 2 if len(toks) >= 3 else 1
-        for i in range(wi, len(words)) if toks else []:
-            window = [norm(x['w']) for x in words[i:i + 10]]
-            score = sum(1 for t in toks if t in window)
-            anchored = any(t in window[:5] for t in toks[:3])
-            if score >= need and anchored and words[i]['s'] > prev_t + 0.02:
+        if ct:
+            W = max(12, len(ct) * 3)
+            need = max(1, -(-len(ct) * 3 // 5))  # ~60% of content tokens
+            cset = set(ct)
+            def anchor(i, reach):
+                """First position of the paragraph's leading content token within `reach` words."""
+                return next((j for j in range(i, min(i + reach, len(words))) if wn[j] == ct[0]), None)
+
+            def hits_from(p, cap):
+                """Content hits counted from the anchor, up to `cap`; returns (hits, last_hit_pos)."""
+                h, last = 0, p
+                for j in range(p, min(p + W, len(words))):
+                    if wn[j] in cset:
+                        h += 1
+                        last = j
+                        if h >= cap:
+                            break
+                return h, last
+
+            for i in range(wi, len(words)):
+                if not boundary[i] or words[i]['s'] <= prev_t + 0.02:
+                    continue
+                # the first content token must sit near the start — otherwise the candidate is
+                # really the PREVIOUS sentence and the hits belong to this paragraph's tail
+                p = anchor(i, 6)
+                if p is None:
+                    continue
+                hits, last = hits_from(p, need)
+                if hits < need:
+                    continue
+                # and the span must not cross a long silence: a window that jumps a sentence
+                # boundary collects the NEXT paragraph's words and fakes a match
+                if any(
+                    words[j + 1]['s'] - words[j].get('e', words[j]['s']) > 0.65
+                    for j in range(i, last)
+                ):
+                    continue
                 found = i
                 break
+            if found is None:
+                # relaxed pass: same anchoring, but any word position may start the paragraph
+                # (TTS does not always pause between paragraphs). Score = hit count, then the
+                # shortest lead-in to the first content token — a candidate that reaches the
+                # cluster from far away is the previous sentence, not this paragraph.
+                best, bs = None, (-1, 99)
+                for i in range(wi, len(words)):
+                    if words[i]['s'] <= prev_t + 0.02:
+                        continue
+                    p = anchor(i, 7)
+                    if p is None:
+                        continue
+                    hits, _ = hits_from(p, len(cset) + 2)
+                    score = (hits, -(p - i))
+                    if score > bs:
+                        best, bs = i, score
+                    if hits >= len(cset) and p == i:
+                        break
+                if best is not None and bs[0] >= max(1, len(cset) // 2):
+                    found = best
         if found is None:
             # fall back to a beat after the previous paragraph rather than failing the whole plan
             starts.append(round(prev_t + 1.2, 2))
-            print(f'  ! page {n}: could not place paragraph starting "{toks[0] if toks else para[:30]}" — guessed')
+            print(f'  ! page {n}: could not place paragraph starting "{ct[0] if ct else para[:30]}" — guessed')
         else:
             wi = found + 1
             prev_t = words[found]['s']
@@ -122,8 +196,9 @@ for (n, c), rows in sorted(scenes.items()):
              'Design before code — put a short design note in the file header: set object inventory,',
              'depth layers (foreground/midground/background), character blocking, and a keyframe budget',
              '(every shot: >=3 independently moving elements — pose keys, camera drift, prop motion, particles).',
-             'Motion grammar (references/look.md): easeOut for entrances, easeIn for exits, backOut for pops,',
-             'settle() for landing wobble, shake() for impacts, rnd() for scatter — never linear-only motion.',
+             'Motion grammar (references/look.md): easeOut for entrances, easeIn for exits, spring() for weighty',
+             'entrances (damping 12 / stiffness 100), backOut for pops, settle() for landing wobble, shake() for',
+             'impacts, rnd() for scatter — never linear-only motion.',
              '', '| Shot | Starts (s, local) | Paragraph |', '|---|---|---|']
     for sid, st, para in rows:
         lines.append(f'| {sid} | {st:.1f} | {para} |')
