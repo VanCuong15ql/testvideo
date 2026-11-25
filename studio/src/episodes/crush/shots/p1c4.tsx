@@ -13,7 +13,7 @@ const PIP = { x: 640, y: 830, s: 1.0 };
 const EMP = { x: 1010, y: 800, s: 0.92 };
 const WALL_SH = { x: 1230, y: 655 };
 
-const Cls: React.FC<{ t: number; id?: string }> = ({ t, id = 'c4a' }) => <Classroom t={t + 400} id={id} />;
+const Cls: React.FC<{ t: number; id?: string }> = ({ t, id = 'c4a' }) => <Classroom t={t + 400} id={id} board={<K.Question5Board t={t} />} />;
 
 // P1S31: while Emma reads, her wall shadow leans toward you, hands clasped — 'worried' + drift
 export const P1S31: React.FC<ShotProps> = ({ t, len }) => {

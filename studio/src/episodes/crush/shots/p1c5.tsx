@@ -13,7 +13,7 @@ const EMP_SEAT = { x: 1420, y: 745, s: 0.8 };   // her desk further down the ais
 const EMP_NEAR = { x: 1010, y: 800, s: 0.92 };
 const WALL_SH = { x: 1160, y: 640 };
 
-const Cls: React.FC<{ t: number; id?: string }> = ({ t, id = 'c5a' }) => <Classroom t={t + 400} id={id} />;
+const Cls: React.FC<{ t: number; id?: string }> = ({ t, id = 'c5a' }) => <Classroom t={t + 400} id={id} board={<K.Question5Board t={t} />} />;
 
 // P1S41: you nearly laughed — Pip bites lip, shoulders shake
 export const P1S41: React.FC<ShotProps> = ({ t, len }) => {

@@ -30,9 +30,27 @@ jobs:
           else
             base="${{ github.event.before }}"
             [ "$base" = "0000000000000000000000000000000000000000" ] && base="HEAD~1"
-            s=$(git diff --name-only "$base" HEAD | sed -n 's#studio/src/episodes/\([^/]*\)/.*#\1#p' | sort -u | head -1)
+            # candidate slugs from this push's diff; drop any slug that is a
+            # prefix of another (crush-p1 wins over crush)
+            mapfile -t slugs < <(git diff --name-only "$base" HEAD | sed -n 's#studio/src/episodes/\([^/]*\)/.*#\1#p' | sort -u)
+            s=""
+            for cand in "${slugs[@]}"; do
+              skip=0
+              for other in "${slugs[@]}"; do
+                if [ "$cand" != "$other" ] && [[ "$other" == "$cand"* ]]; then skip=1; fi
+              done
+              if [ $skip -eq 0 ]; then s="$cand"; break; fi
+            done
             if [ -z "$s" ]; then
-              s=$(git log --format= --name-only -30 | sed -n 's#studio/src/episodes/\([^/]*\)/.*#\1#p' | head -1)
+              # no episode changed: render the most recently touched one
+              mapfile -t hist < <(git log --format= --name-only -30 | sed -n 's#studio/src/episodes/\([^/]*\)/.*#\1#p' | awk '!seen[$0]++')
+              for cand in "${hist[@]}"; do
+                skip=0
+                for other in "${hist[@]}"; do
+                  if [ "$cand" != "$other" ] && [[ "$other" == "$cand"* ]]; then skip=1; fi
+                done
+                if [ $skip -eq 0 ]; then s="$cand"; break; fi
+              done
             fi
             s="${s:-sandglass}"
           fi

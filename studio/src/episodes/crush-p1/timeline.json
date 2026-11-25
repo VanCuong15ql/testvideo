@@ -1,0 +1,777 @@
+{
+ "fps": 30,
+ "slug": "crush-p1",
+ "title": "What If Your Crush’s Shadow Revealed Her Secret Feelings?",
+ "total": 3890,
+ "segments": [
+  {
+   "shot": "P1S1",
+   "a": 0,
+   "b": 44,
+   "t0": 0,
+   "t1": 44,
+   "line": "What if your crush's shadow"
+  },
+  {
+   "shot": "P1S2",
+   "a": 44,
+   "b": 216,
+   "t0": 0,
+   "t1": 172,
+   "line": "revealed her secret feelings? Exactly 8 -12 on Monday morning."
+  },
+  {
+   "shot": "P1S3",
+   "a": 216,
+   "b": 359,
+   "t0": 0,
+   "t1": 143,
+   "line": "You notice something strange. Your crush was standing on the other side of the school hallway,"
+  },
+  {
+   "shot": "P1S4",
+   "a": 359,
+   "b": 402,
+   "t0": 0,
+   "t1": 43,
+   "line": "chatting with her friends."
+  },
+  {
+   "shot": "P1S5",
+   "a": 402,
+   "b": 409,
+   "t0": 0,
+   "t1": 7,
+   "line": "You"
+  },
+  {
+   "shot": "P1S6",
+   "a": 409,
+   "b": 480,
+   "t0": 0,
+   "t1": 71,
+   "line": "looked at her. She smiled."
+  },
+  {
+   "shot": "P1S7",
+   "a": 480,
+   "b": 539,
+   "t0": 0,
+   "t1": 59,
+   "line": "You immediately looked away."
+  },
+  {
+   "shot": "P1S8",
+   "a": 539,
+   "b": 639,
+   "t0": 0,
+   "t1": 100,
+   "line": "Just another normal day. But then, you"
+  },
+  {
+   "shot": "P1S9",
+   "a": 639,
+   "b": 739,
+   "t0": 0,
+   "t1": 100,
+   "line": "noticed something completely impossible. Her"
+  },
+  {
+   "shot": "P1S10",
+   "a": 739,
+   "b": 755,
+   "t0": 0,
+   "t1": 16,
+   "line": "shadow"
+  },
+  {
+   "shot": "P1S11",
+   "a": 755,
+   "b": 824,
+   "t0": 0,
+   "t1": 69,
+   "line": "was waving at you. You"
+  },
+  {
+   "shot": "P1S12",
+   "a": 824,
+   "b": 892,
+   "t0": 0,
+   "t1": 68,
+   "line": "blinked. She wasn't waving."
+  },
+  {
+   "shot": "P1S13",
+   "a": 892,
+   "b": 959,
+   "t0": 0,
+   "t1": 67,
+   "line": "Both of her hands were still holding her"
+  },
+  {
+   "shot": "P1S14",
+   "a": 959,
+   "b": 1074,
+   "t0": 0,
+   "t1": 115,
+   "line": "books. But her shadow? It was waving. Like I had just"
+  },
+  {
+   "shot": "P1S15",
+   "a": 1074,
+   "b": 1151,
+   "t0": 0,
+   "t1": 77,
+   "line": "spotted its favorite celebrity."
+  },
+  {
+   "shot": "P1S16",
+   "a": 1151,
+   "b": 1276,
+   "t0": 0,
+   "t1": 125,
+   "line": "You stared at it. The shadow pointed at you. Then used both hands"
+  },
+  {
+   "shot": "P1S17",
+   "a": 1276,
+   "b": 1283,
+   "t0": 0,
+   "t1": 7,
+   "line": "to"
+  },
+  {
+   "shot": "P1S18",
+   "a": 1283,
+   "b": 1403,
+   "t0": 0,
+   "t1": 120,
+   "line": "make a heart. You almost dropped your backpack. You"
+  },
+  {
+   "shot": "P1S19",
+   "a": 1403,
+   "b": 1540,
+   "t0": 0,
+   "t1": 137,
+   "line": "looked back at Emma. She was still chatting with her friends. Completely unaware of what"
+  },
+  {
+   "shot": "P1S20",
+   "a": 1540,
+   "b": 1545,
+   "t0": 0,
+   "t1": 5,
+   "line": "her"
+  },
+  {
+   "shot": "P1S21",
+   "a": 1545,
+   "b": 1711,
+   "t0": 0,
+   "t1": 166,
+   "line": "shadow was doing. You quickly walked into your classroom. There was no way you were going to spend the rest"
+  },
+  {
+   "shot": "P1S22",
+   "a": 1711,
+   "b": 1780,
+   "t0": 0,
+   "t1": 69,
+   "line": "of the morning staring at someone's shadow."
+  },
+  {
+   "shot": "P1S23",
+   "a": 1780,
+   "b": 1785,
+   "t0": 0,
+   "t1": 5,
+   "line": "At"
+  },
+  {
+   "shot": "P1S24",
+   "a": 1785,
+   "b": 2038,
+   "t0": 0,
+   "t1": 253,
+   "line": "least, that was the plan. The first strange discovery. During the first break, you were standing near the classroom"
+  },
+  {
+   "shot": "P1S25",
+   "a": 2038,
+   "b": 2062,
+   "t0": 0,
+   "t1": 24,
+   "line": "window when"
+  },
+  {
+   "shot": "P1S26",
+   "a": 2062,
+   "b": 2171,
+   "t0": 0,
+   "t1": 109,
+   "line": "Emma approached. Hey, do you understand question"
+  },
+  {
+   "shot": "P1S27",
+   "a": 2171,
+   "b": 2206,
+   "t0": 0,
+   "t1": 35,
+   "line": "5?"
+  },
+  {
+   "shot": "P1S28",
+   "a": 2206,
+   "b": 2305,
+   "t0": 0,
+   "t1": 99,
+   "line": "You turned around. Maybe, let"
+  },
+  {
+   "shot": "P1S29",
+   "a": 2305,
+   "b": 2309,
+   "t0": 0,
+   "t1": 4,
+   "line": "me"
+  },
+  {
+   "shot": "P1S30",
+   "a": 2309,
+   "b": 2544,
+   "t0": 0,
+   "t1": 235,
+   "line": "see. She handed you her notebook. You looked at the question, trying very hard to concentrate. But then you noticed her"
+  },
+  {
+   "shot": "P1S31",
+   "a": 2544,
+   "b": 2713,
+   "t0": 0,
+   "t1": 169,
+   "line": "shadow on the wall. While Emma was looking at the notebook, her shadow was leaning toward you with"
+  },
+  {
+   "shot": "P1S32",
+   "a": 2713,
+   "b": 2803,
+   "t0": 0,
+   "t1": 90,
+   "line": "the tans clashed together. It looked like it"
+  },
+  {
+   "shot": "P1S33",
+   "a": 2803,
+   "b": 2855,
+   "t0": 0,
+   "t1": 52,
+   "line": "was waiting for something."
+  },
+  {
+   "shot": "P1S34",
+   "a": 2855,
+   "b": 2905,
+   "t0": 0,
+   "t1": 50,
+   "line": "You glanced at Emma."
+  },
+  {
+   "shot": "P1S35",
+   "a": 2905,
+   "b": 2998,
+   "t0": 0,
+   "t1": 93,
+   "line": "What's wrong? She asked. Nothing."
+  },
+  {
+   "shot": "P1S36",
+   "a": 2998,
+   "b": 3065,
+   "t0": 0,
+   "t1": 67,
+   "line": "I just need to think. Her"
+  },
+  {
+   "shot": "P1S37",
+   "a": 3065,
+   "b": 3105,
+   "t0": 0,
+   "t1": 40,
+   "line": "shadow suddenly nodded"
+  },
+  {
+   "shot": "P1S38",
+   "a": 3105,
+   "b": 3223,
+   "t0": 0,
+   "t1": 118,
+   "line": "enthusiastically. You looked away. After explaining"
+  },
+  {
+   "shot": "P1S39",
+   "a": 3223,
+   "b": 3320,
+   "t0": 0,
+   "t1": 97,
+   "line": "the question, Emma smiled. Thanks."
+  },
+  {
+   "shot": "P1S40",
+   "a": 3320,
+   "b": 3404,
+   "t0": 0,
+   "t1": 84,
+   "line": "I knew you'd understand it. Her shadow immediately"
+  },
+  {
+   "shot": "P1S41",
+   "a": 3404,
+   "b": 3429,
+   "t0": 0,
+   "t1": 25,
+   "line": "jumped into the"
+  },
+  {
+   "shot": "P1S42",
+   "a": 3429,
+   "b": 3461,
+   "t0": 0,
+   "t1": 32,
+   "line": "air. You"
+  },
+  {
+   "shot": "P1S43",
+   "a": 3461,
+   "b": 3542,
+   "t0": 0,
+   "t1": 81,
+   "line": "nearly laughed. You're welcome."
+  },
+  {
+   "shot": "P1S44",
+   "a": 3542,
+   "b": 3663,
+   "t0": 0,
+   "t1": 121,
+   "line": "Emma walked back to her seat. Her shadow turned around and gave"
+  },
+  {
+   "shot": "P1S45",
+   "a": 3663,
+   "b": 3890,
+   "t0": 0,
+   "t1": 227,
+   "line": "you one final thumbs up before following her. You were beginning to suspect that her shadow had a personality of its own."
+  }
+ ],
+ "shots": [
+  {
+   "id": "P1S1",
+   "size": "story",
+   "key": 22,
+   "len": 44,
+   "first": 0,
+   "line": "What if your crush's shadow",
+   "note": "What If Your Crush’s Shadow Revealed Her Secret Feelings?"
+  },
+  {
+   "id": "P1S2",
+   "size": "story",
+   "key": 86,
+   "len": 172,
+   "first": 44,
+   "line": "revealed her secret feelings? Exactly 8 -12 on Monday morning.",
+   "note": "Exactly 8:12 on Monday morning, you noticed something strange."
+  },
+  {
+   "id": "P1S3",
+   "size": "story",
+   "key": 71,
+   "len": 143,
+   "first": 216,
+   "line": "You notice something strange. Your crush was standing on the other side of the school hallway,",
+   "note": "Your CRUSH was standing on the other side of the school hallway, chatting with her friends."
+  },
+  {
+   "id": "P1S4",
+   "size": "story",
+   "key": 21,
+   "len": 43,
+   "first": 359,
+   "line": "chatting with her friends.",
+   "note": "You looked at her."
+  },
+  {
+   "id": "P1S5",
+   "size": "story",
+   "key": 3,
+   "len": 7,
+   "first": 402,
+   "line": "You",
+   "note": "She smiled."
+  },
+  {
+   "id": "P1S6",
+   "size": "story",
+   "key": 35,
+   "len": 71,
+   "first": 409,
+   "line": "looked at her. She smiled.",
+   "note": "You immediately looked away."
+  },
+  {
+   "id": "P1S7",
+   "size": "story",
+   "key": 29,
+   "len": 59,
+   "first": 480,
+   "line": "You immediately looked away.",
+   "note": "Just another normal day."
+  },
+  {
+   "id": "P1S8",
+   "size": "story",
+   "key": 50,
+   "len": 100,
+   "first": 539,
+   "line": "Just another normal day. But then, you",
+   "note": "But then you noticed something completely impossible."
+  },
+  {
+   "id": "P1S9",
+   "size": "story",
+   "key": 50,
+   "len": 100,
+   "first": 639,
+   "line": "noticed something completely impossible. Her",
+   "note": "Her shadow was waving at you."
+  },
+  {
+   "id": "P1S10",
+   "size": "story",
+   "key": 8,
+   "len": 16,
+   "first": 739,
+   "line": "shadow",
+   "note": "You blinked."
+  },
+  {
+   "id": "P1S11",
+   "size": "story",
+   "key": 34,
+   "len": 69,
+   "first": 755,
+   "line": "was waving at you. You",
+   "note": "She wasn't waving."
+  },
+  {
+   "id": "P1S12",
+   "size": "story",
+   "key": 34,
+   "len": 68,
+   "first": 824,
+   "line": "blinked. She wasn't waving.",
+   "note": "Both of her hands were still holding her books."
+  },
+  {
+   "id": "P1S13",
+   "size": "story",
+   "key": 33,
+   "len": 67,
+   "first": 892,
+   "line": "Both of her hands were still holding her",
+   "note": "But her shadow?"
+  },
+  {
+   "id": "P1S14",
+   "size": "story",
+   "key": 57,
+   "len": 115,
+   "first": 959,
+   "line": "books. But her shadow? It was waving. Like I had just",
+   "note": "It was waving like it had just spotted its favorite celebrity."
+  },
+  {
+   "id": "P1S15",
+   "size": "story",
+   "key": 38,
+   "len": 77,
+   "first": 1074,
+   "line": "spotted its favorite celebrity.",
+   "note": "You stared at it."
+  },
+  {
+   "id": "P1S16",
+   "size": "story",
+   "key": 62,
+   "len": 125,
+   "first": 1151,
+   "line": "You stared at it. The shadow pointed at you. Then used both hands",
+   "note": "The shadow pointed at you, then used both hands to make a heart."
+  },
+  {
+   "id": "P1S17",
+   "size": "story",
+   "key": 3,
+   "len": 7,
+   "first": 1276,
+   "line": "to",
+   "note": "You almost dropped your backpack."
+  },
+  {
+   "id": "P1S18",
+   "size": "story",
+   "key": 60,
+   "len": 120,
+   "first": 1283,
+   "line": "make a heart. You almost dropped your backpack. You",
+   "note": "You looked back at Emma."
+  },
+  {
+   "id": "P1S19",
+   "size": "story",
+   "key": 68,
+   "len": 137,
+   "first": 1403,
+   "line": "looked back at Emma. She was still chatting with her friends. Completely unaware of what",
+   "note": "She was still chatting with her friends, completely unaware of what her shadow was doing."
+  },
+  {
+   "id": "P1S20",
+   "size": "story",
+   "key": 2,
+   "len": 5,
+   "first": 1540,
+   "line": "her",
+   "note": "You quickly walked into your classroom."
+  },
+  {
+   "id": "P1S21",
+   "size": "story",
+   "key": 83,
+   "len": 166,
+   "first": 1545,
+   "line": "shadow was doing. You quickly walked into your classroom. There was no way you were going to spend the rest",
+   "note": "There was no way you were going to spend the rest of the morning staring at someone's shadow."
+  },
+  {
+   "id": "P1S22",
+   "size": "story",
+   "key": 34,
+   "len": 69,
+   "first": 1711,
+   "line": "of the morning staring at someone's shadow.",
+   "note": "At least, that was the plan."
+  },
+  {
+   "id": "P1S23",
+   "size": "story",
+   "key": 2,
+   "len": 5,
+   "first": 1780,
+   "line": "At",
+   "note": "The first strange discovery"
+  },
+  {
+   "id": "P1S24",
+   "size": "story",
+   "key": 126,
+   "len": 253,
+   "first": 1785,
+   "line": "least, that was the plan. The first strange discovery. During the first break, you were standing near the classroom",
+   "note": "During the first break, you were standing near the classroom window when Emma approached."
+  },
+  {
+   "id": "P1S25",
+   "size": "story",
+   "key": 12,
+   "len": 24,
+   "first": 2038,
+   "line": "window when",
+   "note": "\"Hey, do you understand question five?\""
+  },
+  {
+   "id": "P1S26",
+   "size": "story",
+   "key": 54,
+   "len": 109,
+   "first": 2062,
+   "line": "Emma approached. Hey, do you understand question",
+   "note": "You turned around."
+  },
+  {
+   "id": "P1S27",
+   "size": "story",
+   "key": 17,
+   "len": 35,
+   "first": 2171,
+   "line": "5?",
+   "note": "\"Uh… maybe. Let me see.\""
+  },
+  {
+   "id": "P1S28",
+   "size": "story",
+   "key": 49,
+   "len": 99,
+   "first": 2206,
+   "line": "You turned around. Maybe, let",
+   "note": "She handed you her notebook."
+  },
+  {
+   "id": "P1S29",
+   "size": "story",
+   "key": 2,
+   "len": 4,
+   "first": 2305,
+   "line": "me",
+   "note": "You looked at the question, trying very hard to concentrate."
+  },
+  {
+   "id": "P1S30",
+   "size": "story",
+   "key": 117,
+   "len": 235,
+   "first": 2309,
+   "line": "see. She handed you her notebook. You looked at the question, trying very hard to concentrate. But then you noticed her",
+   "note": "But then you noticed her shadow on the wall."
+  },
+  {
+   "id": "P1S31",
+   "size": "story",
+   "key": 84,
+   "len": 169,
+   "first": 2544,
+   "line": "shadow on the wall. While Emma was looking at the notebook, her shadow was leaning toward you with",
+   "note": "While Emma was looking at the notebook, her shadow was leaning toward you with its hands clasped together."
+  },
+  {
+   "id": "P1S32",
+   "size": "story",
+   "key": 45,
+   "len": 90,
+   "first": 2713,
+   "line": "the tans clashed together. It looked like it",
+   "note": "It looked like it was waiting for something."
+  },
+  {
+   "id": "P1S33",
+   "size": "story",
+   "key": 26,
+   "len": 52,
+   "first": 2803,
+   "line": "was waiting for something.",
+   "note": "You glanced at Emma."
+  },
+  {
+   "id": "P1S34",
+   "size": "story",
+   "key": 25,
+   "len": 50,
+   "first": 2855,
+   "line": "You glanced at Emma.",
+   "note": "\"What's wrong?\" she asked."
+  },
+  {
+   "id": "P1S35",
+   "size": "story",
+   "key": 46,
+   "len": 93,
+   "first": 2905,
+   "line": "What's wrong? She asked. Nothing.",
+   "note": "\"Nothing. I just… need to think.\""
+  },
+  {
+   "id": "P1S36",
+   "size": "story",
+   "key": 33,
+   "len": 67,
+   "first": 2998,
+   "line": "I just need to think. Her",
+   "note": "Her shadow suddenly nodded enthusiastically."
+  },
+  {
+   "id": "P1S37",
+   "size": "story",
+   "key": 20,
+   "len": 40,
+   "first": 3065,
+   "line": "shadow suddenly nodded",
+   "note": "You looked away."
+  },
+  {
+   "id": "P1S38",
+   "size": "story",
+   "key": 59,
+   "len": 118,
+   "first": 3105,
+   "line": "enthusiastically. You looked away. After explaining",
+   "note": "After explaining the question, Emma smiled."
+  },
+  {
+   "id": "P1S39",
+   "size": "story",
+   "key": 48,
+   "len": 97,
+   "first": 3223,
+   "line": "the question, Emma smiled. Thanks.",
+   "note": "\"Thanks! I knew you'd understand it.\""
+  },
+  {
+   "id": "P1S40",
+   "size": "story",
+   "key": 42,
+   "len": 84,
+   "first": 3320,
+   "line": "I knew you'd understand it. Her shadow immediately",
+   "note": "Her shadow immediately jumped into the air."
+  },
+  {
+   "id": "P1S41",
+   "size": "story",
+   "key": 12,
+   "len": 25,
+   "first": 3404,
+   "line": "jumped into the",
+   "note": "You nearly laughed."
+  },
+  {
+   "id": "P1S42",
+   "size": "story",
+   "key": 16,
+   "len": 32,
+   "first": 3429,
+   "line": "air. You",
+   "note": "\"You're welcome.\""
+  },
+  {
+   "id": "P1S43",
+   "size": "story",
+   "key": 40,
+   "len": 81,
+   "first": 3461,
+   "line": "nearly laughed. You're welcome.",
+   "note": "Emma walked back to her seat."
+  },
+  {
+   "id": "P1S44",
+   "size": "story",
+   "key": 60,
+   "len": 121,
+   "first": 3542,
+   "line": "Emma walked back to her seat. Her shadow turned around and gave",
+   "note": "Her shadow turned around and gave you one final thumbs-up before following her."
+  },
+  {
+   "id": "P1S45",
+   "size": "story",
+   "key": 113,
+   "len": 227,
+   "first": 3663,
+   "line": "you one final thumbs up before following her. You were beginning to suspect that her shadow had a personality of its own.",
+   "note": "You were beginning to suspect that her shadow had a personality of its own."
+  }
+ ],
+ "fx": [],
+ "audio": {}
+}

@@ -156,74 +156,230 @@ export const DebugShot: React.FC<{ id: string; text?: string }> = ({ id, text = 
   </g>
 );
 
-// ---------- the school hallway: one-point perspective to (960, 430), dusk light from the right windows ----------
-// Back wall x 640-1280 y 300-720; floor runs to the bottom corners. Characters stand on the floor:
-// deeper = smaller y and scale (far ~690/0.72, near ~830/1.05).
+// ---------- the school hallway: rich multi-layer set ----------
+// Depth layers (back → front): far wall (clock, notice boards, doors) → side windows with light
+// shafts → floor tiles + warm reflections → mid character plane → foreground locker edge + plant.
+// One-point perspective to (960, 430). Characters: far ~690/0.72, mid ~780/0.9, near ~860/1.05.
 export const HALL = {
   back: { x0: 640, x1: 1280, y0: 300, y1: 720 },
   far: { x: 960, y: 690, s: 0.72 },
-  mid: { x: 960, y: 770, s: 0.9 },
-  near: { x: 960, y: 840, s: 1.05 },
+  mid: { x: 960, y: 780, s: 0.9 },
+  near: { x: 960, y: 860, s: 1.05 },
 };
 
-export const Hallway: React.FC<{ t?: number; id?: string; glow?: number }> = ({ t = 0, id = 'hw', glow = 1 }) => {
+/** Wall clock frozen at 8:12 — the "exactly 8:12 Monday morning" detail. */
+export const Clock8_12: React.FC<{ x: number; y: number; r?: number; id?: string }> = ({ x, y, r = 46, id = 'clk' }) => (
+  <g transform={`translate(${x} ${y})`}>
+    <defs>
+      <radialGradient id={`${id}face`} cx="0.4" cy="0.35" r="0.9">
+        <stop offset="0%" stopColor="#F4EEE0" />
+        <stop offset="100%" stopColor="#C9BFA8" />
+      </radialGradient>
+    </defs>
+    <circle r={r} fill={`url(#${id}face)`} stroke={INK} strokeWidth={5} />
+    <circle r={r - 7} fill="none" stroke="#8A93AE" strokeWidth={2} />
+    {[0, 1, 2, 3].map((i) => (
+      <line key={i} x1={0} y1={-r + 10} x2={0} y2={-r + 18} stroke={INK} strokeWidth={4} transform={`rotate(${i * 90})`} />
+    ))}
+    {[...Array(12)].map((_, i) => (
+      <circle key={i} cx={Math.sin((i / 12) * Math.PI * 2) * (r - 13)} cy={-Math.cos((i / 12) * Math.PI * 2) * (r - 13)} r={2.4} fill={INK} />
+    ))}
+    {/* 8:12 — hour hand just past 8, minute on the 12 */}
+    <line x1={0} y1={8} x2={Math.sin((8.2 / 12) * Math.PI * 2) * (r * 0.5)} y2={-Math.cos((8.2 / 12) * Math.PI * 2) * (r * 0.5) + 8} stroke={INK} strokeWidth={6} strokeLinecap="round" />
+    <line x1={0} y1={8} x2={0} y2={-r + 20} stroke="#B4543F" strokeWidth={4} strokeLinecap="round" />
+    <circle r={5} fill={INK} />
+  </g>
+);
+
+/** Pinned notice board: cork panel, scattered notes, a photo, a star sticker. */
+const NoticeBoard: React.FC<{ x: number; y: number; w?: number; h?: number; seed?: number }> = ({ x, y, w = 200, h = 130, seed = 0 }) => (
+  <g transform={`translate(${x} ${y})`}>
+    <rect x={-w / 2} y={-h / 2} width={w} height={h} rx={6} fill="#4A3A28" stroke={INK} strokeWidth={4} />
+    <rect x={-w / 2 + 8} y={-h / 2 + 8} width={w - 16} height={h - 16} rx={3} fill="#C9A06A" />
+    {[0, 1, 2, 3, 4].map((i) => {
+      const nx = -w / 2 + 24 + ((i * 67 + seed * 31) % (w - 60));
+      const ny = -h / 2 + 22 + ((i * 41 + seed * 17) % (h - 50));
+      const rot = ((i * 37 + seed * 13) % 24) - 12;
+      const col = ['#F4EEE0', '#F2B95C', '#8FD3FF', '#E86A92', '#9FD8A8'][i % 5];
+      return (
+        <g key={i} transform={`translate(${nx} ${ny}) rotate(${rot})`}>
+          <rect x={-16} y={-12} width={32} height={24} fill={col} opacity={0.9} />
+          <line x1={-10} y1={-4} x2={10} y2={-4} stroke="#3A3550" strokeWidth={2.5} />
+          <line x1={-10} y1={3} x2={7} y2={3} stroke="#3A3550" strokeWidth={2.5} />
+          <circle cx={0} cy={-13} r={3.5} fill="#B4543F" />
+        </g>
+      );
+    })}
+  </g>
+);
+
+/** A bank of lockers receding in perspective: doors, vents, numbers, handles. */
+const LockerBank: React.FC<{ x: number; y: number; w: number; h: number; n?: number; seed?: number }> = ({ x, y, w, h, n = 4, seed = 0 }) => (
+  <g transform={`translate(${x} ${y})`}>
+    {Array.from({ length: n }, (_, i) => {
+      const lx = (-w / 2) + (i / n) * w;
+      const lw = w / n;
+      return (
+        <g key={i}>
+          <rect x={lx} y={-h / 2} width={lw - 4} height={h} fill={i % 2 ? '#3A3462' : '#443D70'} stroke="#221D3C" strokeWidth={4} />
+          {/* vent slits */}
+          {[0, 1, 2].map((v) => (
+            <rect key={v} x={lx + lw * 0.22} y={-h / 2 + 12 + v * 10} width={lw * 0.56} height={4} rx={2} fill="#221D3C" opacity={0.7} />
+          ))}
+          {/* number plate */}
+          <rect x={lx + lw * 0.3} y={-h / 2 + h * 0.62} width={lw * 0.4} height={18} rx={3} fill="#2A2450" />
+          <text x={lx + lw / 2} y={-h / 2 + h * 0.62 + 14} textAnchor="middle" fontSize={12} fill="#8B7BB8" fontFamily="monospace">
+            {String(101 + seed * 7 + i)}
+          </text>
+          {/* handle */}
+          <rect x={lx + lw - 14} y={-h / 2 + h * 0.42} width={6} height={26} rx={3} fill="#8A93AE" />
+        </g>
+      );
+    })}
+  </g>
+);
+
+export const Hallway: React.FC<{ t?: number; id?: string; glow?: number; clock?: boolean }> = ({ t = 0, id = 'hw', glow = 1, clock = true }) => {
   const flick = 1 + Math.sin(t * 0.11 + 1.7) * 0.04;
-  // floor cross-lines at three depths
-  const floorLines = [840, 960].map((y) => {
-    const k = (y - 720) / 360;
-    const xl = 640 - (y - 720) * 1.78;
-    const xr = 1280 + (y - 720) * 1.78;
-    return <line key={y} x1={xl} y1={y} x2={xr} y2={y} stroke="#0F0C1C" strokeWidth={3} opacity={0.7} />;
+  const shaftO = 0.16 * glow * (0.9 + Math.sin(t * 0.07) * 0.1);
+  // floor cross-lines at three depths (perspective grout)
+  const floorLines = [840, 960, 1060].map((y) => {
+    const xl = 640 - (y - 720) * 1.9;
+    const xr = 1280 + (y - 720) * 1.9;
+    return <line key={y} x1={xl} y1={y} x2={xr} y2={y} stroke="#0F0C1C" strokeWidth={y > 960 ? 4 : 3} opacity={0.75} />;
   });
-  const boardLines = [0, 1, 2, 3].map((i) => {
-    const y = 340 + i * 90;
-    return <line key={i} x1={660} y1={y} x2={1260} y2={y} stroke="#3A3560" strokeWidth={4} opacity={0.5} />;
-  });
+  // vertical grout lines converging toward vanishing point
+  const grout = [-3, -2, -1, 1, 2, 3].map((i) => (
+    <line key={i} x1={960 + i * 90} y1={720} x2={960 + i * 340} y2={1080} stroke="#0F0C1C" strokeWidth={2.5} opacity={0.4} />
+  ));
+  // dusk windows on the right wall receding + their light shafts on the floor
+  const wins = [
+    { p: '1560,380 1780,345 1780,640 1560,690', shaft: '1560,690 1780,640 1900,1080 1100,1080' },
+    { p: '1330,470 1500,448 1500,700 1330,728', shaft: '1330,728 1500,700 1650,1080 900,1080' },
+    { p: '1170,545 1290,532 1290,725 1170,738', shaft: '1170,738 1290,725 1400,1080 800,1080' },
+  ];
   return (
     <g>
-      {/* ceiling, walls, floor */}
-      <polygon points="0,0 640,300 1280,300 1920,0" fill="#221D3C" />
+      {/* ===== LAYER: ceiling + far wall ===== */}
+      <polygon points="0,0 640,300 1280,300 1920,0" fill="#241F42" />
+      {/* ceiling pipes receding to vanishing point */}
+      <path d="M 700 60 L 960 330 L 1220 60" stroke="#171327" strokeWidth={14} fill="none" />
+      <path d="M 780 40 L 960 300 L 1140 40" stroke="#1E1834" strokeWidth={8} fill="none" />
+      {/* EXIT sign above far doors */}
+      <rect x={890} y={310} width={140} height={34} rx={5} fill="#1E5C3A" stroke={INK} strokeWidth={3} />
+      <text x={960} y={335} textAnchor="middle" fontSize={20} fill="#9FD8A8" fontFamily="monospace" letterSpacing={4}>EXIT</text>
+      {/* far wall */}
+      <rect x={640} y={300} width={640} height={420} fill="#2E2850" />
+      {/* far doors either side of exit */}
+      <rect x={668} y={430} width={140} height={290} fill="#38315E" stroke="#221D3C" strokeWidth={5} />
+      <rect x={1112} y={430} width={140} height={290} fill="#38315E" stroke="#221D3C" strokeWidth={5} />
+      <circle cx={790} cy={580} r={6} fill="#8A93AE" />
+      <circle cx={1130} cy={580} r={6} fill="#8A93AE" />
+      {/* lockers flanking the doors */}
+      <LockerBank x={800} y={560} w={130} h={220} n={2} seed={1} />
+      <LockerBank x={1120} y={560} w={130} h={220} n={2} seed={4} />
+      {/* notice boards on the far wall */}
+      <NoticeBoard x={720} y={380} w={190} h={120} seed={0} />
+      <NoticeBoard x={1200} y={380} w={190} h={120} seed={3} />
+      {/* the 8:12 clock, dead center high on the far wall */}
+      {clock ? <Clock8_12 x={960} y={345} r={34} id={`${id}clk`} /> : null}
+      {/* baseboard */}
+      <rect x={640} y={690} width={640} height={30} fill="#221D3C" />
+
+      {/* ===== LAYER: side walls ===== */}
       <polygon points="0,0 640,300 640,720 0,1080" fill="#2B2547" />
       <polygon points="1920,0 1280,300 1280,720 1920,1080" fill="#1F1A36" />
-      <polygon points="0,1080 640,720 1280,720 1920,1080" fill="#171327" />
-      {floorLines}
-      {/* back wall: notice board + lockers either side */}
-      <rect x={640} y={300} width={640} height={420} fill="#2E2850" />
-      {boardLines}
-      <rect x={700} y={330} width={220} height={140} rx={6} fill="#38315E" stroke="#4A4480" strokeWidth={3} />
-      <rect x={1000} y={330} width={220} height={140} rx={6} fill="#38315E" stroke="#4A4480" strokeWidth={3} />
-      {[0, 1, 2].map((i) => (
+      {/* left wall: one tall cool window high on the wall */}
+      {(() => {
+        const p = '150,420 330,390 330,640 150,680';
+        const cx = (150 + 330 + 330 + 150) / 4, cy = (390 + 390 + 640 + 680) / 4;
+        return (
+          <g>
+            <polygon points={p} fill="#8B7BB8" opacity={0.13} />
+            <polygon points={p} fill="none" stroke="#141126" strokeWidth={6} />
+            <line x1={240} y1={395} x2={240} y2={665} stroke="#141126" strokeWidth={4} />
+            <line x1={152} y1={545} x2={328} y2={520} stroke="#141126" strokeWidth={4} />
+          </g>
+        );
+      })()}
+      {/* right wall windows + mullions + sills */}
+      {wins.map((wn, i) => (
         <g key={i}>
-          <rect x={668 + i * 62} y={348} width={50} height={104} rx={3} fill="#4A3F6E" opacity={0.8} />
-          <rect x={968 + i * 62} y={348} width={50} height={104} rx={3} fill="#4A3F6E" opacity={0.8} />
-        </g>
-      ))}
-      {/* dusk windows on the right wall: warm rectangles receding */}
-      {[
-        { p: '1560,380 1760,350 1760,620 1560,660', o: 0.85 },
-        { p: '1330,470 1480,450 1480,690 1330,715', o: 0.6 },
-        { p: '1180,540 1280,530 1280,720 1180,730', o: 0.4 },
-      ].map((wn, i) => (
-        <g key={i}>
-          <polygon points={wn.p} fill="#F2B95C" opacity={wn.o * 0.5 * glow} />
+          <polygon points={wn.p} fill="#F2B95C" opacity={(0.55 - i * 0.14) * glow} />
           <polygon points={wn.p} fill="none" stroke="#141126" strokeWidth={6} />
+          {/* mullion cross */}
+          <line x1={(+wn.p.split(',')[0] + +wn.p.split(',')[4]) / 2} y1={(+wn.p.split(',')[1] + +wn.p.split(',')[5]) / 2} x2={(+wn.p.split(',')[2] + +wn.p.split(',')[6]) / 2} y2={(+wn.p.split(',')[3] + +wn.p.split(',')[7]) / 2} stroke="#141126" strokeWidth={5} />
+          <line x1={(+wn.p.split(',')[0] + +wn.p.split(',')[2]) / 2} y1={(+wn.p.split(',')[1] + +wn.p.split(',')[3]) / 2} x2={(+wn.p.split(',')[4] + +wn.p.split(',')[6]) / 2} y2={(+wn.p.split(',')[5] + +wn.p.split(',')[7]) / 2} stroke="#141126" strokeWidth={4} />
+          {/* sill */}
+          <polygon points={`${wn.p.split(',')[0]},${wn.p.split(',')[5]} ${wn.p.split(',')[2]},${wn.p.split(',')[7]} ${+wn.p.split(',')[2] + 26},${+wn.p.split(',')[7] + 14} ${+wn.p.split(',')[0] + 26},${+wn.p.split(',')[5] + 14}`} fill="#171327" opacity={0.8} />
         </g>
       ))}
-      {/* ceiling lamps receding to the vanishing point */}
+
+      {/* ===== LAYER: floor ===== */}
+      <polygon points="0,1080 640,720 1280,720 1920,1080" fill="#171327" />
+      {/* warm window light washing the floor */}
+      {wins.map((wn, i) => (
+        <polygon key={i} points={wn.shaft} fill="#F2B95C" opacity={shaftO * (1 - i * 0.22)} />
+      ))}
+      {floorLines}
+      {grout}
+      {/* long warm reflections of the windows on the tiles */}
+      <polygon points="1330,780 1500,760 1700,1080 1150,1080" fill="#F2B95C" opacity={0.07 * glow} />
+
+      {/* ===== LAYER: ceiling lamps receding ===== */}
       {[
-        { x: 960, y: 318, r: 26 },
-        { x: 960, y: 380, r: 18 },
-        { x: 960, y: 452, r: 12 },
+        { x: 960, y: 322, r: 24 },
+        { x: 960, y: 372, r: 16 },
+        { x: 960, y: 428, r: 10 },
       ].map((l, i) => (
         <g key={i}>
-          <ellipse cx={l.x} cy={l.y} rx={l.r * 1.5} ry={l.r * 0.5} fill="#FFE9B0" opacity={0.75 * flick} />
-          <Glow x={l.x} y={l.y + 30} r={l.r * 4} o={0.1 * glow} />
+          <line x1={l.x} y1={0} x2={l.x} y2={l.y - l.r} stroke="#171327" strokeWidth={4} />
+          <ellipse cx={l.x} cy={l.y} rx={l.r * 1.5} ry={l.r * 0.45} fill="#FFE9B0" opacity={0.8 * flick} />
+          <Glow x={l.x} y={l.y + 40} r={l.r * 4.5} o={0.1 * glow} />
         </g>
       ))}
-      <Glow x={1500} y={560} r={620} o={0.16 * glow} />
+      {/* hanging sign near camera: "ROOM 204" */}
+      <g transform="translate(1560 120)">
+        <line x1={0} y1={-60} x2={0} y2={0} stroke="#171327" strokeWidth={5} />
+        <rect x={-80} y={0} width={160} height={44} rx={8} fill="#221D3C" stroke="#4A4480" strokeWidth={3} />
+        <text x={0} y={31} textAnchor="middle" fontSize={24} fill="#8B7BB8" fontFamily="monospace">204</text>
+      </g>
+
+      {/* ===== LAYER: atmosphere ===== */}
+      <Glow x={1560} y={560} r={700} o={0.18 * glow} />
+      <Glow x={960} y={330} r={400} o={0.08 * glow} />
+      {/* dust motes drifting in the biggest light shaft */}
+      {Array.from({ length: 14 }, (_, i) => {
+        const dx = 1250 + ((i * 97 + t * (8 + (i % 4) * 3)) % 420);
+        const dy = 760 + ((i * 61 + t * (5 + (i % 3) * 2)) % 300);
+        return <circle key={i} cx={dx} cy={dy} r={2 + (i % 3)} fill="#FFE9B0" opacity={0.25 + (i % 4) * 0.08} />;
+      })}
     </g>
   );
 };
+
+/** Foreground depth layer: blurry locker edge + plant silhouette at frame left. */
+export const HallForeground: React.FC<{ t?: number }> = ({ t = 0 }) => (
+  <g opacity={0.9}>
+    {/* out-of-focus locker doors crowding the left edge */}
+    <rect x={-40} y={0} width={150} height={1080} fill="#141126" opacity={0.85} />
+    <rect x={80} y={0} width={14} height={1080} fill="#0D0A14" />
+    <rect x={-20} y={180} width={180} height={900} fill="#1E1834" opacity={0.6} />
+    {/* potted plant silhouette */}
+    <g transform="translate(210 950)">
+      <path d="M -34 0 L 34 0 L 26 90 L -26 90 Z" fill="#2A1E3A" />
+      <path d="M 0 0 Q -60 -70 -30 -130 Q -10 -80 0 -60 Q 10 -90 34 -140 Q 66 -70 0 0 Z" fill="#241B33" />
+      <path d="M 0 0 Q -30 -50 -16 -96" stroke="#2E2444" strokeWidth={6} fill="none" />
+      <path d="M 0 0 Q 34 -46 22 -88" stroke="#2E2444" strokeWidth={6} fill="none" />
+      {/* sway */}
+      <g transform={`rotate(${Math.sin(t * 0.5) * 3} 0 0)`} opacity={0.9}>
+        <path d="M 0 -60 Q -54 -120 -28 -176 Q -8 -128 0 -108 Q 8 -134 30 -184 Q 56 -124 0 -60 Z" fill="#2E2444" />
+      </g>
+    </g>
+    {/* floor shadow of the foreground plant */}
+    <ellipse cx={210} cy={1040} rx={90} ry={18} fill="#0D0A14" opacity={0.5} />
+  </g>
+);
 
 // ---------- story props: Emma's notebook and Pip's backpack ----------
 export const Notebook: React.FC<{ x: number; y: number; s?: number; rot?: number; open?: number }> = ({ x, y, s = 1, rot = 0, open = 0 }) => (
@@ -355,6 +511,52 @@ export const Bandage: React.FC<{ x: number; y: number; s?: number; rot?: number 
     <rect x={-26} y={-9} width={52} height={18} rx={6} fill="#F4EEE0" stroke="#0D0A14" strokeWidth={2.5} />
     <rect x={-18} y={-9} width={8} height={18} fill="#D9A0A0" opacity={0.7} />
     <rect x={10} y={-9} width={8} height={18} fill="#D9A0A0" opacity={0.7} />
+  </g>
+);
+
+/** Chalk writing for the classroom board: "QUESTION 5" + the algebra Emma asks about.
+ *  Drop into <Classroom board={...}/> — writing area is x 426-1054, y 196-524. */
+export const Question5Board: React.FC<{ t?: number }> = ({ t = 0 }) => (
+  <g fontFamily="'Segoe Print','Comic Sans MS',cursive" fill="#EDEFE6">
+    {/* earlier faded working, still on the board */}
+    <g opacity={0.14} fontSize={30}>
+      <text x={470} y={240}>a + b = c</text>
+      <text x={830} y={500}>12 ÷ 4 = 3</text>
+    </g>
+    {/* the question of the day */}
+    <text x={470} y={290} fontSize={42} opacity={0.95}>QUESTION 5</text>
+    <path d="M 470 308 L 760 308" stroke="#EDEFE6" strokeWidth={3} opacity={0.55} />
+    <text x={470} y={400} fontSize={58} opacity={0.95}>3x + 7 = 22</text>
+    <text x={470} y={470} fontSize={38} opacity={0.8}>x = ?</text>
+    {/* Emma's pencilled scratch, half-erased */}
+    <g opacity={0.3} fontSize={26} fontFamily="monospace">
+      <text x={880} y={380} transform="rotate(-4 880 380)">3x = 15?</text>
+      <text x={880} y={420} transform="rotate(-4 880 420)">x = 5!</text>
+    </g>
+    {/* chalk dust puff when "written" */}
+    {[0, 1, 2].map((i) => {
+      const k = (t * 0.4 + i * 0.33) % 1;
+      return <circle key={i} cx={560 + i * 160} cy={310 - k * 40} r={4 + k * 8} fill="#EDEFE6" opacity={(1 - k) * 0.3} />;
+    })}
+  </g>
+);
+
+/** Foreground depth layer for classroom shots: blurry desk edge + chair back at frame bottom. */
+export const ClsForeground: React.FC = () => (
+  <g opacity={0.9}>
+    <rect x={-30} y={930} width={700} height={200} fill="#141126" opacity={0.7} />
+    <rect x={1300} y={940} width={660} height={200} fill="#141126" opacity={0.7} />
+    {/* a classmate's shoulder + head silhouette, back to camera, bottom corners */}
+    <g transform="translate(140 1010)" opacity={0.85}>
+      <circle cx={0} cy={-60} r={52} fill="#1E1834" />
+      <path d="M -70 60 Q -72 -10 0 -14 Q 72 -10 70 60 Z" fill="#241E3C" />
+      <path d="M -58 -70 Q 0 -110 58 -70 L 50 -96 Q 0 -122 -50 -96 Z" fill="#2E2444" />
+    </g>
+    <g transform="translate(1800 1020) scale(-1 1)" opacity={0.8}>
+      <circle cx={0} cy={-56} r={48} fill="#1E1834" />
+      <path d="M -64 56 Q -66 -8 0 -12 Q 66 -8 64 56 Z" fill="#241E3C" />
+      <path d="M -52 -64 Q 0 -100 52 -64 L 45 -88 Q 0 -110 -45 -88 Z" fill="#2E2444" />
+    </g>
   </g>
 );
 

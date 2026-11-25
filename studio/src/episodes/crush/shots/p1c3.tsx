@@ -17,7 +17,7 @@ const EMMA_FAR = { x: 1420, y: 745, s: 0.8 };
 // her shadow, cast big on the back wall behind/right of her
 const WALL_SH = { x: 1230, y: 655 };
 
-const Cls: React.FC<{ t: number; id?: string }> = ({ t, id = 'c3a' }) => <Classroom t={t + 400} id={id} />;
+const Cls: React.FC<{ t: number; id?: string }> = ({ t, id = 'c3a' }) => <Classroom t={t + 400} id={id} board={<K.Question5Board t={t} />} />;
 
 // P1S21: no way you'd spend the morning staring at a shadow — Pip at the window, resolved face
 export const P1S21: React.FC<ShotProps> = ({ t, len }) => {
