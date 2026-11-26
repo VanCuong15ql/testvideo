@@ -1,0 +1,27 @@
+{
+ "voices": {"male": "Narrator/Charon", "female": "Emma/Leda"},
+ "note": "Noah -> 'you', teacher/Ethan/superhero/message -> 'other'. All male-voice roles; no 'emma' lines in this script.",
+ "quotes": [
+  "other","you","you","you","other","you","other","you",
+  "you","you","you","other","you","other",
+  "you","other","you","other","you","other","you","other","other",
+  "you","other","you","other"
+ ],
+ "styles": {
+  "1": "sheepish, quiet",
+  "5": "panicked, yelling",
+  "7": "cheerful, joking",
+  "9": "terrified whisper",
+  "10": "shouting, panicked",
+  "12": "defensive, quick",
+  "14": "dreading, quiet",
+  "16": "dreading, quiet",
+  "17": "overconfident, heroic",
+  "19": "polite but firm",
+  "20": "indignant, shouting",
+  "23": "gentle, sincere",
+  "24": "curious, a little awkward",
+  "25": "wry, quiet",
+  "26": "soft, grateful"
+ }
+}

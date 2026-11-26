@@ -18,3 +18,6 @@ studio/public/*/music.mp3
 # Sound library cache (keep - shared across episodes, avoids regenerating)
 # studio/library/sfx/ is committed
 task.txt
+
+# Remotion bundle cache
+.remotion/

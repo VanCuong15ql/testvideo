@@ -16,7 +16,6 @@ export const C = {
   limb: '#EFE2CC',
 };
 
-/** A costume for the rig: the same body and animation, different colours and one optional extra piece. */
 export type Look = {
   skin: string;
   skinShade: string;
@@ -29,56 +28,53 @@ export type Look = {
   shoe: string;
   face: string;
   hair: string;
+  /** Trousers colour; defaults to a darkened jacket. */
+  pants?: string;
+  pantsDark?: string;
+  /** Female silhouette: wider bust, narrower waist. */
+  bust?: boolean;
   extra?: 'hood' | 'curls' | 'bunches' | 'bob' | 'suit' | 'short' | 'long';
 };
+
 export type CastName = 'pip' | 'pipHood' | 'pipInk' | 'mo' | 'sis' | 'mom' | 'suit' | 'minh' | 'linh';
+
 export const LOOKS: Record<CastName, Look> = {
-  // A: Pip as built
-  pip: { skin: C.skin, skinShade: C.skinShade, hand: C.skin, jacket: C.jacket, jacketShade: C.jacketShade, accent: C.jacketShade, limb: C.limb, line: C.ink, shoe: C.shoe, face: C.ink, hair: C.ink },
-  // B: Pip in a dark hoodie with mustard drawstrings: the body goes dark and catches the rim light, the head stays the brightest thing
-  pipHood: { skin: C.skin, skinShade: C.skinShade, hand: C.skin, jacket: '#2E2B3D', jacketShade: '#24212F', accent: C.jacket, limb: '#2E2B3D', line: '#121019', shoe: C.shoe, face: C.ink, hair: C.ink, extra: 'hood' },
-  // C: a dark head with light features, the genre's high-contrast convention, in Pip's mustard
-  pipInk: { skin: '#26232F', skinShade: '#1C1A24', hand: '#26232F', jacket: C.jacket, jacketShade: C.jacketShade, accent: C.jacketShade, limb: '#26232F', line: '#121019', shoe: C.shoe, face: '#F6EFE3', hair: '#26232F' },
-  // Mo, Pip's friend: a second recurring character with his own costume (curly hair, headphones round his neck)
+  pip: { skin: C.skin, skinShade: C.skinShade, hand: C.skin, jacket: C.jacket, jacketShade: C.jacketShade, accent: C.jacketShade, limb: C.jacket, line: C.ink, shoe: C.shoe, face: C.ink, hair: '#2B1F3A', pants: '#2E3A5C', pantsDark: '#222B47' },
+  pipHood: { skin: C.skin, skinShade: C.skinShade, hand: C.skin, jacket: '#2E2B3D', jacketShade: '#24212F', accent: C.jacket, limb: '#2E2B3D', line: '#121019', shoe: C.shoe, face: C.ink, hair: '#2B1F3A', pants: '#2E3A5C', pantsDark: '#222B47', extra: 'hood' },
+  pipInk: { skin: '#26232F', skinShade: '#1C1A24', hand: '#26232F', jacket: C.jacket, jacketShade: C.jacketShade, accent: C.jacketShade, limb: '#26232F', line: '#121019', shoe: C.shoe, face: '#F6EFE3', hair: '#2B1F3A', pants: '#26232F', pantsDark: '#1C1A24' },
   mo: { skin: '#C98E68', skinShade: '#B07A58', hand: '#C98E68', jacket: '#5E6E46', jacketShade: '#4C5A38', accent: '#E9C46A', limb: '#3A3446', line: '#1A1622', shoe: '#D9534F', face: C.ink, hair: '#2A1C18', extra: 'curls' },
-  // the formula's recurring cast (beats 5 and 6): Pip's little sister (draw her at about 0.7 of Pip's scale), his mum,
-  // and the man in a suit who notices the power. All three are ours: plain shapes, no famous silhouettes.
-  sis: { skin: C.skin, skinShade: C.skinShade, hand: C.skin, jacket: '#3E8C86', jacketShade: '#2F6E69', accent: '#F28C6A', limb: '#3A3446', line: '#14121C', shoe: '#F28C6A', face: C.ink, hair: '#3A2620', extra: 'bunches' },
-  mom: { skin: C.skin, skinShade: C.skinShade, hand: C.skin, jacket: '#8A5A6A', jacketShade: '#704858', accent: '#E9C46A', limb: '#3A3446', line: '#14121C', shoe: '#5A4A6A', face: C.ink, hair: '#5A3226', extra: 'bob' },
+  sis: { skin: C.skin, skinShade: C.skinShade, hand: C.skin, jacket: '#3E8C86', jacketShade: '#2F6E69', accent: '#F28C6A', limb: '#3A3446', line: '#14121C', shoe: '#F28C6A', face: C.ink, hair: '#3A2620', bust: true, extra: 'bunches' },
+  mom: { skin: C.skin, skinShade: C.skinShade, hand: C.skin, jacket: '#8A5A6A', jacketShade: '#704858', accent: '#E9C46A', limb: '#3A3446', line: '#14121C', shoe: '#5A4A6A', face: C.ink, hair: '#5A3226', bust: true, extra: 'bob' },
   suit: { skin: '#D9C6AE', skinShade: '#C2AE96', hand: '#D9C6AE', jacket: '#2B2F3A', jacketShade: '#20232C', accent: '#A8323E', limb: '#2B2F3A', line: '#0E0F14', shoe: '#14151A', face: C.ink, hair: '#17141A', extra: 'suit' },
-  // the two of this episode: Minh, the repairman who keeps the old shop (a short crop, an olive work shirt),
-  // and Linh, the girl in the wet kaki coat (long dark hair). Ours: plain shapes, no famous silhouette.
   minh: { skin: '#EAC9A6', skinShade: '#D2AE86', hand: '#EAC9A6', jacket: '#55604A', jacketShade: '#434C3B', accent: '#8C6A48', limb: '#33303C', line: '#1A161E', shoe: '#231D1A', face: '#221B20', hair: '#1E1614', extra: 'short' },
-  linh: { skin: '#F0D3B4', skinShade: '#D9B895', hand: '#F0D3B4', jacket: '#8B7B58', jacketShade: '#756748', accent: '#5E5440', limb: '#3B3542', line: '#191420', shoe: '#4A3E34', face: '#241C22', hair: '#2A1B16', extra: 'long' },
+  linh: { skin: '#F0D3B4', skinShade: '#D9B895', hand: '#F0D3B4', jacket: '#8B7B58', jacketShade: '#756748', accent: '#5E5440', limb: '#3B3542', line: '#191420', shoe: '#4A3E34', face: '#241C22', hair: '#2A1B16', bust: true, extra: 'long' },
 };
 
-// ---------- the hero ----------
-/** Mitten hands: open (a palm and a thumb) or pointing (a fist with the index finger out). */
 export type HandKind = 'open' | 'point';
 export type Expr = 'neutral' | 'happy' | 'smug' | 'shock' | 'worried' | 'oops' | 'cool' | 'dizzy' | 'tired';
-export type Limb = { a: number; b: number }; // a: upper segment angle, b: bend of the lower segment (degrees)
+export type Limb = { a: number; b: number };
 export type Pose = {
   x: number;
-  y: number; // hip point
+  y: number;
   scale: number;
   facing: 1 | -1;
-  tilt: number; // torso lean around the hips, degrees, + leans screen-right
-  spin: number; // whole-body rotation around the chest (tumbles)
+  tilt: number;
+  spin: number;
   headTilt: number;
   armL: Limb;
   armR: Limb;
   legL: Limb;
   legR: Limb;
   expr: Expr;
-  blink: number; // 0 open, 1 shut
-  look: number; // -1..1 eye offset
-  glasses: number; // 0..1
-  yaw: number; // -1 profile facing screen-left, 0 front, 1 profile facing screen-right
-  squash: number; // + squashes (landing), - stretches (jump), about the feet
+  blink: number;
+  look: number;
+  glasses: number;
+  yaw: number;
+  squash: number;
   handL: HandKind;
   handR: HandKind;
-  sway: number; // secondary motion: how far loose things (the hood's drawstrings) swing, degrees-ish
-  glint?: number; // 0..1 the eyes light up in the power's colour (set it after poseAt: it isn't interpolated)
+  sway: number;
+  glint?: number;
   glintColor?: string;
 };
 
@@ -92,8 +88,8 @@ export const basePose: Pose = {
   headTilt: 0,
   armL: { a: 10, b: -8 },
   armR: { a: 10, b: -8 },
-  legL: { a: 5, b: 0 },
-  legR: { a: -5, b: 0 },
+  legL: { a: -6, b: 0 },
+  legR: { a: 6, b: 0 },
   expr: 'neutral',
   blink: 0,
   look: 0,
@@ -109,9 +105,7 @@ type Key = { f: number; p: Partial<Pose>; ease?: (t: number) => number };
 
 const mixLimb = (a: Limb, b: Limb, t: number): Limb => ({ a: lerp(a.a, b.a, t), b: lerp(a.b, b.b, t) });
 
-/** Interpolates every numeric part of a pose between keys; the face swaps (never morphs) at its key. */
 export const poseAt = (f: number, keys: Key[], from: Pose = basePose): Pose => {
-  // resolve each key into a full pose, carrying values forward
   const full: { f: number; p: Pose; ease?: (t: number) => number }[] = [];
   let cur = from;
   for (const k of keys) {
@@ -136,7 +130,7 @@ export const poseAt = (f: number, keys: Key[], from: Pose = basePose): Pose => {
         armR: mixLimb(A.p.armR, B.p.armR, t),
         legL: mixLimb(A.p.legL, B.p.legL, t),
         legR: mixLimb(A.p.legR, B.p.legR, t),
-        expr: A.p.expr, // a face swaps when its own key lands, so hold the earlier one
+        expr: A.p.expr,
         handL: A.p.handL,
         handR: A.p.handR,
         blink: lerp(A.p.blink, B.p.blink, t),
@@ -151,20 +145,18 @@ export const poseAt = (f: number, keys: Key[], from: Pose = basePose): Pose => {
   return full[full.length - 1].p;
 };
 
-// body measurements (local space: hips at 0,0, y down)
 const UPPER_ARM = 62;
 const FORE_ARM = 58;
 const THIGH = 72;
 const SHIN = 68;
 const SHOULDER = { x: 42, y: -108 };
-const HIP = { x: 17, y: 0 };
+const HIP = { x: 28, y: 0 };
 export const HEAD = { x: 0, y: -176, r: 62 };
 export const LEG_LEN = THIGH + SHIN;
 
 const rad = (d: number) => (d * Math.PI) / 180;
 type P = { x: number; y: number };
 
-/** Shift a #rrggbb colour: f > 1 lifts it toward white, f < 1 sinks it toward black. */
 export const tint = (c: string, f: number): string => {
   const n = [1, 3, 5].map((i) => {
     const v = parseInt(c.slice(i, i + 2), 16);
@@ -172,6 +164,7 @@ export const tint = (c: string, f: number): string => {
   });
   return `#${((n[0] << 16) | (n[1] << 8) | n[2]).toString(16).padStart(6, '0')}`;
 };
+
 const rot = (p: P, deg: number, c: P = { x: 0, y: 0 }): P => {
   const r = rad(deg);
   const dx = p.x - c.x;
@@ -179,10 +172,11 @@ const rot = (p: P, deg: number, c: P = { x: 0, y: 0 }): P => {
   return { x: c.x + dx * Math.cos(r) - dy * Math.sin(r), y: c.y + dx * Math.sin(r) + dy * Math.cos(r) };
 };
 
-/** Joint positions in local space (before the hip translate/scale), so scenes can attach props to hands. */
+export const turnWidth = (yaw: number) => 1 - 0.4 * Math.min(1, Math.abs(yaw));
+export const limbSpread = (yaw: number) => 1 - 0.85 * Math.min(1, Math.abs(yaw));
+
 export const joints = (pose: Pose) => {
   const side = (s: 1 | -1, limb: Limb, root: P, l1: number, l2: number, isLeg: boolean) => {
-    // arms swing outward (away from the body) on their own side; legs swing forward in the facing direction
     const dir = isLeg ? pose.facing : s;
     const d1 = { x: dir * Math.sin(rad(limb.a)), y: Math.cos(rad(limb.a)) };
     const mid = { x: root.x + d1.x * l1, y: root.y + d1.y * l1 };
@@ -202,12 +196,6 @@ export const joints = (pose: Pose) => {
   return { armL: r(armL), armR: r(armR), legL, legR, head: torsoRot(HEAD) };
 };
 
-/** How wide the body reads as it turns: full width face-on, about 60% in profile. */
-export const turnWidth = (yaw: number) => 1 - 0.4 * Math.min(1, Math.abs(yaw));
-/** Shoulders and hips close up as he turns, so in profile the limbs overlap the body. */
-export const limbSpread = (yaw: number) => 1 - 0.85 * Math.min(1, Math.abs(yaw));
-
-/** Face swaps happen through a blink: two frames shut either side of each change, as in the genre. */
 export const faceAt = (f: number, keys: [number, Expr][]): { expr: Expr; blink: number } => {
   let expr = keys[0][1];
   let blink = 0;
@@ -219,101 +207,171 @@ export const faceAt = (f: number, keys: [number, Expr][]): { expr: Expr; blink: 
   return { expr, blink };
 };
 
-/** A local point to world space, for attaching props (the mug in Pip's hand). */
 export const toWorld = (pose: Pose, p: P): P => {
   const spun = rot(p, pose.spin, { x: 0, y: -90 });
   return { x: pose.x + spun.x * pose.scale, y: pose.y + spun.y * pose.scale };
 };
 
-/** Straight-arm reach: the right arm angle (local) that points the hand at a world target. */
 export const reachAngle = (pose: Pose, target: P) => {
   const sh = toWorld(pose, rot({ x: SHOULDER.x * limbSpread(pose.yaw) + pose.yaw * 6, y: SHOULDER.y }, pose.tilt));
-  const world = (Math.atan2(target.x - sh.x, target.y - sh.y) * 180) / Math.PI; // 0 = straight down
+  const world = (Math.atan2(target.x - sh.x, target.y - sh.y) * 180) / Math.PI;
   return world - pose.tilt;
 };
 
+const PUPIL = '#1B1830';
+const SCLERA = '#F6EFE3';
+const TEETH = '#F4EEE0';
+const TONGUE = '#FF8A96';
+const BLUSH = '#F0806E';
+
+const TORSO_D = 'M -46 -112 Q 0 -124 46 -112 L 40 2 Q 0 12 -40 2 Z';
+// female silhouette: wider through the bust, pinched at the waist, same hem
+const TORSO_BUST_D =
+  'M -48 -112 Q 0 -126 48 -112 C 54 -84 52 -58 42 -34 C 46 -12 44 4 40 8 Q 0 16 -40 8 C -44 4 -46 -12 -42 -34 C -52 -58 -54 -84 -48 -112 Z';
+
 const Face: React.FC<{ expr: Expr; blink: number; look: number; glasses: number; yaw?: number; ink?: string; glint?: number; glintColor?: string }> = ({ expr, blink, look, glasses, yaw = 0, ink = C.ink, glint = 0, glintColor = '#8FF0FF' }) => {
-  const ex = look * 7;
+  const ex = look * 8;
   const ay = Math.min(1, Math.abs(yaw));
   const farHidden = ay > 0.72;
-  const farSide = yaw > 0 ? -1 : 1; // facing screen-right hides the screen-left eye
+  const farSide = yaw > 0 ? -1 : 1;
   const eyeY = HEAD.y - 4;
-  // heavy lids: half shut when smug or cool, more than half when tired (with dark rings under the eyes)
-  const lid = expr === 'smug' || expr === 'cool' ? 0.45 : expr === 'tired' ? 0.58 : 0;
+  const lid = expr === 'smug' || expr === 'cool' ? 0.44 : expr === 'tired' ? 0.58 : 0;
   const open = Math.max(0.08, 1 - Math.max(blink, lid));
+
   const eye = (cx: number) => {
     if (farHidden && Math.sign(cx) === farSide) return null;
-    if (expr === 'happy') return <path d={`M ${cx - 10} ${eyeY + 3} Q ${cx} ${eyeY - 9} ${cx + 10} ${eyeY + 3}`} stroke={ink} strokeWidth={6} fill="none" strokeLinecap="round" />;
-    if (expr === 'oops') return <path d={`M ${cx - 9} ${eyeY - 6} L ${cx + 4} ${eyeY} L ${cx - 9} ${eyeY + 6}`} transform={cx > 0 ? `translate(${2 * cx},0) scale(-1,1)` : undefined} stroke={ink} strokeWidth={6} fill="none" strokeLinecap="round" strokeLinejoin="round" />;
-    if (expr === 'dizzy') return <g stroke={ink} strokeWidth={5} strokeLinecap="round"><path d={`M ${cx - 7} ${eyeY - 7} L ${cx + 7} ${eyeY + 7} M ${cx + 7} ${eyeY - 7} L ${cx - 7} ${eyeY + 7}`} /></g>;
-    // shut (a blink's middle frame, or asleep): the closed lid's curve, with the tired rings kept
-    if (blink >= 0.95)
+    const px = cx + ex * 0.5;
+    if (expr === 'happy') {
+      return (
+        <g>
+          <path d={`M ${cx - 11} ${eyeY + 3} Q ${cx} ${eyeY - 10} ${cx + 11} ${eyeY + 3}`} stroke={ink} strokeWidth={6} fill="none" strokeLinecap="round" />
+          <path d={`M ${cx - 8} ${eyeY + 1} Q ${cx} ${eyeY - 5} ${cx + 8} ${eyeY + 1}`} stroke="#FFFFFF" strokeWidth={2} fill="none" strokeLinecap="round" opacity={0.35} />
+        </g>
+      );
+    }
+    if (expr === 'oops') {
+      return (
+        <path
+          d={`M ${cx - 9} ${eyeY - 6} L ${cx + 4} ${eyeY} L ${cx - 9} ${eyeY + 6}`}
+          transform={cx > 0 ? `translate(${2 * cx},0) scale(-1,1)` : undefined}
+          stroke={ink}
+          strokeWidth={6}
+          fill="none"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      );
+    }
+    if (expr === 'dizzy') {
+      return (
+        <g stroke={ink} strokeWidth={5} strokeLinecap="round">
+          <path d={`M ${cx - 7} ${eyeY - 7} L ${cx + 7} ${eyeY + 7} M ${cx + 7} ${eyeY - 7} L ${cx - 7} ${eyeY + 7}`} />
+        </g>
+      );
+    }
+    if (blink >= 0.95) {
       return (
         <g>
           <path d={`M ${cx - 12} ${eyeY + 1} Q ${cx} ${eyeY + 8} ${cx + 12} ${eyeY + 1}`} stroke={ink} strokeWidth={5} fill="none" strokeLinecap="round" />
           {expr === 'tired' ? <path d={`M ${cx - 12} ${eyeY + 15} Q ${cx} ${eyeY + 22} ${cx + 12} ${eyeY + 15}`} stroke="#8C7AA6" strokeWidth={4.5} fill="none" strokeLinecap="round" opacity={0.85} /> : null}
         </g>
       );
+    }
     const big = expr === 'shock';
-    const rx = big ? 11 : 7;
-    const ry = (big ? 13 : 10) * open;
+    const exy = eyeY + (lid ? 3 : 0);
     return (
       <g>
-        <ellipse cx={cx + ex} cy={eyeY + (lid ? 3 : 0)} rx={rx} ry={ry} fill={ink} />
-        {big && open > 0.5 ? <circle cx={cx + ex + 3.5} cy={eyeY - 4} r={3.4} fill="#fff" /> : null}
-        {lid ? <path d={expr === 'tired' ? `M ${cx - 13} ${eyeY - 1} Q ${cx} ${eyeY - 5} ${cx + 13} ${eyeY - 1}` : `M ${cx - 12} ${eyeY - 4} L ${cx + 12} ${eyeY - 2}`} stroke={ink} strokeWidth={4} strokeLinecap="round" fill="none" /> : null}
+        {/* sclera + pupil + catchlight, squashed vertically as the lids close */}
+        <g transform={`translate(${cx} ${exy}) scale(1 ${open}) translate(${-cx} ${-exy})`}>
+          <ellipse cx={cx} cy={exy} rx={big ? 13 : 10.5} ry={big ? 14 : 11.5} fill={SCLERA} />
+          <circle cx={px} cy={exy + 1.5} r={big ? 5.4 : 6} fill={PUPIL} />
+          <circle cx={px - 2.4} cy={exy - 1.2} r={2} fill="#FFFFFF" opacity={0.9} />
+        </g>
+        {lid ? (
+          <path
+            d={expr === 'tired' ? `M ${cx - 13} ${eyeY - 1} Q ${cx} ${eyeY - 5} ${cx + 13} ${eyeY - 1}` : `M ${cx - 12} ${eyeY - 4} L ${cx + 12} ${eyeY - 2}`}
+            stroke={ink}
+            strokeWidth={4}
+            strokeLinecap="round"
+            fill="none"
+          />
+        ) : null}
         {expr === 'tired' ? <path d={`M ${cx - 12} ${eyeY + 14} Q ${cx} ${eyeY + 21} ${cx + 12} ${eyeY + 14}`} stroke="#8C7AA6" strokeWidth={4.5} fill="none" strokeLinecap="round" opacity={0.85} /> : null}
       </g>
     );
   };
+
   const brows: Record<Expr, string> = {
-    neutral: '',
-    happy: '',
+    neutral: `M -30 ${eyeY - 21} Q -21 ${eyeY - 24} -13 ${eyeY - 21} M 13 ${eyeY - 21} Q 21 ${eyeY - 24} 30 ${eyeY - 21}`,
+    happy: `M -31 ${eyeY - 23} Q -21 ${eyeY - 29} -12 ${eyeY - 23} M 12 ${eyeY - 23} Q 21 ${eyeY - 29} 31 ${eyeY - 23}`,
     smug: `M -34 ${eyeY - 22} L -12 ${eyeY - 20} M 12 ${eyeY - 26} L 34 ${eyeY - 30}`,
     shock: `M -32 ${eyeY - 28} Q -21 ${eyeY - 36} -10 ${eyeY - 29} M 10 ${eyeY - 29} Q 21 ${eyeY - 36} 32 ${eyeY - 28}`,
     worried: `M -32 ${eyeY - 18} L -12 ${eyeY - 26} M 12 ${eyeY - 26} L 32 ${eyeY - 18}`,
     oops: `M -32 ${eyeY - 20} L -12 ${eyeY - 16} M 12 ${eyeY - 16} L 32 ${eyeY - 20}`,
-    cool: '',
-    dizzy: '',
+    cool: `M -34 ${eyeY - 23} L -12 ${eyeY - 22} M 12 ${eyeY - 22} L 34 ${eyeY - 25}`,
+    dizzy: `M -32 ${eyeY - 20} Q -21 ${eyeY - 25} -12 ${eyeY - 20} M 12 ${eyeY - 24} Q 21 ${eyeY - 19} 32 ${eyeY - 24}`,
     tired: `M -33 ${eyeY - 17} Q -22 ${eyeY - 21} -11 ${eyeY - 19} M 11 ${eyeY - 19} Q 22 ${eyeY - 21} 33 ${eyeY - 17}`,
   };
-  const mY = HEAD.y + 28;
+
+  const mY = HEAD.y + 30;
   const mouth: Record<Expr, React.ReactNode> = {
-    neutral: <path d={`M -10 ${mY} Q 0 ${mY + 4} 10 ${mY}`} stroke={ink} strokeWidth={5} fill="none" strokeLinecap="round" />,
-    happy: <path d={`M -18 ${mY - 4} Q 0 ${mY + 20} 18 ${mY - 4} Z`} fill={ink} />,
-    smug: <path d={`M -12 ${mY + 2} Q 4 ${mY + 8} 16 ${mY - 6}`} stroke={ink} strokeWidth={5} fill="none" strokeLinecap="round" />,
-    shock: <ellipse cx={0} cy={mY + 4} rx={10} ry={14} fill={ink} />,
-    worried: <path d={`M -16 ${mY + 4} Q -8 ${mY - 4} 0 ${mY + 4} Q 8 ${mY + 12} 16 ${mY + 4}`} stroke={ink} strokeWidth={5} fill="none" strokeLinecap="round" />,
-    oops: <g><rect x={-18} y={mY - 6} width={36} height={16} rx={6} fill={ink} /><path d={`M -14 ${mY + 2} L 14 ${mY + 2}`} stroke="#fff" strokeWidth={3} /></g>,
-    cool: <path d={`M -12 ${mY + 2} Q 4 ${mY + 8} 16 ${mY - 6}`} stroke={ink} strokeWidth={5} fill="none" strokeLinecap="round" />,
-    dizzy: <path d={`M -14 ${mY + 4} Q -7 ${mY - 4} 0 ${mY + 4} Q 7 ${mY + 12} 14 ${mY + 4}`} stroke={ink} strokeWidth={5} fill="none" strokeLinecap="round" />,
-    tired: <path d={`M -11 ${mY + 4} Q 0 ${mY} 11 ${mY + 4}`} stroke={ink} strokeWidth={5} fill="none" strokeLinecap="round" />,
+    neutral: <path d={`M -9 ${mY} Q 0 ${mY + 4.5} 9 ${mY}`} stroke={ink} strokeWidth={4.5} fill="none" strokeLinecap="round" />,
+    happy: (
+      <g>
+        <ellipse cx={0} cy={mY + 2} rx={14} ry={7} fill={ink} />
+        <path d={`M -9 ${mY - 1} Q 0 ${mY + 2} 9 ${mY - 1} L 8 ${mY + 3} Q 0 ${mY + 5} -8 ${mY + 3} Z`} fill={TEETH} />
+        <ellipse cx={0} cy={mY + 5.5} rx={6} ry={2.8} fill={TONGUE} opacity={0.9} />
+      </g>
+    ),
+    smug: <path d={`M -12 ${mY + 2} Q 4 ${mY + 8} 16 ${mY - 6}`} stroke={ink} strokeWidth={4.5} fill="none" strokeLinecap="round" />,
+    shock: (
+      <g>
+        <ellipse cx={0} cy={mY + 3} rx={10} ry={13.5} fill={ink} />
+        <path d={`M -6 ${mY - 7} Q 0 ${mY - 4} 6 ${mY - 7} L 6 ${mY - 1} Q 0 ${mY + 1} -6 ${mY - 1} Z`} fill={TEETH} opacity={0.9} />
+      </g>
+    ),
+    worried: <path d={`M -16 ${mY + 4} Q -8 ${mY - 4} 0 ${mY + 4} Q 8 ${mY + 12} 16 ${mY + 4}`} stroke={ink} strokeWidth={4.5} fill="none" strokeLinecap="round" />,
+    oops: (
+      <g>
+        <rect x={-18} y={mY - 6} width={36} height={16} rx={6} fill={ink} />
+        <path d={`M -14 ${mY + 2} L 14 ${mY + 2}`} stroke="#fff" strokeWidth={3} />
+      </g>
+    ),
+    cool: <path d={`M -12 ${mY + 2} Q 4 ${mY + 8} 16 ${mY - 6}`} stroke={ink} strokeWidth={4.5} fill="none" strokeLinecap="round" />,
+    dizzy: <path d={`M -14 ${mY + 4} Q -7 ${mY - 4} 0 ${mY + 4} Q 7 ${mY + 12} 14 ${mY + 4}`} stroke={ink} strokeWidth={4.5} fill="none" strokeLinecap="round" />,
+    tired: <path d={`M -11 ${mY + 4} Q 0 ${mY} 11 ${mY + 4}`} stroke={ink} strokeWidth={4.5} fill="none" strokeLinecap="round" />,
   };
+
   return (
     <g transform={`translate(${yaw * 30} 0) scale(${1 - 0.28 * ay} 1)`}>
-      {eye(-21)}
-      {eye(21)}
-      {brows[expr] ? <path d={brows[expr]} stroke={ink} strokeWidth={5} fill="none" strokeLinecap="round" /> : null}
-      {/* a quiet nose bump between the eyes and the mouth */}
-      <path d={`M 4 ${HEAD.y + 14} q 7 6 1 13`} stroke={ink} strokeWidth={3.5} fill="none" strokeLinecap="round" opacity={0.3} />
+      {eye(-24)}
+      {eye(24)}
+      {brows[expr] ? (
+        <path
+          d={brows[expr]}
+          stroke={ink}
+          strokeWidth={expr === 'neutral' ? 3.8 : 5}
+          opacity={expr === 'neutral' ? 0.55 : 1}
+          fill="none"
+          strokeLinecap="round"
+        />
+      ) : null}
       {mouth[expr]}
       {expr === 'shock' || expr === 'oops' ? <path d={`M 52 ${HEAD.y - 30} q 6 10 0 16 q -6 -6 0 -16 Z`} fill="#8FD3FF" /> : null}
-      {/* a power lighting the eyes: a soft halo, a bright iris, a white catchlight (none while the lids are shut) */}
       {glint > 0.01 && blink < 0.95
-        ? [-21, 21].map((cx) =>
+        ? [-24, 24].map((cx) =>
             farHidden && Math.sign(cx) === farSide ? null : (
               <g key={`gl${cx}`} opacity={Math.min(1, glint)}>
-                <circle cx={cx + ex} cy={eyeY} r={17} fill={glintColor} opacity={0.2} />
-                <circle cx={cx + ex} cy={eyeY} r={12} fill={glintColor} opacity={0.28} />
-                <ellipse cx={cx + ex} cy={eyeY + (lid ? 3 : 0)} rx={8} ry={Math.max(2, 11 * open)} fill={glintColor} />
-                <circle cx={cx + ex + 2.5} cy={eyeY - 3} r={2.6} fill="#FFFFFF" />
+                <circle cx={cx + ex * 0.5} cy={eyeY} r={17} fill={glintColor} opacity={0.2} />
+                <circle cx={cx + ex * 0.5} cy={eyeY} r={12} fill={glintColor} opacity={0.28} />
+                <ellipse cx={cx + ex * 0.5} cy={eyeY + (lid ? 3 : 0)} rx={8} ry={Math.max(2, 11 * open)} fill={glintColor} />
+                <circle cx={cx + ex * 0.5 + 2.5} cy={eyeY - 3} r={2.6} fill="#FFFFFF" />
               </g>
             ),
           )
         : null}
       {glasses > 0.01 ? (
         <g opacity={glasses} transform={`translate(0 ${(1 - glasses) * -60})`}>
-          {/* classic shades: a full bar across, two big lenses, one bright glint so it reads at feed size */}
           <path d={`M -58 ${eyeY - 12} L 58 ${eyeY - 12}`} stroke={ink} strokeWidth={6} strokeLinecap="round" />
           <path d={`M -50 ${eyeY - 14} L -6 ${eyeY - 14} L -10 ${eyeY + 8} Q -28 ${eyeY + 18} -46 ${eyeY + 8} Z`} fill="#0D0F1C" stroke={ink} strokeWidth={3} />
           <path d={`M 6 ${eyeY - 14} L 50 ${eyeY - 14} L 46 ${eyeY + 8} Q 28 ${eyeY + 18} 10 ${eyeY + 8} Z`} fill="#0D0F1C" stroke={ink} strokeWidth={3} />
@@ -324,54 +382,96 @@ const Face: React.FC<{ expr: Expr; blink: number; look: number; glasses: number;
   );
 };
 
-export const Hero: React.FC<{ pose: Pose; shadow?: number; rimId?: string; look?: Look }> = ({ pose, shadow = 1, rimId = 'rimR', look = LOOKS.pipHood }) => {
+export const Hero: React.FC<{ pose: Pose; shadow?: number; rimId?: string; look?: Look }> = ({
+  pose,
+  shadow = 1,
+  rimId = 'rimR',
+  look = LOOKS.pipHood,
+}) => {
   const j = joints(pose);
   const L = look;
-  // per-instance gradient ids: several Actors share the frame, so fixed ids would collide
   const uid = React.useId().replace(/[^a-zA-Z0-9]/g, '');
+  const pants = L.pants ?? tint(L.jacket, 0.45);
+  const pantsDark = L.pantsDark ?? tint(pants, 0.72);
+  const hairLight = tint(L.hair, 1.55);
+  const torsoD = L.bust ? TORSO_BUST_D : TORSO_D;
+
+  const isCoolRim = rimId === 'rimBlue' || rimId === 'rimBlueL';
+  const rimTint = isCoolRim ? '#A9C6FF' : '#FFB15A';
+
   const defs = (
     <defs>
-      <linearGradient id={`${uid}s`} x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0" stopColor={tint(L.skin, 1.07)} />
-        <stop offset="0.5" stopColor={L.skin} />
+      <radialGradient id={`${uid}sr`} cx="0.36" cy="0.3" r="0.95">
+        <stop offset="0" stopColor={tint(L.skin, 1.1)} />
+        <stop offset="0.55" stopColor={L.skin} />
         <stop offset="1" stopColor={L.skinShade} />
-      </linearGradient>
-      <linearGradient id={`${uid}j`} x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0" stopColor={tint(L.jacket, 1.14)} />
-        <stop offset="0.45" stopColor={L.jacket} />
+      </radialGradient>
+      <linearGradient id={`${uid}j`} x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stopColor={tint(L.jacket, 1.16)} />
+        <stop offset="0.5" stopColor={L.jacket} />
         <stop offset="1" stopColor={L.jacketShade} />
       </linearGradient>
-      <linearGradient id={`${uid}h`} x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0" stopColor={tint(L.shoe, 1.18)} />
-        <stop offset="1" stopColor={tint(L.shoe, 0.7)} />
+      <linearGradient id={`${uid}sl`} x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stopColor={tint(L.limb, 1.16)} />
+        <stop offset="0.5" stopColor={L.limb} />
+        <stop offset="1" stopColor={tint(L.limb, 0.72)} />
       </linearGradient>
+      <linearGradient id={`${uid}h`} x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stopColor={tint(L.shoe, 1.2)} />
+        <stop offset="1" stopColor={tint(L.shoe, 0.68)} />
+      </linearGradient>
+      <clipPath id={`${uid}fc`}>
+        <circle cx={HEAD.x} cy={HEAD.y} r={HEAD.r} />
+      </clipPath>
+      <clipPath id={`${uid}tc`}>
+        <path d={torsoD} />
+      </clipPath>
     </defs>
   );
-  // limbs are light with a dark outline, so they read on the dark sets (navy limbs vanished on navy walls)
-  const limb = (o: { root: P; mid: P; end: P }, w: number) => {
+
+  // jacketed arm: sleeve gradient, elbow shade, lit edge
+  const armLimb = (o: { root: P; mid: P; end: P }, w: number) => {
     const d = `M ${o.root.x} ${o.root.y} L ${o.mid.x} ${o.mid.y} L ${o.end.x} ${o.end.y}`;
     return (
       <g>
         <path d={d} stroke={L.line} strokeWidth={w + 7} fill="none" strokeLinecap="round" strokeLinejoin="round" />
-        <path d={d} stroke={L.limb} strokeWidth={w} fill="none" strokeLinecap="round" strokeLinejoin="round" />
-        {/* a narrow lit edge on the upper-left of the limb: the second light pass, cheap cel shading */}
-        <path d={d} stroke={tint(L.limb, 1.35)} strokeWidth={w * 0.32} fill="none" strokeLinecap="round" strokeLinejoin="round" opacity={0.5} transform="translate(-1.6 -1.6)" />
+        <path d={d} stroke={`url(#${uid}sl)`} strokeWidth={w} fill="none" strokeLinecap="round" strokeLinejoin="round" />
+        <path d={d} stroke={tint(L.limb, 1.4)} strokeWidth={w * 0.34} fill="none" strokeLinecap="round" strokeLinejoin="round" opacity={0.5} transform="translate(-1.6 -1.6)" />
+        <circle cx={o.mid.x} cy={o.mid.y} r={w * 0.72} fill={tint(L.limb, 0.66)} opacity={0.42} />
       </g>
     );
   };
-  const shoe = (o: { root: P; mid: P; end: P }) => {
-    const cx = o.end.x + pose.facing * 9;
-    const cy = o.end.y + 4;
+
+  // trouser leg: outline, pant colour, crease + lit edge, knee shade
+  const leg = (o: { root: P; mid: P; end: P }) => {
+    const d = `M ${o.root.x} ${o.root.y} L ${o.mid.x} ${o.mid.y} L ${o.end.x} ${o.end.y}`;
     return (
       <g>
-        {/* sole peeks out below the upper */}
-        <ellipse cx={cx} cy={cy + 7} rx={20} ry={6} fill={tint(L.shoe, 0.55)} stroke={L.line} strokeWidth={3} />
-        <ellipse cx={cx} cy={cy} rx={22} ry={11} fill={`url(#${uid}h)`} stroke={L.line} strokeWidth={4} />
-        <path d={`M ${cx - 15} ${cy - 5} Q ${cx} ${cy - 13} ${cx + 15} ${cy - 5}`} stroke="#FFFFFF" strokeWidth={3} fill="none" strokeLinecap="round" opacity={0.3} />
+        <path d={d} stroke={L.line} strokeWidth={19} fill="none" strokeLinecap="round" strokeLinejoin="round" />
+        <path d={d} stroke={pants} strokeWidth={12} fill="none" strokeLinecap="round" strokeLinejoin="round" />
+        <path d={d} stroke={pantsDark} strokeWidth={2.6} fill="none" strokeLinecap="round" strokeLinejoin="round" opacity={0.55} transform="translate(-2.4 -1.4)" />
+        <path d={d} stroke={tint(pants, 1.3)} strokeWidth={3.2} fill="none" strokeLinecap="round" strokeLinejoin="round" opacity={0.35} transform="translate(1.8 -1.8)" />
+        <circle cx={o.mid.x + 2} cy={o.mid.y} r={7} fill={pantsDark} opacity={0.3} />
       </g>
     );
   };
-  // a mitten along the forearm: the palm, the thumb toward the body, two knuckle marks; or a pointing fist
+
+  // sneaker: white-ish upper, two-tone sole, lace lines, toe cap
+  const shoe = (o: { root: P; mid: P; end: P }) => {
+    const cx = o.end.x + pose.facing * 10;
+    const cy = o.end.y + 2;
+    return (
+      <g transform={`translate(${cx} ${cy}) scale(${pose.facing} 1)`}>
+        <path d="M -23 5 L 27 5 Q 31 5 31 9 L 29 14 Q 2 18 -25 14 Q -28 9 -23 5 Z" fill={tint(L.shoe, 0.5)} stroke={L.line} strokeWidth={3.5} strokeLinejoin="round" />
+        <path d="M -21 -2 Q -23 4 -14 6 L 24 6 Q 30 2 28 -8 Q 20 -16 2 -16 L -12 -16 Q -19 -14 -21 -2 Z" fill={`url(#${uid}h)`} stroke={L.line} strokeWidth={3.5} strokeLinejoin="round" />
+        <path d="M 12 -12 Q 24 -10 27 -4 L 24 4 Q 14 0 10 -8 Z" fill={tint(L.shoe, 0.78)} opacity={0.85} />
+        <path d="M -19 1 L 25 1" stroke={tint(L.shoe, 0.5)} strokeWidth={5} strokeLinecap="round" opacity={0.9} />
+        <path d="M -8 -12 L -2 -4 M 2 -13 L 8 -5 M 12 -12 L 17 -5" stroke="#FFFFFF" strokeWidth={2.2} strokeLinecap="round" opacity={0.6} />
+        <path d="M -16 -12 Q -18 -2 -10 4" stroke="#FFFFFF" strokeWidth={2.5} fill="none" strokeLinecap="round" opacity={0.35} />
+      </g>
+    );
+  };
+
   const hand = (o: { mid: P; end: P }, side: 1 | -1, kind: HandKind) => {
     const ang = (Math.atan2(o.end.x - o.mid.x, o.end.y - o.mid.y) * 180) / Math.PI;
     return (
@@ -384,82 +484,120 @@ export const Hero: React.FC<{ pose: Pose; shadow?: number; rimId?: string; look?
           </g>
         ) : (
           <g>
-            <ellipse cx={side * 10} cy={3} rx={5.5} ry={9} transform={`rotate(${side * -28} ${side * 10} 3)`} fill={L.hand} stroke={L.line} strokeWidth={4} />
-            <ellipse cx={0} cy={10} rx={11} ry={15} fill={L.hand} stroke={L.line} strokeWidth={4} />
+            <ellipse cx={side * 10} cy={3} rx={5.8} ry={9.2} transform={`rotate(${side * -28} ${side * 10} 3)`} fill={L.hand} stroke={L.line} strokeWidth={4} />
+            <ellipse cx={0} cy={10} rx={11.5} ry={15} fill={L.hand} stroke={L.line} strokeWidth={4} />
+            <path d="M -6 3 Q 0 1 6 4" stroke={tint(L.hand, 1.25)} strokeWidth={2.2} fill="none" strokeLinecap="round" opacity={0.6} />
             <path d="M -4 17 L -4 23 M 3 18 L 3 24" stroke={L.line} strokeWidth={2} opacity={0.45} strokeLinecap="round" />
           </g>
         )}
       </g>
     );
   };
-  // a jacket cuff where the sleeve meets the wrist
+
   const cuff = (o: { mid: P; end: P }) => {
-    const x = lerp(o.mid.x, o.end.x, 0.78);
-    const y = lerp(o.mid.y, o.end.y, 0.78);
-    return <circle cx={x} cy={y} r={8.5} fill={L.jacket} stroke={L.line} strokeWidth={3} />;
+    const x = lerp(o.mid.x, o.end.x, 0.8);
+    const y = lerp(o.mid.y, o.end.y, 0.8);
+    return (
+      <g>
+        <circle cx={x} cy={y} r={9.2} fill={L.jacketShade} stroke={L.line} strokeWidth={3} />
+        <path d={`M ${x - 5} ${y - 1} Q ${x} ${y + 3} ${x + 5} ${y - 1}`} stroke={tint(L.jacketShade, 1.4)} strokeWidth={2} fill="none" strokeLinecap="round" opacity={0.7} />
+      </g>
+    );
   };
+
   const kw = turnWidth(pose.yaw);
+
   const torso = (
     <g transform={`rotate(${pose.tilt}) translate(${pose.yaw * 6} 0) scale(${kw} 1)`}>
-      <path d="M -46 -112 Q 0 -124 46 -112 L 40 2 Q 0 12 -40 2 Z" fill={`url(#${uid}j)`} stroke={L.line} strokeWidth={4} strokeLinejoin="round" />
-      <path d="M 10 -116 Q 30 -114 46 -112 L 40 2 Q 26 8 12 9 Z" fill={L.jacketShade} opacity={0.4} />
-      {/* cloth folds: two quiet seams running the length of the jacket */}
-      <path d="M -19 -104 Q -23 -48 -15 -2" stroke={L.jacketShade} strokeWidth={3} fill="none" opacity={0.45} strokeLinecap="round" />
-      <path d="M 21 -104 Q 25 -48 17 -2" stroke={L.jacketShade} strokeWidth={3} fill="none" opacity={0.3} strokeLinecap="round" />
-      {/* hem band and collar, under the neckline */}
-      <path d="M -43 -8 Q 0 4 43 -8 L 40 3 Q 0 14 -40 3 Z" fill={L.jacketShade} opacity={0.85} />
-      <path d="M -38 -114 Q 0 -94 38 -114 Q 0 -102 -38 -114 Z" fill={L.jacketShade} opacity={0.9} />
-      <rect x={-39} y={-62} width={17} height={13} rx={3} fill="none" stroke={L.jacketShade} strokeWidth={3} opacity={0.8} />
-      {/* lapels and buttons: tailoring for the jackets; hoodies, tees and the suit skip them */}
-      {!['hood', 'curls'].includes(L.extra ?? '') ? (
-        <g stroke={L.jacketShade} strokeWidth={4} fill="none" opacity={0.75} strokeLinecap="round">
-          <path d="M -33 -110 L -7 -60" />
-          <path d="M 33 -110 L 7 -60" />
-        </g>
-      ) : null}
-      <path d="M 0 -112 L 0 4" stroke={L.jacketShade} strokeWidth={4} />
-      {!['hood', 'curls', 'suit'].includes(L.extra ?? '') ? (
-        <g>
-          {[-86, -60, -34].map((y) => (
-            <circle key={y} cx={0} cy={y} r={3.4} fill={L.accent} stroke={L.line} strokeWidth={2} />
-          ))}
-        </g>
-      ) : null}
+      <path d={torsoD} fill={`url(#${uid}j)`} stroke={L.line} strokeWidth={4} strokeLinejoin="round" />
+      <g clipPath={`url(#${uid}tc)`}>
+        {/* cel shade on the shadow side + hem band */}
+        <path d="M 34 -114 L 50 -112 L 46 6 L 36 10 Z" fill={L.jacketShade} opacity={0.4} />
+        <path d="M -46 -110 L -34 -112 L -36 4 L -42 6 Z" fill={tint(L.jacket, 0.8)} opacity={0.22} />
+        <path d="M -44 -9 Q 0 3 44 -9 L 42 5 Q 0 16 -42 5 Z" fill={L.jacketShade} opacity={0.9} />
+        {L.bust ? (
+          <g>
+            {/* bust definition: two soft mounds + centre fold */}
+            <ellipse cx={-15} cy={-98} rx={15} ry={9} fill={tint(L.jacket, 1.14)} opacity={0.4} />
+            <ellipse cx={15} cy={-98} rx={15} ry={9} fill={tint(L.jacket, 1.14)} opacity={0.4} />
+            <path d="M 0 -110 L 0 -88" stroke={L.jacketShade} strokeWidth={2.5} opacity={0.5} />
+          </g>
+        ) : null}
+      </g>
+      {/* collar */}
+      <path d="M -38 -114 Q 0 -94 38 -114 Q 0 -102 -38 -114 Z" fill={L.jacketShade} opacity={0.95} />
       {L.extra === 'suit' ? (
-        // a white shirt in the V of the jacket and a tie in the accent colour
         <g>
-          <path d="M -24 -116 L 0 -54 L 24 -116 Z" fill="#EDE8DE" />
-          <path d="M -7 -112 L 7 -112 L 9 -100 L 5 -64 L 0 -56 L -5 -64 L -9 -100 Z" fill={L.accent} />
-          <path d="M -26 -116 L 0 -54 M 26 -116 L 0 -54" stroke={L.line} strokeWidth={4} />
+          <path d="M -26 -116 L 0 -50 L 26 -116 Z" fill="#EDE8DE" />
+          <path d="M -8 -112 L 8 -112 L 10 -98 L 6 -62 L 0 -53 L -6 -62 L -10 -98 Z" fill={L.accent} />
+          <path d="M -28 -116 L 0 -50 M 28 -116 L 0 -50" stroke={L.line} strokeWidth={4} />
         </g>
-      ) : (
+      ) : L.extra === 'hood' || L.extra === 'curls' ? (
         <path d="M -22 -118 Q 0 -100 22 -118" stroke={L.accent} strokeWidth={6} fill="none" strokeLinecap="round" />
+      ) : (
+        <g>
+          {/* inner shirt V + zipper + pockets */}
+          <path d="M -13 -110 L 0 -88 L 13 -110 L 13 -103 L 0 -82 L -13 -103 Z" fill="#F4EEE0" opacity={0.92} />
+          <path d="M 0 -84 L 0 4" stroke={L.jacketShade} strokeWidth={3.5} strokeLinecap="round" />
+          <rect x={-4.5} y={-62} width={9} height={13} rx={3.5} fill={L.jacketShade} stroke={L.line} strokeWidth={2} />
+          <path d="M -36 6 Q -34 16 -24 16 M 36 6 Q 34 16 24 16" stroke={L.jacketShade} strokeWidth={3} fill="none" strokeLinecap="round" opacity={0.8} />
+        </g>
       )}
     </g>
   );
-  // the neck: a short column of skin between collar and jaw, lagging the head's tilt a little
+
   const neck = (
     <g transform={`rotate(${pose.tilt}) rotate(${pose.headTilt * 0.5} 0 ${HEAD.y + 40})`}>
-      <rect x={-11} y={HEAD.y + 50} width={22} height={28} rx={10} fill={`url(#${uid}s)`} stroke={L.line} strokeWidth={3} />
+      <rect x={-11} y={HEAD.y + 50} width={22} height={36} rx={10} fill={`url(#${uid}sr)`} stroke={L.line} strokeWidth={3} />
+      <path d="M -9 54 Q 0 62 9 54" stroke={L.skinShade} strokeWidth={3} fill="none" opacity={0.55} />
     </g>
   );
+
   const head = (
     <g transform={`rotate(${pose.tilt}) rotate(${pose.headTilt} 0 ${HEAD.y + 40})`}>
-      <circle cx={HEAD.x} cy={HEAD.y} r={HEAD.r} fill={`url(#${uid}s)`} stroke={L.line} strokeWidth={4} />
-      <path d={`M ${HEAD.x + 14} ${HEAD.y + 58} A ${HEAD.r} ${HEAD.r} 0 0 0 ${HEAD.x + 60} ${HEAD.y + 14} A 70 70 0 0 1 ${HEAD.x + 14} ${HEAD.y + 58} Z`} fill={L.skinShade} opacity={0.7} />
-      {/* ears, culled on the far side as the head turns; a soft blush sits under the eyes */}
+      {/* back hair for the uncapped styles (pip, pipInk) */}
+      {!L.extra ? (
+        <path
+          d="M -66 -178 C -74 -236 -36 -254 0 -254 C 36 -254 74 -236 66 -178 C 62 -146 54 -124 46 -114 L -46 -114 C -54 -124 -62 -146 -66 -178 Z"
+          fill={L.hair}
+        />
+      ) : null}
       {([-1, 1] as const).map((sd) =>
         Math.abs(pose.yaw) > 0.5 && sd === (pose.yaw > 0 ? -1 : 1) ? null : (
-          <ellipse key={sd} cx={HEAD.x + sd * 56} cy={HEAD.y + 16} rx={8} ry={11} fill={L.skin} stroke={L.line} strokeWidth={3.5} />
+          <g key={sd}>
+            <ellipse cx={HEAD.x + sd * 58} cy={HEAD.y + 16} rx={7.5} ry={10} fill={L.skin} stroke={L.line} strokeWidth={3.5} />
+            <path d={`M ${HEAD.x + sd * 57} ${HEAD.y + 12} Q ${HEAD.x + sd * 60} ${HEAD.y + 16} ${HEAD.x + sd * 57} ${HEAD.y + 20}`} stroke={L.skinShade} strokeWidth={2.4} fill="none" strokeLinecap="round" />
+          </g>
         ),
       )}
-      <ellipse cx={HEAD.x - 30} cy={HEAD.y + 24} rx={9} ry={5} fill="#F2997A" opacity={0.2} />
-      <ellipse cx={HEAD.x + 30} cy={HEAD.y + 24} rx={9} ry={5} fill="#F2997A" opacity={0.2} />
-      {L.extra === 'bunches' || L.extra === 'bob' || L.extra === 'suit' || L.extra === 'short' || L.extra === 'long' ? null : (
-        <path transform={`translate(${-pose.yaw * 16} 0)`} d={`M -6 ${HEAD.y - 60} q 10 -26 30 -18 q -16 2 -14 16 q -8 -10 -16 2 Z`} fill={L.hair} />
-      )}
+      {/* face: round head with radial skin shading */}
+      <circle cx={HEAD.x} cy={HEAD.y} r={HEAD.r} fill={`url(#${uid}sr)`} stroke={L.line} strokeWidth={4} />
+      <g clipPath={`url(#${uid}fc)`}>
+        <ellipse cx={48} cy={-158} rx={34} ry={62} fill={L.skinShade} opacity={0.4} />
+        <path d="M -62 -198 C -28 -226 28 -226 62 -198 L 62 -180 C 28 -208 -28 -208 -62 -180 Z" fill={L.skinShade} opacity={0.45} />
+      </g>
+      <ellipse cx={-34} cy={HEAD.y + 26} rx={11} ry={6.5} fill={BLUSH} opacity={0.3} />
+      <ellipse cx={34} cy={HEAD.y + 26} rx={11} ry={6.5} fill={BLUSH} opacity={0.3} />
+
+      {/* front hair per style */}
+      {!L.extra ? (
+        <g>
+          {/* bangs with jagged points + sheen + swaying cowlick */}
+          <path
+            d="M -64 -184 C -68 -230 -34 -248 0 -248 C 34 -248 68 -230 64 -184 C 56 -206 46 -216 36 -220 C 30 -204 20 -212 12 -224 C 4 -208 -6 -218 -16 -228 C -26 -214 -38 -206 -48 -198 C -56 -192 -62 -188 -64 -184 Z"
+            fill={L.hair}
+          />
+          <g stroke={hairLight} strokeWidth={3.5} fill="none" strokeLinecap="round" opacity={0.6}>
+            <path d="M -30 -230 Q -8 -242 16 -234" />
+            <path d="M -14 -222 Q 4 -232 22 -224" />
+          </g>
+          <g transform={`rotate(${pose.sway * 0.5 + pose.headTilt * 0.15} 4 ${HEAD.y - 62})`}>
+            <path d="M 2 -244 C -8 -260 6 -270 18 -260 C 8 -256 6 -250 8 -242 Z" fill={L.hair} />
+            <path d="M 4 -252 Q 10 -260 16 -258" stroke={hairLight} strokeWidth={2.5} fill="none" strokeLinecap="round" opacity={0.6} />
+          </g>
+        </g>
+      ) : null}
       {L.extra === 'bunches' ? (
-        // a fringe cap and two bunches tied with coral bands; the bunches swing a little with sway
         <g>
           {[-1, 1].map((sd) => (
             <g key={sd} transform={`rotate(${pose.sway * 0.5} ${sd * 58} ${HEAD.y - 30})`}>
@@ -471,7 +609,6 @@ export const Hero: React.FC<{ pose: Pose; shadow?: number; rimId?: string; look?
         </g>
       ) : null}
       {L.extra === 'bob' ? (
-        // a chin-length bob framing the face, a side parting
         <path
           transform={`translate(${-pose.yaw * 12} 0)`}
           d={`M -74 ${HEAD.y + 34} Q -84 ${HEAD.y - 70} 0 ${HEAD.y - 72} Q 84 ${HEAD.y - 70} 74 ${HEAD.y + 34} L 56 ${HEAD.y + 34} Q 60 ${HEAD.y - 20} 40 ${HEAD.y - 40} Q 10 ${HEAD.y - 34} -16 ${HEAD.y - 48} Q -52 ${HEAD.y - 30} -56 ${HEAD.y + 34} Z`}
@@ -482,36 +619,36 @@ export const Hero: React.FC<{ pose: Pose; shadow?: number; rimId?: string; look?
         />
       ) : null}
       {L.extra === 'suit' ? (
-        // short combed-back hair with a hard side parting
         <path transform={`translate(${-pose.yaw * 14} 0)`} d={`M -60 ${HEAD.y - 18} Q -64 ${HEAD.y - 70} 4 ${HEAD.y - 68} Q 64 ${HEAD.y - 64} 60 ${HEAD.y - 18} Q 52 ${HEAD.y - 44} 18 ${HEAD.y - 46} L 12 ${HEAD.y - 54} L 6 ${HEAD.y - 46} Q -44 ${HEAD.y - 46} -60 ${HEAD.y - 18} Z`} fill={L.hair} />
       ) : null}
       {L.extra === 'short' ? (
-        // a plain short crop, a little longer at the back
         <path transform={`translate(${-pose.yaw * 12} 0)`} d={`M -60 ${HEAD.y - 8} Q -66 ${HEAD.y - 74} 0 ${HEAD.y - 76} Q 66 ${HEAD.y - 74} 60 ${HEAD.y - 8} L 52 ${HEAD.y - 6} Q 48 ${HEAD.y - 44} 22 ${HEAD.y - 50} Q 2 ${HEAD.y - 40} -20 ${HEAD.y - 50} Q -46 ${HEAD.y - 44} -52 ${HEAD.y - 6} Z`} fill={L.hair} stroke={L.line} strokeWidth={4} strokeLinejoin="round" />
       ) : null}
       {L.extra === 'long' ? (
-        // hair to the shoulders: a fringe cap and two quiet lengths down the back of the neck
         <path transform={`translate(${-pose.yaw * 12} 0)`} d={`M -66 ${HEAD.y + 86} Q -82 ${HEAD.y - 62} 0 ${HEAD.y - 74} Q 82 ${HEAD.y - 62} 66 ${HEAD.y + 86} L 46 ${HEAD.y + 92} Q 50 ${HEAD.y - 16} 38 ${HEAD.y - 40} Q 12 ${HEAD.y - 34} -14 ${HEAD.y - 48} Q -50 ${HEAD.y - 28} -46 ${HEAD.y + 92} Z`} fill={L.hair} stroke={L.line} strokeWidth={4} strokeLinejoin="round" />
       ) : null}
-      {/* hair sheen: lifted strand strokes on the capped styles, highlight dots on the curls */}
+
+      {/* hair sheen on the capped styles */}
       {L.extra === 'curls' ? (
         [-150, -125, -100, -78, -55, -30].map((deg) => {
           const a = (deg * Math.PI) / 180;
-          return <circle key={deg} cx={Math.cos(a) * 54 - 7} cy={HEAD.y + Math.sin(a) * 54 - 7} r={9} fill={tint(L.hair, 1.4)} opacity={0.55} />;
+          return <circle key={deg} cx={Math.cos(a) * 54 - 7} cy={HEAD.y + Math.sin(a) * 54 - 7} r={9} fill={hairLight} opacity={0.55} />;
         })
       ) : L.extra === 'bunches' ? (
-        <g stroke={tint(L.hair, 1.5)} strokeWidth={3.5} fill="none" opacity={0.5} strokeLinecap="round" transform={`translate(${-pose.yaw * 14} 0)`}>
+        <g stroke={hairLight} strokeWidth={3.5} fill="none" opacity={0.5} strokeLinecap="round" transform={`translate(${-pose.yaw * 14} 0)`}>
           <path d={`M -40 ${HEAD.y - 58} Q 0 ${HEAD.y - 66} 40 ${HEAD.y - 58}`} />
           <path d={`M -16 ${HEAD.y - 62} Q 0 ${HEAD.y - 68} 16 ${HEAD.y - 62}`} />
         </g>
       ) : L.extra ? (
-        <g stroke={tint(L.hair, 1.5)} strokeWidth={3.5} fill="none" opacity={0.5} strokeLinecap="round" transform={`translate(${-pose.yaw * 12} 0)`}>
+        <g stroke={hairLight} strokeWidth={3.5} fill="none" opacity={0.5} strokeLinecap="round" transform={`translate(${-pose.yaw * 12} 0)`}>
           <path d={`M -34 ${HEAD.y - 58} Q -16 ${HEAD.y - 70} 2 ${HEAD.y - 64}`} />
           <path d={`M 8 ${HEAD.y - 66} Q 26 ${HEAD.y - 72} 38 ${HEAD.y - 58}`} />
           <path d={`M -10 ${HEAD.y - 68} Q 2 ${HEAD.y - 74} 14 ${HEAD.y - 66}`} />
         </g>
       ) : null}
+
       <Face expr={pose.expr} blink={pose.blink} look={pose.look} glasses={pose.glasses} yaw={pose.yaw} ink={L.face} glint={pose.glint} glintColor={pose.glintColor} />
+
       {L.extra === 'curls'
         ? [-150, -125, -100, -78, -55, -30].map((deg, k) => {
             const a = (deg * Math.PI) / 180;
@@ -520,27 +657,60 @@ export const Hero: React.FC<{ pose: Pose; shadow?: number; rimId?: string; look?
         : null}
     </g>
   );
+
   return (
     <g>
       {defs}
-      {shadow > 0 ? <ellipse cx={pose.x} cy={pose.y + LEG_LEN * pose.scale + 10} rx={70 * pose.scale} ry={12 * pose.scale} fill="#000" opacity={0.25 * shadow} /> : null}
+      {shadow > 0 ? (
+        <ellipse
+          cx={pose.x}
+          cy={pose.y + LEG_LEN * pose.scale + 10}
+          rx={70 * pose.scale}
+          ry={12 * pose.scale}
+          fill={isCoolRim ? '#091126' : '#000000'}
+          opacity={0.26 * shadow}
+        />
+      ) : null}
       <g transform={`translate(${pose.x} ${pose.y}) scale(${pose.scale}) rotate(${pose.spin} 0 -90)`} filter={`url(#${rimId})`}>
         <g transform={`translate(0 ${LEG_LEN}) scale(${1 + 0.6 * pose.squash} ${1 - pose.squash}) translate(0 ${-LEG_LEN})`}>
-          {/* the far side is drawn first, so a turned body overlaps itself the right way */}
-          {pose.yaw < 0 ? <>{limb(j.legR, 12)}{shoe(j.legR)}{limb(j.legL, 12)}{shoe(j.legL)}</> : <>{limb(j.legL, 12)}{shoe(j.legL)}{limb(j.legR, 12)}{shoe(j.legR)}</>}
-          {pose.yaw < 0 ? <>{limb(j.armR, 11)}{cuff(j.armR)}{hand(j.armR, -1, pose.handR)}</> : <>{limb(j.armL, 11)}{cuff(j.armL)}{hand(j.armL, 1, pose.handL)}</>}
+          {pose.yaw < 0 ? (
+            <>{leg(j.legR)}{shoe(j.legR)}{leg(j.legL)}{shoe(j.legL)}</>
+          ) : (
+            <>{leg(j.legL)}{shoe(j.legL)}{leg(j.legR)}{shoe(j.legR)}</>
+          )}
+          {pose.yaw < 0 ? (
+            <>{armLimb(j.armR, 11)}{cuff(j.armR)}{hand(j.armR, -1, pose.handR)}</>
+          ) : (
+            <>{armLimb(j.armL, 11)}{cuff(j.armL)}{hand(j.armL, 1, pose.handL)}</>
+          )}
           {torso}
-          {pose.yaw < 0 ? <>{limb(j.armL, 11)}{cuff(j.armL)}{hand(j.armL, 1, pose.handL)}</> : <>{limb(j.armR, 11)}{cuff(j.armR)}{hand(j.armR, -1, pose.handR)}</>}
+          {pose.yaw < 0 ? (
+            <>{armLimb(j.armL, 11)}{cuff(j.armL)}{hand(j.armL, 1, pose.handL)}</>
+          ) : (
+            <>{armLimb(j.armR, 11)}{cuff(j.armR)}{hand(j.armR, -1, pose.handR)}</>
+          )}
           {L.extra === 'hood' ? (
             <g transform={`rotate(${pose.tilt}) rotate(${pose.headTilt * 0.5} 0 ${HEAD.y + 40})`}>
-              <path d={`M -70 ${HEAD.y + 14} Q -80 ${HEAD.y - 74} 0 ${HEAD.y - 80} Q 80 ${HEAD.y - 74} 70 ${HEAD.y + 14} Q 52 -100 0 -106 Q -52 -100 -70 ${HEAD.y + 14} Z`} fill={L.jacket} stroke={L.line} strokeWidth={4} />
+              <path
+                d={`M -70 ${HEAD.y + 14} Q -80 ${HEAD.y - 74} 0 ${HEAD.y - 80} Q 80 ${HEAD.y - 74} 70 ${HEAD.y + 14} Q 52 -100 0 -106 Q -52 -100 -70 ${HEAD.y + 14} Z`}
+                fill={L.jacket}
+                stroke={L.line}
+                strokeWidth={4}
+              />
+              <path
+                d={`M -62 ${HEAD.y + 8} Q -68 ${HEAD.y - 62} 0 ${HEAD.y - 68} Q 68 ${HEAD.y - 62} 62 ${HEAD.y + 8}`}
+                stroke={rimTint}
+                strokeWidth={2.5}
+                fill="none"
+                opacity={0.22}
+              />
               {(() => {
                 const sw = pose.sway * 0.7 - pose.tilt * 0.6;
                 return (
                   <g>
                     <path d={`M -12 -108 Q ${-14 + sw * 0.3} -88 ${-16 + sw} -66 M 12 -108 Q ${14 + sw * 0.3} -88 ${16 + sw} -66`} stroke={L.accent} strokeWidth={5} strokeLinecap="round" fill="none" />
-                    <circle cx={-16 + sw} cy={-64} r={5} fill={L.accent} />
-                    <circle cx={16 + sw} cy={-64} r={5} fill={L.accent} />
+                    <circle cx={-16 + sw} cy={-64} r={5.2} fill={L.accent} stroke={L.line} strokeWidth={2} />
+                    <circle cx={16 + sw} cy={-64} r={5.2} fill={L.accent} stroke={L.line} strokeWidth={2} />
                   </g>
                 );
               })()}
@@ -561,16 +731,16 @@ export const Hero: React.FC<{ pose: Pose; shadow?: number; rimId?: string; look?
   );
 };
 
-
-/** A character is the rig in a costume: <Actor> is the same as <Hero>, named for scenes with more than one person. */
 export const Actor = Hero;
 
-/**
- * A walk in profile. `phase` advances about 0.6 a frame for a normal walk; `ground` is the floor height under the hips
- * (a number, or a function of x for stairs and slopes). Leans into the step, bobs the head, bends the elbows, swings
- * loose things (the drawstrings) a beat behind the body.
- */
-export const walkPose = (x: number, phase: number, ground: number | ((x: number) => number), scale = 0.9, extra: Partial<Pose> = {}, facing: 1 | -1 = 1): Pose => {
+export const walkPose = (
+  x: number,
+  phase: number,
+  ground: number | ((x: number) => number),
+  scale = 0.9,
+  extra: Partial<Pose> = {},
+  facing: 1 | -1 = 1,
+): Pose => {
   const s = Math.sin(phase);
   const g = typeof ground === 'number' ? ground : ground(x);
   return {
@@ -591,5 +761,4 @@ export const walkPose = (x: number, phase: number, ground: number | ((x: number)
   };
 };
 
-/** Where the feet are for a pose standing at hip y: use it to put a character on a floor (y = floor - feetBelowHips). */
 export const feetBelowHips = (scale: number) => LEG_LEN * scale;

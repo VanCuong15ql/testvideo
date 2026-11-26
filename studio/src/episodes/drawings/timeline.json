@@ -1,0 +1,1017 @@
+{
+ "slug": "drawings",
+ "title": "What If Everything You Drew Became Real?",
+ "fps": 30,
+ "total": 5151,
+ "segments": [
+  {
+   "shot": "P1S1",
+   "a": 0,
+   "b": 126,
+   "t0": 0,
+   "t1": 126,
+   "line": "What if everything you drew became real?"
+  },
+  {
+   "shot": "P1S2",
+   "a": 126,
+   "b": 229,
+   "t0": 0,
+   "t1": 103,
+   "line": "At exactly 10 .15 on a Monday morning,"
+  },
+  {
+   "shot": "P1S3",
+   "a": 229,
+   "b": 340,
+   "t0": 0,
+   "t1": 111,
+   "line": "Noah drew a hamburger in the corner of his math notebook."
+  },
+  {
+   "shot": "P1S4",
+   "a": 340,
+   "b": 415,
+   "t0": 0,
+   "t1": 75,
+   "line": "Five seconds later, a giant,"
+  },
+  {
+   "shot": "P1S5",
+   "a": 415,
+   "b": 523,
+   "t0": 0,
+   "t1": 108,
+   "line": "freshly cooked hamburger appeared on his desk."
+  },
+  {
+   "shot": "P1S6",
+   "a": 523,
+   "b": 605,
+   "t0": 0,
+   "t1": 82,
+   "line": "He stared at it. His classmates stared at it."
+  },
+  {
+   "shot": "P1S7",
+   "a": 605,
+   "b": 683,
+   "t0": 0,
+   "t1": 78,
+   "line": "Even his teacher stopped talking."
+  },
+  {
+   "shot": "P1S8",
+   "a": 683,
+   "b": 803,
+   "t0": 0,
+   "t1": 120,
+   "line": "Noah, why is there a hamburger on your desk?"
+  },
+  {
+   "shot": "P1S9",
+   "a": 803,
+   "b": 887,
+   "t0": 0,
+   "t1": 84,
+   "line": "Noah slowly looked down at his notebook."
+  },
+  {
+   "shot": "P1S10",
+   "a": 887,
+   "b": 973,
+   "t0": 0,
+   "t1": 86,
+   "line": "Then, back at the hamburger,"
+  },
+  {
+   "shot": "P1S11",
+   "a": 973,
+   "b": 1081,
+   "t0": 0,
+   "t1": 108,
+   "line": "I think I just drew lunch."
+  },
+  {
+   "shot": "P1S12",
+   "a": 1081,
+   "b": 1202,
+   "t0": 0,
+   "t1": 121,
+   "line": "And that was the moment Noah discovered something extraordinary."
+  },
+  {
+   "shot": "P1S13",
+   "a": 1202,
+   "b": 1295,
+   "t0": 0,
+   "t1": 93,
+   "line": "Everything he drew could become real."
+  },
+  {
+   "shot": "P1S14",
+   "a": 1295,
+   "b": 1343,
+   "t0": 0,
+   "t1": 48,
+   "line": "At first he thought it was a joke."
+  },
+  {
+   "shot": "P1S15",
+   "a": 1343,
+   "b": 1422,
+   "t0": 0,
+   "t1": 79,
+   "line": "Maybe someone had placed the hamburger there to prank him,"
+  },
+  {
+   "shot": "P1S16",
+   "a": 1422,
+   "b": 1493,
+   "t0": 0,
+   "t1": 71,
+   "line": "but then he grabbed his pencil,"
+  },
+  {
+   "shot": "P1S17",
+   "a": 1493,
+   "b": 1549,
+   "t0": 0,
+   "t1": 56,
+   "line": "drew a small red ball,"
+  },
+  {
+   "shot": "P1S18",
+   "a": 1549,
+   "b": 1634,
+   "t0": 0,
+   "t1": 85,
+   "line": "and watched it roll right out of the notebook."
+  },
+  {
+   "shot": "P1S19",
+   "a": 1634,
+   "b": 1700,
+   "t0": 0,
+   "t1": 66,
+   "line": "Okay, that was impossible."
+  },
+  {
+   "shot": "P1S20",
+   "a": 1700,
+   "b": 1804,
+   "t0": 0,
+   "t1": 104,
+   "line": "So naturally he decided to test it."
+  },
+  {
+   "shot": "P1S21",
+   "a": 1804,
+   "b": 1893,
+   "t0": 0,
+   "t1": 89,
+   "line": "First, he drew a brand new smartphone."
+  },
+  {
+   "shot": "P1S22",
+   "a": 1893,
+   "b": 1947,
+   "t0": 0,
+   "t1": 54,
+   "line": "It appeared instantly."
+  },
+  {
+   "shot": "P1S23",
+   "a": 1947,
+   "b": 2039,
+   "t0": 0,
+   "t1": 92,
+   "line": "Then he drew a pair of expensive sneakers."
+  },
+  {
+   "shot": "P1S24",
+   "a": 2039,
+   "b": 2124,
+   "t0": 0,
+   "t1": 85,
+   "line": "They landed perfectly beside his desk."
+  },
+  {
+   "shot": "P1S25",
+   "a": 2124,
+   "b": 2252,
+   "t0": 0,
+   "t1": 128,
+   "line": "Next, he drew a little golden crown and placed it on his head."
+  },
+  {
+   "shot": "P1S26",
+   "a": 2252,
+   "b": 2294,
+   "t0": 0,
+   "t1": 42,
+   "line": "Your majesty,"
+  },
+  {
+   "shot": "P1S27",
+   "a": 2294,
+   "b": 2389,
+   "t0": 0,
+   "t1": 95,
+   "line": "the homework is due today."
+  },
+  {
+   "shot": "P1S28",
+   "a": 2389,
+   "b": 2468,
+   "t0": 0,
+   "t1": 79,
+   "line": "Noah looked at his teacher. Sorry,"
+  },
+  {
+   "shot": "P1S29",
+   "a": 2468,
+   "b": 2570,
+   "t0": 0,
+   "t1": 102,
+   "line": "citizens, your king needs a little more time."
+  },
+  {
+   "shot": "P1S30",
+   "a": 2570,
+   "b": 2692,
+   "t0": 0,
+   "t1": 122,
+   "line": "By lunch time, he had discovered that his drawings didn't just appear."
+  },
+  {
+   "shot": "P1S31",
+   "a": 2692,
+   "b": 2783,
+   "t0": 0,
+   "t1": 91,
+   "line": "They actually worked. A car could drive,"
+  },
+  {
+   "shot": "P1S32",
+   "a": 2783,
+   "b": 2836,
+   "t0": 0,
+   "t1": 53,
+   "line": "a watch could tell time."
+  },
+  {
+   "shot": "P1S33",
+   "a": 2836,
+   "b": 2933,
+   "t0": 0,
+   "t1": 97,
+   "line": "And the little dog he drew could bark in wag its tail."
+  },
+  {
+   "shot": "P1S34",
+   "a": 2933,
+   "b": 3010,
+   "t0": 0,
+   "t1": 77,
+   "line": "He even drew a tiny dinosaur."
+  },
+  {
+   "shot": "P1S35",
+   "a": 3010,
+   "b": 3092,
+   "t0": 0,
+   "t1": 82,
+   "line": "Unfortunately, he forgot to make it friendly."
+  },
+  {
+   "shot": "P1S36",
+   "a": 3092,
+   "b": 3236,
+   "t0": 0,
+   "t1": 144,
+   "line": "The dinosaur immediately chased him around the classroom while his classmates screamed and climbed"
+  },
+  {
+   "shot": "P1S37",
+   "a": 3236,
+   "b": 3287,
+   "t0": 0,
+   "t1": 51,
+   "line": "onto their desks."
+  },
+  {
+   "shot": "P1S38",
+   "a": 3287,
+   "b": 3349,
+   "t0": 0,
+   "t1": 62,
+   "line": "Why would you draw that?"
+  },
+  {
+   "shot": "P1S39",
+   "a": 3349,
+   "b": 3424,
+   "t0": 0,
+   "t1": 75,
+   "line": "I didn't think it would be this fast."
+  },
+  {
+   "shot": "P1S40",
+   "a": 3424,
+   "b": 3469,
+   "t0": 0,
+   "t1": 45,
+   "line": "After a few experiments,"
+  },
+  {
+   "shot": "P1S41",
+   "a": 3469,
+   "b": 3571,
+   "t0": 0,
+   "t1": 102,
+   "line": "Noah began to understand how powerful his ability was."
+  },
+  {
+   "shot": "P1S42",
+   "a": 3571,
+   "b": 3635,
+   "t0": 0,
+   "t1": 64,
+   "line": "The more detailed his drawings became,"
+  },
+  {
+   "shot": "P1S43",
+   "a": 3635,
+   "b": 3698,
+   "t0": 0,
+   "t1": 63,
+   "line": "the more realistic they appeared."
+  },
+  {
+   "shot": "P1S44",
+   "a": 3698,
+   "b": 3763,
+   "t0": 0,
+   "t1": 65,
+   "line": "A simple circle became a ball."
+  },
+  {
+   "shot": "P1S45",
+   "a": 3763,
+   "b": 3891,
+   "t0": 0,
+   "t1": 128,
+   "line": "But a carefully drawn bicycle became a fully functional bicycle."
+  },
+  {
+   "shot": "P1S46",
+   "a": 3891,
+   "b": 3998,
+   "t0": 0,
+   "t1": 107,
+   "line": "And soon Noah started using his new power to help people."
+  },
+  {
+   "shot": "P1S47",
+   "a": 3998,
+   "b": 4100,
+   "t0": 0,
+   "t1": 102,
+   "line": "When his best friend Ethan complained about walking to school every morning,"
+  },
+  {
+   "shot": "P1S48",
+   "a": 4100,
+   "b": 4192,
+   "t0": 0,
+   "t1": 92,
+   "line": "Noah drew him a brand new electric bicycle."
+  },
+  {
+   "shot": "P1S49",
+   "a": 4192,
+   "b": 4291,
+   "t0": 0,
+   "t1": 99,
+   "line": "When another classmate forgot her umbrella, he quickly drew one for her."
+  },
+  {
+   "shot": "P1S50",
+   "a": 4291,
+   "b": 4358,
+   "t0": 0,
+   "t1": 67,
+   "line": "And when Ethan lost a video game tournament,"
+  },
+  {
+   "shot": "P1S51",
+   "a": 4358,
+   "b": 4428,
+   "t0": 0,
+   "t1": 70,
+   "line": "Noah drew him a golden trophy. Bro,"
+  },
+  {
+   "shot": "P1S52",
+   "a": 4428,
+   "b": 4507,
+   "t0": 0,
+   "t1": 79,
+   "line": "you can't just draw me a trophy."
+  },
+  {
+   "shot": "P1S53",
+   "a": 4507,
+   "b": 4583,
+   "t0": 0,
+   "t1": 76,
+   "line": "Why not? You deserve one."
+  },
+  {
+   "shot": "P1S54",
+   "a": 4583,
+   "b": 4627,
+   "t0": 0,
+   "t1": 44,
+   "line": "For the first time,"
+  },
+  {
+   "shot": "P1S55",
+   "a": 4627,
+   "b": 4724,
+   "t0": 0,
+   "t1": 97,
+   "line": "Noah felt like he could make the world a better place."
+  },
+  {
+   "shot": "P1S56",
+   "a": 4724,
+   "b": 4802,
+   "t0": 0,
+   "t1": 78,
+   "line": "He wasn't just a student with a pencil anymore."
+  },
+  {
+   "shot": "P1S57",
+   "a": 4802,
+   "b": 4896,
+   "t0": 0,
+   "t1": 94,
+   "line": "He could create almost anything he imagined."
+  },
+  {
+   "shot": "P1S58",
+   "a": 4896,
+   "b": 4952,
+   "t0": 0,
+   "t1": 56,
+   "line": "But there was one problem."
+  },
+  {
+   "shot": "P1S59",
+   "a": 4952,
+   "b": 5151,
+   "t0": 0,
+   "t1": 199,
+   "line": "He had no idea what would happen if he drew something he couldn't control."
+  }
+ ],
+ "shots": [
+  {
+   "id": "P1S1",
+   "size": "story",
+   "key": 63,
+   "len": 126,
+   "first": 0,
+   "line": "What if everything you drew became real?",
+   "note": "What If Everything You Drew Became Real?"
+  },
+  {
+   "id": "P1S2",
+   "size": "story",
+   "key": 51,
+   "len": 103,
+   "first": 126,
+   "line": "At exactly 10 .15 on a Monday morning,",
+   "note": "At exactly 10:15 on a Monday morning, Noah drew a hamburger in the corner of his math notebook. Five seconds l"
+  },
+  {
+   "id": "P1S3",
+   "size": "story",
+   "key": 55,
+   "len": 111,
+   "first": 229,
+   "line": "Noah drew a hamburger in the corner of his math notebook.",
+   "note": "At exactly 10:15 on a Monday morning, Noah drew a hamburger in the corner of his math notebook. Five seconds l"
+  },
+  {
+   "id": "P1S4",
+   "size": "story",
+   "key": 37,
+   "len": 75,
+   "first": 340,
+   "line": "Five seconds later, a giant,",
+   "note": "At exactly 10:15 on a Monday morning, Noah drew a hamburger in the corner of his math notebook. Five seconds l"
+  },
+  {
+   "id": "P1S5",
+   "size": "story",
+   "key": 54,
+   "len": 108,
+   "first": 415,
+   "line": "freshly cooked hamburger appeared on his desk.",
+   "note": "At exactly 10:15 on a Monday morning, Noah drew a hamburger in the corner of his math notebook. Five seconds l"
+  },
+  {
+   "id": "P1S6",
+   "size": "story",
+   "key": 41,
+   "len": 82,
+   "first": 523,
+   "line": "He stared at it. His classmates stared at it.",
+   "note": "He stared at it. His classmates stared at it. Even his teacher stopped talking."
+  },
+  {
+   "id": "P1S7",
+   "size": "story",
+   "key": 39,
+   "len": 78,
+   "first": 605,
+   "line": "Even his teacher stopped talking.",
+   "note": "He stared at it. His classmates stared at it. Even his teacher stopped talking."
+  },
+  {
+   "id": "P1S8",
+   "size": "story",
+   "key": 60,
+   "len": 120,
+   "first": 683,
+   "line": "Noah, why is there a hamburger on your desk?",
+   "note": "\"NOAH! WHY IS THERE A HAMBURGER ON YOUR DESK?\""
+  },
+  {
+   "id": "P1S9",
+   "size": "story",
+   "key": 42,
+   "len": 84,
+   "first": 803,
+   "line": "Noah slowly looked down at his notebook.",
+   "note": "Noah slowly looked down at his notebook, then back at the hamburger."
+  },
+  {
+   "id": "P1S10",
+   "size": "story",
+   "key": 43,
+   "len": 86,
+   "first": 887,
+   "line": "Then, back at the hamburger,",
+   "note": "Noah slowly looked down at his notebook, then back at the hamburger."
+  },
+  {
+   "id": "P1S11",
+   "size": "story",
+   "key": 54,
+   "len": 108,
+   "first": 973,
+   "line": "I think I just drew lunch.",
+   "note": "\"I... I think I just drew lunch.\""
+  },
+  {
+   "id": "P1S12",
+   "size": "story",
+   "key": 60,
+   "len": 121,
+   "first": 1081,
+   "line": "And that was the moment Noah discovered something extraordinary.",
+   "note": "And that was the moment Noah discovered something extraordinary. Everything he drew could become real."
+  },
+  {
+   "id": "P1S13",
+   "size": "story",
+   "key": 46,
+   "len": 93,
+   "first": 1202,
+   "line": "Everything he drew could become real.",
+   "note": "And that was the moment Noah discovered something extraordinary. Everything he drew could become real."
+  },
+  {
+   "id": "P1S14",
+   "size": "story",
+   "key": 24,
+   "len": 48,
+   "first": 1295,
+   "line": "At first he thought it was a joke.",
+   "note": "At first, he thought it was a joke. Maybe someone had placed the hamburger there to prank him. But then he gra"
+  },
+  {
+   "id": "P1S15",
+   "size": "story",
+   "key": 39,
+   "len": 79,
+   "first": 1343,
+   "line": "Maybe someone had placed the hamburger there to prank him,",
+   "note": "At first, he thought it was a joke. Maybe someone had placed the hamburger there to prank him. But then he gra"
+  },
+  {
+   "id": "P1S16",
+   "size": "story",
+   "key": 35,
+   "len": 71,
+   "first": 1422,
+   "line": "but then he grabbed his pencil,",
+   "note": "At first, he thought it was a joke. Maybe someone had placed the hamburger there to prank him. But then he gra"
+  },
+  {
+   "id": "P1S17",
+   "size": "story",
+   "key": 28,
+   "len": 56,
+   "first": 1493,
+   "line": "drew a small red ball,",
+   "note": "At first, he thought it was a joke. Maybe someone had placed the hamburger there to prank him. But then he gra"
+  },
+  {
+   "id": "P1S18",
+   "size": "story",
+   "key": 42,
+   "len": 85,
+   "first": 1549,
+   "line": "and watched it roll right out of the notebook.",
+   "note": "At first, he thought it was a joke. Maybe someone had placed the hamburger there to prank him. But then he gra"
+  },
+  {
+   "id": "P1S19",
+   "size": "story",
+   "key": 33,
+   "len": 66,
+   "first": 1634,
+   "line": "Okay, that was impossible.",
+   "note": "Okay. That was impossible. / So naturally, he decided to test it."
+  },
+  {
+   "id": "P1S20",
+   "size": "story",
+   "key": 52,
+   "len": 104,
+   "first": 1700,
+   "line": "So naturally he decided to test it.",
+   "note": "So naturally, he decided to test it."
+  },
+  {
+   "id": "P1S21",
+   "size": "story",
+   "key": 44,
+   "len": 89,
+   "first": 1804,
+   "line": "First, he drew a brand new smartphone.",
+   "note": "First, he drew a brand-new smartphone. It appeared instantly. Then he drew a pair of expensive sneakers. They "
+  },
+  {
+   "id": "P1S22",
+   "size": "story",
+   "key": 27,
+   "len": 54,
+   "first": 1893,
+   "line": "It appeared instantly.",
+   "note": "First, he drew a brand-new smartphone. It appeared instantly. Then he drew a pair of expensive sneakers. They "
+  },
+  {
+   "id": "P1S23",
+   "size": "story",
+   "key": 46,
+   "len": 92,
+   "first": 1947,
+   "line": "Then he drew a pair of expensive sneakers.",
+   "note": "First, he drew a brand-new smartphone. It appeared instantly. Then he drew a pair of expensive sneakers. They "
+  },
+  {
+   "id": "P1S24",
+   "size": "story",
+   "key": 42,
+   "len": 85,
+   "first": 2039,
+   "line": "They landed perfectly beside his desk.",
+   "note": "First, he drew a brand-new smartphone. It appeared instantly. Then he drew a pair of expensive sneakers. They "
+  },
+  {
+   "id": "P1S25",
+   "size": "story",
+   "key": 64,
+   "len": 128,
+   "first": 2124,
+   "line": "Next, he drew a little golden crown and placed it on his head.",
+   "note": "First, he drew a brand-new smartphone. It appeared instantly. Then he drew a pair of expensive sneakers. They "
+  },
+  {
+   "id": "P1S26",
+   "size": "story",
+   "key": 21,
+   "len": 42,
+   "first": 2252,
+   "line": "Your majesty,",
+   "note": "\"Your Majesty, the homework is due today.\""
+  },
+  {
+   "id": "P1S27",
+   "size": "story",
+   "key": 47,
+   "len": 95,
+   "first": 2294,
+   "line": "the homework is due today.",
+   "note": "\"Your Majesty, the homework is due today.\""
+  },
+  {
+   "id": "P1S28",
+   "size": "story",
+   "key": 39,
+   "len": 79,
+   "first": 2389,
+   "line": "Noah looked at his teacher. Sorry,",
+   "note": "Noah looked at his teacher. / \"Sorry, citizens. Your king needs a little more time.\""
+  },
+  {
+   "id": "P1S29",
+   "size": "story",
+   "key": 51,
+   "len": 102,
+   "first": 2468,
+   "line": "citizens, your king needs a little more time.",
+   "note": "\"Sorry, citizens. Your king needs a little more time.\" / By lunchtime, he had discovered that his drawings did"
+  },
+  {
+   "id": "P1S30",
+   "size": "story",
+   "key": 61,
+   "len": 122,
+   "first": 2570,
+   "line": "By lunch time, he had discovered that his drawings didn't just appear.",
+   "note": "By lunchtime, he had discovered that his drawings didn't just appear. They actually worked. A car could drive,"
+  },
+  {
+   "id": "P1S31",
+   "size": "story",
+   "key": 45,
+   "len": 91,
+   "first": 2692,
+   "line": "They actually worked. A car could drive,",
+   "note": "By lunchtime, he had discovered that his drawings didn't just appear. They actually worked. A car could drive,"
+  },
+  {
+   "id": "P1S32",
+   "size": "story",
+   "key": 26,
+   "len": 53,
+   "first": 2783,
+   "line": "a watch could tell time.",
+   "note": "By lunchtime, he had discovered that his drawings didn't just appear. They actually worked. A car could drive,"
+  },
+  {
+   "id": "P1S33",
+   "size": "story",
+   "key": 48,
+   "len": 97,
+   "first": 2836,
+   "line": "And the little dog he drew could bark in wag its tail.",
+   "note": "By lunchtime, he had discovered that his drawings didn't just appear. They actually worked. A car could drive,"
+  },
+  {
+   "id": "P1S34",
+   "size": "story",
+   "key": 38,
+   "len": 77,
+   "first": 2933,
+   "line": "He even drew a tiny dinosaur.",
+   "note": "He even drew a tiny dinosaur."
+  },
+  {
+   "id": "P1S35",
+   "size": "story",
+   "key": 41,
+   "len": 82,
+   "first": 3010,
+   "line": "Unfortunately, he forgot to make it friendly.",
+   "note": "Unfortunately, he forgot to make it friendly."
+  },
+  {
+   "id": "P1S36",
+   "size": "story",
+   "key": 72,
+   "len": 144,
+   "first": 3092,
+   "line": "The dinosaur immediately chased him around the classroom while his classmates screamed and climbed",
+   "note": "The dinosaur immediately chased him around the classroom while his classmates screamed and climbed onto their "
+  },
+  {
+   "id": "P1S37",
+   "size": "story",
+   "key": 25,
+   "len": 51,
+   "first": 3236,
+   "line": "onto their desks.",
+   "note": "The dinosaur immediately chased him around the classroom while his classmates screamed and climbed onto their "
+  },
+  {
+   "id": "P1S38",
+   "size": "story",
+   "key": 31,
+   "len": 62,
+   "first": 3287,
+   "line": "Why would you draw that?",
+   "note": "\"WHY WOULD YOU DRAW THAT?\""
+  },
+  {
+   "id": "P1S39",
+   "size": "story",
+   "key": 37,
+   "len": 75,
+   "first": 3349,
+   "line": "I didn't think it would be this fast.",
+   "note": "\"I DIDN'T THINK IT WOULD BE THIS FAST!\""
+  },
+  {
+   "id": "P1S40",
+   "size": "story",
+   "key": 22,
+   "len": 45,
+   "first": 3424,
+   "line": "After a few experiments,",
+   "note": "After a few experiments, Noah began to understand how powerful his ability was. The more detailed his drawings"
+  },
+  {
+   "id": "P1S41",
+   "size": "story",
+   "key": 51,
+   "len": 102,
+   "first": 3469,
+   "line": "Noah began to understand how powerful his ability was.",
+   "note": "After a few experiments, Noah began to understand how powerful his ability was. The more detailed his drawings"
+  },
+  {
+   "id": "P1S42",
+   "size": "story",
+   "key": 32,
+   "len": 64,
+   "first": 3571,
+   "line": "The more detailed his drawings became,",
+   "note": "After a few experiments, Noah began to understand how powerful his ability was. The more detailed his drawings"
+  },
+  {
+   "id": "P1S43",
+   "size": "story",
+   "key": 31,
+   "len": 63,
+   "first": 3635,
+   "line": "the more realistic they appeared.",
+   "note": "After a few experiments, Noah began to understand how powerful his ability was. The more detailed his drawings"
+  },
+  {
+   "id": "P1S44",
+   "size": "story",
+   "key": 32,
+   "len": 65,
+   "first": 3698,
+   "line": "A simple circle became a ball.",
+   "note": "After a few experiments, Noah began to understand how powerful his ability was. The more detailed his drawings"
+  },
+  {
+   "id": "P1S45",
+   "size": "story",
+   "key": 64,
+   "len": 128,
+   "first": 3763,
+   "line": "But a carefully drawn bicycle became a fully functional bicycle.",
+   "note": "After a few experiments, Noah began to understand how powerful his ability was. The more detailed his drawings"
+  },
+  {
+   "id": "P1S46",
+   "size": "story",
+   "key": 53,
+   "len": 107,
+   "first": 3891,
+   "line": "And soon Noah started using his new power to help people.",
+   "note": "And soon, Noah started using his new power to help people."
+  },
+  {
+   "id": "P1S47",
+   "size": "story",
+   "key": 51,
+   "len": 102,
+   "first": 3998,
+   "line": "When his best friend Ethan complained about walking to school every morning,",
+   "note": "When his best friend Ethan complained about walking to school every morning, Noah drew him a brand-new electri"
+  },
+  {
+   "id": "P1S48",
+   "size": "story",
+   "key": 46,
+   "len": 92,
+   "first": 4100,
+   "line": "Noah drew him a brand new electric bicycle.",
+   "note": "When his best friend Ethan complained about walking to school every morning, Noah drew him a brand-new electri"
+  },
+  {
+   "id": "P1S49",
+   "size": "story",
+   "key": 49,
+   "len": 99,
+   "first": 4192,
+   "line": "When another classmate forgot her umbrella, he quickly drew one for her.",
+   "note": "When another classmate forgot her umbrella, he quickly drew one for her."
+  },
+  {
+   "id": "P1S50",
+   "size": "story",
+   "key": 33,
+   "len": 67,
+   "first": 4291,
+   "line": "And when Ethan lost a video game tournament,",
+   "note": "And when Ethan lost a video game tournament, Noah drew him a golden trophy."
+  },
+  {
+   "id": "P1S51",
+   "size": "story",
+   "key": 35,
+   "len": 70,
+   "first": 4358,
+   "line": "Noah drew him a golden trophy. Bro,",
+   "note": "And when Ethan lost a video game tournament, Noah drew him a golden trophy. / \"Bro, you can't just draw me a t"
+  },
+  {
+   "id": "P1S52",
+   "size": "story",
+   "key": 39,
+   "len": 79,
+   "first": 4428,
+   "line": "you can't just draw me a trophy.",
+   "note": "\"Bro, you can't just draw me a trophy!\""
+  },
+  {
+   "id": "P1S53",
+   "size": "story",
+   "key": 38,
+   "len": 76,
+   "first": 4507,
+   "line": "Why not? You deserve one.",
+   "note": "\"Why not? You deserve one.\""
+  },
+  {
+   "id": "P1S54",
+   "size": "story",
+   "key": 22,
+   "len": 44,
+   "first": 4583,
+   "line": "For the first time,",
+   "note": "For the first time, Noah felt like he could make the world a better place. He wasn't just a student with a pen"
+  },
+  {
+   "id": "P1S55",
+   "size": "story",
+   "key": 48,
+   "len": 97,
+   "first": 4627,
+   "line": "Noah felt like he could make the world a better place.",
+   "note": "For the first time, Noah felt like he could make the world a better place. He wasn't just a student with a pen"
+  },
+  {
+   "id": "P1S56",
+   "size": "story",
+   "key": 39,
+   "len": 78,
+   "first": 4724,
+   "line": "He wasn't just a student with a pencil anymore.",
+   "note": "For the first time, Noah felt like he could make the world a better place. He wasn't just a student with a pen"
+  },
+  {
+   "id": "P1S57",
+   "size": "story",
+   "key": 47,
+   "len": 94,
+   "first": 4802,
+   "line": "He could create almost anything he imagined.",
+   "note": "For the first time, Noah felt like he could make the world a better place. He wasn't just a student with a pen"
+  },
+  {
+   "id": "P1S58",
+   "size": "story",
+   "key": 28,
+   "len": 56,
+   "first": 4896,
+   "line": "But there was one problem.",
+   "note": "But there was one problem."
+  },
+  {
+   "id": "P1S59",
+   "size": "story",
+   "key": 99,
+   "len": 199,
+   "first": 4952,
+   "line": "He had no idea what would happen if he drew something he couldn't control.",
+   "note": "He had no idea what would happen if he drew something he couldn't control."
+  }
+ ],
+ "fx": [],
+ "audio": {
+  "voice": "drawings/voice.wav"
+ }
+}
