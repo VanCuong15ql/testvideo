@@ -1012,6 +1012,11 @@
  ],
  "fx": [],
  "audio": {
-  "voice": "drawings/voice.wav"
+  "voice": "drawings/voice.wav",
+  "sfx": "drawings/sfx.wav",
+  "voiceVol": 0.7552,
+  "sfxVol": 0.8,
+  "music": "drawings/music.wav",
+  "musicVol": 0.1875
  }
 }

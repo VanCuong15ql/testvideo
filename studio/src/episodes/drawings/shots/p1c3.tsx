@@ -12,7 +12,7 @@ import * as K from './common';
 
 const {
   NOAH, TEACHER, Cls, Note, Pencil, Hamburger, PhoneD, Sneakers, Crown,
-  CarD, WatchD, DogD, SchoolDesk, Tag, Toast, FloatLabel, Glow, AppearFx, Materialize,
+  CarD, WatchD, DogD, SchoolDesk, Tag, Toast, FloatLabel, Glow, AppearFx, Materialize, Say,
   camT, kf, clamp, lerp, easeOut, easeInOut, easeIn, backOut, settle, spring,
   poseAt, faceAt, joints, toWorld, idle, NOAH_POS, NOAH_DESK, TEACHER_POS,
 } = K;
@@ -163,7 +163,7 @@ export const P1S26: React.FC<ShotProps> = ({ t, len }) => {
     { f: len, p: { armL: { a: 44, b: -22 } } }, // beckoning dismissively
   ]);
   const headTop = toWorld({ ...pose }, { x: 0, y: K.HEAD.y - 66 });
-  return (
+  return (<>
     <g transform={camT(kf(t, [[0, 980], [len, 962]]), kf(t, [[0, 600], [len, 586]]), kf(t, [[0, 1.75], [len, 1.9]]))}>
       <Cls t={t + 260} />
       <Hamburger x={NOAH_DESK} y={692} s={1.3} steam={t} />
@@ -182,7 +182,8 @@ export const P1S26: React.FC<ShotProps> = ({ t, len }) => {
       <Toast x={960} y={190} t={t} text="ORDER!" hold={30} />
       <Glow x={960} y={580} r={440} o={0.13} />
     </g>
-  );
+    <Say x={1380} y={170} tx={1440} ty={565} text="Your Majesty, the homework is due today." at={2} until={44} t={t} fs={40} maxW={520} />
+  </>);
 };
 
 // P1S27: same line, reverse angle — over Noah's shoulder at the teacher, crown in foreground
@@ -192,7 +193,7 @@ export const P1S27: React.FC<ShotProps> = ({ t, len }) => {
     { f: len * 0.5, p: { armR: { a: 55, b: -24 }, headTilt: 8 } }, // finger wag
     { f: len, p: { headTilt: 5 } },
   ]);
-  return (
+  return (<>
     <g transform={camT(kf(t, [[0, 1080], [len, 1065]]), kf(t, [[0, 610], [len, 598]]), kf(t, [[0, 1.8], [len, 1.95]]))}>
       <Cls t={t + 275} />
       {/* Noah's shoulder + crown, big blurred-ish foreground left */}
@@ -203,7 +204,9 @@ export const P1S27: React.FC<ShotProps> = ({ t, len }) => {
       <K.Hero look={TEACHER} pose={{ ...teach, ...faceAt(t, [[0, 'worried'], [len * 0.5, 'shock']]) }} rimId="rimR" shadow={0.45} />
       <Glow x={1100} y={580} r={420} o={0.12} />
     </g>
-  );
+    {/* same line continues from S26 — bubble already settled */}
+    <Say x={1330} y={180} tx={1200} ty={540} text="Your Majesty, the homework is due today." at={-20} until={50} t={t} fs={40} maxW={520} />
+  </>);
 };
 
 // P1S28: "Noah looked at his teacher" — Noah turns, double-take; then "Sorry, citizens..."
@@ -215,7 +218,7 @@ export const P1S28: React.FC<ShotProps> = ({ t, len }) => {
     { f: len, p: { headTilt: 2 } },
   ]);
   const headTop = toWorld({ ...pose }, { x: 0, y: K.HEAD.y - 66 });
-  return (
+  return (<>
     <g transform={camT(kf(t, [[0, 980], [len, 962]]), kf(t, [[0, 600], [len, 585]]), kf(t, [[0, 1.75], [len, 1.88]]))}>
       <Cls t={t + 290} />
       <Hamburger x={NOAH_DESK} y={692} s={1.3} steam={t} />
@@ -226,7 +229,9 @@ export const P1S28: React.FC<ShotProps> = ({ t, len }) => {
       <K.Hero look={TEACHER} pose={idle(1190, 728, TEACHER_POS.s * 1.0, { yaw: -0.4, look: -0.4, ...faceAt(t, [[0, 'shock']]) })} rimId="rimR" shadow={0.45} />
       <Glow x={960} y={580} r={440} o={0.12} />
     </g>
-  );
+    {/* "Sorry, citizens. Your king needs a little more time." starts at t~55 */}
+    <Say x={780} y={290} tx={975} ty={650} text="Sorry, citizens. Your king needs a little more time." at={55} until={79} t={t} fs={38} maxW={560} />
+  </>);
 };
 
 // P1S29: "Sorry, citizens. Your king needs a little more time." — royal wave, teacher facepalms-ish
@@ -238,7 +243,7 @@ export const P1S29: React.FC<ShotProps> = ({ t, len }) => {
     { f: len, p: { headTilt: -4 } },
   ]);
   const headTop = toWorld({ ...pose }, { x: 0, y: K.HEAD.y - 66 });
-  return (
+  return (<>
     <g transform={camT(kf(t, [[0, 960], [len, 940]]), kf(t, [[0, 590], [len, 575]]), kf(t, [[0, 1.8], [len, 2.0]]))}>
       <Cls t={t + 305} />
       <Hamburger x={NOAH_DESK} y={692} s={1.3} steam={t} />
@@ -254,7 +259,9 @@ export const P1S29: React.FC<ShotProps> = ({ t, len }) => {
       {/* crown glint */}
       <Glow x={NOAH_POS.x} y={540} r={300} o={0.14} />
     </g>
-  );
+    {/* same line continues from S28 — bubble already settled */}
+    <Say x={800} y={285} tx={1015} ty={665} text="Sorry, citizens. Your king needs a little more time." at={-20} until={85} t={t} fs={38} maxW={560} />
+  </>);
 };
 
 // P1S30: "by lunchtime... they actually worked" — three mini-demos in one wide: car rolls, watch ticks, dog wags

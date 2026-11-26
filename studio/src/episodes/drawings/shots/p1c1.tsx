@@ -14,7 +14,7 @@ import * as K from './common';
 
 const {
   NOAH, ETHAN, TEACHER, Cls, MathBoard, Note, Pencil, Hamburger, SchoolDesk,
-  TitleCard, Tag, Toast, FloatLabel, Glow, AppearFx, Materialize,
+  TitleCard, Tag, Toast, FloatLabel, Glow, AppearFx, Materialize, Say,
   camT, kf, clamp, lerp, easeOut, easeInOut, backOut, settle, spring, shake, rnd,
   poseAt, faceAt, joints, toWorld, idle, NOAH_POS, NOAH_DESK, TEACHER_POS,
 } = K;
@@ -186,7 +186,7 @@ export const P1S8: React.FC<ShotProps> = ({ t, len }) => {
     { f: len, p: { armR: { a: 145, b: -8 } } },
   ]);
   const sh = shake(t, 6, 10, 6);
-  return (
+  return (<>
     <g transform={camT(kf(t, [[0, 1120], [len, 1100]]), kf(t, [[0, 640], [len, 622]]), kf(t, [[0, 1.35], [len, 1.5]]))}>
       <Cls t={t + 90} />
       <g transform={`translate(${sh.x} ${sh.y})`}>
@@ -198,7 +198,8 @@ export const P1S8: React.FC<ShotProps> = ({ t, len }) => {
       ))}
       <Toast x={960} y={180} t={t} text="ORDER IN THE COURT!" hold={30} />
     </g>
-  );
+    <Say x={1500} y={150} tx={1055} ty={460} text="NOAH! WHY IS THERE A HAMBURGER ON YOUR DESK?" at={2} until={92} t={t} fs={40} maxW={540} />
+  </>);
 };
 
 // P1S9: Noah looks down at the notebook, then back at the burger — the guilty beat

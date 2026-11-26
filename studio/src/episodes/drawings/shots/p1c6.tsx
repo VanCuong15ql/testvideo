@@ -12,7 +12,7 @@ import * as K from './common';
 
 const {
   NOAH, TEACHER, ETHAN, CLASSMATE, Cls, Note, Pencil, Hamburger, BikeD, UmbrellaD, TrophyD, DogD, Crown,
-  SchoolDesk, Tag, Toast, FloatLabel, Glow, AppearFx, Materialize,
+  SchoolDesk, Tag, Toast, FloatLabel, Glow, AppearFx, Materialize, Say,
   camT, kf, clamp, lerp, easeOut, easeInOut, backOut, settle,
   poseAt, faceAt, joints, toWorld, idle, NOAH_POS, NOAH_DESK, ETHAN_POS,
 } = K;
@@ -35,7 +35,7 @@ export const P1S51: React.FC<ShotProps> = ({ t, len }) => {
   const j = joints(eth);
   const lH = toWorld(eth, j.armL.end);
   const rH = toWorld(eth, j.armR.end);
-  return (
+  return (<>
     <g transform={camT(kf(t, [[0, 960], [len, 942]]), kf(t, [[0, 620], [len, 600]]), kf(t, [[0, 1.6], [len, 1.8]]))}>
       <Cls t={t + 585} />
       {/* trophy hovering between Ethan's hands */}
@@ -45,7 +45,9 @@ export const P1S51: React.FC<ShotProps> = ({ t, len }) => {
       <NoahAtDesk pose={idle(NOAH_POS.x, NOAH_POS.y, NOAH_POS.s, { yaw: 0.4, look: 0.6, ...faceAt(t, [[0, 'smug'], [len * 0.6, 'happy']]) })} t={t} />
       <Glow x={960} y={600} r={460} o={0.13} />
     </g>
-  );
+    {/* "Bro, you can't just draw me a trophy!" starts ~t53 */}
+    <Say x={570} y={275} tx={568} ty={620} text="Bro, you can't just draw me a trophy!" at={53} until={72} t={t} fs={40} maxW={540} />
+  </>);
 };
 
 const Backpack: React.FC<{ eth: { x: number; y: number }; t: number }> = ({ eth, t }) => (
@@ -66,7 +68,7 @@ export const P1S52: React.FC<ShotProps> = ({ t, len }) => {
   ]);
   const j = joints(eth);
   const mid = { x: (toWorld(eth, j.armL.end).x + toWorld(eth, j.armR.end).x) / 2, y: (toWorld(eth, j.armL.end).y + toWorld(eth, j.armR.end).y) / 2 - 40 };
-  return (
+  return (<>
     <g transform={camT(kf(t, [[0, 900], [len, 885]]), kf(t, [[0, 630], [len, 614]]), kf(t, [[0, 1.8], [len, 2.0]]))}>
       <Cls t={t + 600} />
       <TrophyD x={mid.x} y={mid.y} s={0.75} t={t} />
@@ -76,7 +78,9 @@ export const P1S52: React.FC<ShotProps> = ({ t, len }) => {
       <NoahAtDesk pose={idle(NOAH_POS.x, NOAH_POS.y, NOAH_POS.s, { yaw: -0.2, look: -0.5, ...faceAt(t, [[0, 'smug']]) })} t={t} />
       <Glow x={900} y={560} r={420} o={0.12} />
     </g>
-  );
+    {/* same line continues from S51 — bubble already settled */}
+    <Say x={650} y={260} tx={632} ty={590} text="Bro, you can't just draw me a trophy!" at={-20} until={60} t={t} fs={40} maxW={540} />
+  </>);
 };
 
 // P1S53: "Why not? You deserve one." — Noah warm, almost proud
@@ -86,7 +90,7 @@ export const P1S53: React.FC<ShotProps> = ({ t, len }) => {
     { f: len * 0.5, p: { headTilt: -2, look: 0.55, armL: { a: 30, b: -30 } } },
     { f: len, p: { headTilt: 0 } },
   ]);
-  return (
+  return (<>
     <g transform={camT(kf(t, [[0, 960], [len, 942]]), kf(t, [[0, 590], [len, 574]]), kf(t, [[0, 2.0], [len, 2.15]]))}>
       <Cls t={t + 615} />
       <Hamburger x={NOAH_DESK} y={692} s={1.35} steam={t} />
@@ -97,7 +101,8 @@ export const P1S53: React.FC<ShotProps> = ({ t, len }) => {
       <K.Hero look={ETHAN} pose={idle(ETHAN_POS.x + 30, ETHAN_POS.y, ETHAN_POS.s, { yaw: 0.5, look: -0.4, headTilt: 4, ...faceAt(t, [[0, 'worried'], [len * 0.6, 'happy']]) })} rimId="rimR" shadow={0.4} />
       <Glow x={NOAH_POS.x} y={540} r={420} o={0.15} />
     </g>
-  );
+    <Say x={1060} y={310} tx={1018} ty={685} text="Why not? You deserve one." at={2} until={55} t={t} fs={40} maxW={440} />
+  </>);
 };
 
 // P1S54: "he could make the world a better place" — warm glow blooms around Noah

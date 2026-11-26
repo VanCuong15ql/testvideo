@@ -540,5 +540,434 @@
    "shot": "P1S59",
    "at": "s:165.06"
   }
- ]
+ ],
+ "sound": {
+  "clips": {
+   "title_boom": [
+    "a cinematic whoosh rising into a deep boom impact",
+    1.6
+   ],
+   "sparkle": [
+    "a short bright magical sparkle twinkle, cartoon",
+    0.8
+   ],
+   "paste_pop": [
+    "a bright magical pop as an object appears out of thin air, a soft shimmering whoosh into a pop",
+    0.7
+   ],
+   "pop": [
+    "a cartoon speech bubble pop, short and bright",
+    0.5
+   ],
+   "gasp": [
+    "two young people gasping in surprise at the same moment, cartoon, short",
+    0.8
+   ],
+   "laugh": [
+    "a small classroom of kids bursting out laughing",
+    1.6
+   ],
+   "class_murmur": [
+    "a quiet classroom murmur, kids whispering, chairs shuffling",
+    2.0
+   ],
+   "ding": [
+    "a correct answer ding, bright bell chime",
+    0.8
+   ],
+   "drone_hit": [
+    "a dark ominous low drone hit, deep cinematic horror sting",
+    2.6
+   ],
+   "fall_whoosh": [
+    "a small object falling fast through the air, short soft whoosh",
+    0.6
+   ],
+   "land": [
+    "a heavy body landing flat on a wooden floor, cartoon thud",
+    0.6
+   ],
+   "step": [
+    "a single sneaker footstep on a wooden stair, close",
+    0.5
+   ],
+   "room_tone": [
+    "quiet indoor room tone in the evening, faint distant city hum, no voices",
+    12.5
+   ],
+   "music": [
+    "playful quirky cartoon background music, pizzicato strings, glockenspiel and soft bass, light and curious, 110 bpm, no vocals",
+    17.0
+   ],
+   "pencil": [
+    "a pencil scribbling quickly on paper, sketching lines, short",
+    1.2
+   ],
+   "bark": [
+    "a small friendly dog barking twice then a happy yip, cartoon",
+    1.0
+   ],
+   "roar": [
+    "a tiny cartoon dinosaur roaring goofily, comedic, short",
+    1.2
+   ],
+   "car": [
+    "a small cartoon car engine puttering and driving away, short",
+    2.0
+   ]
+  },
+  "events": [
+   [
+    "P1S1",
+    "title_boom",
+    0.7
+   ],
+   [
+    "P1S5+32",
+    "paste_pop",
+    0.8
+   ],
+   [
+    "P1S13+20",
+    "paste_pop",
+    0.5
+   ],
+   [
+    "P1S17+34",
+    "paste_pop",
+    0.6
+   ],
+   [
+    "P1S18+15",
+    "fall_whoosh",
+    0.4
+   ],
+   [
+    "P1S21+49",
+    "paste_pop",
+    0.65
+   ],
+   [
+    "P1S23+15",
+    "fall_whoosh",
+    0.5
+   ],
+   [
+    "P1S24+10",
+    "land",
+    0.45
+   ],
+   [
+    "P1S25+45",
+    "paste_pop",
+    0.7
+   ],
+   [
+    "P1S25+52",
+    "ding",
+    0.4
+   ],
+   [
+    "P1S30",
+    "car",
+    0.3
+   ],
+   [
+    "P1S33+15",
+    "bark",
+    0.45
+   ],
+   [
+    "P1S33+62",
+    "bark",
+    0.4
+   ],
+   [
+    "P1S34+42",
+    "paste_pop",
+    0.6
+   ],
+   [
+    "P1S35+35",
+    "roar",
+    0.5
+   ],
+   [
+    "P1S36",
+    "gasp",
+    0.5
+   ],
+   [
+    "P1S44+33",
+    "paste_pop",
+    0.55
+   ],
+   [
+    "P1S45+51",
+    "paste_pop",
+    0.65
+   ],
+   [
+    "P1S48+41",
+    "paste_pop",
+    0.6
+   ],
+   [
+    "P1S49+50",
+    "paste_pop",
+    0.55
+   ],
+   [
+    "P1S50+34",
+    "paste_pop",
+    0.6
+   ],
+   [
+    "P1S50+40",
+    "sparkle",
+    0.3
+   ],
+   [
+    "P1S59+10",
+    "drone_hit",
+    0.5
+   ]
+  ],
+  "repeats": [
+   {
+    "at": "P1S1",
+    "clip": "room_tone",
+    "n": 15,
+    "every": 350,
+    "gain": [
+     0.05,
+     0.05
+    ],
+    "pitch": [
+     1,
+     1
+    ],
+    "note": "classroom ambience bed under the whole episode (12.5 s clip tiled)"
+   },
+   {
+    "at": "P1S3+5",
+    "clip": "pencil",
+    "n": 5,
+    "every": 10,
+    "gain": [
+     0.1,
+     0.16
+    ],
+    "pitch": [
+     0.9,
+     1.1
+    ],
+    "note": "Noah doodles the hamburger"
+   },
+   {
+    "at": "P1S16",
+    "clip": "pencil",
+    "n": 4,
+    "every": 9,
+    "gain": [
+     0.1,
+     0.16
+    ],
+    "pitch": [
+     0.9,
+     1.1
+    ],
+    "note": "pencil out for the red ball test"
+   },
+   {
+    "at": "P1S21",
+    "clip": "pencil",
+    "n": 4,
+    "every": 10,
+    "gain": [
+     0.1,
+     0.16
+    ],
+    "pitch": [
+     0.9,
+     1.1
+    ],
+    "note": "phone doodle"
+   },
+   {
+    "at": "P1S23",
+    "clip": "pencil",
+    "n": 4,
+    "every": 9,
+    "gain": [
+     0.1,
+     0.16
+    ],
+    "pitch": [
+     0.9,
+     1.1
+    ],
+    "note": "sneakers doodle"
+   },
+   {
+    "at": "P1S25",
+    "clip": "pencil",
+    "n": 5,
+    "every": 10,
+    "gain": [
+     0.1,
+     0.16
+    ],
+    "pitch": [
+     0.9,
+     1.1
+    ],
+    "note": "crown doodle"
+   },
+   {
+    "at": "P1S34",
+    "clip": "pencil",
+    "n": 4,
+    "every": 9,
+    "gain": [
+     0.1,
+     0.16
+    ],
+    "pitch": [
+     0.9,
+     1.1
+    ],
+    "note": "dinosaur doodle"
+   },
+   {
+    "at": "P1S36+5",
+    "clip": "step",
+    "n": 8,
+    "every": 11,
+    "gain": [
+     0.12,
+     0.2
+    ],
+    "pitch": [
+     0.9,
+     1.15
+    ],
+    "note": "Noah sprinting (S36)"
+   },
+   {
+    "at": "P1S37",
+    "clip": "step",
+    "n": 5,
+    "every": 12,
+    "gain": [
+     0.12,
+     0.2
+    ],
+    "pitch": [
+     0.9,
+     1.15
+    ],
+    "note": "chase continues (S37)"
+   },
+   {
+    "at": "P1S38",
+    "clip": "step",
+    "n": 4,
+    "every": 12,
+    "gain": [
+     0.1,
+     0.18
+    ],
+    "pitch": [
+     0.9,
+     1.15
+    ],
+    "note": "chase tail (S38-39)"
+   },
+   {
+    "at": "P1S44",
+    "clip": "pencil",
+    "n": 3,
+    "every": 9,
+    "gain": [
+     0.1,
+     0.16
+    ],
+    "pitch": [
+     0.9,
+     1.1
+    ],
+    "note": "ball doodle"
+   },
+   {
+    "at": "P1S45",
+    "clip": "pencil",
+    "n": 5,
+    "every": 10,
+    "gain": [
+     0.1,
+     0.16
+    ],
+    "pitch": [
+     0.9,
+     1.1
+    ],
+    "note": "bicycle doodle"
+   },
+   {
+    "at": "P1S48",
+    "clip": "pencil",
+    "n": 4,
+    "every": 9,
+    "gain": [
+     0.1,
+     0.16
+    ],
+    "pitch": [
+     0.9,
+     1.1
+    ],
+    "note": "electric bike doodle"
+   },
+   {
+    "at": "P1S49",
+    "clip": "pencil",
+    "n": 4,
+    "every": 9,
+    "gain": [
+     0.1,
+     0.16
+    ],
+    "pitch": [
+     0.9,
+     1.1
+    ],
+    "note": "umbrella doodle"
+   },
+   {
+    "at": "P1S50",
+    "clip": "pencil",
+    "n": 3,
+    "every": 9,
+    "gain": [
+     0.1,
+     0.16
+    ],
+    "pitch": [
+     0.9,
+     1.1
+    ],
+    "note": "trophy doodle"
+   }
+  ],
+  "music": {
+   "clip": "music",
+   "from": "P1S46",
+   "until": "P1S58"
+  },
+  "levels": {
+   "sfx_lu": -1.5,
+   "music_lu": -9.5
+  }
+ }
 }

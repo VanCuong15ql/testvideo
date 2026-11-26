@@ -12,7 +12,7 @@ import * as K from './common';
 
 const {
   NOAH, TEACHER, ETHAN, Cls, Hamburger, WatchD, DogD, Dino, BikeD,
-  SchoolDesk, Tag, Toast, Glow, AppearFx, Materialize, ShadowFigure,
+  SchoolDesk, Tag, Toast, Glow, AppearFx, Materialize, ShadowFigure, Say,
   camT, kf, clamp, lerp, easeOut, easeInOut, backOut,
   poseAt, faceAt, joints, toWorld, idle, NOAH_POS, NOAH_DESK, TEACHER_POS, ETHAN_POS,
 } = K;
@@ -212,7 +212,7 @@ export const P1S38: React.FC<ShotProps> = ({ t, len }) => {
     { f: 30, p: { armR: { a: 142, b: -6 } } },
     { f: len, p: { armR: { a: 150, b: -8 } } },
   ]);
-  return (
+  return (<>
     <g transform={camT(kf(t, [[0, 1100], [len, 1080]]), kf(t, [[0, 630], [len, 615]]), kf(t, [[0, 1.4], [len, 1.55]]))}>
       <Cls t={t + 420} />
       <K.Hero look={TEACHER} pose={{ ...teach, ...faceAt(t, [[0, 'shock'], [12, 'worried']]) }} rimId="rimR" shadow={0.5} />
@@ -221,7 +221,8 @@ export const P1S38: React.FC<ShotProps> = ({ t, len }) => {
       <Toast x={960} y={170} t={t} text="DETAINMENT!" hold={30} />
       <Glow x={1100} y={560} r={420} o={0.12} />
     </g>
-  );
+    <Say x={1400} y={160} tx={1080} ty={495} text="WHY WOULD YOU DRAW THAT?" at={2} until={44} t={t} fs={42} maxW={480} />
+  </>);
 };
 
 // P1S39: "I didn't think it would be this fast!" — Noah yelling mid-run, dino right behind
@@ -229,8 +230,11 @@ export const P1S39: React.FC<ShotProps> = ({ t, len }) => {
   const nx = lerp(500, 1150, easeInOut(clamp(t / len)));
   const dx = nx - 210;
   const pose = runPose(nx, 835, 1.0, t * 0.62 + 4);
-  return (
-    <g transform={camT(kf(t, [[0, 980], [len, 950]]), kf(t, [[0, 620], [len, 600]]), kf(t, [[0, 1.6], [len, 1.8]]))}>
+  // bubble chases Noah's head across the frame (he sprints right)
+  const ccx = kf(t, [[0, 980], [len, 950]]), ccy = kf(t, [[0, 620], [len, 600]]), ccs = kf(t, [[0, 1.6], [len, 1.8]]);
+  const hx = (nx - ccx) * ccs + 960, hy = (659 - ccy) * ccs + 540;
+  return (<>
+    <g transform={camT(ccx, ccy, ccs)}>
       <Cls t={t + 435} laugh={1} />
       <Dino x={dx} y={1020} s={1.15} t={t * 1.5} flip={1} mood="snarl" />
       <K.Hero look={NOAH} pose={{ ...pose, ...faceAt(t, [[0, 'shock'], [len * 0.4, 'worried']]) }} rimId="rimR" shadow={0.5} />
@@ -240,7 +244,8 @@ export const P1S39: React.FC<ShotProps> = ({ t, len }) => {
       ))}
       <Glow x={900} y={580} r={460} o={0.12} />
     </g>
-  );
+    <Say x={hx + 150} y={hy - 330} tx={hx} ty={hy} text="I DIDN'T THINK IT WOULD BE THIS FAST!" at={2} until={54} t={t} fs={40} maxW={520} />
+  </>);
 };
 
 // P1S40: "the more detailed, the more realistic" — schematic compare: circle vs ball, line-bike vs real bike

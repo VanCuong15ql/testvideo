@@ -195,6 +195,56 @@ export const Materialize: React.FC<{ x: number; y: number; p: number; s?: number
   );
 };
 
+// ---------- speech bubbles: quoted lines get a hand-drawn comic bubble ----------
+/** A comic speech bubble in screen space (the 1920x1080 frame). Render it as a SIBLING after the
+ *  shot's camT group so it doesn't inherit the camera. x,y = bubble centre, tx,ty = tail tip on the
+ *  speaker's head (screen px), at/until = shot-clock frames, t = current shot clock. */
+export const Say: React.FC<{
+  x: number; y: number; tx: number; ty: number;
+  text: string; at: number; until: number; t: number;
+  maxW?: number; fs?: number;
+}> = ({ x, y, tx, ty, text, at, until, t, maxW = 520, fs = 44 }) => {
+  if (t < at - 2 || t > until + 2) return null;
+  const pin = spring(t - at, { damping: 11, stiffness: 170 });
+  const pout = clamp((until - t) / 8);
+  const sc = Math.max(0.01, pin * (0.72 + 0.28 * pout));
+  const o = clamp(pin * 2.5) * pout;
+  // greedy word wrap on an estimated glyph width
+  const cw = fs * 0.52;
+  const per = Math.max(8, Math.floor(maxW / cw));
+  const lines: string[] = [];
+  let cur = '';
+  for (const w of text.split(/\s+/)) {
+    if (cur && (cur + ' ' + w).length > per) { lines.push(cur); cur = w; } else { cur = cur ? cur + ' ' + w : w; }
+  }
+  if (cur) lines.push(cur);
+  const w = Math.max(...lines.map((l) => l.length)) * cw + fs * 1.15;
+  const h = lines.length * fs * 1.26 + fs * 1.0;
+  const wob = t - at > 14 ? Math.sin((t - at) * 0.16) * 1.3 + Math.sin((t - at) * 0.061) * 0.7 : 0;
+  // tail on the edge facing the speaker, tip slightly short of the head
+  const down = ty > y;
+  const ey = down ? h / 2 : -h / 2;
+  const lx = clamp(tx - x, -w * 0.3, w * 0.3);
+  const tipx = tx - x;
+  const tipy = ty - y - (down ? 8 : -8);
+  const bw = fs * 0.62;
+  const tail = `M ${lx - bw} ${ey} L ${tipx} ${tipy} L ${lx + bw} ${ey} Q ${lx} ${ey + (down ? fs * 0.34 : -fs * 0.34)} ${lx - bw} ${ey} Z`;
+  return (
+    <g transform={`translate(${x} ${y}) rotate(${wob}) scale(${sc})`} opacity={o}>
+      <path d={tail} fill={PAPER} stroke={INK} strokeWidth={4.5} strokeLinejoin="round" />
+      <rect x={-w / 2} y={-h / 2} width={w} height={h} rx={fs * 0.55} fill={PAPER} stroke={INK} strokeWidth={5} />
+      {/* sketchy second pass, keeps the hand-drawn feel */}
+      <rect x={-w / 2 + 3} y={-h / 2 + 2} width={w - 6} height={h - 4} rx={fs * 0.5} fill="none" stroke={INK} strokeWidth={1.6} opacity={0.25} />
+      {lines.map((l, i) => (
+        <text key={i} x={0} y={-h / 2 + fs * 0.98 + i * fs * 1.26} textAnchor="middle"
+          fontFamily="'Segoe Print','Comic Sans MS',cursive" fontSize={fs} fontWeight={700} fill={INK}>
+          {l}
+        </text>
+      ))}
+    </g>
+  );
+};
+
 // ---------- the notebook and pencil ----------
 /** Noah's math notebook, closed or open; `doodle` draws the tiny hamburger he sketched. */
 export const Note: React.FC<{ x: number; y: number; s?: number; rot?: number; open?: number; doodle?: boolean; t?: number }> = ({ x, y, s = 1, rot = 0, open = 0, doodle = false, t = 0 }) => (

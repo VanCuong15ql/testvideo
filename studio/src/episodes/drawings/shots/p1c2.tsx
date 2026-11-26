@@ -11,7 +11,7 @@ import * as K from './common';
 
 const {
   NOAH, ETHAN, TEACHER, Cls, Note, Pencil, Hamburger, RedBall, SchoolDesk,
-  Tag, Toast, FloatLabel, Glow, AppearFx, Materialize,
+  Tag, Toast, FloatLabel, Glow, AppearFx, Materialize, Say,
   camT, kf, clamp, lerp, easeOut, easeInOut, backOut, settle, spring,
   poseAt, faceAt, joints, toWorld, idle, NOAH_POS, NOAH_DESK,
 } = K;
@@ -31,7 +31,7 @@ export const P1S11: React.FC<ShotProps> = ({ t, len }) => {
     { f: len * 0.4, p: { headTilt: 3, look: -0.1 } },
     { f: len, p: { armR: { a: 26, b: -14 }, headTilt: 1 } },
   ]);
-  return (
+  return (<>
     <g transform={camT(kf(t, [[0, 940], [len, 925]]), kf(t, [[0, 610], [len, 600]]), kf(t, [[0, 1.9], [len, 2.02]]))}>
       <Cls t={t + 110} />
       <Hamburger x={NOAH_DESK} y={690} s={1.5} steam={t} />
@@ -42,7 +42,8 @@ export const P1S11: React.FC<ShotProps> = ({ t, len }) => {
       ))}
       <Glow x={980} y={600} r={420} o={0.12} />
     </g>
-  );
+    <Say x={1100} y={315} tx={978} ty={625} text="I... I think I just drew lunch." at={2} until={80} t={t} fs={42} maxW={460} />
+  </>);
 };
 
 // P1S12: the moment of discovery — eyes widen, glow pulse, notebook + burger in frame
