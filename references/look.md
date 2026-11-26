@@ -56,7 +56,16 @@ or any other tool.
 ## On-screen text
 
 Almost none. The title card, and small UI readouts in the mono face (a timer, a chip naming the power, a short
-label). No speech bubbles, no "HA HA", no captions of the voice.
+label). No "HA HA", no captions of the narration.
+
+Exception: when the script carries **quoted dialogue** the voice performs (the long-story format), comic speech
+bubbles are the genre's equivalent of lip-sync — the voice gives no visual cue for who is talking. Time each bubble
+to its word span in `words.json` (see `references/voice.md`), draw it in screen space as a sibling *after* the
+shot's `camT` group so it doesn't inherit the camera, and point the tail at the speaker's head. The `Say`
+component in `src/episodes/drawings/shots/common.tsx` is the working example: paper fill, ink stroke, spring pop,
+idle wobble, greedy word wrap, fade before the line ends. For a line that crosses a cut, show the bubble already
+settled (`at` negative) in the next shot rather than re-popping it. If a speaker moves across frame, compute the
+tail tip per frame from the same pose/camera math the shot uses.
 
 ## The storyboard self-check (step 5)
 

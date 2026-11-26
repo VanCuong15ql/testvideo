@@ -60,6 +60,14 @@ good enough for shot cues; if a cue lands off, nudge the cue word rather than th
 Then the same post-pass as before: `gaps` in `episode.json` tighten pauses to the genre's pace, writing
 `public/<slug>/voice.wav` and the final `words.json`. Check the length stays 15-25 s.
 
+**Dialogue vs narration.** In the long-story format (`voice_story.py`), `turns_pN.json` marks *every* turn
+`"Narrator"` — the `you`/`other` tags in `speakers.json` only pick the delivery `style`, not a different voice
+(only `emma` gets the second voice). So the voice can't tell you which words are spoken lines. To time dialogue
+(for speech bubbles or lip-sync-ish acting), re-parse the quoted spans out of `script/<slug>/pageN.txt` and align
+them sequentially against `words.json` — narration words sit between them, so match each quote's full word
+sequence and skip forward. Watch for Whisper merging stutters ("I... I" can come back as one "I"); fix those few
+by hand from the word list.
+
 ## Costs
 
 Gemini TTS on the free tier costs **no credits** — it spends daily quota instead. Report the quota used

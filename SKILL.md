@@ -180,7 +180,11 @@ python <skill>/scripts/sfx.py <slug> --dry
 python <skill>/scripts/sfx.py <slug>
 ```
 
-It prints the credits it used and sets the stem volumes in `timeline.json`. Then check that every word stays clear:
+It prints the credits it used and sets the stem volumes in `timeline.json`. Clips are cached in
+`studio/library/sfx/` by name + prompt + length: copy a clip entry **verbatim** (prompt and seconds) from another
+episode's `sound` section and it costs nothing — check `sfx.py <slug> --dry` first to see what's already cached.
+Only write new prompts for sounds the library lacks. Run it from the `studio/` folder (it errors from anywhere
+else). Then check that every word stays clear:
 
 ```bash
 python <skill>/scripts/mixcheck.py <slug>
@@ -215,14 +219,35 @@ What the workflow needs committed: `episode.json`, `shots.tsx`, `index.tsx`, `ti
 timing files `voice.py`/`plan.py` write — without them there is nothing to render). `public/<slug>/` audio stays
 gitignored.
 
-How it works: a `plan` job reads `timeline.json`'s `total` frames and splits them into up to 32 chunks of ~1500 frames;
-a `render` matrix job runs `npx remotion render --frames=start-end` per chunk in parallel; a `join` job concatenates
-the parts with `ffmpeg -f concat -c copy` into `<slug>-raw.mp4` and runs `master.py <slug> --skip-render`, which
-detects the missing audio stream and copy-throughs to `-final.mp4` without loudnorm. Standard `ubuntu-latest` runners
-are free on public repos, so chunk count is the lever: render wall-clock is roughly `frames / (chunks × ~4-core
-throughput)` plus ~4 min of setup per job. Use Python 3.12 in CI — 3.9 is not published for the current Ubuntu
+How it works: a `plan` job reads `timeline.json`'s `total` frames and derives the job count from a per-job frame
+budget (~320 frames, the sweet spot between fixed setup cost and parallelism; capped at 20 jobs and never below
+200 frames/chunk — see the `plan` step in the workflow for the exact rule); a `render` matrix job runs
+`npx remotion render --frames=start-end` per chunk in parallel; a `join` job concatenates the parts with
+`ffmpeg -f concat -c copy` into `<slug>-raw.mp4` and runs `master.py <slug> --skip-render`, which detects the
+missing audio stream and copy-throughs to `-final.mp4` without loudnorm. The workflow also sets a concurrency
+group with `cancel-in-progress`, so pushing again supersedes a stale render instead of doubling it. Standard
+`ubuntu-latest` runners are free on public repos; render wall-clock is roughly `frames / (jobs × ~4-core
+throughput)` plus ~2 min of setup per job. Use Python 3.12 in CI — 3.9 is not published for the current Ubuntu
 runner image. `GEMINI_API_KEY*`/`ELEVENLABS_API_KEY*` secrets are only needed if a workflow step calls the APIs;
 this one doesn't.
+
+**Finishing the audio locally.** The artifacts are `what-if-<slug>-video` (`<slug>-final.mp4`, silent) and
+`what-if-<slug>` (`report.json`). The artifact API needs a token even on public repos — download with the same
+credential git push uses. Then rebuild the exact mix `sfx.py` set up in `timeline.json` (`audio.voiceVol`,
+`sfxVol`, `musicVol`), lay it on the silent video and loudnorm:
+
+```bash
+cd studio
+ffmpeg -i public/<slug>/voice.wav -i public/<slug>/sfx.wav -i public/<slug>/music.wav \
+  -filter_complex "[0:a]volume=<voiceVol>[v];[1:a]volume=<sfxVol>[s];[2:a]volume=<musicVol>[m];[v][s][m]amix=inputs=3:duration=longest:normalize=0[a]" \
+  -map "[a]" -ar 44100 -ac 1 out/<slug>/mix.wav
+ffmpeg -i out/<slug>/ci/video/<slug>-final.mp4 -i out/<slug>/mix.wav \
+  -map 0:v -map 1:a -c:v copy -c:a aac -b:a 256k -movflags +faststart out/<slug>/<slug>-raw.mp4
+python ../scripts/master.py <slug> --skip-render   # loudnorms to -14 LUFS, writes <slug>-final.mp4
+```
+
+Skip the stems that don't exist (voice-only page: just `voice.wav`). Do **not** use `-shortest` — the voice is
+shorter than the video and it would cut the tail.
 
 ## Where an episode lives
 
