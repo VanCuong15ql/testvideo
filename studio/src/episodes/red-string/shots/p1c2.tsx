@@ -31,7 +31,7 @@ export const P1S11: React.FC<ShotProps> = ({ t, len }) => {
     { f: len, p: { armR: { a: 42, b: -22 }, look: -0.2, headTilt: 1 } },
   ]);
   return (
-    <g transform={camT(kf(t, [[0, 1050], [len * 0.6, 1030], [len, 1010]]), kf(t, [[0, 580], [len, 565]]), kf(t, [[0, 1.5], [len, 1.65]]))}>
+    <g transform={camT(kf(t, [[0, 1050], [len * 0.6, 1030], [len, 1010]]), kf(t, [[0, 580], [len, 565]]), kf(t, [[0, 1.5], [len, 1.5]]))}>
       <DawnRoom t={t} dawn={0.85} />
       <AlexStand pose={{ ...pose, ...faceAt(t, [[0, 'neutral'], [len * 0.8, 'tired']]) }} t={t} />
       {/* shirt half-buttoned: a few buttons + open collar */}
@@ -53,7 +53,7 @@ export const P1S12: React.FC<ShotProps> = ({ t, len }) => {
   ]);
   const fp = pinky({ ...pose }, 'L');
   return (
-    <g transform={camT(kf(t, [[0, 1080], [len, 1070]]), kf(t, [[0, 700], [len, 695]]), kf(t, [[0, 2.6], [len, 2.85]]))}>
+    <g transform={camT(kf(t, [[0, 1080], [len, 1070]]), kf(t, [[0, 700], [len, 695]]), kf(t, [[0, 2.6], [len, 2.6]]))}>
       <DawnRoom t={t} dawn={0.85} />
       <AlexStand pose={pose} t={t} />
       {/* the thread in macro: a thin red coil around the pinky, catching dawn light */}
@@ -77,7 +77,7 @@ export const P1S13: React.FC<ShotProps> = ({ t, len }) => {
   ]);
   const fp = pinky({ ...pose }, 'L');
   return (
-    <g transform={camT(kf(t, [[0, 1020], [len, 1000]]), kf(t, [[0, 560], [len, 548]]), kf(t, [[0, 1.7], [len, 1.85]]))}>
+    <g transform={camT(kf(t, [[0, 1020], [len, 1000]]), kf(t, [[0, 560], [len, 548]]), kf(t, [[0, 1.7], [len, 1.7]]))}>
       <DawnRoom t={t} dawn={0.9} />
       <AlexStand pose={{ ...pose, ...faceAt(t, [[0, 'neutral'], [len * 0.5, 'worried']]) }} t={t} />
       {/* hand lifted into the window light: thread glows against the sky */}
@@ -103,7 +103,7 @@ export const P1S14: React.FC<ShotProps> = ({ t, len }) => {
   const fp = pinky({ ...pose }, 'L');
   const pull = easeOut(clamp((t - len * 0.35) / 12));
   return (
-    <g transform={camT(kf(t, [[0, 1000], [len, 985]]), kf(t, [[0, 545], [len, 535]]), kf(t, [[0, 1.8], [len, 1.95]]))}>
+    <g transform={camT(kf(t, [[0, 1000], [len, 985]]), kf(t, [[0, 545], [len, 535]]), kf(t, [[0, 1.8], [len, 1.8]]))}>
       <DawnRoom t={t} dawn={0.9} />
       <AlexStand pose={{ ...pose, ...faceAt(t, [[0, 'neutral'], [len * 0.6, 'worried']]) }} t={t} />
       {/* the thread stretches then just... hangs there. shrug lines */}
@@ -124,7 +124,7 @@ export const P1S15: React.FC<ShotProps> = ({ t, len }) => {
   const rp = toWorld({ ...pose }, joints({ ...pose }).armR.end);
   const snip = clamp((t - len * 0.6) / 10);
   return (
-    <g transform={camT(kf(t, [[0, 990], [len, 975]]), kf(t, [[0, 535], [len, 525]]), kf(t, [[0, 1.9], [len, 2.05]]))}>
+    <g transform={camT(kf(t, [[0, 990], [len, 975]]), kf(t, [[0, 535], [len, 525]]), kf(t, [[0, 1.9], [len, 1.9]]))}>
       <DawnRoom t={t} dawn={0.9} />
       <AlexStand pose={{ ...pose, ...faceAt(t, [[0, 'neutral'], [len * 0.6, 'worried']]) }} t={t} />
       {/* scissors in his right hand, closing on the thread */}
@@ -148,7 +148,7 @@ export const P1S16: React.FC<ShotProps> = ({ t, len }) => {
   const rp = toWorld({ ...pose }, joints({ ...pose }).armR.end);
   const snip = clamp((t - len * 0.45) / 8);
   return (
-    <g transform={camT(kf(t, [[0, 980], [len, 965]]), kf(t, [[0, 525], [len, 515]]), kf(t, [[0, 2.0], [len, 2.15]]))}>
+    <g transform={camT(kf(t, [[0, 980], [len, 965]]), kf(t, [[0, 525], [len, 515]]), kf(t, [[0, 2.0], [len, 2.0]]))}>
       <DawnRoom t={t} dawn={0.9} />
       <AlexStand pose={{ ...pose, ...faceAt(t, [[0, 'neutral'], [len * 0.5, 'shock'], [len * 0.8, 'worried']]) }} t={t} />
       <g transform={`translate(${rp.x} ${rp.y})`}>
@@ -192,7 +192,7 @@ export const P1S18: React.FC<ShotProps> = ({ t, len }) => {
     { f: len, p: { look: -0.75 } },
   ]);
   return (
-    <g transform={camT(kf(t, [[0, 1030], [len, 1010]]), kf(t, [[0, 540], [len, 530]]), kf(t, [[0, 1.6], [len, 1.8]]))}>
+    <g transform={camT(kf(t, [[0, 1030], [len, 1010]]), kf(t, [[0, 540], [len, 530]]), kf(t, [[0, 1.6], [len, 1.6]]))}>
       <DawnRoom t={t} dawn={0.9} />
       {/* door swung open a crack, red glow spilling out */}
       <g>
@@ -216,7 +216,7 @@ export const P1S19: React.FC<ShotProps> = ({ t, len }) => {
     { f: len, p: { headTilt: 0 } },
   ]);
   return (<>
-    <g transform={camT(kf(t, [[0, 1040], [len, 1020]]), kf(t, [[0, 530], [len, 520]]), kf(t, [[0, 1.7], [len, 1.85]]))}>
+    <g transform={camT(kf(t, [[0, 1040], [len, 1020]]), kf(t, [[0, 530], [len, 520]]), kf(t, [[0, 1.7], [len, 1.7]]))}>
       <DawnRoom t={t} dawn={0.9} />
       <AlexStand pose={{ ...pose, ...faceAt(t, [[0, 'shock'], [len * 0.5, 'worried']]) }} t={t} />
       <RedString x1={pinky({ ...pose }, 'L').x} y1={pinky({ ...pose }, 'L').y} x2={300} y2={620} slack={0.1} glow={0.95} pulse={0.5} t={t} width={4} />
@@ -233,7 +233,7 @@ export const P1S20: React.FC<ShotProps> = ({ t, len }) => {
   const pose = walkPose(px, t * 0.5, 880, 0.95, { look: -0.6, expr: 'worried' }, -1);
   const fp = pinky({ ...pose }, 'L');
   return (
-    <g transform={camT(kf(t, [[0, 1030], [len, 880]]), kf(t, [[0, 540], [len, 520]]), kf(t, [[0, 1.6], [len, 1.9]]))}>
+    <g transform={camT(kf(t, [[0, 1030], [len, 880]]), kf(t, [[0, 540], [len, 520]]), kf(t, [[0, 1.6], [len, 1.6]]))}>
       <DawnRoom t={t} dawn={0.95} />
       {/* door opening as he reaches it */}
       <rect x={40} y={240} width={190} height={620} fill="#2E2438" opacity={enter} transform={`translate(${enter * 90} 0)`} />

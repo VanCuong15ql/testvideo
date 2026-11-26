@@ -33,7 +33,7 @@ export const P1S21: React.FC<ShotProps> = ({ t, len }) => {
     { f: len, p: { look: -0.55 } },
   ]);
   return (
-    <g transform={camT(kf(t, [[0, 960], [len, 950]]), kf(t, [[0, 560], [len, 545]]), kf(t, [[0, 1.35], [len, 1.5]]))}>
+    <g transform={camT(kf(t, [[0, 960], [len, 950]]), kf(t, [[0, 560], [len, 545]]), kf(t, [[0, 1.35], [len, 1.35]]))}>
       <Gate t={t} />
       {/* Maya by the right pillar, hands in pockets-ish */}
       <K.Hero look={MAYA} pose={{ ...maya, ...faceAt(t, [[0, 'neutral'], [len * 0.5, 'worried']]) }} rimId="rimR" shadow={0.55} />
@@ -58,7 +58,7 @@ export const P1S22: React.FC<ShotProps> = ({ t, len }) => {
     { f: len, p: { look: 0.1 } },
   ]);
   return (
-    <g transform={camT(kf(t, [[0, 1030], [len, 1010]]), kf(t, [[0, 560], [len, 548]]), kf(t, [[0, 1.55], [len, 1.7]]))}>
+    <g transform={camT(kf(t, [[0, 1030], [len, 1010]]), kf(t, [[0, 560], [len, 548]]), kf(t, [[0, 1.55], [len, 1.55]]))}>
       <Gate t={t} />
       <K.Hero look={MAYA} pose={{ ...maya, ...faceAt(t, [[0, 'neutral'], [len * 0.6, 'worried']]) }} rimId="rimR" shadow={0.55} />
       <K.Hero look={ALEX} pose={{ ...alex, ...faceAt(t, [[0, 'shock'], [len * 0.7, 'worried']]) }} rimId="rimR" shadow={0.55} />
@@ -76,7 +76,7 @@ export const P1S23: React.FC<ShotProps> = ({ t, len }) => {
     { f: len, p: { headTilt: 2 } },
   ]);
   return (
-    <g transform={camT(kf(t, [[0, 960], [len, 955]]), kf(t, [[0, 560], [len, 548]]), kf(t, [[0, 1.9], [len, 2.1]]))}>
+    <g transform={camT(kf(t, [[0, 960], [len, 955]]), kf(t, [[0, 560], [len, 548]]), kf(t, [[0, 1.9], [len, 1.9]]))}>
       <Gate t={t} />
       {/* Maya big in frame, Alex a shoulder at left edge */}
       <g transform="translate(620 900) scale(0.9)" opacity={0.9}>
@@ -99,7 +99,7 @@ export const P1S24: React.FC<ShotProps> = ({ t, len }) => {
   ]);
   const fp = pinky({ ...maya }, 'R');
   return (
-    <g transform={camT(kf(t, [[0, 1000], [len, 990]]), kf(t, [[0, 640], [len, 630]]), kf(t, [[0, 3.0], [len, 3.2]]))}>
+    <g transform={camT(kf(t, [[0, 1000], [len, 990]]), kf(t, [[0, 640], [len, 630]]), kf(t, [[0, 3.0], [len, 3.0]]))}>
       <Gate t={t} />
       <K.Hero look={MAYA} pose={maya} rimId="rimR" shadow={0.6} />
       {/* knot on her pinky + thread leaving frame left toward Alex */}
@@ -123,7 +123,7 @@ export const P1S25: React.FC<ShotProps> = ({ t, len }) => {
   ]);
   const fp = pinky({ ...maya }, 'R');
   return (
-    <g transform={camT(kf(t, [[0, 960], [len, 955]]), kf(t, [[0, 555], [len, 545]]), kf(t, [[0, 1.85], [len, 2.0]]))}>
+    <g transform={camT(kf(t, [[0, 960], [len, 955]]), kf(t, [[0, 555], [len, 545]]), kf(t, [[0, 1.85], [len, 1.85]]))}>
       <Gate t={t} />
       <K.Hero look={MAYA} pose={{ ...maya, ...faceAt(t, [[0, 'neutral'], [len * 0.5, 'worried']]) }} rimId="rimR" shadow={0.6} />
       {/* her hand drops into frame bottom, pinky knot visible */}
@@ -145,7 +145,7 @@ export const P1S26: React.FC<ShotProps> = ({ t, len }) => {
   ]);
   const alex = idle(620, 900, 0.85, { yaw: 0.45, look: -0.6, expr: 'worried' });
   return (
-    <g transform={camT(kf(t, [[0, 960], [len, 950]]), kf(t, [[0, 555], [len, 545]]), kf(t, [[0, 1.8], [len, 1.95]]))}>
+    <g transform={camT(kf(t, [[0, 960], [len, 950]]), kf(t, [[0, 555], [len, 545]]), kf(t, [[0, 1.8], [len, 1.8]]))}>
       <Gate t={t} />
       <g transform="translate(620 900) scale(0.85)" opacity={0.9}>
         <K.Hero look={ALEX} pose={{ ...alex, ...faceAt(t, [[0, 'shock'], [len * 0.7, 'worried']]) }} rimId="rimR" shadow={0.4} />
@@ -167,7 +167,7 @@ export const P1S27: React.FC<ShotProps> = ({ t, len }) => {
   ]);
   const alex = idle(700, 900, 0.9, { yaw: 0.35, look: 0.55, expr: 'worried' });
   return (<>
-    <g transform={camT(kf(t, [[0, 1000], [len, 985]]), kf(t, [[0, 550], [len, 540]]), kf(t, [[0, 1.7], [len, 1.85]]))}>
+    <g transform={camT(kf(t, [[0, 1000], [len, 985]]), kf(t, [[0, 550], [len, 540]]), kf(t, [[0, 1.7], [len, 1.7]]))}>
       <Gate t={t} />
       <g transform="translate(700 900) scale(0.9)" opacity={0.9}>
         <K.Hero look={ALEX} pose={{ ...alex, ...faceAt(t, [[0, 'shock'], [len * 0.8, 'worried']]) }} rimId="rimR" shadow={0.4} />
@@ -191,7 +191,7 @@ export const P1S28: React.FC<ShotProps> = ({ t, len }) => {
     { f: len, p: { look: -0.35 } },
   ]);
   return (
-    <g transform={camT(kf(t, [[0, 1000], [len, 985]]), kf(t, [[0, 550], [len, 540]]), kf(t, [[0, 1.65], [len, 1.8]]))}>
+    <g transform={camT(kf(t, [[0, 1000], [len, 985]]), kf(t, [[0, 550], [len, 540]]), kf(t, [[0, 1.65], [len, 1.65]]))}>
       <Gate t={t} />
       <K.Hero look={MAYA} pose={{ ...maya, ...faceAt(t, [[0, 'neutral'], [len * 0.4, 'worried']]) }} rimId="rimR" shadow={0.55} />
       <K.Hero look={ALEX} pose={{ ...alex, ...faceAt(t, [[0, 'shock'], [len * 0.5, 'worried']]) }} rimId="rimR" shadow={0.55} />
@@ -210,7 +210,7 @@ export const P1S29: React.FC<ShotProps> = ({ t, len }) => {
   ]);
   const maya = idle(1240, 900, 1.05, { yaw: -0.2, look: -0.45 });
   return (
-    <g transform={camT(kf(t, [[0, 980], [len, 965]]), kf(t, [[0, 555], [len, 545]]), kf(t, [[0, 1.9], [len, 2.05]]))}>
+    <g transform={camT(kf(t, [[0, 980], [len, 965]]), kf(t, [[0, 555], [len, 545]]), kf(t, [[0, 1.9], [len, 1.9]]))}>
       <Gate t={t} />
       <K.Hero look={MAYA} pose={{ ...maya, ...faceAt(t, [[0, 'neutral']]) }} rimId="rimR" shadow={0.55} />
       <K.Hero look={ALEX} pose={{ ...alex, ...faceAt(t, [[0, 'shock'], [len * 0.7, 'worried']]) }} rimId="rimR" shadow={0.55} />
@@ -239,7 +239,7 @@ export const P1S30: React.FC<ShotProps> = ({ t, len }) => {
   const sh = shake(t, yankAt, 10, 12);
   const tight = clamp((t - yankAt) / 8);
   return (
-    <g transform={camT(kf(t, [[0, 1010], [yankAt, 1000], [len, 1060]]), kf(t, [[0, 555], [len, 545]]), kf(t, [[0, 1.7], [len, 1.95]]))}>
+    <g transform={camT(kf(t, [[0, 1010], [yankAt, 1000], [len, 1060]]), kf(t, [[0, 555], [len, 545]]), kf(t, [[0, 1.7], [len, 1.7]]))}>
       <Gate t={t} />
       <g transform={`translate(${sh.x} ${sh.y})`}>
         <K.Hero look={MAYA} pose={{ ...maya, ...faceAt(t, [[0, 'neutral'], [yankAt, 'shock']]) }} rimId="rimR" shadow={0.55} />

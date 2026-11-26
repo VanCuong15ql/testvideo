@@ -33,7 +33,7 @@ const AlexInBed: React.FC<{ pose: Pose; duvet?: boolean; t?: number }> = ({ pose
 
 // P1S1: title over the dark bedroom — slow push in, lamp flicker, dust
 export const P1S1: React.FC<ShotProps> = ({ t, len }) => (
-  <g transform={camT(kf(t, [[0, 940], [len * 0.6, 930], [len, 915]]), kf(t, [[0, 520], [len, 505]]), kf(t, [[0, 1.0], [len, 1.1]]))}>
+  <g transform={camT(kf(t, [[0, 940], [len * 0.6, 930], [len, 915]]), kf(t, [[0, 520], [len, 505]]), kf(t, [[0, 1.0], [len, 1.0]]))}>
     <Bedroom t={t + 20} clock="07:02" lamp={0.9} />
     <TitleCard t={t} lines={['WHAT IF A RED STRING', 'CONNECTED YOU TO YOUR CRUSH?']} accent="RED STRING" accentT={40} y={170} size={86} />
     <Glow x={960} y={480} r={620} o={0.1} />
@@ -52,7 +52,7 @@ export const P1S2: React.FC<ShotProps> = ({ t, len }) => {
   const fp = pinky({ ...pose }, 'L');
   const threadOn = clamp((t - len * 0.45) / 10);
   return (
-    <g transform={camT(kf(t, [[0, 980], [len * 0.6, 965], [len, 950]]), kf(t, [[0, 560], [len, 545]]), kf(t, [[0, 1.35], [len, 1.55]]))}>
+    <g transform={camT(kf(t, [[0, 980], [len * 0.6, 965], [len, 950]]), kf(t, [[0, 560], [len, 545]]), kf(t, [[0, 1.35], [len, 1.35]]))}>
       <Bedroom t={t + 30} clock="07:02" lamp={0.9} duvet={false} />
       <AlexInBed pose={pose} duvet={false} t={t} />
       {/* the red thread on his little finger, glinting into view */}
@@ -79,7 +79,7 @@ export const P1S3: React.FC<ShotProps> = ({ t, len }) => {
   const fp = pinky({ ...pose }, 'L');
   const stretch = 40 + pull * 200;
   return (
-    <g transform={camT(kf(t, [[0, 960], [len, 945]]), kf(t, [[0, 540], [len, 530]]), kf(t, [[0, 1.6], [len, 1.75]]))}>
+    <g transform={camT(kf(t, [[0, 960], [len, 945]]), kf(t, [[0, 540], [len, 530]]), kf(t, [[0, 1.6], [len, 1.6]]))}>
       <Bedroom t={t + 40} clock="07:02" lamp={0.9} duvet={false} />
       <AlexInBed pose={pose} duvet={false} t={t} />
       {/* the string stretched taut toward frame right, vibrating */}
@@ -106,7 +106,7 @@ export const P1S4: React.FC<ShotProps> = ({ t, len }) => {
   const rp = handR({ ...pose });
   const snip = clamp((t - len * 0.55) / 8);
   return (
-    <g transform={camT(kf(t, [[0, 900], [len, 880]]), kf(t, [[0, 500], [len, 490]]), kf(t, [[0, 2.2], [len, 2.4]]))}>
+    <g transform={camT(kf(t, [[0, 900], [len, 880]]), kf(t, [[0, 500], [len, 490]]), kf(t, [[0, 2.2], [len, 2.2]]))}>
       <Bedroom t={t + 50} clock="07:02" lamp={0.9} duvet={false} />
       <AlexInBed pose={pose} duvet={false} t={t} />
       {/* scissors hovering at the thread */}
@@ -131,7 +131,7 @@ export const P1S5: React.FC<ShotProps> = ({ t, len }) => {
   const scX = fp.x + 40 + cutP * 30;
   const scY = fp.y - 60 + Math.sin(cutP * Math.PI) * -14;
   return (
-    <g transform={camT(kf(t, [[0, 890], [len, 875]]), kf(t, [[0, 490], [len, 482]]), kf(t, [[0, 2.4], [len, 2.55]]))}>
+    <g transform={camT(kf(t, [[0, 890], [len, 875]]), kf(t, [[0, 490], [len, 482]]), kf(t, [[0, 2.4], [len, 2.4]]))}>
       <Bedroom t={t + 60} clock="07:02" lamp={0.9} duvet={false} />
       <AlexInBed pose={{ ...pose, ...faceAt(t, [[0, 'neutral'], [len * 0.45, 'shock']]) }} duvet={false} t={t} />
       {/* scissors slicing through — the thread does NOT break, it just slides along the blades */}
@@ -152,7 +152,7 @@ export const P1S6: React.FC<ShotProps> = ({ t, len }) => {
     { f: len, p: { headTilt: -1, look: 0.5 } },
   ]);
   return (
-    <g transform={camT(kf(t, [[0, 960], [len, 950]]), kf(t, [[0, 700], [len, 690]]), kf(t, [[0, 2.6], [len, 2.9]]))}>
+    <g transform={camT(kf(t, [[0, 960], [len, 950]]), kf(t, [[0, 700], [len, 690]]), kf(t, [[0, 2.6], [len, 2.6]]))}>
       {/* abstract dark bedroom hint */}
       <rect x={0} y={0} width={1920} height={1080} fill="#141126" />
       <rect x={0} y={760} width={1920} height={320} fill="#1E1834" />
@@ -169,7 +169,7 @@ export const P1S6: React.FC<ShotProps> = ({ t, len }) => {
 export const P1S7: React.FC<ShotProps> = ({ t, len }) => {
   const girlBob = Math.sin(t * 0.1) * 4;
   return (
-    <g transform={camT(kf(t, [[0, 1100], [len, 1050]]), kf(t, [[0, 560], [len, 540]]), kf(t, [[0, 1.3], [len, 1.5]]))}>
+    <g transform={camT(kf(t, [[0, 1100], [len, 1050]]), kf(t, [[0, 560], [len, 540]]), kf(t, [[0, 1.3], [len, 1.3]]))}>
       <rect x={0} y={0} width={1920} height={1080} fill="#141126" />
       {/* school hallway depth behind the reveal */}
       <HallwayHint t={t} />
@@ -208,7 +208,7 @@ export const P1S8: React.FC<ShotProps> = ({ t, len }) => {
   const pose = walkPose(runX, t * 0.55, 880, 1.0, { look: 0.4, expr: 'worried' }, -1);
   const fp = pinky({ ...pose }, 'R');
   return (
-    <g transform={camT(kf(t, [[0, 1000], [len, 980]]), kf(t, [[0, 560], [len, 550]]), kf(t, [[0, 1.5], [len, 1.62]]))}>
+    <g transform={camT(kf(t, [[0, 1000], [len, 980]]), kf(t, [[0, 560], [len, 550]]), kf(t, [[0, 1.5], [len, 1.5]]))}>
       <DawnRoom t={t} dawn={0.8} />
       {/* motion streaks */}
       {[0, 1, 2].map((i) => (
@@ -229,7 +229,7 @@ export const P1S9: React.FC<ShotProps> = ({ t, len }) => {
   const fp = pinky({ ...pose }, 'R');
   const taut = clamp((t - len * 0.55) / 12);
   return (
-    <g transform={camT(kf(t, [[0, 800], [len, 1000]]), kf(t, [[0, 540], [len, 560]]), kf(t, [[0, 1.45], [len, 1.7]]))}>
+    <g transform={camT(kf(t, [[0, 800], [len, 1000]]), kf(t, [[0, 540], [len, 560]]), kf(t, [[0, 1.45], [len, 1.45]]))}>
       <K.Gate t={t} />
       <K.Hero look={ALEX} pose={pose} rimId="rimR" shadow={0.55} />
       {/* the string now taut ahead — it IS the leash */}
@@ -243,7 +243,7 @@ export const P1S9: React.FC<ShotProps> = ({ t, len }) => {
 export const P1S10: React.FC<ShotProps> = ({ t, len }) => {
   const calFlip = easeInOut(clamp((t - len * 0.3) / 20));
   return (
-    <g transform={camT(kf(t, [[0, 960], [len, 950]]), kf(t, [[0, 540], [len, 530]]), kf(t, [[0, 1.2], [len, 1.35]]))}>
+    <g transform={camT(kf(t, [[0, 960], [len, 950]]), kf(t, [[0, 540], [len, 530]]), kf(t, [[0, 1.2], [len, 1.2]]))}>
       <DawnRoom t={t} dawn={0.5} />
       {/* big wall calendar flipping to MONDAY */}
       <g transform={`translate(960 480) scale(1.6) rotate(${-4 + calFlip * 3})`}>

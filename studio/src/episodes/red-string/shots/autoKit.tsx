@@ -129,8 +129,12 @@ export const Auto: React.FC<ShotProps & { spec: Spec }> = ({ t, len, spec }) => 
     return pose;
   });
 
-  // camera
-  const cam = spec.cam ?? [[0, 960, 545, 1.5], [1, 960, 545, 1.55]];
+  // camera: drop generic slow zoom drift (range < 0.35) — zoom only for motivated moves
+  const camIn = spec.cam ?? [[0, 960, 545, 1.5], [1, 960, 545, 1.55]];
+  const zs = camIn.map((c) => c[3]);
+  const cam = Math.max(...zs) - Math.min(...zs) < 0.35
+    ? camIn.map((c) => [c[0], c[1], c[2], zs[0]] as [number, number, number, number])
+    : camIn;
   const cx = kf(t, cam.map(([fr, x]) => [fr * len, x] as [number, number]));
   const cy = kf(t, cam.map(([fr, , y]) => [fr * len, y] as [number, number]));
   const cz = kf(t, cam.map(([fr, , , z]) => [fr * len, z] as [number, number]));

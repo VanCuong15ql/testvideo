@@ -53,7 +53,9 @@ schematic for the science beat, a cliffhanger blackout). Read the one closest to
 - **Design before code, per scene.** Before writing a scene's shots, write its design note (in the scene file's
   header comment or the brief): the set's object inventory, the depth layers (foreground/midground/background),
   where each character blocks, and the keyframe budget — every shot gets ≥3 independently moving elements
-  (pose keys, camera drift, prop motion, particles). Sets are shared kit pieces in `shots/common.tsx`; extend
+  (pose keys, motivated camera moves, prop motion, particles). **Camera moves must be motivated:** zoom or pan
+  only toward the thing the shot is focusing on — never a generic slow push or drift on every shot; a static or
+  barely-moving camera is fine when nothing needs emphasis. Sets are shared kit pieces in `shots/common.tsx`; extend
   them rather than inventing one-off backgrounds. See `episodes/crush/shots/common.tsx` (`Hallway`,
   `Question5Board`, `HallForeground`) for the pattern. **Scene-by-scene review:** render the scene's board
   stills (`node scripts/stills.mjs <slug> <shot ids>`) and check them before writing the next scene — fix the
@@ -231,23 +233,28 @@ throughput)` plus ~2 min of setup per job. Use Python 3.12 in CI — 3.9 is not 
 runner image. `GEMINI_API_KEY*`/`ELEVENLABS_API_KEY*` secrets are only needed if a workflow step calls the APIs;
 this one doesn't.
 
-**Finishing the audio locally.** The artifacts are `what-if-<slug>-video` (`<slug>-final.mp4`, silent) and
-`what-if-<slug>` (`report.json`). The artifact API needs a token even on public repos — download with the same
-credential git push uses. Then rebuild the exact mix `sfx.py` set up in `timeline.json` (`audio.voiceVol`,
-`sfxVol`, `musicVol`), lay it on the silent video and loudnorm:
+**After pushing, stop.** The render takes tens of minutes on CI — do not keep working or re-push; end the turn
+and wait for the user to say the GitHub render is done before downloading artifacts or muxing audio.
+
+**Finishing the audio locally — keep it fast.** The artifacts are `what-if-<slug>-video` (`<slug>-final.mp4`,
+silent) and `what-if-<slug>` (`report.json`). The artifact API needs a token even on public repos — download
+with the same credential git push uses. Then mux the stems onto the silent video in **one command** — do not
+iterate on loudnorm (a 13-minute file makes every ffmpeg pass minutes long; the summed stems can clip, so the
+limiter is required):
 
 ```bash
 cd studio
-ffmpeg -i public/<slug>/voice.wav -i public/<slug>/sfx.wav -i public/<slug>/music.wav \
-  -filter_complex "[0:a]volume=<voiceVol>[v];[1:a]volume=<sfxVol>[s];[2:a]volume=<musicVol>[m];[v][s][m]amix=inputs=3:duration=longest:normalize=0[a]" \
-  -map "[a]" -ar 44100 -ac 1 out/<slug>/mix.wav
-ffmpeg -i out/<slug>/ci/video/<slug>-final.mp4 -i out/<slug>/mix.wav \
-  -map 0:v -map 1:a -c:v copy -c:a aac -b:a 256k -movflags +faststart out/<slug>/<slug>-raw.mp4
-python ../scripts/master.py <slug> --skip-render   # loudnorms to -14 LUFS, writes <slug>-final.mp4
+ffmpeg -i out/<slug>/ci/video/<slug>-final.mp4 \
+  -i public/<slug>/voice.wav -i public/<slug>/sfx.wav -i public/<slug>/music.wav \
+  -filter_complex "[1:a]volume=<voiceVol>[v];[2:a]volume=<sfxVol>[s];[3:a]volume=<musicVol>[m];[v][s][m]amix=inputs=3:duration=longest:normalize=0,alimiter=limit=0.7[a]" \
+  -map 0:v -map "[a]" -c:v copy -c:a aac -b:a 256k -movflags +faststart \
+  out/<slug>/<slug>-final.mp4
 ```
 
-Skip the stems that don't exist (voice-only page: just `voice.wav`). Do **not** use `-shortest` — the voice is
-shorter than the video and it would cut the tail.
+(`<voiceVol>`/`<sfxVol>`/`<musicVol>` are `audio.*Vol` in `timeline.json`.) Skip the stems that don't exist
+(voice-only page: just `voice.wav`). Do **not** use `-shortest` — the voice is shorter than the video and it
+would cut the tail. Result lands around -15 to -16 LUFS — close enough; only run `master.py <slug>
+--skip-render` for a true -14 LUFS pass if the user asks for it.
 
 ## Where an episode lives
 

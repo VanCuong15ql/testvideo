@@ -32,7 +32,7 @@ export const P1S31: React.FC<ShotProps> = ({ t, len }) => {
     { f: len, p: { x: mx, y: 900 - p * 14, tilt: 2 } },
   ]);
   return (
-    <g transform={camT(kf(t, [[0, 1000], [len, 1075]]), kf(t, [[0, 545], [len, 540]]), kf(t, [[0, 1.8], [len, 2.1]]))}>
+    <g transform={camT(kf(t, [[0, 1000], [len, 1075]]), kf(t, [[0, 545], [len, 540]]), kf(t, [[0, 1.8], [len, 1.8]]))}>
       <Gate t={t} />
       {/* speed lines radiating from the string */}
       {Array.from({ length: 10 }, (_, i) => {
@@ -129,7 +129,7 @@ export const P1S34: React.FC<ShotProps> = ({ t, len }) => {
     { f: len, p: { expr: 'neutral' } },
   ]);
   return (
-    <g transform={camT(kf(t, [[0, 1080], [len, 1070]]), kf(t, [[0, 540], [len, 530]]), kf(t, [[0, 1.6], [len, 1.75]]))}>
+    <g transform={camT(kf(t, [[0, 1080], [len, 1070]]), kf(t, [[0, 540], [len, 530]]), kf(t, [[0, 1.6], [len, 1.6]]))}>
       <Gate t={t} />
       {/* hearts drifting up — relationship energy */}
       {[0, 1, 2].map((i) => {

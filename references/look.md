@@ -143,7 +143,9 @@ Pull frame grids of every action shot with `motiongrid.py` and read them like a 
 
 - Anticipation before a big move (a crouch before a step, a wind-up before a grab), a hold of 2 frames on the beat
   where the character realises, overshoot and settle on landings and catches.
-- Nothing static for more than about a second: something always moves (dust, steam, a sway, a push-in).
+- Nothing static for more than about a second: something always moves (dust, steam, a sway, a motivated
+  camera move). Camera moves are motivated only — zoom or pan toward the thing the shot focuses on; no generic
+  slow push or drift on every shot, and a static camera is fine when nothing needs emphasis.
 - The action lands on its word, within about 3 frames.
 - Reversals read backwards (every move derives from `t`, so it does).
 - No pops: a prop never jumps between frames unless it's meant to (a paste, a flash).
