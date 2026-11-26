@@ -25,7 +25,7 @@ const AlexAt = (x: number, y: number, s: number, extra: Partial<Pose> = {}) =>
 export const P1S21: React.FC<ShotProps> = ({ t, len }) => {
   const enter = easeInOut(clamp((t - 4) / 26));
   const ax = lerp(300, 760, enter);
-  const pose = walkPose(ax, t * 0.45, 900, 0.95, { look: 0.5, expr: 'worried' }, 1);
+  const pose = walkPose(ax, t * 0.315, 900, 0.95, { look: 0.5, expr: 'worried' }, 1);
   const fp = pinky({ ...pose }, 'L');
   const maya = poseAt(t, [
     { f: 0, p: idle(1330, 900, 0.95, { yaw: -0.3, look: -0.4, armL: { a: 20, b: -10 } }) },

@@ -205,7 +205,7 @@ const HallwayHint: React.FC<{ t: number }> = ({ t }) => (
 // P1S8: no matter how far you run — Alex sprinting right-to-left, string stretching behind
 export const P1S8: React.FC<ShotProps> = ({ t, len }) => {
   const runX = kf(t, [[0, 1500], [len, 500]], easeInOut);
-  const pose = walkPose(runX, t * 0.55, 880, 1.0, { look: 0.4, expr: 'worried' }, -1);
+  const pose = walkPose(runX, t * 0.385, 880, 1.0, { look: 0.4, expr: 'worried' }, -1);
   const fp = pinky({ ...pose }, 'R');
   return (
     <g transform={camT(kf(t, [[0, 1000], [len, 980]]), kf(t, [[0, 560], [len, 550]]), kf(t, [[0, 1.5], [len, 1.5]]))}>
@@ -225,7 +225,7 @@ export const P1S8: React.FC<ShotProps> = ({ t, len }) => {
 // P1S9: still can't escape — he rounds a corner (gate), string snaps taut ahead of him
 export const P1S9: React.FC<ShotProps> = ({ t, len }) => {
   const runX = kf(t, [[0, 300], [len, 1300]], easeInOut);
-  const pose = walkPose(runX, t * 0.5 + 2, 880, 1.0, { look: 0.5, expr: 'dizzy' }, 1);
+  const pose = walkPose(runX, t * 0.35 + 2, 880, 1.0, { look: 0.5, expr: 'dizzy' }, 1);
   const fp = pinky({ ...pose }, 'R');
   const taut = clamp((t - len * 0.55) / 12);
   return (

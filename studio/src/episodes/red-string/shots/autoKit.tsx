@@ -114,7 +114,7 @@ export const Auto: React.FC<ShotProps & { spec: Spec }> = ({ t, len, spec }) => 
     if (fg.walk) {
       const p = clamp(t / Math.max(1, len));
       const dir: 1 | -1 = fg.dir ?? (fg.walk[1] >= fg.walk[0] ? 1 : -1);
-      base = walkPose(lerp(fg.walk[0], fg.walk[1], easeInOut(p)), t * 0.42, y, s, {}, dir);
+      base = walkPose(lerp(fg.walk[0], fg.walk[1], easeInOut(p)), t * 0.3, y, s, {}, dir);
     } else {
       base = idle(fg.x, y, s, { yaw: fg.flip === -1 ? -0.35 : 0.35, look: fg.flip === -1 ? -0.3 : 0.3 });
     }

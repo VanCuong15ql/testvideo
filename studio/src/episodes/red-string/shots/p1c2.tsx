@@ -230,7 +230,7 @@ export const P1S19: React.FC<ShotProps> = ({ t, len }) => {
 export const P1S20: React.FC<ShotProps> = ({ t, len }) => {
   const enter = easeInOut(clamp((t - len * 0.3) / 24));
   const px = lerp(1100, 320, enter);
-  const pose = walkPose(px, t * 0.5, 880, 0.95, { look: -0.6, expr: 'worried' }, -1);
+  const pose = walkPose(px, t * 0.35, 880, 0.95, { look: -0.6, expr: 'worried' }, -1);
   const fp = pinky({ ...pose }, 'L');
   return (
     <g transform={camT(kf(t, [[0, 1030], [len, 880]]), kf(t, [[0, 540], [len, 520]]), kf(t, [[0, 1.6], [len, 1.6]]))}>

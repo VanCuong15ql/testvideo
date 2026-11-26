@@ -25,7 +25,7 @@ const at = (x: number, y = HALL.mid.y, s = HALL.mid.s, extra: Partial<Pose> = {}
 // P2S1: Alex watching Maya walk off — he thinks it's a prank; she isn't laughing
 export const P2S1: React.FC<ShotProps> = ({ t, len }) => {
   const mayaX = kf(t, [[0, 700], [len, 1180]], easeInOut);
-  const maya = walkPose(mayaX, t * 0.4, HALL.mid.y, HALL.mid.s, { look: 1, expr: 'neutral' }, 1);
+  const maya = walkPose(mayaX, t * 0.28, HALL.mid.y, HALL.mid.s, { look: 1, expr: 'neutral' }, 1);
   const alex = poseAt(t, [
     { f: 0, p: at(520, HALL.mid.y, HALL.mid.s, { yaw: 0.4, look: 0.6, headTilt: 3 }) },
     { f: len * 0.6, p: { look: 0.7, headTilt: 5 } },
@@ -65,7 +65,7 @@ export const P2S2: React.FC<ShotProps> = ({ t, len }) => {
 // P2S3: she tries walking away — slow walk left, testing the string
 export const P2S3: React.FC<ShotProps> = ({ t, len }) => {
   const mayaX = kf(t, [[0, 1050], [len, 880]], easeInOut);
-  const maya = walkPose(mayaX, t * 0.38, HALL.mid.y, HALL.mid.s, { look: 1, expr: 'neutral' }, -1);
+  const maya = walkPose(mayaX, t * 0.266, HALL.mid.y, HALL.mid.s, { look: 1, expr: 'neutral' }, -1);
   const alex = at(620, HALL.mid.y, HALL.mid.s, { yaw: 0.4, look: 0.7 });
   return (
     <g transform={camT(kf(t, [[0, 1000], [len, 990]]), kf(t, [[0, 590], [len, 580]]), kf(t, [[0, 1.55], [len, 1.7]]))}>
@@ -81,7 +81,7 @@ export const P2S3: React.FC<ShotProps> = ({ t, len }) => {
 // P2S4: the string stretches behind her — tension builds, it hums
 export const P2S4: React.FC<ShotProps> = ({ t, len }) => {
   const mayaX = kf(t, [[0, 950], [len, 780]], easeInOut);
-  const maya = walkPose(mayaX, t * 0.4, HALL.mid.y, HALL.mid.s, { look: 1, expr: 'neutral' }, -1);
+  const maya = walkPose(mayaX, t * 0.28, HALL.mid.y, HALL.mid.s, { look: 1, expr: 'neutral' }, -1);
   const alex = at(640, HALL.mid.y, HALL.mid.s, { yaw: 0.4, look: 0.7 });
   const tension = clamp((mayaX - 780) / 200);
   return (
@@ -100,7 +100,7 @@ export const P2S4: React.FC<ShotProps> = ({ t, len }) => {
 // P2S5: another step — she's committed now, leaning into it
 export const P2S5: React.FC<ShotProps> = ({ t, len }) => {
   const mayaX = kf(t, [[0, 830], [len, 640]], easeInOut);
-  const maya = walkPose(mayaX, t * 0.42, HALL.mid.y, HALL.mid.s, { look: 1, expr: 'smug' }, -1);
+  const maya = walkPose(mayaX, t * 0.294, HALL.mid.y, HALL.mid.s, { look: 1, expr: 'smug' }, -1);
   const alex = at(660, HALL.mid.y, HALL.mid.s, { yaw: 0.4, look: 0.7 });
   return (
     <g transform={camT(kf(t, [[0, 980], [len, 975]]), kf(t, [[0, 575], [len, 570]]), kf(t, [[0, 1.65], [len, 1.8]]))}>
@@ -116,7 +116,7 @@ export const P2S5: React.FC<ShotProps> = ({ t, len }) => {
 // P2S6: then another — string at breaking point, vibration lines
 export const P2S6: React.FC<ShotProps> = ({ t, len }) => {
   const mayaX = kf(t, [[0, 700], [len, 560]], easeInOut);
-  const maya = walkPose(mayaX, t * 0.45, HALL.mid.y, HALL.mid.s, { look: 1, expr: 'smug' }, -1);
+  const maya = walkPose(mayaX, t * 0.315, HALL.mid.y, HALL.mid.s, { look: 1, expr: 'smug' }, -1);
   const alex = at(680, HALL.mid.y, HALL.mid.s, { yaw: 0.4, look: 0.75 });
   const vib = 1 + Math.sin(t * 1.4) * 0.15;
   return (
@@ -142,7 +142,7 @@ export const P2S7: React.FC<ShotProps> = ({ t, len }) => {
   const snapAt = len * 0.25;
   const p = easeIn(clamp((t - snapAt) / (len * 0.6)));
   const ax = lerp(680, 1480, p);
-  const alex = walkPose(ax, t * 0.9, HALL.near.y, HALL.near.s, { look: 1, expr: 'dizzy', tilt: 8, armL: { a: -40, b: 30 }, armR: { a: -50, b: 40 } }, 1);
+  const alex = walkPose(ax, t * 0.63, HALL.near.y, HALL.near.s, { look: 1, expr: 'dizzy', tilt: 8, armL: { a: -40, b: 30 }, armR: { a: -50, b: 40 } }, 1);
   const maya = at(560, HALL.mid.y, HALL.mid.s, { yaw: -0.3, look: 0.5, expr: 'shock' });
   return (
     <g transform={camT(kf(t, [[0, 1050], [len, 1150]]), kf(t, [[0, 580], [len, 600]]), kf(t, [[0, 1.5], [len, 1.85]]))}>
