@@ -5,5 +5,6 @@ import { sandglass } from './sandglass';
 import { crush } from './crush';
 import { crushP1 } from './crush-p1';
 import { drawings } from './drawings';
+import { redString } from './red-string';
 
-export const EPISODES = [rewind, copyPaste, sandglass, crush, crushP1, drawings];
+export const EPISODES = [rewind, copyPaste, sandglass, crush, crushP1, drawings, redString];
