@@ -1,5 +1,9 @@
 name: Render What If Animation
 
+concurrency:
+  group: render-what-if-${{ github.ref }}
+  cancel-in-progress: true
+
 on:
   push:
     branches: [ main ]
@@ -72,12 +76,21 @@ jobs:
           slug = os.environ['SLUG']
           d = json.load(open(f'studio/src/episodes/{slug}/timeline.json', encoding='utf-8'))
           total = int(d['total'])
-          n = max(1, min(32, math.ceil(total / 330)))
+          # Per-job frame budget -> job count. Each job pays ~2 min of fixed
+          # setup (checkout, npm install, bundle), so chunks under ~200 frames
+          # are overhead-dominated; ~320 frames (~11 s of video) is the sweet
+          # spot. MAX_JOBS stays under GitHub's practical matrix concurrency.
+          TARGET_FRAMES = 320
+          MAX_JOBS = 20
+          MIN_CHUNK = 200
+          n = max(1, min(MAX_JOBS, round(total / TARGET_FRAMES)))
+          # never let a chunk shrink below MIN_CHUNK just to hit MAX_JOBS
+          n = min(n, max(1, total // MIN_CHUNK))
           size = math.ceil(total / n)
           chunks = [{'i': i, 'start': i * size, 'end': min((i + 1) * size, total) - 1} for i in range(n)]
           with open(os.environ['GITHUB_OUTPUT'], 'a', encoding='utf-8') as f:
               f.write('chunks=' + json.dumps(chunks) + '\n')
-          print(f'total={total} chunks={len(chunks)} size={size}')
+          print(f'total={total} jobs={len(chunks)} frames_per_job={size}')
           EOF
 
   render:
