@@ -91,6 +91,15 @@ in screen coordinates and bring a character's arm in from the side of frame wher
 Each set is a component taking the shot clock `t` (for dust, sways, flicker) and an `id`. Offset `t` per shot so
 idle motion carries across cuts.
 
+**Depth order.** A set with several layers must draw strictly back-to-front: background furniture and walls →
+midground props → characters sorted by depth → foreground occluders (near-camera shapes, `Foreground`, window
+frames). Nothing drawn earlier may overlap something nearer; if a far object would cover a character or a close
+prop, it belongs to a later layer or the character moves. Check the board stills for accidental overlaps.
+
+**Where new sets live.** A new room or background is a shared kit piece: write it under `src/engine/sets/` (the
+`room` folder) with its coordinates and props documented in the table below, commit it, and reuse it in later
+episodes — don't leave one-off backgrounds inside scene files.
+
 | Set | Coordinates and parts | Props |
 |---|---|---|
 | `Study` (`sets/study.tsx`) | `STUDY = makeRoom({980,500}, back 530-1430 x 335-740)`. `night` puts the moon in the window and turns the pendant off (the `Desk` lamp becomes the light); `shelf` (0..1) empties the bookcase, books flying from `STUDY_SHELF_V`. Window 782-1178 x 380-606 with the sun at (1085, 596); bookcase on the left wall, door and print on the right, pendant at u 0.32 w 0.42, wall light on the left. `Desk x0 x1 y` stands mid-room (the proof clip: x0 560, x1 1360, y 700, Pip behind it at hips (960, 712) scale 1). | `veil` (0.28 for a wide that must show the floor) |

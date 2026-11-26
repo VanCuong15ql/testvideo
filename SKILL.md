@@ -39,6 +39,12 @@ schematic for the science beat, a cliffhanger blackout). Read the one closest to
   Say the numbers when you hand the episode over.
 - **Storyboard before animation.** No video render until the stills pass the self-check (step 5) and, when the person
   is in the loop, they've seen the board.
+- **Depth order is explicit.** Any set with several object or character layers declares its draw order
+  back-to-front (background → midground → foreground → near-camera). Characters and props slot into that order by
+  depth, so a far object can never cover something nearer — verify on the board stills, not by eye at render time.
+- **New sets are shared.** A background/room built for one episode is saved into the shared `room` folder
+  (`src/engine/sets/`, mirrored to the skill's copy) so later episodes reuse or improve it — never left inline in a
+  scene file.
 - **Every fact is real.** A number in the script is worked out and sourced in the episode's `science` field first.
 - **Script splitting.** If the script is too long, manually split it into pages (script/page1.txt, script/page2.txt, etc.)
   by content boundaries - do NOT use code for splitting. Each page should be a coherent section.
@@ -136,9 +142,9 @@ opening and no static shot over about 3 s; fix what it flags before drawing anyt
 Read `references/kit.md` for the building blocks. Write `src/episodes/<slug>/shots.tsx`, one component per shot,
 each a pure function of its clock `t` (copy the patterns in the two examples' `shots.tsx`), and `index.tsx` (the
 episode and its power look), then add the episode to `src/episodes/index.ts`. At this step each shot only needs to
-be right at its `key` frame. When a topic needs a place the library lacks, build it with the room kit and add it to
-`src/engine/sets/` (and to the skill's copy) so the next episode has it, as the copy-paste run did with the kitchen
-and the schematic. A new character or costume: add the look, then check it on the cast sheet
+be right at its `key` frame. When a topic needs a place the library lacks, build it with the room kit and save it to
+the shared `room` folder (`src/engine/sets/`, and to the skill's copy) so the next episode has it, as the
+copy-paste run did with the kitchen and the schematic. A new character or costume: add the look, then check it on the cast sheet
 (`npx remotion still src/index.ts Cast out/cast.png`).
 
 ```bash
