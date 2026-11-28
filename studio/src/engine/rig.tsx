@@ -33,10 +33,14 @@ export type Look = {
   pantsDark?: string;
   /** Female silhouette: wider bust, narrower waist. */
   bust?: boolean;
-  extra?: 'hood' | 'curls' | 'bunches' | 'bob' | 'suit' | 'short' | 'long';
+  /** Hip joint spacing (half-width); defaults to HIP.x = 28. Smaller = feet planted closer. */
+  hipX?: number;
+  /** Limb thickness multiplier for arms, legs, hands and shoes; defaults to 1. */
+  bulk?: number;
+  extra?: 'hood' | 'curls' | 'bunches' | 'bob' | 'suit' | 'short' | 'long' | 'twintails';
 };
 
-export type CastName = 'pip' | 'pipHood' | 'pipInk' | 'mo' | 'sis' | 'mom' | 'suit' | 'minh' | 'linh';
+export type CastName = 'pip' | 'pipHood' | 'pipInk' | 'mo' | 'sis' | 'mom' | 'suit' | 'minh' | 'linh' | 'nina';
 
 export const LOOKS: Record<CastName, Look> = {
   pip: { skin: C.skin, skinShade: C.skinShade, hand: C.skin, jacket: C.jacket, jacketShade: C.jacketShade, accent: C.jacketShade, limb: C.jacket, line: C.ink, shoe: C.shoe, face: C.ink, hair: '#2B1F3A', pants: '#2E3A5C', pantsDark: '#222B47' },
@@ -48,6 +52,7 @@ export const LOOKS: Record<CastName, Look> = {
   suit: { skin: '#D9C6AE', skinShade: '#C2AE96', hand: '#D9C6AE', jacket: '#2B2F3A', jacketShade: '#20232C', accent: '#A8323E', limb: '#2B2F3A', line: '#0E0F14', shoe: '#14151A', face: C.ink, hair: '#17141A', extra: 'suit' },
   minh: { skin: '#EAC9A6', skinShade: '#D2AE86', hand: '#EAC9A6', jacket: '#55604A', jacketShade: '#434C3B', accent: '#8C6A48', limb: '#33303C', line: '#1A161E', shoe: '#231D1A', face: '#221B20', hair: '#1E1614', extra: 'short' },
   linh: { skin: '#F0D3B4', skinShade: '#D9B895', hand: '#F0D3B4', jacket: '#8B7B58', jacketShade: '#756748', accent: '#5E5440', limb: '#3B3542', line: '#191420', shoe: '#4A3E34', face: '#241C22', hair: '#2A1B16', bust: true, extra: 'long' },
+  nina: { skin: '#FBE3CE', skinShade: '#EFC7AC', hand: '#FBE3CE', jacket: '#F7A8C4', jacketShade: '#DE7FA0', accent: '#FFF1B8', limb: '#FFF3E4', line: '#2A1E2E', shoe: '#FF9EC7', face: C.ink, hair: '#8A5A3B', pants: '#9B8BC4', pantsDark: '#7E6DA8', bust: true, hipX: 18, bulk: 1.15, extra: 'twintails' },
 };
 
 export type HandKind = 'open' | 'point';
@@ -74,6 +79,12 @@ export type Pose = {
   handL: HandKind;
   handR: HandKind;
   sway: number;
+  /** 0 = facing the viewer, 1 = back turned to the viewer (face hidden, back-of-head hair shown). */
+  back?: number;
+  /** Lateral shoe offset in px relative to the ankle; positive shifts the shoe toward screen-right. */
+  shoeShift?: number;
+  /** Which arm renders behind the torso; defaults to the far side of `yaw`. */
+  armBack?: 'L' | 'R';
   glint?: number;
   glintColor?: string;
 };
@@ -99,6 +110,7 @@ export const basePose: Pose = {
   handL: 'open',
   handR: 'open',
   sway: 0,
+  back: 0,
 };
 
 type Key = { f: number; p: Partial<Pose>; ease?: (t: number) => number };
@@ -137,6 +149,9 @@ export const poseAt = (f: number, keys: Key[], from: Pose = basePose): Pose => {
         look: lerp(A.p.look, B.p.look, t),
         glasses: lerp(A.p.glasses, B.p.glasses, t),
         yaw: lerp(A.p.yaw, B.p.yaw, t),
+        back: lerp(A.p.back ?? 0, B.p.back ?? 0, t),
+        shoeShift: lerp(A.p.shoeShift ?? 0, B.p.shoeShift ?? 0, t),
+        armBack: t < 0.5 ? A.p.armBack : B.p.armBack,
         squash: lerp(A.p.squash, B.p.squash, t),
         sway: lerp(A.p.sway, B.p.sway, t),
       };
@@ -175,7 +190,7 @@ const rot = (p: P, deg: number, c: P = { x: 0, y: 0 }): P => {
 export const turnWidth = (yaw: number) => 1 - 0.4 * Math.min(1, Math.abs(yaw));
 export const limbSpread = (yaw: number) => 1 - 0.85 * Math.min(1, Math.abs(yaw));
 
-export const joints = (pose: Pose) => {
+export const joints = (pose: Pose, hipX: number = HIP.x) => {
   const side = (s: 1 | -1, limb: Limb, root: P, l1: number, l2: number, isLeg: boolean) => {
     const dir = isLeg ? pose.facing : s;
     const d1 = { x: dir * Math.sin(rad(limb.a)), y: Math.cos(rad(limb.a)) };
@@ -190,8 +205,8 @@ export const joints = (pose: Pose) => {
   const shR = { x: SHOULDER.x * sp + pose.yaw * 6, y: SHOULDER.y };
   const armL = side(-1, pose.armL, shL, UPPER_ARM, FORE_ARM, false);
   const armR = side(1, pose.armR, shR, UPPER_ARM, FORE_ARM, false);
-  const legL = side(-1, pose.legL, { x: -HIP.x * sp, y: 0 }, THIGH, SHIN, true);
-  const legR = side(1, pose.legR, { x: HIP.x * sp, y: 0 }, THIGH, SHIN, true);
+  const legL = side(-1, pose.legL, { x: -hipX * sp, y: 0 }, THIGH, SHIN, true);
+  const legR = side(1, pose.legR, { x: hipX * sp, y: 0 }, THIGH, SHIN, true);
   const r = (o: { root: P; mid: P; end: P }) => ({ root: torsoRot(o.root), mid: torsoRot(o.mid), end: torsoRot(o.end) });
   return { armL: r(armL), armR: r(armR), legL, legR, head: torsoRot(HEAD) };
 };
@@ -346,16 +361,23 @@ const Face: React.FC<{ expr: Expr; blink: number; look: number; glasses: number;
     <g transform={`translate(${yaw * 30} 0) scale(${1 - 0.28 * ay} 1)`}>
       {eye(-24)}
       {eye(24)}
-      {brows[expr] ? (
-        <path
-          d={brows[expr]}
-          stroke={ink}
-          strokeWidth={expr === 'neutral' ? 3.8 : 5}
-          opacity={expr === 'neutral' ? 0.55 : 1}
-          fill="none"
-          strokeLinecap="round"
-        />
-      ) : null}
+      {brows[expr]
+        ? brows[expr]
+            .split(/(?=M\s)/)
+            .map((d, k) =>
+              farHidden && (k === 0 ? -1 : 1) === farSide ? null : (
+                <path
+                  key={k}
+                  d={d}
+                  stroke={ink}
+                  strokeWidth={expr === 'neutral' ? 3.8 : 5}
+                  opacity={expr === 'neutral' ? 0.55 : 1}
+                  fill="none"
+                  strokeLinecap="round"
+                />
+              ),
+            )
+        : null}
       {mouth[expr]}
       {expr === 'shock' || expr === 'oops' ? <path d={`M 52 ${HEAD.y - 30} q 6 10 0 16 q -6 -6 0 -16 Z`} fill="#8FD3FF" /> : null}
       {glint > 0.01 && blink < 0.95
@@ -388,8 +410,9 @@ export const Hero: React.FC<{ pose: Pose; shadow?: number; rimId?: string; look?
   rimId = 'rimR',
   look = LOOKS.pipHood,
 }) => {
-  const j = joints(pose);
   const L = look;
+  const bulk = L.bulk ?? 1;
+  const j = joints(pose, L.hipX);
   const uid = React.useId().replace(/[^a-zA-Z0-9]/g, '');
   const pants = L.pants ?? tint(L.jacket, 0.45);
   const pantsDark = L.pantsDark ?? tint(pants, 0.72);
@@ -447,21 +470,21 @@ export const Hero: React.FC<{ pose: Pose; shadow?: number; rimId?: string; look?
     const d = `M ${o.root.x} ${o.root.y} L ${o.mid.x} ${o.mid.y} L ${o.end.x} ${o.end.y}`;
     return (
       <g>
-        <path d={d} stroke={L.line} strokeWidth={19} fill="none" strokeLinecap="round" strokeLinejoin="round" />
-        <path d={d} stroke={pants} strokeWidth={12} fill="none" strokeLinecap="round" strokeLinejoin="round" />
-        <path d={d} stroke={pantsDark} strokeWidth={2.6} fill="none" strokeLinecap="round" strokeLinejoin="round" opacity={0.55} transform="translate(-2.4 -1.4)" />
-        <path d={d} stroke={tint(pants, 1.3)} strokeWidth={3.2} fill="none" strokeLinecap="round" strokeLinejoin="round" opacity={0.35} transform="translate(1.8 -1.8)" />
-        <circle cx={o.mid.x + 2} cy={o.mid.y} r={7} fill={pantsDark} opacity={0.3} />
+        <path d={d} stroke={L.line} strokeWidth={19 * bulk} fill="none" strokeLinecap="round" strokeLinejoin="round" />
+        <path d={d} stroke={pants} strokeWidth={12 * bulk} fill="none" strokeLinecap="round" strokeLinejoin="round" />
+        <path d={d} stroke={pantsDark} strokeWidth={2.6 * bulk} fill="none" strokeLinecap="round" strokeLinejoin="round" opacity={0.55} transform="translate(-2.4 -1.4)" />
+        <path d={d} stroke={tint(pants, 1.3)} strokeWidth={3.2 * bulk} fill="none" strokeLinecap="round" strokeLinejoin="round" opacity={0.35} transform="translate(1.8 -1.8)" />
+        <circle cx={o.mid.x + 2} cy={o.mid.y} r={7 * bulk} fill={pantsDark} opacity={0.3} />
       </g>
     );
   };
 
   // sneaker: white-ish upper, two-tone sole, lace lines, toe cap
   const shoe = (o: { root: P; mid: P; end: P }) => {
-    const cx = o.end.x + pose.facing * 10;
+    const cx = o.end.x + pose.facing * 3 + (pose.shoeShift ?? 0);
     const cy = o.end.y + 2;
     return (
-      <g transform={`translate(${cx} ${cy}) scale(${pose.facing} 1)`}>
+      <g transform={`translate(${cx} ${cy}) scale(${pose.facing * bulk} ${bulk})`}>
         <path d="M -23 5 L 27 5 Q 31 5 31 9 L 29 14 Q 2 18 -25 14 Q -28 9 -23 5 Z" fill={tint(L.shoe, 0.5)} stroke={L.line} strokeWidth={3.5} strokeLinejoin="round" />
         <path d="M -21 -2 Q -23 4 -14 6 L 24 6 Q 30 2 28 -8 Q 20 -16 2 -16 L -12 -16 Q -19 -14 -21 -2 Z" fill={`url(#${uid}h)`} stroke={L.line} strokeWidth={3.5} strokeLinejoin="round" />
         <path d="M 12 -12 Q 24 -10 27 -4 L 24 4 Q 14 0 10 -8 Z" fill={tint(L.shoe, 0.78)} opacity={0.85} />
@@ -475,7 +498,7 @@ export const Hero: React.FC<{ pose: Pose; shadow?: number; rimId?: string; look?
   const hand = (o: { mid: P; end: P }, side: 1 | -1, kind: HandKind) => {
     const ang = (Math.atan2(o.end.x - o.mid.x, o.end.y - o.mid.y) * 180) / Math.PI;
     return (
-      <g transform={`translate(${o.end.x} ${o.end.y}) rotate(${-ang})`}>
+      <g transform={`translate(${o.end.x} ${o.end.y}) rotate(${-ang}) scale(${bulk})`}>
         {kind === 'point' ? (
           <g>
             <rect x={-4} y={10} width={8} height={24} rx={4} fill={L.hand} stroke={L.line} strokeWidth={3.5} />
@@ -499,13 +522,15 @@ export const Hero: React.FC<{ pose: Pose; shadow?: number; rimId?: string; look?
     const y = lerp(o.mid.y, o.end.y, 0.8);
     return (
       <g>
-        <circle cx={x} cy={y} r={9.2} fill={L.jacketShade} stroke={L.line} strokeWidth={3} />
+        <circle cx={x} cy={y} r={9.2 * bulk} fill={L.jacketShade} stroke={L.line} strokeWidth={3 * bulk} />
         <path d={`M ${x - 5} ${y - 1} Q ${x} ${y + 3} ${x + 5} ${y - 1}`} stroke={tint(L.jacketShade, 1.4)} strokeWidth={2} fill="none" strokeLinecap="round" opacity={0.7} />
       </g>
     );
   };
 
   const kw = turnWidth(pose.yaw);
+  const back = pose.back ?? 0;
+  const armRBack = pose.armBack === 'R' || (pose.armBack === undefined && pose.yaw < 0);
 
   const torso = (
     <g transform={`rotate(${pose.tilt}) translate(${pose.yaw * 6} 0) scale(${kw} 1)`}>
@@ -527,7 +552,7 @@ export const Hero: React.FC<{ pose: Pose; shadow?: number; rimId?: string; look?
       {/* collar */}
       <path d="M -38 -114 Q 0 -94 38 -114 Q 0 -102 -38 -114 Z" fill={L.jacketShade} opacity={0.95} />
       {L.extra === 'suit' ? (
-        <g>
+        <g opacity={1 - back}>
           <path d="M -26 -116 L 0 -50 L 26 -116 Z" fill="#EDE8DE" />
           <path d="M -8 -112 L 8 -112 L 10 -98 L 6 -62 L 0 -53 L -6 -62 L -10 -98 Z" fill={L.accent} />
           <path d="M -28 -116 L 0 -50 M 28 -116 L 0 -50" stroke={L.line} strokeWidth={4} />
@@ -535,7 +560,7 @@ export const Hero: React.FC<{ pose: Pose; shadow?: number; rimId?: string; look?
       ) : L.extra === 'hood' || L.extra === 'curls' ? (
         <path d="M -22 -118 Q 0 -100 22 -118" stroke={L.accent} strokeWidth={6} fill="none" strokeLinecap="round" />
       ) : (
-        <g>
+        <g opacity={1 - back}>
           {/* inner shirt V + zipper + pockets */}
           <path d="M -13 -110 L 0 -88 L 13 -110 L 13 -103 L 0 -82 L -13 -103 Z" fill="#F4EEE0" opacity={0.92} />
           <path d="M 0 -84 L 0 4" stroke={L.jacketShade} strokeWidth={3.5} strokeLinecap="round" />
@@ -562,14 +587,16 @@ export const Hero: React.FC<{ pose: Pose; shadow?: number; rimId?: string; look?
           fill={L.hair}
         />
       ) : null}
-      {([-1, 1] as const).map((sd) =>
-        Math.abs(pose.yaw) > 0.5 && sd === (pose.yaw > 0 ? -1 : 1) ? null : (
-          <g key={sd}>
-            <ellipse cx={HEAD.x + sd * 58} cy={HEAD.y + 16} rx={7.5} ry={10} fill={L.skin} stroke={L.line} strokeWidth={3.5} />
-            <path d={`M ${HEAD.x + sd * 57} ${HEAD.y + 12} Q ${HEAD.x + sd * 60} ${HEAD.y + 16} ${HEAD.x + sd * 57} ${HEAD.y + 20}`} stroke={L.skinShade} strokeWidth={2.4} fill="none" strokeLinecap="round" />
-          </g>
-        ),
-      )}
+      <g opacity={1 - back}>
+        {([-1, 1] as const).map((sd) =>
+          Math.abs(pose.yaw) > 0.5 && sd === (pose.yaw > 0 ? -1 : 1) ? null : (
+            <g key={sd}>
+              <ellipse cx={HEAD.x + sd * 58} cy={HEAD.y + 16} rx={7.5} ry={10} fill={L.skin} stroke={L.line} strokeWidth={3.5} />
+              <path d={`M ${HEAD.x + sd * 57} ${HEAD.y + 12} Q ${HEAD.x + sd * 60} ${HEAD.y + 16} ${HEAD.x + sd * 57} ${HEAD.y + 20}`} stroke={L.skinShade} strokeWidth={2.4} fill="none" strokeLinecap="round" />
+            </g>
+          ),
+        )}
+      </g>
       {/* face: round head with radial skin shading */}
       <circle cx={HEAD.x} cy={HEAD.y} r={HEAD.r} fill={`url(#${uid}sr)`} stroke={L.line} strokeWidth={4} />
       <g clipPath={`url(#${uid}fc)`}>
@@ -627,6 +654,47 @@ export const Hero: React.FC<{ pose: Pose; shadow?: number; rimId?: string; look?
       {L.extra === 'long' ? (
         <path transform={`translate(${-pose.yaw * 12} 0)`} d={`M -66 ${HEAD.y + 86} Q -82 ${HEAD.y - 62} 0 ${HEAD.y - 74} Q 82 ${HEAD.y - 62} 66 ${HEAD.y + 86} L 46 ${HEAD.y + 92} Q 50 ${HEAD.y - 16} 38 ${HEAD.y - 40} Q 12 ${HEAD.y - 34} -14 ${HEAD.y - 48} Q -50 ${HEAD.y - 28} -46 ${HEAD.y + 92} Z`} fill={L.hair} stroke={L.line} strokeWidth={4} strokeLinejoin="round" />
       ) : null}
+      {L.extra === 'twintails' ? (
+        <g>
+          {([-1, 1] as const).map((sd) => (
+            <g key={sd} transform={`rotate(${pose.sway * 0.6 - pose.yaw * 15} ${sd * 56} ${HEAD.y - 30})`}>
+              <path
+                d={`M ${sd * 48} ${HEAD.y - 60} C ${sd * 98} ${HEAD.y - 48} ${sd * 106} ${HEAD.y - 4} ${sd * 92} ${HEAD.y + 44} C ${sd * 84} ${HEAD.y + 84} ${sd * 68} ${HEAD.y + 96} ${sd * 58} ${HEAD.y + 80} C ${sd * 62} ${HEAD.y + 34} ${sd * 56} ${HEAD.y - 4} ${sd * 40} ${HEAD.y - 34} Z`}
+                fill={L.hair}
+                stroke={L.line}
+                strokeWidth={4}
+                strokeLinejoin="round"
+              />
+              <path
+                d={`M ${sd * 62} ${HEAD.y - 26} Q ${sd * 80} ${HEAD.y + 16} ${sd * 72} ${HEAD.y + 62}`}
+                stroke={hairLight}
+                strokeWidth={3}
+                fill="none"
+                strokeLinecap="round"
+                opacity={0.5}
+              />
+              <g transform={`translate(${sd * 52} ${HEAD.y - 32}) rotate(${sd * 14})`}>
+                <path d="M 0 0 L -22 -11 Q -28 0 -22 11 Z" fill={L.accent} stroke={L.line} strokeWidth={3} strokeLinejoin="round" />
+                <path d="M 0 0 L 22 -11 Q 28 0 22 11 Z" fill={L.accent} stroke={L.line} strokeWidth={3} strokeLinejoin="round" />
+                <circle r={5.5} fill={tint(L.accent, 0.85)} stroke={L.line} strokeWidth={3} />
+              </g>
+            </g>
+          ))}
+          <path
+            transform={`translate(${-pose.yaw * 12} 0)`}
+            d={`M -60 ${HEAD.y - 22} Q -64 ${HEAD.y - 70} 0 ${HEAD.y - 72} Q 64 ${HEAD.y - 70} 60 ${HEAD.y - 22} Q 42 ${HEAD.y - 48} 14 ${HEAD.y - 42} Q 0 ${HEAD.y - 54} -14 ${HEAD.y - 42} Q -42 ${HEAD.y - 48} -60 ${HEAD.y - 22} Z`}
+            fill={L.hair}
+            stroke={L.line}
+            strokeWidth={4}
+            strokeLinejoin="round"
+          />
+          <path
+            transform={`translate(${-pose.yaw * 12} 0)`}
+            d={`M -34 ${HEAD.y - 56} L -22 ${HEAD.y - 40} L -12 ${HEAD.y - 52} L 0 ${HEAD.y - 38} L 12 ${HEAD.y - 52} L 22 ${HEAD.y - 40} L 34 ${HEAD.y - 56} Q 18 ${HEAD.y - 46} 0 ${HEAD.y - 48} Q -18 ${HEAD.y - 46} -34 ${HEAD.y - 56} Z`}
+            fill={L.hair}
+          />
+        </g>
+      ) : null}
 
       {/* hair sheen on the capped styles */}
       {L.extra === 'curls' ? (
@@ -647,7 +715,27 @@ export const Hero: React.FC<{ pose: Pose; shadow?: number; rimId?: string; look?
         </g>
       ) : null}
 
-      <Face expr={pose.expr} blink={pose.blink} look={pose.look} glasses={pose.glasses} yaw={pose.yaw} ink={L.face} glint={pose.glint} glintColor={pose.glintColor} />
+      <g opacity={1 - back}>
+        <Face expr={pose.expr} blink={pose.blink} look={pose.look} glasses={pose.glasses} yaw={pose.yaw} ink={L.face} glint={pose.glint} glintColor={pose.glintColor} />
+      </g>
+
+      {/* back of the head: hair cap shown instead of the face when the character has turned around */}
+      <g opacity={back}>
+        <path
+          d="M -72 -166 C -82 -244 -40 -262 0 -262 C 40 -262 82 -244 72 -166 C 76 -114 44 -98 0 -98 C -44 -98 -76 -114 -72 -166 Z"
+          fill={L.hair}
+          stroke={L.line}
+          strokeWidth={4}
+          strokeLinejoin="round"
+        />
+        <g stroke={hairLight} strokeWidth={3.5} fill="none" opacity={0.5} strokeLinecap="round">
+          <path d="M -32 -238 Q -12 -250 10 -242" />
+          <path d="M -10 -230 Q 8 -240 26 -232" />
+        </g>
+        {L.extra === 'twintails' ? (
+          <path d="M 0 -252 Q 7 -212 0 -128" stroke={tint(L.hair, 0.7)} strokeWidth={4} fill="none" opacity={0.7} />
+        ) : null}
+      </g>
 
       {L.extra === 'curls'
         ? [-150, -125, -100, -78, -55, -30].map((deg, k) => {
@@ -678,16 +766,16 @@ export const Hero: React.FC<{ pose: Pose; shadow?: number; rimId?: string; look?
           ) : (
             <>{leg(j.legL)}{shoe(j.legL)}{leg(j.legR)}{shoe(j.legR)}</>
           )}
-          {pose.yaw < 0 ? (
-            <>{armLimb(j.armR, 11)}{cuff(j.armR)}{hand(j.armR, -1, pose.handR)}</>
+          {armRBack ? (
+            <>{armLimb(j.armR, 11 * bulk)}{cuff(j.armR)}{hand(j.armR, -1, pose.handR)}</>
           ) : (
-            <>{armLimb(j.armL, 11)}{cuff(j.armL)}{hand(j.armL, 1, pose.handL)}</>
+            <>{armLimb(j.armL, 11 * bulk)}{cuff(j.armL)}{hand(j.armL, 1, pose.handL)}</>
           )}
           {torso}
-          {pose.yaw < 0 ? (
-            <>{armLimb(j.armL, 11)}{cuff(j.armL)}{hand(j.armL, 1, pose.handL)}</>
+          {armRBack ? (
+            <>{armLimb(j.armL, 11 * bulk)}{cuff(j.armL)}{hand(j.armL, 1, pose.handL)}</>
           ) : (
-            <>{armLimb(j.armR, 11)}{cuff(j.armR)}{hand(j.armR, -1, pose.handR)}</>
+            <>{armLimb(j.armR, 11 * bulk)}{cuff(j.armR)}{hand(j.armR, -1, pose.handR)}</>
           )}
           {L.extra === 'hood' ? (
             <g transform={`rotate(${pose.tilt}) rotate(${pose.headTilt * 0.5} 0 ${HEAD.y + 40})`}>
@@ -759,6 +847,66 @@ export const walkPose = (
     armR: { a: 24 * s, b: 12 + 14 * Math.abs(s) },
     ...extra,
   };
+};
+
+export type TurnDir = 'left' | 'right' | 'front' | 'back';
+
+/**
+ * The four facing actions as ready-made pose deltas: body turn (yaw), rear view (back), gaze (look) and
+ * hair swing (sway, which the long styles trail on) all move together. Merge over any base pose:
+ *   poseAt(f, keys, { ...basePose, ...turnPose('left') })
+ */
+export const turnPose = (dir: TurnDir, extra: Partial<Pose> = {}): Partial<Pose> => {
+  const base: Partial<Pose> = {
+    yaw: 0,
+    back: 0,
+    tilt: 0,
+    shoeShift: 0,
+    look: 0,
+    headTilt: 0,
+    sway: 0,
+    expr: 'neutral',
+    armL: { a: 12, b: -10 },
+    armR: { a: 12, b: -10 },
+    // legs straight, angled out so the ankles land at the usual cast spacing even with a narrow hipX
+    legL: { a: -8, b: 0 },
+    legR: { a: 8, b: 0 },
+  };
+  switch (dir) {
+    // a lean, not a turn: small yaw keeps both eyes, feet drift toward the lean side
+    case 'left':
+      return {
+        ...base,
+        yaw: -0.35,
+        tilt: -5,
+        shoeShift: -14,
+        armBack: 'L',
+        look: -0.45,
+        headTilt: 4,
+        sway: 0,
+        armL: { a: 26, b: -14 },
+        expr: 'happy',
+        ...extra,
+      };
+    case 'right':
+      return {
+        ...base,
+        yaw: 0.35,
+        tilt: 5,
+        shoeShift: 14,
+        armBack: 'R',
+        look: 0.45,
+        headTilt: -4,
+        sway: 0,
+        armR: { a: 26, b: -14 },
+        expr: 'happy',
+        ...extra,
+      };
+    case 'back':
+      return { ...base, back: 1, yaw: 0, look: 0, headTilt: -6, armL: { a: 20, b: -22 }, armR: { a: 20, b: -22 }, expr: 'happy', ...extra };
+    default:
+      return { ...base, expr: 'happy', ...extra };
+  }
 };
 
 export const feetBelowHips = (scale: number) => LEG_LEN * scale;

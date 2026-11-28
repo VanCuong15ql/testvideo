@@ -1,0 +1,883 @@
+{
+ "id": "Thermos",
+ "slug": "thermos",
+ "title": [
+  "Cái Bình Giữ Nhiệt"
+ ],
+ "tail": 2.5,
+ "fps": 30,
+ "shots": [
+  {
+   "id": "P1S1",
+   "size": "story",
+   "note": "Sáng thứ hai,"
+  },
+  {
+   "id": "P1S2",
+   "size": "story",
+   "note": "bạn vớ vội chiếc bình giữ nhiệt màu xanh rêu trên bàn học,"
+  },
+  {
+   "id": "P1S3",
+   "size": "story",
+   "note": "rồi lao ra khỏi nhà vì trễ giờ kiểm tra miệng môn lý."
+  },
+  {
+   "id": "P1S4",
+   "size": "story",
+   "note": "Đến lớp, bạn thở dốc, đặt phịch chiếc bình lên bàn và nhận ra một chi tiết hơi sai."
+  },
+  {
+   "id": "P1S5",
+   "size": "story",
+   "note": "Bình của bạn vốn màu xám bạc có dán sticker mèo mập,"
+  },
+  {
+   "id": "P1S6",
+   "size": "story",
+   "note": "còn bên này màu xanh rêu dán sticker nhỏ xíu hình cốc cà phê."
+  },
+  {
+   "id": "P1S7",
+   "size": "story",
+   "note": "Lúc ấy bạn chưa kịp bận tâm, cho đến khi khải,"
+  },
+  {
+   "id": "P1S8",
+   "size": "story",
+   "note": "thằng bản thân ngồi cạnh với biệt tài soi mói và cà khỉa đúng lúc nhất."
+  },
+  {
+   "id": "P1S9",
+   "size": "story",
+   "note": "Cho một người sang. Ê, hôm nay đổi phong cách à,"
+  },
+  {
+   "id": "P1S10",
+   "size": "story",
+   "note": "nhìn giống đồ của Minh Anh ngồi dãy bên kia thế."
+  },
+  {
+   "id": "P1S11",
+   "size": "story",
+   "note": "Bạn liếc sang dãy bàn kế bên. Minh Anh,"
+  },
+  {
+   "id": "P1S12",
+   "size": "story",
+   "note": "người bạn thầm thích suốt hai học kỳ, đang cầm chiếc bình xám bạc dán sticker mèo mập của bạn,"
+  },
+  {
+   "id": "P1S13",
+   "size": "story",
+   "note": "nghiêng đầu nhìn chầm chầm vào nó với vẻ mặt đầy nghi vấn."
+  },
+  {
+   "id": "P1S14",
+   "size": "story",
+   "note": "Chưa kịp giải thích, bạn mở nắp bình xanh rêu và tu một ngụm lớn trà sữa matcha đá lạnh."
+  },
+  {
+   "id": "P1S15",
+   "size": "story",
+   "note": "Ngay lập tức, thư kỳ lạ xảy ra."
+  },
+  {
+   "id": "P1S16",
+   "size": "story",
+   "note": "Trong miệng bạn mát lạnh vị matcha."
+  },
+  {
+   "id": "P1S17",
+   "size": "story",
+   "note": "Nhưng ở dãy bàn bên kia... Minh Anh đột ngột rung mình, nhăn tít mũi,"
+  },
+  {
+   "id": "P1S18",
+   "size": "story",
+   "note": "rồi đưa tay ôm má như vừa nếm phải thứ gì đó cực kỳ lạnh hoặc chát."
+  },
+  {
+   "id": "P1S19",
+   "size": "story",
+   "note": "Ánh mắt của ấy lia thẳng sang bạn."
+  },
+  {
+   "id": "P1S20",
+   "size": "story",
+   "note": "Cơ chế kỳ hoạt này lập tức lộ rõ quy luật."
+  },
+  {
+   "id": "P1S21",
+   "size": "story",
+   "note": "Hệ ai uống nước từ chiếc bình đang cầm nhầm, người kia sẽ cảm nhận y hệt vị,"
+  },
+  {
+   "id": "P1S22",
+   "size": "story",
+   "note": "nhiệt độ và cảm giác tức thi, như tê bút,"
+  },
+  {
+   "id": "P1S23",
+   "size": "story",
+   "note": "chua lẹ hay bừng tỉnh vì caffeine,"
+  },
+  {
+   "id": "P1S24",
+   "size": "story",
+   "note": "trong vòng 10 giây, bất kể khoảng cách trong trường."
+  },
+  {
+   "id": "P1S25",
+   "size": "story",
+   "note": "Bạn nuốt vội ngụm trà sữa. Mặt tìm đập thịnh thịt, Khải nheo mắt nhìn bạn,"
+  },
+  {
+   "id": "P1S26",
+   "size": "story",
+   "note": "rồi nhìn sang Minh Anh, nhạch mẹp."
+  },
+  {
+   "id": "P1S27",
+   "size": "story",
+   "note": "Sao mặt mày đỏ như tôm luộc thế?"
+  },
+  {
+   "id": "P1S28",
+   "size": "story",
+   "note": "Uống nhầm thuốc băng lực à? Im đi Khải, bạn gằn giọng, cúi gằm súng vỡ. Hãy subscribe cho kênh La La School Để không bỏ lỡ những video hấp dẫn"
+  },
+  {
+   "id": "P2S1",
+   "size": "story",
+   "note": "Giờ ra chơi, Minh Anh bước tới bạn bạn,"
+  },
+  {
+   "id": "P2S2",
+   "size": "story",
+   "note": "tay cầm chiếc bình xám bạc của bạn, mặt hơi cao lại nhưng ánh mắt lại lấp lánh tò mò."
+  },
+  {
+   "id": "P2S3",
+   "size": "story",
+   "note": "Nè, bạn nãy cầu uống gì thế?"
+  },
+  {
+   "id": "P2S4",
+   "size": "story",
+   "note": "Minh Anh hỏi thẳng, không vòng vo."
+  },
+  {
+   "id": "P2S5",
+   "size": "story",
+   "note": "Trà sữa matcha. Bạn đáp, cố giữ vẻ bình thẳng."
+  },
+  {
+   "id": "P2S6",
+   "size": "story",
+   "note": "Sao thế?"
+  },
+  {
+   "id": "P2S7",
+   "size": "story",
+   "note": "Tại vì đúng lúc đó, tự nhiên mình thấy lạnh bút từ cổ họng xuống tận bụng,"
+  },
+  {
+   "id": "P2S8",
+   "size": "story",
+   "note": "xong rồi có vị matcha. Trà."
+  },
+  {
+   "id": "P2S9",
+   "size": "story",
+   "note": "Minh Anh dơ chiếc bình xám bạc lên, khẽ lắc."
+  },
+  {
+   "id": "P2S10",
+   "size": "story",
+   "note": "Còn cái này là của cậu, hồi nãy mình nhắp thử một chút nước chanh mật ong."
+  },
+  {
+   "id": "P2S11",
+   "size": "story",
+   "note": "Bạn chóp mắt."
+  },
+  {
+   "id": "P2S12",
+   "size": "story",
+   "note": "Đúng là lúc nãy bạn thoáng thấy vị chua dịu thoảng qua đầu lưỡi mà cứ tưởng mình bị ảo giác vì thiếu ngủ."
+  },
+  {
+   "id": "P2S13",
+   "size": "story",
+   "note": "Khải tự nhiên chen vào,"
+  },
+  {
+   "id": "P2S14",
+   "size": "story",
+   "note": "chống cầm nhìn hai người như đang xem phim truyền hình."
+  },
+  {
+   "id": "P2S15",
+   "size": "story",
+   "note": "Thế tức là hai người đang làm chuột bạch cho nhau bằng bình nước,"
+  },
+  {
+   "id": "P2S16",
+   "size": "story",
+   "note": "hay là để tao thử uống ké xem có bị lây không?"
+  },
+  {
+   "id": "P2S17",
+   "size": "story",
+   "note": "Cút ra chỗ khác đi ông thần. Bạn... bạn gạt tay khải, rồi quay lại nhìn Minh Anh."
+  },
+  {
+   "id": "P2S18",
+   "size": "story",
+   "note": "Vậy, giờ mình đổ lại bình nhá."
+  },
+  {
+   "id": "P2S19",
+   "size": "story",
+   "note": "Minh Anh trần trừ một nhịp, ánh mắt tinh nghịch hẳn lên."
+  },
+  {
+   "id": "P2S20",
+   "size": "story",
+   "note": "Khoan đã, nếu chưa đổi vội thì... thử thêm một lần nữa xem có đúng không?"
+  },
+  {
+   "id": "P2S21",
+   "size": "story",
+   "note": "Chưa kịp để bạn kịp phản ứng, Minh Anh mở nắp bình xám bạc của bạn và uống một hơi."
+  },
+  {
+   "id": "P2S22",
+   "size": "story",
+   "note": "Ngay khoảnh khắc ấy, bạn thấy cổ họng mình ngọt liệm vị mật ong xen lẫn vị chua thanh của chanh,"
+  },
+  {
+   "id": "P2S23",
+   "size": "story",
+   "note": "kèm theo một cân rung mình nhẹ chạy dọc sống lưng."
+  },
+  {
+   "id": "P2S24",
+   "size": "story",
+   "note": "Bạn bật cười khẽ, lát đầu nhìn cô ấy."
+  },
+  {
+   "id": "P2S25",
+   "size": "story",
+   "note": "Thấy chưa, chuẩn không cần chỉnh."
+  },
+  {
+   "id": "P2S26",
+   "size": "story",
+   "note": "Minh Anh cười tui, rạn rỡ đến mức bạn suýt quên mất cả lời treo chọc tiếp theo của Khải."
+  },
+  {
+   "id": "P2S27",
+   "size": "story",
+   "note": "Cô ấy đặt chiếc bình xám bạc xuống bàn bạn,"
+  },
+  {
+   "id": "P2S28",
+   "size": "story",
+   "note": "cầm lại bình xanh reo của mình."
+  },
+  {
+   "id": "P2S29",
+   "size": "story",
+   "note": "Hôm nay vui thật đấy, nhớ uống nhiều nước vào nhé, không là tớ biết ngay đấy."
+  },
+  {
+   "id": "P2S30",
+   "size": "story",
+   "note": "Biết cái gì cơ?"
+  },
+  {
+   "id": "P2S31",
+   "size": "story",
+   "note": "Biết cậu đang khát hay đang... lén nhìn tớ."
+  },
+  {
+   "id": "P2S32",
+   "size": "story",
+   "note": "Minh Anh nháy mắt rồi quay về chỗ ngồi."
+  },
+  {
+   "id": "P2S33",
+   "size": "story",
+   "note": "Để lại bạn đứng ngay ngừa giữa... Để lại bạn đứng ngay ngừa giữa tiếng cười."
+  },
+  {
+   "id": "P2S34",
+   "size": "story",
+   "note": "Đầy ác ý của Khải."
+  },
+  {
+   "id": "P2S35",
+   "size": "story",
+   "note": "Chết mày chưa, người ta bắt thóp rồi kìa."
+  },
+  {
+   "id": "P2S36",
+   "size": "story",
+   "note": "Khải vỗ vai bạn rầm rầm."
+  },
+  {
+   "id": "P2S37",
+   "size": "story",
+   "note": "Chiều nay nhớ giữ bình cho cẩn thận, đừng để hớ hên."
+  },
+  {
+   "id": "P3S1",
+   "size": "story",
+   "note": "Suốt buổi chiều, bạn cẩn thận tuyệt đối,"
+  },
+  {
+   "id": "P3S2",
+   "size": "story",
+   "note": "chỉ dám uống nước lọc khi chắc chắn Minh Anh không cầm mình của bạn."
+  },
+  {
+   "id": "P3S3",
+   "size": "story",
+   "note": "Tàn học, bạn về nhà, tắm rửa xong xui, leo lên giường định ngủ sớm."
+  },
+  {
+   "id": "P3S4",
+   "size": "story",
+   "note": "Điện thoại rung lên một cái, tin nhắn từ Minh Anh."
+  },
+  {
+   "id": "P3S5",
+   "size": "story",
+   "note": "Ngủ chưa?"
+  },
+  {
+   "id": "P3S6",
+   "size": "story",
+   "note": "Tớ vừa pha một cốc cacao nóng, siêu nhiều đường."
+  },
+  {
+   "id": "P3S7",
+   "size": "story",
+   "note": "Bạn mỉm cười, gõ lại. Chưa, sao tự nhiên pha cacao khuya thế?"
+  },
+  {
+   "id": "P3S8",
+   "size": "story",
+   "note": "Thử nghiệm khoa học thôi, cậu sẵn sàng chưa? Chưa."
+  },
+  {
+   "id": "P3S9",
+   "size": "story",
+   "note": "Chưa kịp nhắn thêm câu nào, mà người điện thoại sáng lên lần nữa."
+  },
+  {
+   "id": "P3S10",
+   "size": "story",
+   "note": "3, 2, 1, uống đây."
+  },
+  {
+   "id": "P3S11",
+   "size": "story",
+   "note": "Bạn nín thở chờ đợi, nhưng suốt một phút trôi qua,"
+  },
+  {
+   "id": "P3S12",
+   "size": "story",
+   "note": "chẳng có vị ngọt ngào hay hơi ấm nào của cacao lan tới cả."
+  },
+  {
+   "id": "P3S13",
+   "size": "story",
+   "note": "Bạn câu mày, gõ nhanh. Ủa, có thấy gì đâu?"
+  },
+  {
+   "id": "P3S14",
+   "size": "story",
+   "note": "Bình của cậu hết tác dụng rồi à?"
+  },
+  {
+   "id": "P3S15",
+   "size": "story",
+   "note": "Tin nhắn trả lời hiện lên gần như ngay lập tức, kèm theo một biểu tượng cười đắt thắng."
+  },
+  {
+   "id": "P3S16",
+   "size": "story",
+   "note": "Không hề, chỉ là tớ không... Không hề uống từ cái bình đó."
+  },
+  {
+   "id": "P3S17",
+   "size": "story",
+   "note": "Tớ đang cầm bình xám bạc của cậu đây."
+  },
+  {
+   "id": "P3S18",
+   "size": "story",
+   "note": "Chúc ngủ ngon nha, người bị đánh úp."
+  }
+ ],
+ "sound": {
+  "clips": {
+   "title_boom": [
+    "a cinematic whoosh rising into a deep boom impact",
+    1.6
+   ],
+   "sparkle": [
+    "a short bright magical sparkle twinkle, cartoon",
+    0.8
+   ],
+   "paste_pop": [
+    "a bright magical pop as an object appears out of thin air, a soft shimmering whoosh into a pop",
+    0.7
+   ],
+   "pop": [
+    "a cartoon speech bubble pop, short and bright",
+    0.5
+   ],
+   "gasp": [
+    "two young people gasping in surprise at the same moment, cartoon, short",
+    0.8
+   ],
+   "laugh": [
+    "a small classroom of kids bursting out laughing",
+    1.6
+   ],
+   "class_murmur": [
+    "a quiet classroom murmur, kids whispering, chairs shuffling",
+    2.0
+   ],
+   "ding": [
+    "a correct answer ding, bright bell chime",
+    0.8
+   ],
+   "fall_whoosh": [
+    "a small object falling fast through the air, short soft whoosh",
+    0.6
+   ],
+   "land": [
+    "a heavy body landing flat on a wooden floor, cartoon thud",
+    0.6
+   ],
+   "room_tone": [
+    "quiet indoor room tone in the evening, faint distant city hum, no voices",
+    12.5
+   ],
+   "music": [
+    "playful quirky cartoon background music, pizzicato strings, glockenspiel and soft bass, light and curious, 110 bpm, no vocals",
+    17.0
+   ],
+   "gulp": [
+    "a nervous cartoon gulp, short",
+    0.5
+   ],
+   "notify": [
+    "a soft smartphone notification chime, a friendly digital ding",
+    0.7
+   ],
+   "keyboard": [
+    "fast typing on a laptop keyboard, a short burst of clicks",
+    0.9
+   ],
+   "giggle": [
+    "a teenage girl giggling softly, a short cartoon laugh",
+    0.9
+   ],
+   "heartbeat": [
+    "a soft heartbeat thump, two warm beats, close",
+    0.8
+   ],
+   "door_close": [
+    "a wooden door closing softly with a latch click",
+    1.5
+   ],
+   "clink": [
+    "a ceramic coffee mug knocked by a hand on a wooden desk, short clink and scrape",
+    0.7
+   ],
+   "school_bell": [
+    "a school hallway bell ringing, a bright chime",
+    1.5
+   ],
+   "big_step": [
+    "a cartoon exaggerated careful tiptoe step, light airy whoosh",
+    0.7
+   ],
+   "bonk": [
+    "two cartoon heads bonking together, a soft boing",
+    0.6
+   ],
+   "buzzer": [
+    "a game show wrong answer buzzer, short",
+    0.8
+   ],
+   "thermos_thunk": [
+    "a metal thermos slammed down onto a wooden school desk, a hollow metallic thunk, cartoon",
+    0.6
+   ],
+   "phone_vibrate": [
+    "a smartphone vibrating on a wooden nightstand, a short buzz",
+    0.8
+   ]
+  },
+  "events": [
+   [
+    "P1S1",
+    "title_boom",
+    0.25
+   ],
+   [
+    "P1S3+15",
+    "big_step",
+    0.4
+   ],
+   [
+    "P1S4+30",
+    "school_bell",
+    0.12
+   ],
+   [
+    "P1S5+8",
+    "thermos_thunk",
+    0.85
+   ],
+   [
+    "P1S5+14",
+    "land",
+    0.4
+   ],
+   [
+    "P1S6+35",
+    "sparkle",
+    0.5
+   ],
+   [
+    "P1S9+10",
+    "pop",
+    0.5
+   ],
+   [
+    "P1S10+20",
+    "pop",
+    0.45
+   ],
+   [
+    "P1S11+15",
+    "ding",
+    0.4
+   ],
+   [
+    "P1S12+45",
+    "sparkle",
+    0.4
+   ],
+   [
+    "P1S14+35",
+    "gulp",
+    0.45
+   ],
+   [
+    "P1S14+60",
+    "sparkle",
+    0.4
+   ],
+   [
+    "P1S17+10",
+    "gasp",
+    0.35
+   ],
+   [
+    "P1S19+12",
+    "sparkle",
+    0.4
+   ],
+   [
+    "P1S21+30",
+    "ding",
+    0.4
+   ],
+   [
+    "P1S24+20",
+    "ding",
+    0.45
+   ],
+   [
+    "P1S25+15",
+    "heartbeat",
+    0.5
+   ],
+   [
+    "P1S27+8",
+    "pop",
+    0.5
+   ],
+   [
+    "P1S28+95",
+    "pop",
+    0.5
+   ],
+   [
+    "P2S1+15",
+    "big_step",
+    0.4
+   ],
+   [
+    "P2S2+20",
+    "sparkle",
+    0.25
+   ],
+   [
+    "P2S3+6",
+    "pop",
+    0.5
+   ],
+   [
+    "P2S4+10",
+    "pop",
+    0.45
+   ],
+   [
+    "P2S5+22",
+    "pop",
+    0.5
+   ],
+   [
+    "P2S6+4",
+    "pop",
+    0.4
+   ],
+   [
+    "P2S7+20",
+    "sparkle",
+    0.4
+   ],
+   [
+    "P2S9+25",
+    "clink",
+    0.5
+   ],
+   [
+    "P2S10+10",
+    "pop",
+    0.5
+   ],
+   [
+    "P2S11+30",
+    "bonk",
+    0.35
+   ],
+   [
+    "P2S13+8",
+    "pop",
+    0.45
+   ],
+   [
+    "P2S15+8",
+    "pop",
+    0.5
+   ],
+   [
+    "P2S16+12",
+    "pop",
+    0.5
+   ],
+   [
+    "P2S17+10",
+    "bonk",
+    0.6
+   ],
+   [
+    "P2S18+6",
+    "pop",
+    0.5
+   ],
+   [
+    "P2S19+54",
+    "sparkle",
+    0.45
+   ],
+   [
+    "P2S20+8",
+    "pop",
+    0.5
+   ],
+   [
+    "P2S21+73",
+    "gulp",
+    0.6
+   ],
+   [
+    "P2S21+114",
+    "sparkle",
+    0.55
+   ],
+   [
+    "P2S22+15",
+    "heartbeat",
+    0.4
+   ],
+   [
+    "P2S24+12",
+    "giggle",
+    0.3
+   ],
+   [
+    "P2S25+6",
+    "pop",
+    0.5
+   ],
+   [
+    "P2S26+15",
+    "laugh",
+    0.45
+   ],
+   [
+    "P2S29+8",
+    "pop",
+    0.5
+   ],
+   [
+    "P2S31+59",
+    "giggle",
+    0.35
+   ],
+   [
+    "P2S33+30",
+    "laugh",
+    0.4
+   ],
+   [
+    "P2S35+8",
+    "pop",
+    0.5
+   ],
+   [
+    "P2S36+12",
+    "bonk",
+    0.4
+   ],
+   [
+    "P2S37+8",
+    "pop",
+    0.5
+   ],
+   [
+    "P3S3+57",
+    "door_close",
+    0.5
+   ],
+   [
+    "P3S4+49",
+    "phone_vibrate",
+    0.4
+   ],
+   [
+    "P3S4+53",
+    "notify",
+    0.3
+   ],
+   [
+    "P3S5+6",
+    "notify",
+    0.45
+   ],
+   [
+    "P3S6+45",
+    "notify",
+    0.45
+   ],
+   [
+    "P3S10+35",
+    "notify",
+    0.4
+   ],
+   [
+    "P3S12+20",
+    "buzzer",
+    0.5
+   ],
+   [
+    "P3S13+93",
+    "keyboard",
+    0.5
+   ],
+   [
+    "P3S15+98",
+    "notify",
+    0.35
+   ],
+   [
+    "P3S17+25",
+    "sparkle",
+    0.7
+   ],
+   [
+    "P3S18+68",
+    "pop",
+    0.4
+   ]
+  ],
+  "repeats": [
+   {
+    "at": "P1S1",
+    "clip": "room_tone",
+    "n": 26,
+    "every": 350,
+    "gain": [
+     0.04,
+     0.05
+    ],
+    "pitch": [
+     1,
+     1
+    ],
+    "note": "evening room tone bed under the whole episode"
+   },
+   {
+    "at": "P1S4",
+    "clip": "class_murmur",
+    "n": 40,
+    "every": 85,
+    "gain": [
+     0.04,
+     0.06
+    ],
+    "pitch": [
+     1,
+     1
+    ],
+    "note": "classroom murmur pages 1-2"
+   },
+   {
+    "at": "P3S1",
+    "clip": "room_tone",
+    "n": 8,
+    "every": 200,
+    "gain": [
+     0.05,
+     0.06
+    ],
+    "pitch": [
+     1,
+     1
+    ],
+    "note": "bedroom night tone page 3"
+   }
+  ],
+  "music": {
+   "clip": "music",
+   "from": "P2S24",
+   "until": "P2S37"
+  },
+  "levels": {
+   "sfx_lu": -3.0,
+   "music_lu": -9.5
+  }
+ }
+}

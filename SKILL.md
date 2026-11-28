@@ -56,6 +56,12 @@ schematic for the science beat, a cliffhanger blackout). Read the one closest to
   illustrates), and timing never depends on that alignment. Scenes (~10 shots) are the unit of parallel work —
   each agent implements `shots/p{n}c{m}.tsx` exporting `{mod}Shots: ShotMap`; `shots.tsx` merges them all. Then
   `plan.py` builds `timeline.json` as usual. See `episodes/crush/` for the pattern.
+- **Captioned-story variant (user-made SRT).** When the person captions the audio themselves, the pipeline stops
+  after voicing: **clean `I:\My Drive\audiovideo\audio\` first** (delete stale `pageN.wav`/old takes so only the
+  current run's files remain), then copy each `studio/public/<slug>/voice_pN.wav` there as `pageN.wav`, hand
+  over, and wait — they produce the SRT into `I:\My Drive\audiovideo\caption\` and reply. Skip
+  `plan_story.py`/`plan.py`/shots entirely for that flow. `speakers.json` may set `"language"` (e.g. `"vi"`) for
+  Whisper word timestamps.
 - **Design before code, per scene.** Before writing a scene's shots, write its design note (in the scene file's
   header comment or the brief): the set's object inventory, the depth layers (foreground/midground/background),
   where each character blocks, and the keyframe budget — every shot gets ≥3 independently moving elements

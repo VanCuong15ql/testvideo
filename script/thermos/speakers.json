@@ -1,0 +1,29 @@
+{
+ "language": "vi",
+ "voices": {"male": "Narrator/Charon", "female": "Emma/Leda"},
+ "note": "you -> nam chính (bạn), emma -> Minh Anh, other -> Khải. 'hì hì' là tiếng cười của Khải.",
+ "quotes": [
+  "other","other","you",
+  "emma","you","you","emma","emma","other","you","you","emma","you","emma","you","emma","other","other","other",
+  "emma","you","emma","emma","you","emma"
+ ],
+ "styles": {
+  "0": "teasing, playful, a bit smug",
+  "1": "mocking, grinning",
+  "2": "sharp, annoyed whisper",
+  "3": "curious, direct, a little blunt",
+  "4": "casual, calm",
+  "6": "earnest, explaining, a little shy",
+  "7": "amused, teasing",
+  "9": "playful, challenging",
+  "10": "triumphant, pleased",
+  "11": "warm, bright, happy",
+  "13": "flirty, smiling, teasing",
+  "14": "mean, sing-song laugh",
+  "15": "urgent, loud, warning",
+  "16": "cautioning, half joking",
+  "19": "soft, texting, a little playful",
+  "21": "playful, counting down",
+  "24": "triumphant, teasing, warm"
+ }
+}

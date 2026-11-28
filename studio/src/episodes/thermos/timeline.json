@@ -1,0 +1,1430 @@
+{
+ "slug": "thermos",
+ "title": "Cái Bình Giữ Nhiệt",
+ "fps": 30,
+ "total": 8998,
+ "segments": [
+  {
+   "shot": "P1S1",
+   "a": 0,
+   "b": 18,
+   "t0": 0,
+   "t1": 18,
+   "line": "Sáng thứ hai,"
+  },
+  {
+   "shot": "P1S2",
+   "a": 18,
+   "b": 118,
+   "t0": 0,
+   "t1": 100,
+   "line": "bạn vớ vội chiếc bình giữ nhiệt màu xanh rêu trên bàn học,"
+  },
+  {
+   "shot": "P1S3",
+   "a": 118,
+   "b": 217,
+   "t0": 0,
+   "t1": 99,
+   "line": "rồi lao ra khỏi nhà vì trễ giờ kiểm tra miệng môn lý."
+  },
+  {
+   "shot": "P1S4",
+   "a": 217,
+   "b": 429,
+   "t0": 0,
+   "t1": 212,
+   "line": "Đến lớp, / bạn thở dốc, / đặt phịch chiếc bình lên bàn và nhận ra một chi tiết hơi sai."
+  },
+  {
+   "shot": "P1S5",
+   "a": 429,
+   "b": 548,
+   "t0": 0,
+   "t1": 119,
+   "line": "Bình của bạn vốn màu xám bạc có dán sticker mèo mập,"
+  },
+  {
+   "shot": "P1S6",
+   "a": 548,
+   "b": 677,
+   "t0": 0,
+   "t1": 129,
+   "line": "còn bên này màu xanh rêu dán sticker nhỏ xíu hình cốc cà phê."
+  },
+  {
+   "shot": "P1S7",
+   "a": 677,
+   "b": 779,
+   "t0": 0,
+   "t1": 102,
+   "line": "Lúc ấy bạn chưa kịp bận tâm, / cho đến khi khải,"
+  },
+  {
+   "shot": "P1S8",
+   "a": 779,
+   "b": 894,
+   "t0": 0,
+   "t1": 115,
+   "line": "thằng bản thân ngồi cạnh với biệt tài soi mói và cà khỉa đúng lúc nhất."
+  },
+  {
+   "shot": "P1S9",
+   "a": 894,
+   "b": 999,
+   "t0": 0,
+   "t1": 105,
+   "line": "Cho một người sang. / Ê, / hôm nay đổi phong cách à,"
+  },
+  {
+   "shot": "P1S10",
+   "a": 999,
+   "b": 1069,
+   "t0": 0,
+   "t1": 70,
+   "line": "nhìn giống đồ của Minh Anh ngồi dãy bên kia thế."
+  },
+  {
+   "shot": "P1S11",
+   "a": 1069,
+   "b": 1169,
+   "t0": 0,
+   "t1": 100,
+   "line": "Bạn liếc sang dãy bàn kế bên. / Minh Anh,"
+  },
+  {
+   "shot": "P1S12",
+   "a": 1169,
+   "b": 1330,
+   "t0": 0,
+   "t1": 161,
+   "line": "người bạn thầm thích suốt hai học kỳ, / đang cầm chiếc bình xám bạc dán sticker mèo mập của bạn,"
+  },
+  {
+   "shot": "P1S13",
+   "a": 1330,
+   "b": 1433,
+   "t0": 0,
+   "t1": 103,
+   "line": "nghiêng đầu nhìn chầm chầm vào nó với vẻ mặt đầy nghi vấn."
+  },
+  {
+   "shot": "P1S14",
+   "a": 1433,
+   "b": 1598,
+   "t0": 0,
+   "t1": 165,
+   "line": "Chưa kịp giải thích, / bạn mở nắp bình xanh rêu và tu một ngụm lớn trà sữa matcha đá lạnh."
+  },
+  {
+   "shot": "P1S15",
+   "a": 1598,
+   "b": 1676,
+   "t0": 0,
+   "t1": 78,
+   "line": "Ngay lập tức, / thư kỳ lạ xảy ra."
+  },
+  {
+   "shot": "P1S16",
+   "a": 1676,
+   "b": 1759,
+   "t0": 0,
+   "t1": 83,
+   "line": "Trong miệng bạn mát lạnh vị matcha."
+  },
+  {
+   "shot": "P1S17",
+   "a": 1759,
+   "b": 1897,
+   "t0": 0,
+   "t1": 138,
+   "line": "Nhưng ở dãy bàn bên kia... / Minh Anh đột ngột rung mình, / nhăn tít mũi,"
+  },
+  {
+   "shot": "P1S18",
+   "a": 1897,
+   "b": 2026,
+   "t0": 0,
+   "t1": 129,
+   "line": "rồi đưa tay ôm má như vừa nếm phải thứ gì đó cực kỳ lạnh hoặc chát."
+  },
+  {
+   "shot": "P1S19",
+   "a": 2026,
+   "b": 2100,
+   "t0": 0,
+   "t1": 74,
+   "line": "Ánh mắt của ấy lia thẳng sang bạn."
+  },
+  {
+   "shot": "P1S20",
+   "a": 2100,
+   "b": 2197,
+   "t0": 0,
+   "t1": 97,
+   "line": "Cơ chế kỳ hoạt này lập tức lộ rõ quy luật."
+  },
+  {
+   "shot": "P1S21",
+   "a": 2197,
+   "b": 2341,
+   "t0": 0,
+   "t1": 144,
+   "line": "Hệ ai uống nước từ chiếc bình đang cầm nhầm, / người kia sẽ cảm nhận y hệt vị,"
+  },
+  {
+   "shot": "P1S22",
+   "a": 2341,
+   "b": 2461,
+   "t0": 0,
+   "t1": 120,
+   "line": "nhiệt độ và cảm giác tức thi, / như tê bút,"
+  },
+  {
+   "shot": "P1S23",
+   "a": 2461,
+   "b": 2533,
+   "t0": 0,
+   "t1": 72,
+   "line": "chua lẹ hay bừng tỉnh vì caffeine,"
+  },
+  {
+   "shot": "P1S24",
+   "a": 2533,
+   "b": 2626,
+   "t0": 0,
+   "t1": 93,
+   "line": "trong vòng 10 giây, / bất kể khoảng cách trong trường."
+  },
+  {
+   "shot": "P1S25",
+   "a": 2626,
+   "b": 2789,
+   "t0": 0,
+   "t1": 163,
+   "line": "Bạn nuốt vội ngụm trà sữa. / Mặt tìm đập thịnh thịt, / Khải nheo mắt nhìn bạn,"
+  },
+  {
+   "shot": "P1S26",
+   "a": 2789,
+   "b": 2868,
+   "t0": 0,
+   "t1": 79,
+   "line": "rồi nhìn sang Minh Anh, / nhạch mẹp."
+  },
+  {
+   "shot": "P1S27",
+   "a": 2868,
+   "b": 2943,
+   "t0": 0,
+   "t1": 75,
+   "line": "Sao mặt mày đỏ như tôm luộc thế?"
+  },
+  {
+   "shot": "P1S28",
+   "a": 2943,
+   "b": 3116,
+   "t0": 0,
+   "t1": 173,
+   "line": "Uống nhầm thuốc băng lực à? / Im đi Khải, / bạn gằn giọng, / cúi gằm súng vỡ. / Hãy subscribe cho kênh La La School Để không bỏ lỡ những video hấp dẫn"
+  },
+  {
+   "shot": "P2S1",
+   "a": 3116,
+   "b": 3180,
+   "t0": 0,
+   "t1": 64,
+   "line": "Giờ ra chơi, / Minh Anh bước tới bạn bạn,"
+  },
+  {
+   "shot": "P2S2",
+   "a": 3180,
+   "b": 3343,
+   "t0": 0,
+   "t1": 163,
+   "line": "tay cầm chiếc bình xám bạc của bạn, / mặt hơi cao lại nhưng ánh mắt lại lấp lánh tò mò."
+  },
+  {
+   "shot": "P2S3",
+   "a": 3343,
+   "b": 3428,
+   "t0": 0,
+   "t1": 85,
+   "line": "Nè, / bạn nãy cầu uống gì thế?"
+  },
+  {
+   "shot": "P2S4",
+   "a": 3428,
+   "b": 3507,
+   "t0": 0,
+   "t1": 79,
+   "line": "Minh Anh hỏi thẳng, / không vòng vo."
+  },
+  {
+   "shot": "P2S5",
+   "a": 3507,
+   "b": 3643,
+   "t0": 0,
+   "t1": 136,
+   "line": "Trà sữa matcha. / Bạn đáp, / cố giữ vẻ bình thẳng."
+  },
+  {
+   "shot": "P2S6",
+   "a": 3643,
+   "b": 3680,
+   "t0": 0,
+   "t1": 37,
+   "line": "Sao thế?"
+  },
+  {
+   "shot": "P2S7",
+   "a": 3680,
+   "b": 3849,
+   "t0": 0,
+   "t1": 169,
+   "line": "Tại vì đúng lúc đó, / tự nhiên mình thấy lạnh bút từ cổ họng xuống tận bụng,"
+  },
+  {
+   "shot": "P2S8",
+   "a": 3849,
+   "b": 3926,
+   "t0": 0,
+   "t1": 77,
+   "line": "xong rồi có vị matcha. / Trà."
+  },
+  {
+   "shot": "P2S9",
+   "a": 3926,
+   "b": 4018,
+   "t0": 0,
+   "t1": 92,
+   "line": "Minh Anh dơ chiếc bình xám bạc lên, / khẽ lắc."
+  },
+  {
+   "shot": "P2S10",
+   "a": 4018,
+   "b": 4150,
+   "t0": 0,
+   "t1": 132,
+   "line": "Còn cái này là của cậu, / hồi nãy mình nhắp thử một chút nước chanh mật ong."
+  },
+  {
+   "shot": "P2S11",
+   "a": 4150,
+   "b": 4184,
+   "t0": 0,
+   "t1": 34,
+   "line": "Bạn chóp mắt."
+  },
+  {
+   "shot": "P2S12",
+   "a": 4184,
+   "b": 4377,
+   "t0": 0,
+   "t1": 193,
+   "line": "Đúng là lúc nãy bạn thoáng thấy vị chua dịu thoảng qua đầu lưỡi mà cứ tưởng mình bị ảo giác vì thiếu ngủ."
+  },
+  {
+   "shot": "P2S13",
+   "a": 4377,
+   "b": 4431,
+   "t0": 0,
+   "t1": 54,
+   "line": "Khải tự nhiên chen vào,"
+  },
+  {
+   "shot": "P2S14",
+   "a": 4431,
+   "b": 4514,
+   "t0": 0,
+   "t1": 83,
+   "line": "chống cầm nhìn hai người như đang xem phim truyền hình."
+  },
+  {
+   "shot": "P2S15",
+   "a": 4514,
+   "b": 4630,
+   "t0": 0,
+   "t1": 116,
+   "line": "Thế tức là hai người đang làm chuột bạch cho nhau bằng bình nước,"
+  },
+  {
+   "shot": "P2S16",
+   "a": 4630,
+   "b": 4719,
+   "t0": 0,
+   "t1": 89,
+   "line": "hay là để tao thử uống ké xem có bị lây không?"
+  },
+  {
+   "shot": "P2S17",
+   "a": 4719,
+   "b": 4875,
+   "t0": 0,
+   "t1": 156,
+   "line": "Cút ra chỗ khác đi ông thần. / Bạn... / bạn gạt tay khải, / rồi quay lại nhìn Minh Anh."
+  },
+  {
+   "shot": "P2S18",
+   "a": 4875,
+   "b": 4946,
+   "t0": 0,
+   "t1": 71,
+   "line": "Vậy, / giờ mình đổ lại bình nhá."
+  },
+  {
+   "shot": "P2S19",
+   "a": 4946,
+   "b": 5055,
+   "t0": 0,
+   "t1": 109,
+   "line": "Minh Anh trần trừ một nhịp, / ánh mắt tinh nghịch hẳn lên."
+  },
+  {
+   "shot": "P2S20",
+   "a": 5055,
+   "b": 5234,
+   "t0": 0,
+   "t1": 179,
+   "line": "Khoan đã, / nếu chưa đổi vội thì... / thử thêm một lần nữa xem có đúng không?"
+  },
+  {
+   "shot": "P2S21",
+   "a": 5234,
+   "b": 5397,
+   "t0": 0,
+   "t1": 163,
+   "line": "Chưa kịp để bạn kịp phản ứng, / Minh Anh mở nắp bình xám bạc của bạn và uống một hơi."
+  },
+  {
+   "shot": "P2S22",
+   "a": 5397,
+   "b": 5578,
+   "t0": 0,
+   "t1": 181,
+   "line": "Ngay khoảnh khắc ấy, / bạn thấy cổ họng mình ngọt liệm vị mật ong xen lẫn vị chua thanh của chanh,"
+  },
+  {
+   "shot": "P2S23",
+   "a": 5578,
+   "b": 5662,
+   "t0": 0,
+   "t1": 84,
+   "line": "kèm theo một cân rung mình nhẹ chạy dọc sống lưng."
+  },
+  {
+   "shot": "P2S24",
+   "a": 5662,
+   "b": 5748,
+   "t0": 0,
+   "t1": 86,
+   "line": "Bạn bật cười khẽ, / lát đầu nhìn cô ấy."
+  },
+  {
+   "shot": "P2S25",
+   "a": 5748,
+   "b": 5829,
+   "t0": 0,
+   "t1": 81,
+   "line": "Thấy chưa, / chuẩn không cần chỉnh."
+  },
+  {
+   "shot": "P2S26",
+   "a": 5829,
+   "b": 5988,
+   "t0": 0,
+   "t1": 159,
+   "line": "Minh Anh cười tui, / rạn rỡ đến mức bạn suýt quên mất cả lời treo chọc tiếp theo của Khải."
+  },
+  {
+   "shot": "P2S27",
+   "a": 5988,
+   "b": 6075,
+   "t0": 0,
+   "t1": 87,
+   "line": "Cô ấy đặt chiếc bình xám bạc xuống bàn bạn,"
+  },
+  {
+   "shot": "P2S28",
+   "a": 6075,
+   "b": 6124,
+   "t0": 0,
+   "t1": 49,
+   "line": "cầm lại bình xanh reo của mình."
+  },
+  {
+   "shot": "P2S29",
+   "a": 6124,
+   "b": 6296,
+   "t0": 0,
+   "t1": 172,
+   "line": "Hôm nay vui thật đấy, / nhớ uống nhiều nước vào nhé, / không là tớ biết ngay đấy."
+  },
+  {
+   "shot": "P2S30",
+   "a": 6296,
+   "b": 6338,
+   "t0": 0,
+   "t1": 42,
+   "line": "Biết cái gì cơ?"
+  },
+  {
+   "shot": "P2S31",
+   "a": 6338,
+   "b": 6447,
+   "t0": 0,
+   "t1": 109,
+   "line": "Biết cậu đang khát hay đang... / lén nhìn tớ."
+  },
+  {
+   "shot": "P2S32",
+   "a": 6447,
+   "b": 6523,
+   "t0": 0,
+   "t1": 76,
+   "line": "Minh Anh nháy mắt rồi quay về chỗ ngồi."
+  },
+  {
+   "shot": "P2S33",
+   "a": 6523,
+   "b": 6597,
+   "t0": 0,
+   "t1": 74,
+   "line": "Để lại bạn đứng ngay ngừa giữa... / Để lại bạn đứng ngay ngừa giữa tiếng cười."
+  },
+  {
+   "shot": "P2S34",
+   "a": 6597,
+   "b": 6686,
+   "t0": 0,
+   "t1": 89,
+   "line": "Đầy ác ý của Khải."
+  },
+  {
+   "shot": "P2S35",
+   "a": 6686,
+   "b": 6806,
+   "t0": 0,
+   "t1": 120,
+   "line": "Chết mày chưa, / người ta bắt thóp rồi kìa."
+  },
+  {
+   "shot": "P2S36",
+   "a": 6806,
+   "b": 6882,
+   "t0": 0,
+   "t1": 76,
+   "line": "Khải vỗ vai bạn rầm rầm."
+  },
+  {
+   "shot": "P2S37",
+   "a": 6882,
+   "b": 6998,
+   "t0": 0,
+   "t1": 116,
+   "line": "Chiều nay nhớ giữ bình cho cẩn thận, / đừng để hớ hên."
+  },
+  {
+   "shot": "P3S1",
+   "a": 6998,
+   "b": 7080,
+   "t0": 0,
+   "t1": 82,
+   "line": "Suốt buổi chiều, / bạn cẩn thận tuyệt đối,"
+  },
+  {
+   "shot": "P3S2",
+   "a": 7080,
+   "b": 7192,
+   "t0": 0,
+   "t1": 112,
+   "line": "chỉ dám uống nước lọc khi chắc chắn Minh Anh không cầm mình của bạn."
+  },
+  {
+   "shot": "P3S3",
+   "a": 7192,
+   "b": 7357,
+   "t0": 0,
+   "t1": 165,
+   "line": "Tàn học, / bạn về nhà, / tắm rửa xong xui, / leo lên giường định ngủ sớm."
+  },
+  {
+   "shot": "P3S4",
+   "a": 7357,
+   "b": 7455,
+   "t0": 0,
+   "t1": 98,
+   "line": "Điện thoại rung lên một cái, / tin nhắn từ Minh Anh."
+  },
+  {
+   "shot": "P3S5",
+   "a": 7455,
+   "b": 7486,
+   "t0": 0,
+   "t1": 31,
+   "line": "Ngủ chưa?"
+  },
+  {
+   "shot": "P3S6",
+   "a": 7486,
+   "b": 7600,
+   "t0": 0,
+   "t1": 114,
+   "line": "Tớ vừa pha một cốc cacao nóng, / siêu nhiều đường."
+  },
+  {
+   "shot": "P3S7",
+   "a": 7600,
+   "b": 7750,
+   "t0": 0,
+   "t1": 150,
+   "line": "Bạn mỉm cười, / gõ lại. / Chưa, / sao tự nhiên pha cacao khuya thế?"
+  },
+  {
+   "shot": "P3S8",
+   "a": 7750,
+   "b": 7838,
+   "t0": 0,
+   "t1": 88,
+   "line": "Thử nghiệm khoa học thôi, / cậu sẵn sàng chưa? / Chưa."
+  },
+  {
+   "shot": "P3S9",
+   "a": 7838,
+   "b": 7947,
+   "t0": 0,
+   "t1": 109,
+   "line": "Chưa kịp nhắn thêm câu nào, / mà người điện thoại sáng lên lần nữa."
+  },
+  {
+   "shot": "P3S10",
+   "a": 7947,
+   "b": 8065,
+   "t0": 0,
+   "t1": 118,
+   "line": "3, / 2, / 1, / uống đây."
+  },
+  {
+   "shot": "P3S11",
+   "a": 8065,
+   "b": 8185,
+   "t0": 0,
+   "t1": 120,
+   "line": "Bạn nín thở chờ đợi, / nhưng suốt một phút trôi qua,"
+  },
+  {
+   "shot": "P3S12",
+   "a": 8185,
+   "b": 8294,
+   "t0": 0,
+   "t1": 109,
+   "line": "chẳng có vị ngọt ngào hay hơi ấm nào của cacao lan tới cả."
+  },
+  {
+   "shot": "P3S13",
+   "a": 8294,
+   "b": 8419,
+   "t0": 0,
+   "t1": 125,
+   "line": "Bạn câu mày, / gõ nhanh. / Ủa, / có thấy gì đâu?"
+  },
+  {
+   "shot": "P3S14",
+   "a": 8419,
+   "b": 8472,
+   "t0": 0,
+   "t1": 53,
+   "line": "Bình của cậu hết tác dụng rồi à?"
+  },
+  {
+   "shot": "P3S15",
+   "a": 8472,
+   "b": 8636,
+   "t0": 0,
+   "t1": 164,
+   "line": "Tin nhắn trả lời hiện lên gần như ngay lập tức, / kèm theo một biểu tượng cười đắt thắng."
+  },
+  {
+   "shot": "P3S16",
+   "a": 8636,
+   "b": 8774,
+   "t0": 0,
+   "t1": 138,
+   "line": "Không hề, / chỉ là tớ không... / Không hề uống từ cái bình đó."
+  },
+  {
+   "shot": "P3S17",
+   "a": 8774,
+   "b": 8847,
+   "t0": 0,
+   "t1": 73,
+   "line": "Tớ đang cầm bình xám bạc của cậu đây."
+  },
+  {
+   "shot": "P3S18",
+   "a": 8847,
+   "b": 8923,
+   "t0": 0,
+   "t1": 76,
+   "line": "Chúc ngủ ngon nha, / người bị đánh úp."
+  }
+ ],
+ "shots": [
+  {
+   "id": "P1S1",
+   "size": "story",
+   "key": 9,
+   "len": 18,
+   "first": 0,
+   "line": "Sáng thứ hai,",
+   "note": "Sáng thứ hai,"
+  },
+  {
+   "id": "P1S2",
+   "size": "story",
+   "key": 50,
+   "len": 100,
+   "first": 18,
+   "line": "bạn vớ vội chiếc bình giữ nhiệt màu xanh rêu trên bàn học,",
+   "note": "bạn vớ vội chiếc bình giữ nhiệt màu xanh rêu trên bàn học,"
+  },
+  {
+   "id": "P1S3",
+   "size": "story",
+   "key": 49,
+   "len": 99,
+   "first": 118,
+   "line": "rồi lao ra khỏi nhà vì trễ giờ kiểm tra miệng môn lý.",
+   "note": "rồi lao ra khỏi nhà vì trễ giờ kiểm tra miệng môn lý."
+  },
+  {
+   "id": "P1S4",
+   "size": "story",
+   "key": 106,
+   "len": 212,
+   "first": 217,
+   "line": "Đến lớp, bạn thở dốc, đặt phịch chiếc bình lên bàn và nhận ra một chi tiết hơi sai.",
+   "note": "Đến lớp, bạn thở dốc, đặt phịch chiếc bình lên bàn và nhận ra một chi tiết hơi sai."
+  },
+  {
+   "id": "P1S5",
+   "size": "story",
+   "key": 59,
+   "len": 119,
+   "first": 429,
+   "line": "Bình của bạn vốn màu xám bạc có dán sticker mèo mập,",
+   "note": "Bình của bạn vốn màu xám bạc có dán sticker mèo mập,"
+  },
+  {
+   "id": "P1S6",
+   "size": "story",
+   "key": 64,
+   "len": 129,
+   "first": 548,
+   "line": "còn bên này màu xanh rêu dán sticker nhỏ xíu hình cốc cà phê.",
+   "note": "còn bên này màu xanh rêu dán sticker nhỏ xíu hình cốc cà phê."
+  },
+  {
+   "id": "P1S7",
+   "size": "story",
+   "key": 51,
+   "len": 102,
+   "first": 677,
+   "line": "Lúc ấy bạn chưa kịp bận tâm, cho đến khi khải,",
+   "note": "Lúc ấy bạn chưa kịp bận tâm, cho đến khi khải,"
+  },
+  {
+   "id": "P1S8",
+   "size": "story",
+   "key": 57,
+   "len": 115,
+   "first": 779,
+   "line": "thằng bản thân ngồi cạnh với biệt tài soi mói và cà khỉa đúng lúc nhất.",
+   "note": "thằng bản thân ngồi cạnh với biệt tài soi mói và cà khỉa đúng lúc nhất."
+  },
+  {
+   "id": "P1S9",
+   "size": "story",
+   "key": 52,
+   "len": 105,
+   "first": 894,
+   "line": "Cho một người sang. Ê, hôm nay đổi phong cách à,",
+   "note": "Cho một người sang. Ê, hôm nay đổi phong cách à,"
+  },
+  {
+   "id": "P1S10",
+   "size": "story",
+   "key": 35,
+   "len": 70,
+   "first": 999,
+   "line": "nhìn giống đồ của Minh Anh ngồi dãy bên kia thế.",
+   "note": "nhìn giống đồ của Minh Anh ngồi dãy bên kia thế."
+  },
+  {
+   "id": "P1S11",
+   "size": "story",
+   "key": 50,
+   "len": 100,
+   "first": 1069,
+   "line": "Bạn liếc sang dãy bàn kế bên. Minh Anh,",
+   "note": "Bạn liếc sang dãy bàn kế bên. Minh Anh,"
+  },
+  {
+   "id": "P1S12",
+   "size": "story",
+   "key": 80,
+   "len": 161,
+   "first": 1169,
+   "line": "người bạn thầm thích suốt hai học kỳ, đang cầm chiếc bình xám bạc dán sticker mèo mập của bạn,",
+   "note": "người bạn thầm thích suốt hai học kỳ, đang cầm chiếc bình xám bạc dán sticker mèo mập của bạn,"
+  },
+  {
+   "id": "P1S13",
+   "size": "story",
+   "key": 51,
+   "len": 103,
+   "first": 1330,
+   "line": "nghiêng đầu nhìn chầm chầm vào nó với vẻ mặt đầy nghi vấn.",
+   "note": "nghiêng đầu nhìn chầm chầm vào nó với vẻ mặt đầy nghi vấn."
+  },
+  {
+   "id": "P1S14",
+   "size": "story",
+   "key": 82,
+   "len": 165,
+   "first": 1433,
+   "line": "Chưa kịp giải thích, bạn mở nắp bình xanh rêu và tu một ngụm lớn trà sữa matcha đá lạnh.",
+   "note": "Chưa kịp giải thích, bạn mở nắp bình xanh rêu và tu một ngụm lớn trà sữa matcha đá lạnh."
+  },
+  {
+   "id": "P1S15",
+   "size": "story",
+   "key": 39,
+   "len": 78,
+   "first": 1598,
+   "line": "Ngay lập tức, thư kỳ lạ xảy ra.",
+   "note": "Ngay lập tức, thư kỳ lạ xảy ra."
+  },
+  {
+   "id": "P1S16",
+   "size": "story",
+   "key": 41,
+   "len": 83,
+   "first": 1676,
+   "line": "Trong miệng bạn mát lạnh vị matcha.",
+   "note": "Trong miệng bạn mát lạnh vị matcha."
+  },
+  {
+   "id": "P1S17",
+   "size": "story",
+   "key": 69,
+   "len": 138,
+   "first": 1759,
+   "line": "Nhưng ở dãy bàn bên kia... Minh Anh đột ngột rung mình, nhăn tít mũi,",
+   "note": "Nhưng ở dãy bàn bên kia... Minh Anh đột ngột rung mình, nhăn tít mũi,"
+  },
+  {
+   "id": "P1S18",
+   "size": "story",
+   "key": 64,
+   "len": 129,
+   "first": 1897,
+   "line": "rồi đưa tay ôm má như vừa nếm phải thứ gì đó cực kỳ lạnh hoặc chát.",
+   "note": "rồi đưa tay ôm má như vừa nếm phải thứ gì đó cực kỳ lạnh hoặc chát."
+  },
+  {
+   "id": "P1S19",
+   "size": "story",
+   "key": 37,
+   "len": 74,
+   "first": 2026,
+   "line": "Ánh mắt của ấy lia thẳng sang bạn.",
+   "note": "Ánh mắt của ấy lia thẳng sang bạn."
+  },
+  {
+   "id": "P1S20",
+   "size": "story",
+   "key": 48,
+   "len": 97,
+   "first": 2100,
+   "line": "Cơ chế kỳ hoạt này lập tức lộ rõ quy luật.",
+   "note": "Cơ chế kỳ hoạt này lập tức lộ rõ quy luật."
+  },
+  {
+   "id": "P1S21",
+   "size": "story",
+   "key": 72,
+   "len": 144,
+   "first": 2197,
+   "line": "Hệ ai uống nước từ chiếc bình đang cầm nhầm, người kia sẽ cảm nhận y hệt vị,",
+   "note": "Hệ ai uống nước từ chiếc bình đang cầm nhầm, người kia sẽ cảm nhận y hệt vị,"
+  },
+  {
+   "id": "P1S22",
+   "size": "story",
+   "key": 60,
+   "len": 120,
+   "first": 2341,
+   "line": "nhiệt độ và cảm giác tức thi, như tê bút,",
+   "note": "nhiệt độ và cảm giác tức thi, như tê bút,"
+  },
+  {
+   "id": "P1S23",
+   "size": "story",
+   "key": 36,
+   "len": 72,
+   "first": 2461,
+   "line": "chua lẹ hay bừng tỉnh vì caffeine,",
+   "note": "chua lẹ hay bừng tỉnh vì caffeine,"
+  },
+  {
+   "id": "P1S24",
+   "size": "story",
+   "key": 46,
+   "len": 93,
+   "first": 2533,
+   "line": "trong vòng 10 giây, bất kể khoảng cách trong trường.",
+   "note": "trong vòng 10 giây, bất kể khoảng cách trong trường."
+  },
+  {
+   "id": "P1S25",
+   "size": "story",
+   "key": 81,
+   "len": 163,
+   "first": 2626,
+   "line": "Bạn nuốt vội ngụm trà sữa. Mặt tìm đập thịnh thịt, Khải nheo mắt nhìn bạn,",
+   "note": "Bạn nuốt vội ngụm trà sữa. Mặt tìm đập thịnh thịt, Khải nheo mắt nhìn bạn,"
+  },
+  {
+   "id": "P1S26",
+   "size": "story",
+   "key": 39,
+   "len": 79,
+   "first": 2789,
+   "line": "rồi nhìn sang Minh Anh, nhạch mẹp.",
+   "note": "rồi nhìn sang Minh Anh, nhạch mẹp."
+  },
+  {
+   "id": "P1S27",
+   "size": "story",
+   "key": 37,
+   "len": 75,
+   "first": 2868,
+   "line": "Sao mặt mày đỏ như tôm luộc thế?",
+   "note": "Sao mặt mày đỏ như tôm luộc thế?"
+  },
+  {
+   "id": "P1S28",
+   "size": "story",
+   "key": 86,
+   "len": 173,
+   "first": 2943,
+   "line": "Uống nhầm thuốc băng lực à? Im đi Khải, bạn gằn giọng, cúi gằm súng vỡ. Hãy subscribe cho kênh La La School Để không bỏ lỡ những video hấp dẫn",
+   "note": "Uống nhầm thuốc băng lực à? Im đi Khải, bạn gằn giọng, cúi gằm súng vỡ. Hãy subscribe cho kênh La La School Để không bỏ lỡ những video hấp dẫn"
+  },
+  {
+   "id": "P2S1",
+   "size": "story",
+   "key": 32,
+   "len": 64,
+   "first": 3116,
+   "line": "Giờ ra chơi, Minh Anh bước tới bạn bạn,",
+   "note": "Giờ ra chơi, Minh Anh bước tới bạn bạn,"
+  },
+  {
+   "id": "P2S2",
+   "size": "story",
+   "key": 81,
+   "len": 163,
+   "first": 3180,
+   "line": "tay cầm chiếc bình xám bạc của bạn, mặt hơi cao lại nhưng ánh mắt lại lấp lánh tò mò.",
+   "note": "tay cầm chiếc bình xám bạc của bạn, mặt hơi cao lại nhưng ánh mắt lại lấp lánh tò mò."
+  },
+  {
+   "id": "P2S3",
+   "size": "story",
+   "key": 42,
+   "len": 85,
+   "first": 3343,
+   "line": "Nè, bạn nãy cầu uống gì thế?",
+   "note": "Nè, bạn nãy cầu uống gì thế?"
+  },
+  {
+   "id": "P2S4",
+   "size": "story",
+   "key": 39,
+   "len": 79,
+   "first": 3428,
+   "line": "Minh Anh hỏi thẳng, không vòng vo.",
+   "note": "Minh Anh hỏi thẳng, không vòng vo."
+  },
+  {
+   "id": "P2S5",
+   "size": "story",
+   "key": 68,
+   "len": 136,
+   "first": 3507,
+   "line": "Trà sữa matcha. Bạn đáp, cố giữ vẻ bình thẳng.",
+   "note": "Trà sữa matcha. Bạn đáp, cố giữ vẻ bình thẳng."
+  },
+  {
+   "id": "P2S6",
+   "size": "story",
+   "key": 18,
+   "len": 37,
+   "first": 3643,
+   "line": "Sao thế?",
+   "note": "Sao thế?"
+  },
+  {
+   "id": "P2S7",
+   "size": "story",
+   "key": 84,
+   "len": 169,
+   "first": 3680,
+   "line": "Tại vì đúng lúc đó, tự nhiên mình thấy lạnh bút từ cổ họng xuống tận bụng,",
+   "note": "Tại vì đúng lúc đó, tự nhiên mình thấy lạnh bút từ cổ họng xuống tận bụng,"
+  },
+  {
+   "id": "P2S8",
+   "size": "story",
+   "key": 38,
+   "len": 77,
+   "first": 3849,
+   "line": "xong rồi có vị matcha. Trà.",
+   "note": "xong rồi có vị matcha. Trà."
+  },
+  {
+   "id": "P2S9",
+   "size": "story",
+   "key": 46,
+   "len": 92,
+   "first": 3926,
+   "line": "Minh Anh dơ chiếc bình xám bạc lên, khẽ lắc.",
+   "note": "Minh Anh dơ chiếc bình xám bạc lên, khẽ lắc."
+  },
+  {
+   "id": "P2S10",
+   "size": "story",
+   "key": 66,
+   "len": 132,
+   "first": 4018,
+   "line": "Còn cái này là của cậu, hồi nãy mình nhắp thử một chút nước chanh mật ong.",
+   "note": "Còn cái này là của cậu, hồi nãy mình nhắp thử một chút nước chanh mật ong."
+  },
+  {
+   "id": "P2S11",
+   "size": "story",
+   "key": 17,
+   "len": 34,
+   "first": 4150,
+   "line": "Bạn chóp mắt.",
+   "note": "Bạn chóp mắt."
+  },
+  {
+   "id": "P2S12",
+   "size": "story",
+   "key": 96,
+   "len": 193,
+   "first": 4184,
+   "line": "Đúng là lúc nãy bạn thoáng thấy vị chua dịu thoảng qua đầu lưỡi mà cứ tưởng mình bị ảo giác vì thiếu ngủ.",
+   "note": "Đúng là lúc nãy bạn thoáng thấy vị chua dịu thoảng qua đầu lưỡi mà cứ tưởng mình bị ảo giác vì thiếu ngủ."
+  },
+  {
+   "id": "P2S13",
+   "size": "story",
+   "key": 27,
+   "len": 54,
+   "first": 4377,
+   "line": "Khải tự nhiên chen vào,",
+   "note": "Khải tự nhiên chen vào,"
+  },
+  {
+   "id": "P2S14",
+   "size": "story",
+   "key": 41,
+   "len": 83,
+   "first": 4431,
+   "line": "chống cầm nhìn hai người như đang xem phim truyền hình.",
+   "note": "chống cầm nhìn hai người như đang xem phim truyền hình."
+  },
+  {
+   "id": "P2S15",
+   "size": "story",
+   "key": 58,
+   "len": 116,
+   "first": 4514,
+   "line": "Thế tức là hai người đang làm chuột bạch cho nhau bằng bình nước,",
+   "note": "Thế tức là hai người đang làm chuột bạch cho nhau bằng bình nước,"
+  },
+  {
+   "id": "P2S16",
+   "size": "story",
+   "key": 44,
+   "len": 89,
+   "first": 4630,
+   "line": "hay là để tao thử uống ké xem có bị lây không?",
+   "note": "hay là để tao thử uống ké xem có bị lây không?"
+  },
+  {
+   "id": "P2S17",
+   "size": "story",
+   "key": 78,
+   "len": 156,
+   "first": 4719,
+   "line": "Cút ra chỗ khác đi ông thần. Bạn... bạn gạt tay khải, rồi quay lại nhìn Minh Anh.",
+   "note": "Cút ra chỗ khác đi ông thần. Bạn... bạn gạt tay khải, rồi quay lại nhìn Minh Anh."
+  },
+  {
+   "id": "P2S18",
+   "size": "story",
+   "key": 35,
+   "len": 71,
+   "first": 4875,
+   "line": "Vậy, giờ mình đổ lại bình nhá.",
+   "note": "Vậy, giờ mình đổ lại bình nhá."
+  },
+  {
+   "id": "P2S19",
+   "size": "story",
+   "key": 54,
+   "len": 109,
+   "first": 4946,
+   "line": "Minh Anh trần trừ một nhịp, ánh mắt tinh nghịch hẳn lên.",
+   "note": "Minh Anh trần trừ một nhịp, ánh mắt tinh nghịch hẳn lên."
+  },
+  {
+   "id": "P2S20",
+   "size": "story",
+   "key": 89,
+   "len": 179,
+   "first": 5055,
+   "line": "Khoan đã, nếu chưa đổi vội thì... thử thêm một lần nữa xem có đúng không?",
+   "note": "Khoan đã, nếu chưa đổi vội thì... thử thêm một lần nữa xem có đúng không?"
+  },
+  {
+   "id": "P2S21",
+   "size": "story",
+   "key": 81,
+   "len": 163,
+   "first": 5234,
+   "line": "Chưa kịp để bạn kịp phản ứng, Minh Anh mở nắp bình xám bạc của bạn và uống một hơi.",
+   "note": "Chưa kịp để bạn kịp phản ứng, Minh Anh mở nắp bình xám bạc của bạn và uống một hơi."
+  },
+  {
+   "id": "P2S22",
+   "size": "story",
+   "key": 90,
+   "len": 181,
+   "first": 5397,
+   "line": "Ngay khoảnh khắc ấy, bạn thấy cổ họng mình ngọt liệm vị mật ong xen lẫn vị chua thanh của chanh,",
+   "note": "Ngay khoảnh khắc ấy, bạn thấy cổ họng mình ngọt liệm vị mật ong xen lẫn vị chua thanh của chanh,"
+  },
+  {
+   "id": "P2S23",
+   "size": "story",
+   "key": 42,
+   "len": 84,
+   "first": 5578,
+   "line": "kèm theo một cân rung mình nhẹ chạy dọc sống lưng.",
+   "note": "kèm theo một cân rung mình nhẹ chạy dọc sống lưng."
+  },
+  {
+   "id": "P2S24",
+   "size": "story",
+   "key": 43,
+   "len": 86,
+   "first": 5662,
+   "line": "Bạn bật cười khẽ, lát đầu nhìn cô ấy.",
+   "note": "Bạn bật cười khẽ, lát đầu nhìn cô ấy."
+  },
+  {
+   "id": "P2S25",
+   "size": "story",
+   "key": 40,
+   "len": 81,
+   "first": 5748,
+   "line": "Thấy chưa, chuẩn không cần chỉnh.",
+   "note": "Thấy chưa, chuẩn không cần chỉnh."
+  },
+  {
+   "id": "P2S26",
+   "size": "story",
+   "key": 79,
+   "len": 159,
+   "first": 5829,
+   "line": "Minh Anh cười tui, rạn rỡ đến mức bạn suýt quên mất cả lời treo chọc tiếp theo của Khải.",
+   "note": "Minh Anh cười tui, rạn rỡ đến mức bạn suýt quên mất cả lời treo chọc tiếp theo của Khải."
+  },
+  {
+   "id": "P2S27",
+   "size": "story",
+   "key": 43,
+   "len": 87,
+   "first": 5988,
+   "line": "Cô ấy đặt chiếc bình xám bạc xuống bàn bạn,",
+   "note": "Cô ấy đặt chiếc bình xám bạc xuống bàn bạn,"
+  },
+  {
+   "id": "P2S28",
+   "size": "story",
+   "key": 24,
+   "len": 49,
+   "first": 6075,
+   "line": "cầm lại bình xanh reo của mình.",
+   "note": "cầm lại bình xanh reo của mình."
+  },
+  {
+   "id": "P2S29",
+   "size": "story",
+   "key": 86,
+   "len": 172,
+   "first": 6124,
+   "line": "Hôm nay vui thật đấy, nhớ uống nhiều nước vào nhé, không là tớ biết ngay đấy.",
+   "note": "Hôm nay vui thật đấy, nhớ uống nhiều nước vào nhé, không là tớ biết ngay đấy."
+  },
+  {
+   "id": "P2S30",
+   "size": "story",
+   "key": 21,
+   "len": 42,
+   "first": 6296,
+   "line": "Biết cái gì cơ?",
+   "note": "Biết cái gì cơ?"
+  },
+  {
+   "id": "P2S31",
+   "size": "story",
+   "key": 54,
+   "len": 109,
+   "first": 6338,
+   "line": "Biết cậu đang khát hay đang... lén nhìn tớ.",
+   "note": "Biết cậu đang khát hay đang... lén nhìn tớ."
+  },
+  {
+   "id": "P2S32",
+   "size": "story",
+   "key": 38,
+   "len": 76,
+   "first": 6447,
+   "line": "Minh Anh nháy mắt rồi quay về chỗ ngồi.",
+   "note": "Minh Anh nháy mắt rồi quay về chỗ ngồi."
+  },
+  {
+   "id": "P2S33",
+   "size": "story",
+   "key": 37,
+   "len": 74,
+   "first": 6523,
+   "line": "Để lại bạn đứng ngay ngừa giữa... Để lại bạn đứng ngay ngừa giữa tiếng cười.",
+   "note": "Để lại bạn đứng ngay ngừa giữa... Để lại bạn đứng ngay ngừa giữa tiếng cười."
+  },
+  {
+   "id": "P2S34",
+   "size": "story",
+   "key": 44,
+   "len": 89,
+   "first": 6597,
+   "line": "Đầy ác ý của Khải.",
+   "note": "Đầy ác ý của Khải."
+  },
+  {
+   "id": "P2S35",
+   "size": "story",
+   "key": 60,
+   "len": 120,
+   "first": 6686,
+   "line": "Chết mày chưa, người ta bắt thóp rồi kìa.",
+   "note": "Chết mày chưa, người ta bắt thóp rồi kìa."
+  },
+  {
+   "id": "P2S36",
+   "size": "story",
+   "key": 38,
+   "len": 76,
+   "first": 6806,
+   "line": "Khải vỗ vai bạn rầm rầm.",
+   "note": "Khải vỗ vai bạn rầm rầm."
+  },
+  {
+   "id": "P2S37",
+   "size": "story",
+   "key": 58,
+   "len": 116,
+   "first": 6882,
+   "line": "Chiều nay nhớ giữ bình cho cẩn thận, đừng để hớ hên.",
+   "note": "Chiều nay nhớ giữ bình cho cẩn thận, đừng để hớ hên."
+  },
+  {
+   "id": "P3S1",
+   "size": "story",
+   "key": 41,
+   "len": 82,
+   "first": 6998,
+   "line": "Suốt buổi chiều, bạn cẩn thận tuyệt đối,",
+   "note": "Suốt buổi chiều, bạn cẩn thận tuyệt đối,"
+  },
+  {
+   "id": "P3S2",
+   "size": "story",
+   "key": 56,
+   "len": 112,
+   "first": 7080,
+   "line": "chỉ dám uống nước lọc khi chắc chắn Minh Anh không cầm mình của bạn.",
+   "note": "chỉ dám uống nước lọc khi chắc chắn Minh Anh không cầm mình của bạn."
+  },
+  {
+   "id": "P3S3",
+   "size": "story",
+   "key": 82,
+   "len": 165,
+   "first": 7192,
+   "line": "Tàn học, bạn về nhà, tắm rửa xong xui, leo lên giường định ngủ sớm.",
+   "note": "Tàn học, bạn về nhà, tắm rửa xong xui, leo lên giường định ngủ sớm."
+  },
+  {
+   "id": "P3S4",
+   "size": "story",
+   "key": 49,
+   "len": 98,
+   "first": 7357,
+   "line": "Điện thoại rung lên một cái, tin nhắn từ Minh Anh.",
+   "note": "Điện thoại rung lên một cái, tin nhắn từ Minh Anh."
+  },
+  {
+   "id": "P3S5",
+   "size": "story",
+   "key": 15,
+   "len": 31,
+   "first": 7455,
+   "line": "Ngủ chưa?",
+   "note": "Ngủ chưa?"
+  },
+  {
+   "id": "P3S6",
+   "size": "story",
+   "key": 57,
+   "len": 114,
+   "first": 7486,
+   "line": "Tớ vừa pha một cốc cacao nóng, siêu nhiều đường.",
+   "note": "Tớ vừa pha một cốc cacao nóng, siêu nhiều đường."
+  },
+  {
+   "id": "P3S7",
+   "size": "story",
+   "key": 75,
+   "len": 150,
+   "first": 7600,
+   "line": "Bạn mỉm cười, gõ lại. Chưa, sao tự nhiên pha cacao khuya thế?",
+   "note": "Bạn mỉm cười, gõ lại. Chưa, sao tự nhiên pha cacao khuya thế?"
+  },
+  {
+   "id": "P3S8",
+   "size": "story",
+   "key": 44,
+   "len": 88,
+   "first": 7750,
+   "line": "Thử nghiệm khoa học thôi, cậu sẵn sàng chưa? Chưa.",
+   "note": "Thử nghiệm khoa học thôi, cậu sẵn sàng chưa? Chưa."
+  },
+  {
+   "id": "P3S9",
+   "size": "story",
+   "key": 54,
+   "len": 109,
+   "first": 7838,
+   "line": "Chưa kịp nhắn thêm câu nào, mà người điện thoại sáng lên lần nữa.",
+   "note": "Chưa kịp nhắn thêm câu nào, mà người điện thoại sáng lên lần nữa."
+  },
+  {
+   "id": "P3S10",
+   "size": "story",
+   "key": 59,
+   "len": 118,
+   "first": 7947,
+   "line": "3, 2, 1, uống đây.",
+   "note": "3, 2, 1, uống đây."
+  },
+  {
+   "id": "P3S11",
+   "size": "story",
+   "key": 60,
+   "len": 120,
+   "first": 8065,
+   "line": "Bạn nín thở chờ đợi, nhưng suốt một phút trôi qua,",
+   "note": "Bạn nín thở chờ đợi, nhưng suốt một phút trôi qua,"
+  },
+  {
+   "id": "P3S12",
+   "size": "story",
+   "key": 54,
+   "len": 109,
+   "first": 8185,
+   "line": "chẳng có vị ngọt ngào hay hơi ấm nào của cacao lan tới cả.",
+   "note": "chẳng có vị ngọt ngào hay hơi ấm nào của cacao lan tới cả."
+  },
+  {
+   "id": "P3S13",
+   "size": "story",
+   "key": 62,
+   "len": 125,
+   "first": 8294,
+   "line": "Bạn câu mày, gõ nhanh. Ủa, có thấy gì đâu?",
+   "note": "Bạn câu mày, gõ nhanh. Ủa, có thấy gì đâu?"
+  },
+  {
+   "id": "P3S14",
+   "size": "story",
+   "key": 26,
+   "len": 53,
+   "first": 8419,
+   "line": "Bình của cậu hết tác dụng rồi à?",
+   "note": "Bình của cậu hết tác dụng rồi à?"
+  },
+  {
+   "id": "P3S15",
+   "size": "story",
+   "key": 82,
+   "len": 164,
+   "first": 8472,
+   "line": "Tin nhắn trả lời hiện lên gần như ngay lập tức, kèm theo một biểu tượng cười đắt thắng.",
+   "note": "Tin nhắn trả lời hiện lên gần như ngay lập tức, kèm theo một biểu tượng cười đắt thắng."
+  },
+  {
+   "id": "P3S16",
+   "size": "story",
+   "key": 69,
+   "len": 138,
+   "first": 8636,
+   "line": "Không hề, chỉ là tớ không... Không hề uống từ cái bình đó.",
+   "note": "Không hề, chỉ là tớ không... Không hề uống từ cái bình đó."
+  },
+  {
+   "id": "P3S17",
+   "size": "story",
+   "key": 36,
+   "len": 73,
+   "first": 8774,
+   "line": "Tớ đang cầm bình xám bạc của cậu đây.",
+   "note": "Tớ đang cầm bình xám bạc của cậu đây."
+  },
+  {
+   "id": "P3S18",
+   "size": "story",
+   "key": 38,
+   "len": 76,
+   "first": 8847,
+   "line": "Chúc ngủ ngon nha, người bị đánh úp.",
+   "note": "Chúc ngủ ngon nha, người bị đánh úp."
+  }
+ ],
+ "fx": [],
+ "audio": {
+  "voice": "thermos/voice.wav",
+  "voiceVol": 0.6355,
+  "sfx": "thermos/sfx.wav",
+  "sfxVol": 0.8,
+  "music": "thermos/music.wav",
+  "musicVol": 0.1812
+ }
+}

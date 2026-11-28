@@ -44,6 +44,11 @@ python ../scripts/master.py <slug> --skip-render  # loudnorm/copy an already-ren
 - Long-story episodes (e.g. `drawings`) split the script into `script/<slug>/pageN.txt`, voice per page with
   `voice_story.py`, plan with `plan_story.py`+`plan.py`; `turns_pN.json` marks all turns "Narrator" — quoted
   dialogue only differs by `style`, so re-parse quotes + align to `words.json` for dialogue timing.
+- **Captioned-story variant:** for stories the user captions themselves, stop after voicing — **clean
+  `I:\My Drive\audiovideo\audio\` first** (remove stale takes), then copy each
+  `studio/public/<slug>/voice_pN.wav` to `I:\My Drive\audiovideo\audio\pageN.wav` and hand over. The user makes
+  the SRT into `I:\My Drive\audiovideo\caption\` and replies; word timestamps/`plan_story.py` are not needed
+  for that flow. `voice_story.py` accepts `"language"` in `speakers.json` for Whisper (e.g. `"vi"`).
 - Speech bubbles for quoted dialogue: comic style, timed to word spans, tail on the speaker — pattern in
   `references/look.md` → On-screen text.
 

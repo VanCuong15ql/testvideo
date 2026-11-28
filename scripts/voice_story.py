@@ -140,7 +140,7 @@ def pcm_to_wav(path, data, mime):
     return secs
 
 
-def whisper_words(wav_path):
+def whisper_words(wav_path, language=None):
     from faster_whisper import WhisperModel
     model = WhisperModel('base', device='cpu', compute_type='int8')
     with wave.open(str(wav_path), 'rb') as w:
@@ -149,7 +149,7 @@ def whisper_words(wav_path):
     if rate != 16000:
         t = np.arange(len(x)) / rate
         x = np.interp(np.arange(0, len(x) * 16000 / rate) / 16000, t, x).astype(np.float32)
-    segs, _ = model.transcribe(x, word_timestamps=True, language='en')
+    segs, _ = model.transcribe(x, word_timestamps=True, language=language)
     words = []
     for s in segs:
         for w in (s.words or []):
@@ -203,7 +203,7 @@ for pf in page_files:
     words_p = out / f'words_p{n}.json'
     if not words_p.exists():
         print(f'page {n}: whisper...')
-        words_p.write_text(json.dumps(whisper_words(wav), ensure_ascii=False), encoding='utf-8')
+        words_p.write_text(json.dumps(whisper_words(wav, spec.get('language')), ensure_ascii=False), encoding='utf-8')
 
 all_words, acc = [], 0.0
 for pf in page_files:
